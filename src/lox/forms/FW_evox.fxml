@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304" prefWidth="265" styleClass="">
+  <children>
+    <ImageViewEx autoSize="true" centered="false" focusTraversable="false" height="20" id="image" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="265">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/lox-evox-statusbar.png" visible="1"/>
+    <Panel backgroundColor="#ffffff" borderColor="#ffffff" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel" layoutX="0" layoutY="20" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="284" prefWidth="267" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="true" centered="false" focusTraversable="false" height="56" id="image3" layoutX="0" layoutY="40" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="265">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image3" image=".data/img/lox-evox-logo.png" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="20" clickColor="#1861c2" color="#1a73e8" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#1867cf" id="button" layoutX="56" layoutY="192" prefHeight="32" prefWidth="144" styleClass="x-flat-button " text="Начать" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button" visible="1"/>
+        <com.jfoenix.controls.JFXComboBox editable="false" focusColor="#4059a9" focusTraversable="true" id="combobox" labelFloat="" layoutX="56" layoutY="152" prefHeight="16" prefWidth="144" promptText="" unFocusColor="#4d4d4d" value="Русский" visibleRowCount="10">
+          <items xmlns:fx="http://javafx.com/fxml">
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Русский"/>
+            </FXCollections>
+          </items>
+          <styleClass xmlns:fx="http://javafx.com/fxml">
+            <String fx:value="combo-box-base"/>
+            <String fx:value="combo-box"/>
+            <String fx:value="jfx-combo-box"/>
+          </styleClass>
+        </com.jfoenix.controls.JFXComboBox>
+        <Data cursor="DEFAULT" enabled="1" id="data-combobox" visible="1"/>
+        <Panel backgroundColor="#ffffff" borderColor="#ffffff" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel3" layoutX="56" layoutY="152" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="26" prefWidth="144" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <Rectangle arcHeight="0" arcWidth="0" fill="#000000" focusTraversable="false" height="10" id="rect" layoutX="122" layoutY="5" rotate="130" stroke="#000000" strokeType="INSIDE" strokeWidth="1" styleClass="" width="1"/>
+            <Data cursor="DEFAULT" enabled="1" id="data-rect" visible="1"/>
+            <Rectangle arcHeight="0" arcWidth="0" fill="#000000" focusTraversable="false" height="10" id="rectAlt" layoutX="130" layoutY="5" rotate="230" stroke="#000000" strokeType="INSIDE" strokeWidth="1" styleClass="" width="1"/>
+            <Data cursor="DEFAULT" enabled="1" id="data-rectAlt" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="System Regular" size="12"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="" id="data-panel3" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="64" layoutY="152" prefHeight="15.9609375" prefWidth="43.5234375" styleClass="label " text="Русский" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-panelAlt" visible="1"/>
+    <Rectangle arcHeight="0" arcWidth="0" fill="#000000" focusTraversable="false" height="284" id="halfprozr" layoutX="0" layoutY="328" opacity="0.5" stroke="#000000" strokeType="INSIDE" strokeWidth="2" styleClass="" width="267"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-halfprozr" visible=""/>
+    <Panel backgroundColor="#ffffff" borderColor="#ffffff" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panelAlt" layoutX="272" layoutY="20" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="284" prefWidth="267" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="10" layoutY="8" prefHeight="96" prefWidth="248" styleClass="label " text="Вы сами согласились на разблокировку имитации прошивки :D&#10;&#10;Ну, имитировали, дальше путей немного, например прошиться обратно..." textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="20" clickColor="#1861c2" color="#1a73e8" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#1867cf" id="buttonAlt" layoutX="78" layoutY="104" prefHeight="32" prefWidth="112" styleClass="x-flat-button " text="Донаты" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-buttonAlt" visible="1"/>
+        <Hyperlink alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="link" layoutX="62" layoutY="144" prefHeight="16" prefWidth="144" styleClass="hyperlink " text="Вернуться назад" textAlignment="CENTER" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </Hyperlink>
+        <Data cursor="DEFAULT" enabled="1" id="data-link" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+  </children>
+</AnchorPane>

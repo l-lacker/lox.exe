@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="store">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doLinkAction">
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="184" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="progressIndicator" object-type="object"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <elementHide object="label3" object-type="object"/>
+      <elementHide object="label4" object-type="object"/>
+      <elementHide object="separatorAlt" object-type="object"/>
+      <elementHide object="separator3" object-type="object"/>
+      <elementLoadContent object="textArea" object-type="object" path="https://l-lacker.ru/app/calendar/weather-service-info.txt" path-type="string" sync="" sync-type=""/>
+      <elementHide object="progressIndicator" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton16Action">
+      <ifVar method="equals" method-type="" name="lox-unlimbillets" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <ifVar method="smaller" method-type="" name="a" name-type="" not="" not-type="" value="25" value-type="integer"/>
+      <openBlock/>
+      <elementSetText object="form('MainForm')-&gt;PODSKAZKA" object-type="object" relative="" relative-type="" value="Невозможно совершить покупку! У Вас не хватает средств." value-type="string"/>
+      <stopMedia id="xpnotiplayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="xpnotiplayer" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <appendVar asString="" asString-type="" name="a" name-type="" value="-25" value-type="string"/>
+      <phpLine expr="$store_prikol = $GLOBALS['a'].' ₽'" expr-type="expr"/>
+      <elementSetText object="form('MainForm')-&gt;balance_store" object-type="object" relative="" relative-type="" value="store_prikol" value-type="variable"/>
+      <stopMedia id="xpnotiplayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="xpnotiplayer" id-type="string" source="res://.data/audio/lox-buy.mp3" source-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <stopMedia id="xpnotiplayer2" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="xpnotiplayer2" id-type="string" source="res://.data/audio/lox-secret-theme-win.mp3" source-type="string"/>
+      <closeBlock/>
+      <elementHide object="panel3" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton4Action">
+      <ifVar method="equals" method-type="" name="lox-unlimbillets" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <elementShow object="panel3" object-type="object"/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+      <setVar name="vt_newcol" name-type="" value="1" value-type="string"/>
+      <setVar name="vt_collink" name-type="" value="black" value-type="string"/>
+    </method>
+  <method name="doButton5Action">
+      <ifVar method="equals" method-type="" name="lox-unlimbillets" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <elementShow object="panel3" object-type="object"/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+      <setVar name="vt_newcol" name-type="" value="1" value-type="string"/>
+      <setVar name="vt_collink" name-type="" value="white" value-type="string"/>
+    </method>
+  <method name="doButton6Action">
+      <ifVar method="equals" method-type="" name="lox-unlimbillets" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <elementShow object="panel3" object-type="object"/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+      <setVar name="vt_newcol" name-type="" value="1" value-type="string"/>
+      <setVar name="vt_collink" name-type="" value="grey" value-type="string"/>
+    </method>
+  <method name="doButton7Action">
+      <ifVar method="equals" method-type="" name="vttorch" name-type="" not="" not-type="" value="enabled" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="xpnotiplayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="xpnotiplayer" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="lox-unlimbillets" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <elementShow object="panel3" object-type="object"/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+      <setVar name="vt_newcol" name-type="" value="1" value-type="string"/>
+      <setVar name="vt_collink" name-type="" value="greyslim" value-type="string"/>
+    </method>
+  <method name="doButton8Action">
+      <ifVar method="equals" method-type="" name="lox-unlimbillets" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <elementShow object="panel3" object-type="object"/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+      <setVar name="vt_newcol" name-type="" value="1" value-type="string"/>
+      <setVar name="vt_collink" name-type="" value="rainbow" value-type="string"/>
+    </method>
+  <method name="doButton9Action">
+      <ifVar method="equals" method-type="" name="lox-unlimbillets" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <elementShow object="panel3" object-type="object"/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+      <setVar name="vt_newcol" name-type="" value="1" value-type="string"/>
+      <setVar name="vt_collink" name-type="" value="lightgreen" value-type="string"/>
+    </method>
+  <method name="doButton10Action">
+      <ifVar method="equals" method-type="" name="lox-unlimbillets" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <elementShow object="panel3" object-type="object"/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+      <setVar name="vt_newcol" name-type="" value="1" value-type="string"/>
+      <setVar name="vt_collink" name-type="" value="lightblue" value-type="string"/>
+    </method>
+  <method name="doButton11Action">
+      <ifVar method="equals" method-type="" name="lox-unlimbillets" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <elementShow object="panel3" object-type="object"/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+      <setVar name="vt_newcol" name-type="" value="1" value-type="string"/>
+      <setVar name="vt_collink" name-type="" value="ceramic" value-type="string"/>
+    </method>
+  <method name="doButton12Action">
+      <ifVar method="equals" method-type="" name="lox-unlimbillets" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <elementShow object="panel3" object-type="object"/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+      <setVar name="vt_newcol" name-type="" value="1" value-type="string"/>
+      <setVar name="vt_collink" name-type="" value="blyafleur" value-type="string"/>
+    </method>
+  <method name="doButton13Action">
+      <ifVar method="equals" method-type="" name="lox-unlimbillets" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <elementShow object="panel3" object-type="object"/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+      <setVar name="vt_newcol" name-type="" value="1" value-type="string"/>
+      <setVar name="vt_collink" name-type="" value="blyafleur2" value-type="string"/>
+    </method>
+  <method name="doButtonAction">
+      <ifVar method="smaller" method-type="" name="a" name-type="" not="" not-type="" value="50" value-type="integer"/>
+      <openBlock/>
+      <elementSetText object="form('MainForm')-&gt;PODSKAZKA" object-type="object" relative="" relative-type="" value="Невозможно совершить покупку! У Вас не хватает средств." value-type="string"/>
+      <stopMedia id="xpnotiplayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="xpnotiplayer" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <appendVar asString="" asString-type="" name="a" name-type="" value="-50" value-type="string"/>
+      <stopMedia id="xpnotiplayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="xpnotiplayer" id-type="string" source="res://.data/audio/lox-buy.mp3" source-type="string"/>
+      <phpLine expr="$store_prikol = $GLOBALS['a'].' ₽'" expr-type="expr"/>
+      <elementSetText object="form('MainForm')-&gt;balance_store" object-type="object" relative="" relative-type="" value="store_prikol" value-type="variable"/>
+      <elementLoadContent object="form('MainForm')-&gt;calendar_main" object-type="object" path="https://l-lacker.ru/app/calendar/old" path-type="string" sync="" sync-type=""/>
+    </method>
+  <method name="doButtonAltAction">
+      <ifVar method="smaller" method-type="" name="a" name-type="" not="" not-type="" value="50" value-type="integer"/>
+      <openBlock/>
+      <elementSetText object="form('MainForm')-&gt;PODSKAZKA" object-type="object" relative="" relative-type="" value="Невозможно совершить покупку! У Вас не хватает средств." value-type="string"/>
+      <stopMedia id="xpnotiplayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="xpnotiplayer" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <appendVar asString="" asString-type="" name="a" name-type="" value="-50" value-type="string"/>
+      <stopMedia id="xpnotiplayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="xpnotiplayer" id-type="string" source="res://.data/audio/lox-buy.mp3" source-type="string"/>
+      <phpLine expr="$store_prikol = $GLOBALS['a'].' ₽'" expr-type="expr"/>
+      <elementSetText object="form('MainForm')-&gt;balance_store" object-type="object" relative="" relative-type="" value="store_prikol" value-type="variable"/>
+      <elementLoadContent object="form('MainForm')-&gt;calendar_main" object-type="object" path="https://l-lacker.ru/app/calendar/" path-type="string" sync="" sync-type=""/>
+    </method>
+  <method name="doButton3Action">
+      <ifVar method="smaller" method-type="" name="a" name-type="" not="" not-type="" value="50" value-type="integer"/>
+      <openBlock/>
+      <elementSetText object="form('MainForm')-&gt;PODSKAZKA" object-type="object" relative="" relative-type="" value="Невозможно совершить покупку! У Вас не хватает средств." value-type="string"/>
+      <stopMedia id="xpnotiplayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="xpnotiplayer" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <appendVar asString="" asString-type="" name="a" name-type="" value="-50" value-type="string"/>
+      <stopMedia id="xpnotiplayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="xpnotiplayer" id-type="string" source="res://.data/audio/lox-buy.mp3" source-type="string"/>
+      <phpLine expr="$store_prikol = $GLOBALS['a'].' ₽'" expr-type="expr"/>
+      <elementSetText object="form('MainForm')-&gt;balance_store" object-type="object" relative="" relative-type="" value="store_prikol" value-type="variable"/>
+      <elementLoadContent object="form('MainForm')-&gt;calendar_main" object-type="object" path="https://l-lacker.ru/app/calendar?weather=on" path-type="string" sync="" sync-type=""/>
+    </method>
+  <method name="doButton14Action">
+      <ifVar method="smaller" method-type="" name="a" name-type="" not="" not-type="" value="350" value-type="integer"/>
+      <openBlock/>
+      <elementSetText object="form('MainForm')-&gt;PODSKAZKA" object-type="object" relative="" relative-type="" value="Невозможно совершить покупку! У Вас не хватает средств." value-type="string"/>
+      <stopMedia id="xpnotiplayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="xpnotiplayer" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="vt_vpload" name-type="" value="4" value-type="string"/>
+      <appendVar asString="" asString-type="" name="a" name-type="" value="-350" value-type="string"/>
+      <stopMedia id="xpnotiplayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="xpnotiplayer" id-type="string" source="res://.data/audio/lox-buy.mp3" source-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Куплено" value-type="string"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <phpLine expr="$store_prikol = $GLOBALS['a'].' ₽'" expr-type="expr"/>
+      <elementSetText object="form('MainForm')-&gt;balance_store" object-type="object" relative="" relative-type="" value="store_prikol" value-type="variable"/>
+      <elementShow object="form('MainForm')-&gt;label37" object-type="object"/>
+      <phpLine expr="$timergovn = Timer::every(10000, function () { $GLOBALS['a'] += '1'" expr-type="expr"/>
+      <behaviourEnable behaviour="behaviour\custom\DropShadowEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;tereb1" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\InnerShadowEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;tereb1" object-type="object"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <behaviourDisable behaviour="behaviour\custom\DropShadowEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;tereb1" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\InnerShadowEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;tereb1" object-type="object"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\DropShadowEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;tereb1" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\InnerShadowEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;tereb1" object-type="object"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <behaviourDisable behaviour="behaviour\custom\DropShadowEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;tereb1" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\InnerShadowEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;tereb1" object-type="object"/>
+      <phpLine expr="})" expr-type="expr"/>
+    </method>
+  </class>
+</root>

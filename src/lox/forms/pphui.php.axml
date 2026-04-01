@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="pphui">
+    
+  
+  
+  <method name="doShow">
+      <phpLine expr="$this-&gt;touchsound-&gt;open('res://.data/audio/touch.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;errorsound-&gt;open('res://.data/audio/vtb-error.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;donesound-&gt;open('res://.data/audio/vtb-done.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;gudoksound-&gt;open('https://l-lacker.ru/app/vtb/vtb-gudok.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;callsound-&gt;open('https://l-lacker.ru/app/vtb/pranks/random.php')" expr-type="expr"/>
+      <setVar name="vtb_longgudok" name-type="" value="rand(2000,8000)" value-type="expr"/>
+    </method>
+  </class>
+</root>

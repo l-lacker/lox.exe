@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="intercard">
+    <method name="doRectClickLeft">
+      <browse url="https://l-lacker.ru/quickurl?l=1" url-type="string"/>
+    </method>
+  
+    
+  
+  
+  
+  
+  
+  <method name="doRectAltClickLeft">
+      <browse url="https://l-lacker.ru/quickurl?l=2" url-type="string"/>
+    </method>
+  <method name="doRect3ClickLeft">
+      <browse url="https://l-lacker.ru/quickurl?l=3" url-type="string"/>
+    </method>
+  </class>
+</root>

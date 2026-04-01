@@ -1,0 +1,112 @@
+{
+  "props": [],
+  "components": {
+    "phoneStart": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 672,
+      "props": {
+        "interval": 1,
+        "repeatable": false,
+        "autoStart": "1"
+      }
+    },
+    "proshivHelper": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 592,
+      "props": {
+        "interval": "1000",
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    },
+    "statCount": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 512,
+      "props": {
+        "interval": "1000",
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    },
+    "phoneHelper": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 432,
+      "props": {
+        "interval": 100,
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    },
+    "videoPlayerAlt": {
+      "type": "script\\MediaPlayerScript",
+      "x": 48,
+      "y": 352,
+      "props": {
+        "loop": true,
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0",
+        "view": "mediaViewAlt"
+      }
+    },
+    "videoPlayer": {
+      "type": "script\\MediaPlayerScript",
+      "x": 48,
+      "y": 272,
+      "props": {
+        "loop": true,
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0",
+        "view": "mediaView"
+      }
+    },
+    "VTtimer": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 192,
+      "props": {
+        "interval": 500,
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    },
+    "timer": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 112,
+      "props": {
+        "interval": 100,
+        "repeatable": "1",
+        "autoStart": false
+      }
+    },
+    "phonePlayer": {
+      "type": "script\\MediaPlayerScript",
+      "x": 48,
+      "y": 32,
+      "props": {
+        "autoplay": "1",
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "timerVolume": {
+      "type": "script\\TimerScript",
+      "x": 144,
+      "y": 32,
+      "props": {
+        "interval": 100,
+        "repeatable": "1",
+        "autoStart": true
+      }
+    }
+  }
+}

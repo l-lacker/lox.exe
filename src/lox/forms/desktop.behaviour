@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="image">
+    <behaviour animated="" direction="ALL" gridX="1" gridY="1" limitedByParent="1" opacity="0.5" opacityEnabled="" type="behaviour\custom\DraggingBehaviour"/>
+  </target>
+  <target id="timelabel">
+    <behaviour format="HH:mm:ss" type="behaviour\custom\WatchMakerBehaviour"/>
+  </target>
+  <target id="datelabel">
+    <behaviour format="dd.MM.YYYY" type="behaviour\custom\WatchMakerBehaviour"/>
+  </target>
+  <target id="timewidget">
+    <behaviour color="#ffffff" offsetX="0" offsetY="0" radius="19.756097560976" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panel4">
+    <behaviour color="#ffffff" offsetX="0" offsetY="0" radius="19.756097560976" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panel7">
+    <behaviour color="#ffffff" offsetX="0" offsetY="0" radius="19.756097560976" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label3">
+    <behaviour format="HH:mm:ss" type="behaviour\custom\WatchMakerBehaviour"/>
+  </target>
+  <target id="label4">
+    <behaviour format="dd.MM.YYYY" type="behaviour\custom\WatchMakerBehaviour"/>
+  </target>
+  <target id="panel5">
+    <behaviour color="#ffffff" offsetX="0" offsetY="0" radius="19.756097560976" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+    <behaviour animated="1" direction="ALL" gridX="1" gridY="1" limitedByParent="" opacity="0.5" opacityEnabled="1" type="behaviour\custom\DraggingBehaviour"/>
+  </target>
+  <target id="panel6">
+    <behaviour color="#ffffff" offsetX="0" offsetY="0" radius="19.756097560976" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+    <behaviour animated="1" direction="ALL" gridX="1" gridY="1" limitedByParent="" opacity="0.5" opacityEnabled="1" type="behaviour\custom\DraggingBehaviour"/>
+  </target>
+  <target id="panel8">
+    <behaviour color="#ffffff" offsetX="0" offsetY="0" radius="19.756097560976" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+    <behaviour animated="1" direction="ALL" gridX="1" gridY="1" limitedByParent="" opacity="0.5" opacityEnabled="1" type="behaviour\custom\DraggingBehaviour"/>
+  </target>
+  <target id="panel">
+    <behaviour enabled="" radius="10" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+  </target>
+</behaviours>

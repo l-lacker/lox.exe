@@ -1,0 +1,1453 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="phone">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+  
+  
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doAppSettingsMouseEnter">
+      <ifVar method="equals" method-type="" name="vtmode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementShow object="vovatechErr1" object-type="object"/>
+      <elementEnabledOn object="vovatechErr1" object-type="object"/>
+      <elementShow object="vovatechErr2" object-type="object"/>
+      <elementEnabledOn object="vovatechErr2" object-type="object"/>
+      <elementShow object="vovatechErr3" object-type="object"/>
+      <elementEnabledOn object="vovatechErr3" object-type="object"/>
+      <elementShow object="checkNewRouter" object-type="object"/>
+      <elementEnabledOn object="checkNewRouter" object-type="object"/>
+      <elementSetX object="vovatechErr2" object-type="object" relative="" relative-type="" value="16" value-type="integer"/>
+      <elementSetY object="vovatechErr2" object-type="object" relative="" relative-type="" value="312" value-type="integer"/>
+      <elementSetX object="vovatechErr3" object-type="object" relative="" relative-type="" value="16" value-type="integer"/>
+      <elementSetY object="vovatechErr3" object-type="object" relative="" relative-type="" value="416" value-type="integer"/>
+      <elementSetX object="checkNewRouter" object-type="object" relative="" relative-type="" value="120" value-type="integer"/>
+      <elementSetY object="checkNewRouter" object-type="object" relative="" relative-type="" value="504" value-type="integer"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <method name="doActivityDeepSettingsMouseEn">
+      <ifVar method="equals" method-type="" name="vtmode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementShow object="vovatechErr1" object-type="object"/>
+      <elementEnabledOn object="vovatechErr1" object-type="object"/>
+      <elementShow object="vovatechErr2" object-type="object"/>
+      <elementEnabledOn object="vovatechErr2" object-type="object"/>
+      <elementShow object="vovatechErr3" object-type="object"/>
+      <elementEnabledOn object="vovatechErr3" object-type="object"/>
+      <elementShow object="checkNewRouter" object-type="object"/>
+      <elementEnabledOn object="checkNewRouter" object-type="object"/>
+      <elementSetX object="vovatechErr2" object-type="object" relative="" relative-type="" value="16" value-type="integer"/>
+      <elementSetY object="vovatechErr2" object-type="object" relative="" relative-type="" value="312" value-type="integer"/>
+      <elementSetX object="vovatechErr3" object-type="object" relative="" relative-type="" value="16" value-type="integer"/>
+      <elementSetY object="vovatechErr3" object-type="object" relative="" relative-type="" value="416" value-type="integer"/>
+      <elementSetX object="checkNewRouter" object-type="object" relative="" relative-type="" value="120" value-type="integer"/>
+      <elementSetY object="checkNewRouter" object-type="object" relative="" relative-type="" value="504" value-type="integer"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doMobilebrowserRunning">
+      <elementShow object="progressIndicatorAlt" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <method name="doCNLAct">
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementHide object="contentnotloaded" object-type="object"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;pause()" expr-type="expr"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="mediaView" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="mediaViewAlt" object-type="object" x="0" x-type="float" y="280" y-type="float"/>
+      <elementSetY object="mediaView" object-type="object" relative="" relative-type="" value="568" value-type="integer"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$randurl = rand(1,10000)" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;open('https://l-lacker.ru/app/random.php?hash='.$randurl.'0')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;play()" expr-type="expr"/>
+      <setVar name="contentaccess" name-type="" value="2" value-type="string"/>
+      <setVar name="video_now" name-type="" value="2" value-type="string"/>
+      <sleep sync="" sync-type="" value="5000" value-type="integer"/>
+      <setVar name="contentaccess" name-type="" value="0" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <elementHide object="contentnotloaded" object-type="object"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;pause()" expr-type="expr"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="mediaViewAlt" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="mediaView" object-type="object" x="0" x-type="float" y="280" y-type="float"/>
+      <elementSetY object="mediaViewAlt" object-type="object" relative="" relative-type="" value="568" value-type="integer"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$randurl = rand(1,10000)" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;open('https://l-lacker.ru/app/random.php?hash='.$randurl.'0')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;play()" expr-type="expr"/>
+      <setVar name="contentaccess" name-type="" value="2" value-type="string"/>
+      <setVar name="video_now" name-type="" value="1" value-type="string"/>
+      <sleep sync="" sync-type="" value="5000" value-type="integer"/>
+      <setVar name="contentaccess" name-type="" value="0" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+    <method name="doCNLMouseDownL">
+      <ifVar method="equals" method-type="" name="contentaccess" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <setVar name="contentaccess" name-type="" value="3" value-type="string"/>
+      <elementShow object="contentnotloaded" object-type="object"/>
+      <sleep sync="" sync-type="" value="5000" value-type="integer"/>
+      <elementHide object="contentnotloaded" object-type="object"/>
+      <closeBlock/>
+    </method>
+  <method name="doCNLAction">
+      <ifVar method="equals" method-type="" name="contentaccess" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <setVar name="contentaccess" name-type="" value="3" value-type="string"/>
+      <elementShow object="contentnotloaded" object-type="object"/>
+      <sleep sync="" sync-type="" value="5000" value-type="integer"/>
+      <elementHide object="contentnotloaded" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doMediaViewClickLeft">
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;pause()" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;pause()" expr-type="expr"/>
+      <elementShow object="loxpause" object-type="object"/>
+    <elementEnabledOn object="loxpause" object-type="object"/>
+    </method>
+  <method name="doMediaViewAltClickLeft">
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;pause()" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;pause()" expr-type="expr"/>
+      <elementShow object="loxpause" object-type="object"/>
+      <elementEnabledOn object="loxpause" object-type="object"/>
+    </method>
+  <method name="doLoxpauseClickLeft">
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;play()" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;play()" expr-type="expr"/>
+      <elementHide object="~sender" object-type="object"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+    </method>
+  <method name="doContentnotloadedClickRight">
+      <elementHide object="~sender" object-type="object"/>
+    </method>
+  
+  
+  <method name="doButton23aAct">
+      <ifVar method="equals" method-type="" name="lgbt" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <setVar name="lgbt" name-type="" value="1" value-type="string"/>
+      <elementSetX object="halftrans" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="halftrans" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <elementSetX object="activityError" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="activityError" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <elementSetText object="errorLabel" object-type="object" relative="" relative-type="" value="Внимание" value-type="string"/>
+      <elementSetText object="errorText" object-type="object" relative="" relative-type="" value="LG, BT запрещено" value-type="string"/>
+      <elementShow object="activityError" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halftrans" object-type="object" value="0" value-type="float"/>
+      <elementShow object="halftrans" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="125" duration-type="integer" object="halftrans" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="125" duration-type="integer" object="activityError" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="125" duration-type="integer" object="activityError" object-type="object" x="224" x-type="float" y="288" y-type="float"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  <method name="doButton24aAct">
+      <ifVar method="equals" method-type="" name="lgbt" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <setVar name="lgbt" name-type="" value="1" value-type="string"/>
+      <elementSetX object="halftrans" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="halftrans" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <elementSetX object="activityError" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="activityError" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <elementSetText object="errorLabel" object-type="object" relative="" relative-type="" value="Внимание" value-type="string"/>
+      <elementSetText object="errorText" object-type="object" relative="" relative-type="" value="LG, BT запрещено" value-type="string"/>
+      <elementShow object="activityError" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halftrans" object-type="object" value="0" value-type="float"/>
+      <elementShow object="halftrans" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="125" duration-type="integer" object="halftrans" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="125" duration-type="integer" object="activityError" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="125" duration-type="integer" object="activityError" object-type="object" x="224" x-type="float" y="288" y-type="float"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton19Action">
+      <phpLine expr="$this-&gt;videoPlayer-&gt;pause()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;pause()" expr-type="expr"/>
+      <setVar name="lvs_num" name-type="" value="" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="0" value-type="string"/>
+      <elementSetX object="panel3" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="panel3" object-type="object" relative="" relative-type="" value="112" value-type="integer"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="112" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="mediaView" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="mediaViewAlt" object-type="object"/>
+    </method>
+  <method name="doButton37Action">
+      <stopMedia id="lvp_pm" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="lvp_pm" id-type="string" source="res://.data/audio/fnf_pm.mp3" source-type="string"/>
+      <appendVar asString="" asString-type="" name="lvs_num" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="lvs_num" value-type="globalVariable"/>
+    </method>
+  <method name="doButton38Action">
+      <stopMedia id="lvp_pm" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="lvp_pm" id-type="string" source="res://.data/audio/fnf_pm.mp3" source-type="string"/>
+      <appendVar asString="" asString-type="" name="lvs_num" name-type="" value="-1" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="lvs_num" value-type="globalVariable"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton30Action">
+      <setVar name="lvs_num" name-type="" value="" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="0" value-type="string"/>
+      <elementHide object="panel3" object-type="object"/>
+      <elementShow object="panelAlt" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton40Action">
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="editAlt" value-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="mediaView" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="mediaViewAlt" object-type="object"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;play()" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;play()" expr-type="expr"/>
+    </method>
+  
+  <method name="doButton5Action">
+      <setVar name="lvs_num" name-type="" value="" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="0" value-type="string"/>
+    </method>
+  
+  
+  <method name="doButton18Action">
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementHide object="contentnotloaded" object-type="object"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;pause()" expr-type="expr"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="mediaView" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="mediaViewAlt" object-type="object" x="0" x-type="float" y="288" y-type="float"/>
+      <elementSetY object="mediaView" object-type="object" relative="" relative-type="" value="568" value-type="integer"/>
+      <phpLine expr="$randurl = rand(1,10000)" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;open('https://l-lacker.ru/app/random.php?hash='.$randurl.'0')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;play()" expr-type="expr"/>
+      <setVar name="contentaccess" name-type="" value="2" value-type="string"/>
+      <setVar name="video_now" name-type="" value="2" value-type="string"/>
+      <ifVar method="equals" method-type="" name="lvNoWait" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementShow object="CNL" object-type="object"/>
+      <elementEnabledOn object="CNL" object-type="object"/>
+      <sleep sync="" sync-type="" value="5000" value-type="integer"/>
+      <elementHide object="CNL" object-type="object"/>
+      <elementEnabledOff object="CNL" object-type="object"/>
+      <setVar name="contentaccess" name-type="" value="0" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <elementHide object="contentnotloaded" object-type="object"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;pause()" expr-type="expr"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="mediaViewAlt" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="mediaView" object-type="object" x="0" x-type="float" y="288" y-type="float"/>
+      <elementSetY object="mediaViewAlt" object-type="object" relative="" relative-type="" value="568" value-type="integer"/>
+      <phpLine expr="$randurl = rand(1,10000)" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;open('https://l-lacker.ru/app/random.php?hash='.$randurl.'0')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;play()" expr-type="expr"/>
+      <setVar name="contentaccess" name-type="" value="2" value-type="string"/>
+      <setVar name="video_now" name-type="" value="1" value-type="string"/>
+      <ifVar method="equals" method-type="" name="lvNoWait" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementShow object="CNL" object-type="object"/>
+      <elementEnabledOn object="CNL" object-type="object"/>
+      <sleep sync="" sync-type="" value="5000" value-type="integer"/>
+      <elementHide object="CNL" object-type="object"/>
+      <elementEnabledOff object="CNL" object-type="object"/>
+      <setVar name="contentaccess" name-type="" value="0" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton39Action">
+      <ifVar method="smaller" method-type="" name="lvs_num" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <openMedia autoplay="1" autoplay-type="flag" id="lv_error" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <elementShow object="panel3" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <openMedia autoplay="1" autoplay-type="flag" id="lvp_conf" id-type="string" source="res://.data/audio/fnf_confirm.mp3" source-type="string"/>
+      <setVar name="lvs_num_s" name-type="" value="$GLOBALS['lvs_num']" value-type="expr"/>
+      <elementShow object="progressIndicator3" object-type="object"/>
+      <elementEnabledOff object="panelAlt" object-type="object"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Ждите" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="editAlt" value-type="object"/>
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$randurl = rand(1,10000)" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;open('https://l-lacker.ru/app/customvid.php?num='.$GLOBALS['lvs_num'].'&amp;hash='.$randurl.'0')" expr-type="expr"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="$randurl = rand(1,10000)" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;open('https://l-lacker.ru/app/customvid.php?num='.$GLOBALS['lvs_num'].'&amp;hash='.$randurl.'0')" expr-type="expr"/>
+      <closeBlock/>
+      <sleep sync="" sync-type="" value="3000" value-type="integer"/>
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;play()" expr-type="expr"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;play()" expr-type="expr"/>
+      <closeBlock/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="mediaView" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="mediaViewAlt" object-type="object"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <elementHide object="progressIndicator3" object-type="object"/>
+      <elementEnabledOn object="panelAlt" object-type="object"/>
+      <elementShow object="button" object-type="object"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="ОК" value-type="string"/>
+      <elementSetY object="button39" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+    </method>
+  <method name="doButtonAction">
+      <stopMedia id="lvp_pm" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="lvp_pm" id-type="string" source="res://.data/audio/fnf_pm.mp3" source-type="string"/>
+      <appendVar asString="" asString-type="" name="lvs_num_s" name-type="" value="1" value-type="string"/>
+      <setVar name="lvs_num" name-type="" value="$GLOBALS['lvs_num_s']" value-type="expr"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="lvs_num" value-type="globalVariable"/>
+      <elementSetY object="button39" object-type="object" relative="" relative-type="" value="232" value-type="integer"/>
+      <elementHide object="~sender" object-type="object"/>
+    </method>
+  <method name="doEditKeyPress">
+      <stopMedia id="netaklavaplayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="netaklavaplayer" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <behaviourEnable behaviour="behaviour\custom\DropShadowEffectBehaviour" behaviour-type="string" object="browserKeyboard" object-type="object"/>
+      <sleep sync="" sync-type="" value="250" value-type="integer"/>
+      <behaviourDisable behaviour="behaviour\custom\DropShadowEffectBehaviour" behaviour-type="string" object="browserKeyboard" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton10Action">
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="activityError" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="halftrans" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="activityError" object-type="object" x="224" x-type="float" y="392" y-type="float"/>
+      <elementHide object="activityError" object-type="object"/>
+      <elementHide object="mnogozad_img" object-type="object"/>
+      <elementHide object="halftrans" object-type="object"/>
+    <elementShow object="errorText" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  <method name="doPanelAltClickLeft">
+      <ifVar method="equals" method-type="" name="lvqex" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;play()" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;play()" expr-type="expr"/>
+      <elementHide object="~sender" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="mediaView" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="mediaViewAlt" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doButton21Action">
+      <ifVar method="equals" method-type="" name="vtmode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="ineterror" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="ineterror" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="mkb_open" name-type="" value="2" value-type="string"/>
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="KBhalfprozr" object-type="object" value="0" value-type="float"/>
+      <elementEnabledOff object="browserKeyboard" object-type="object"/>
+      <elementEnabledOff object="button21" object-type="object"/>
+      <elementHide object="button21" object-type="object"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="browserKeyboard" object-type="object" x="224" x-type="float" y="400" y-type="float"/>
+      <elementHide object="KBhalfprozr" object-type="object"/>
+      <elementHide object="browserKeyboard" object-type="object"/>
+      <setVar name="mkb_open" name-type="" value="0" value-type="string"/>
+      <elementLoadContent object="mobilebrowser" object-type="object" path="mt2" path-type="globalVariable" sync="" sync-type=""/>
+    </method>
+  
+  
+  
+  
+  <method name="doButton17Action">
+      <setVar name="loxstat_opened" name-type="" value="other" value-type="string"/>
+      <setVar name="tt_opened" name-type="" value="0" value-type="string"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;stop()" expr-type="expr"/>
+      <elementHide object="button17" object-type="object"/>
+      <elementHide object="activityLV" object-type="object"/>
+      <elementEnabledOff object="button17" object-type="object"/>
+      <elementEnabledOff object="activityLV" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="lvSplash" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="lvSplash" object-type="object" x="224" x-type="float" y="392" y-type="float"/>
+      <elementHide object="lvSplash" object-type="object"/>
+    </method>
+  
+  <method name="doButton3Action">
+      <setVar name="loxstat_opened" name-type="" value="other" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="appSettings" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="appSettings" object-type="object" x="224" x-type="float" y="392" y-type="float"/>
+      <elementHide object="appSettings" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton25Action">
+      <elementHide object="errorText" object-type="object"/>
+      <setVar name="loxstat_opened" name-type="" value="other" value-type="string"/>
+      <moveTo continue="" continue-type="" duration="125" duration-type="integer" object="appGallery" object-type="object" x="224" x-type="float" y="392" y-type="float"/>
+      <elementHide object="appGallery" object-type="object"/>
+      <elementSetX object="activityError" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="activityError" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <elementSetText object="errorLabel" object-type="object" relative="" relative-type="" value="Многозадачность" value-type="string"/>
+      <elementShow object="mnogozad_img" object-type="object"/>
+      <elementSetX object="halftrans" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="halftrans" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halftrans" object-type="object" value="0" value-type="float"/>
+      <elementShow object="halftrans" object-type="object"/>
+      <elementShow object="activityError" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="125" duration-type="integer" object="halftrans" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="125" duration-type="integer" object="activityError" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="125" duration-type="integer" object="activityError" object-type="object" x="224" x-type="float" y="288" y-type="float"/>
+    </method>
+  
+  <method name="doButton4Action">
+      <phpLine expr="$this-&gt;mobilebrowser-&gt;engine-&gt;history-&gt;goBack()" expr-type="expr"/>
+    </method>
+    
+    
+    
+  
+  
+  
+  <method name="doImage4ClickLeft">
+      <elementHide object="panel4" object-type="object"/>
+      <elementShow object="image5" object-type="object"/>
+    </method>
+  <method name="doImage5ClickLeft">
+      <elementHide object="~sender" object-type="object"/>
+      <elementShow object="panel4" object-type="object"/>
+    </method>
+  <method name="doButton6Action">
+      <phpLine expr="$this-&gt;mobilebrowser-&gt;engine-&gt;history-&gt;goForward()" expr-type="expr"/>
+    </method>
+  
+  <method name="doButton13Action">
+      <elementLoadContent object="mobilebrowser" object-type="object" path="https://l-lacker.ru/app/mobile" path-type="string" sync="" sync-type=""/>
+    </method>
+  <method name="doButton7Action">
+      <phpLine expr="$this-&gt;mobilebrowser-&gt;engine-&gt;reload()" expr-type="expr"/>
+    </method>
+  
+  
+    
+  <method name="doButton15Action">
+      <setVar name="loxstat_opened" name-type="" value="other" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="appCalc" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="appCalc" object-type="object" x="224" x-type="float" y="392" y-type="float"/>
+      <elementHide object="appCalc" object-type="object"/>
+    </method>
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  <method name="doMobilebrowserLoad">
+      <phpLine expr="$GLOBALS['magicurlkey'] = $this-&gt;mobilebrowser-&gt;engine-&gt;url" expr-type="expr"/>
+      <ifVar method="startsWith" method-type="" name="magicurlkey" name-type="" not="" not-type="" value="https://l-lacker.ru/app/" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="lox://internal" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="magicurlkey" value-type="globalVariable"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="magicurlkey" name-type="" not="" not-type="" value="https://l-lacker.ru/app/mobile/" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="lox://homepage" value-type="string"/>
+      <closeBlock/>
+      <elementHide object="progressIndicatorAlt" object-type="object"/>
+      <appendVar asString="" asString-type="" name="total_load_m" name-type="" value="1" value-type="string"/>
+      <ifVar method="startsWith" method-type="" name="magicurlkey" name-type="" not="" not-type="" value="http://" value-type="string"/>
+      <openBlock/>
+      <elementSetX object="halftrans" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="halftrans" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <elementSetX object="activityError" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="activityError" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <elementSetText object="errorLabel" object-type="object" relative="" relative-type="" value="Небезопасно!" value-type="string"/>
+      <elementSetText object="errorText" object-type="object" relative="" relative-type="" value="Вы зашли на сайт с устаревшим протоколом HTTP" value-type="string"/>
+      <elementShow object="activityError" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halftrans" object-type="object" value="0" value-type="float"/>
+      <elementShow object="halftrans" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="125" duration-type="integer" object="halftrans" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="125" duration-type="integer" object="activityError" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="125" duration-type="integer" object="activityError" object-type="object" x="224" x-type="float" y="288" y-type="float"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doEditAltKeyDownEsc">
+      <setVar name="loxstat_opened" name-type="" value="other" value-type="string"/>
+      <elementHide object="searchPanel" object-type="object"/>
+    </method>
+  <method name="doSearchPanelClickLeft">
+      <setVar name="loxstat_opened" name-type="" value="other" value-type="string"/>
+      <elementHide object="~sender" object-type="object"/>
+    </method>
+  
+  <method name="doButton42Action">
+      <elementSetX object="searchPanel" object-type="object" relative="" relative-type="" value="225" value-type="integer"/>
+      <elementSetY object="searchPanel" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <elementSetText object="editAlt" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+      <setVar name="loxstat_opened" name-type="" value="search" value-type="string"/>
+      <elementShow object="searchPanel" object-type="object"/>
+      <elementFocus object="editAlt" object-type="object"/>
+    </method>
+  
+  <method name="doEditAltKeyDownEnter">
+      <ifText method="equals" method-type="" not="" not-type="" object="~sender" object-type="object" string="" string-type="string"/>
+      <openBlock/>
+      <stopMedia id="searcherr" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="searcherr" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <elementHide object="searchPanel" object-type="object"/>
+      <setVar name="loxstat_opened" name-type="" value="browser" value-type="string"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="$e-&gt;sender-&gt;text" value-type="expr"/>
+      <setVar name="googload" name-type="" value="https://www.google.ru/search?q=" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="googload" name-type="" value="$e-&gt;sender-&gt;text" value-type="expr"/>
+      <elementSetX object="appBrowser" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="appBrowser" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="appBrowser" object-type="object" value="0" value-type="float"/>
+      <elementShow object="appBrowser" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="appBrowser" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="appBrowser" object-type="object" x="224" x-type="float" y="112" y-type="float"/>
+      <elementLoadContent object="mobilebrowser" object-type="object" path="googload" path-type="globalVariable" sync="" sync-type=""/>
+    </method>
+  
+  
+  <method name="doMobilebrowserFail">
+      <elementHide object="progressIndicatorAlt" object-type="object"/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Ошибка загрузки!" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Возможно, страница недоступна или Вы неправильно ввели адрес. Повторите попытку." value-type="string"/>
+    </method>
+  <method name="doEditClickLeft">
+      <ifVar method="equals" method-type="" name="mkb_open" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <setVar name="mkb_open" name-type="" value="1" value-type="string"/>
+      <setVar name="mt2" name-type="" value="https://" value-type="string"/>
+      <elementHide object="browserKeyboard" object-type="object"/>
+      <elementHide object="KBhalfprozr" object-type="object"/>
+      <elementSetX object="browserKeyboard" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="browserKeyboard" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <elementSetX object="KBhalfprozr" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="KBhalfprozr" object-type="object" relative="" relative-type="" value="144" value-type="integer"/>
+      <elementEnabledOn object="browserKeyboard" object-type="object"/>
+      <elementShow object="browserKeyboard" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="KBhalfprozr" object-type="object" value="0" value-type="float"/>
+      <elementShow object="KBhalfprozr" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="KBhalfprozr" object-type="object" value="0.5" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="browserKeyboard" object-type="object" x="224" x-type="float" y="218" y-type="float"/>
+      <elementShow object="button21" object-type="object"/>
+      <elementEnabledOn object="button21" object-type="object"/>
+      <phpLine expr="$this-&gt;timer-&gt;start()" expr-type="expr"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton9Action">
+      <ifVar method="equals" method-type="" name="mkb_open" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <setVar name="loxstat_opened" name-type="" value="other" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="appBrowser" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="appBrowser" object-type="object" x="224" x-type="float" y="392" y-type="float"/>
+      <elementHide object="appBrowser" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="mkb_open" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="KBhalfprozr" object-type="object" value="0" value-type="float"/>
+      <elementEnabledOff object="browserKeyboard" object-type="object"/>
+      <elementEnabledOff object="button21" object-type="object"/>
+      <elementHide object="button21" object-type="object"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="browserKeyboard" object-type="object" x="224" x-type="float" y="400" y-type="float"/>
+      <elementHide object="KBhalfprozr" object-type="object"/>
+      <elementHide object="browserKeyboard" object-type="object"/>
+      <setVar name="mkb_open" name-type="" value="0" value-type="string"/>
+      <phpLine expr="$this-&gt;timer-&gt;stop()" expr-type="expr"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton14Action">
+      <phpLine expr="if (str::contains($GLOBALS['loxconfig'], 'mXwVWn7KtSvBnppTv76tsC1qiQrkg')) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Недоступно" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Приложение заблокировано конфигурацией Вашей системы." value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="loxstat_opened" name-type="" value="calc" value-type="string"/>
+      <elementSetX object="appCalc" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="appCalc" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="appCalc" object-type="object" value="0" value-type="float"/>
+      <elementShow object="appCalc" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="appCalc" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="appCalc" object-type="object" x="224" x-type="float" y="112" y-type="float"/>
+    </method>
+  <method name="doButton41Action">
+      <phpLine expr="if (str::contains($GLOBALS['loxconfig'], '4q3vAvMe7rtXoN9qrk4kEP12KxJOB')) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Недоступно" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Приложение заблокировано конфигурацией Вашей системы." value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="masic_helper" name-type="" not="" not-type="" value="playing" value-type="string"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Просто предупредим" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Это приложение может перебиваться по звуку с радио, остановите что-то одно из двух" value-type="string"/>
+      <closeBlock/>
+      <setVar name="loxstat_opened" name-type="" value="lucky" value-type="string"/>
+      <elementSetX object="appLucky" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="appLucky" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="appLucky" object-type="object" value="0" value-type="float"/>
+      <elementShow object="appLucky" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="appLucky" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="appLucky" object-type="object" x="224" x-type="float" y="112" y-type="float"/>
+    </method>
+  <method name="doButton12Action">
+      <phpLine expr="if (str::contains($GLOBALS['loxconfig'], '8Ikx2XN9Cg8hunxQVAXNZ4cIji3FW')) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Недоступно" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Приложение заблокировано конфигурацией Вашей системы." value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="loxstat_opened" name-type="" value="gallery" value-type="string"/>
+      <elementSetX object="appGallery" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="appGallery" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="appGallery" object-type="object" value="0" value-type="float"/>
+      <elementShow object="appGallery" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="appGallery" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="appGallery" object-type="object" x="224" x-type="float" y="112" y-type="float"/>
+    </method>
+  <method name="doButton8Action">
+      <phpLine expr="if (str::contains($GLOBALS['loxconfig'], 'DqGSrMgh5a5ctMC0tXNhNFvKkWZ1k')) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Недоступно" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Приложение заблокировано конфигурацией Вашей системы." value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="loxstat_opened" name-type="" value="browser" value-type="string"/>
+      <elementSetX object="appBrowser" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="appBrowser" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="appBrowser" object-type="object" value="0" value-type="float"/>
+      <elementShow object="appBrowser" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="appBrowser" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="appBrowser" object-type="object" x="224" x-type="float" y="112" y-type="float"/>
+    </method>
+  <method name="doButton11Action">
+      <phpLine expr="if (str::contains($GLOBALS['loxconfig'], 'XewXoTRghIF8pM8WaPamiyj1tvigJ')) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Недоступно" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Приложение заблокировано конфигурацией Вашей системы." value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="masic_helper" name-type="" not="" not-type="" value="playing" value-type="string"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Просто предупредим" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Это приложение может перебиваться по звуку с радио, остановите что-то одно из двух" value-type="string"/>
+      <closeBlock/>
+      <setVar name="tt_opened" name-type="" value="1" value-type="string"/>
+      <setVar name="loxstat_opened" name-type="" value="loxvideos" value-type="string"/>
+      <elementSetX object="lvSplash" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="lvSplash" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="lvSplash" object-type="object" value="0" value-type="float"/>
+      <elementShow object="lvSplash" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="lvSplash" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="lvSplash" object-type="object" x="224" x-type="float" y="112" y-type="float"/>
+      <sleep sync="" sync-type="" value="500" value-type="integer"/>
+      <elementSetX object="activityLV" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="activityLV" object-type="object" relative="" relative-type="" value="-176" value-type="integer"/>
+      <elementSetX object="button17" object-type="object" relative="" relative-type="" value="256" value-type="integer"/>
+      <elementSetY object="button17" object-type="object" relative="" relative-type="" value="344" value-type="integer"/>
+      <elementShow object="activityLV" object-type="object"/>
+      <elementShow object="button17" object-type="object"/>
+      <elementEnabledOn object="activityLV" object-type="object"/>
+      <elementEnabledOn object="button17" object-type="object"/>
+      <ifVar method="equals" method-type="" name="video_now" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;play()" expr-type="expr"/>
+      <else/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;play()" expr-type="expr"/>
+    </method>
+  
+  
+  <method name="doShowing">
+      <phpLine expr="$this-&gt;mobilebrowser-&gt;engine-&gt;userAgent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9A405'" expr-type="expr"/>
+      <phpLine expr="$this-&gt;imageAlt-&gt;toFront()" expr-type="expr"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="loxIcon5" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="image3" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="label9" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="label10" object-type="object" value="0" value-type="float"/>
+      <exit/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton16MouseDownLeft">
+      <setVar name="vt_volch" name-type="" value="up" value-type="string"/>
+    </method>
+  <method name="doButton20MouseDownLeft">
+      <setVar name="vt_volch" name-type="" value="down" value-type="string"/>
+    </method>
+  <method name="doButton20MouseUpLeft">
+      <setVar name="vt_volch" name-type="" value="no" value-type="string"/>
+    </method>
+  <method name="doButton16MouseUpLeft">
+      <setVar name="vt_volch" name-type="" value="no" value-type="string"/>
+    </method>
+  <method name="doShow">
+      <phpLine expr="$this-&gt;videoPlayer-&gt;open('https://l-lacker.ru/app/loxvideos/intro.mp4')" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="3000" value-type="integer"/>
+      <phpLine expr="$randurl = rand(1,10000)" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;open('https://l-lacker.ru/app/random.php?hash='.$randurl.'0')" expr-type="expr"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="randurl" value-type="variable"/>
+      <elementSetWidth object="image8" object-type="object" relative="" relative-type="" value="712" value-type="integer"/>
+      <elementSetHeight object="image8" object-type="object" relative="" relative-type="" value="696" value-type="integer"/>
+      <openUrlMedia autoplay="" autoplay-type="flag" id="ringplayer" id-type="string" source="https://l-lacker.ru/app/masic/lnoti1.mp3" source-type="string"/>
+    </method>
+  
+  <method name="doNotificationPanelMouseUpLeft">
+      <ifVar method="equals" method-type="" name="blockpp" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <setVar name="openpanel" name-type="" value="1" value-type="string"/>
+      <elementSetY object="notificationPanel" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="blockpp" name-type="" not="1" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="openpanel" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <setVar name="openpanel" name-type="" value="1" value-type="string"/>
+      <elementSetY object="notificationPanel" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="openpanel" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="openpanel" name-type="" value="0" value-type="string"/>
+      <elementSetY object="notificationPanel" object-type="object" relative="" relative-type="" value="-192" value-type="integer"/>
+      <exit/>
+      <closeBlock/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doButton26Action">
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <appendVar asString="1" asString-type="" name="lvs_num" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="lvs_num" value-type="globalVariable"/>
+    </method>
+  <method name="doButton27Action">
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <appendVar asString="1" asString-type="" name="lvs_num" name-type="" value="2" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="lvs_num" value-type="globalVariable"/>
+    </method>
+  <method name="doButton28Action">
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <appendVar asString="1" asString-type="" name="lvs_num" name-type="" value="3" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="lvs_num" value-type="globalVariable"/>
+    </method>
+  <method name="doButton29Action">
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <appendVar asString="1" asString-type="" name="lvs_num" name-type="" value="4" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="lvs_num" value-type="globalVariable"/>
+    </method>
+  <method name="doButton31Action">
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <appendVar asString="1" asString-type="" name="lvs_num" name-type="" value="5" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="lvs_num" value-type="globalVariable"/>
+    </method>
+  <method name="doButton32Action">
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <appendVar asString="1" asString-type="" name="lvs_num" name-type="" value="6" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="lvs_num" value-type="globalVariable"/>
+    </method>
+  <method name="doButton33Action">
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <appendVar asString="1" asString-type="" name="lvs_num" name-type="" value="7" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="lvs_num" value-type="globalVariable"/>
+    </method>
+  <method name="doButton34Action">
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <appendVar asString="1" asString-type="" name="lvs_num" name-type="" value="8" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="lvs_num" value-type="globalVariable"/>
+    </method>
+  <method name="doButton35Action">
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <appendVar asString="1" asString-type="" name="lvs_num" name-type="" value="9" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="lvs_num" value-type="globalVariable"/>
+    </method>
+  <method name="doButton36Action">
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <appendVar asString="1" asString-type="" name="lvs_num" name-type="" value="0" value-type="string"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="lvs_num" value-type="globalVariable"/>
+    </method>
+  <method name="doLoxIcon1ClickLeft">
+      <phpLine expr="if (str::contains($GLOBALS['loxconfig'], 'OTsBsfZQZsxsh1MeXQlenYwAAuIfR')) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Недоступно" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Приложение заблокировано конфигурацией Вашей системы." value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="loxstat_opened" name-type="" value="settings" value-type="string"/>
+      <elementSetX object="appSettings" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="appSettings" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="appSettings" object-type="object" value="0" value-type="float"/>
+      <elementShow object="appSettings" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="appSettings" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="appSettings" object-type="object" x="224" x-type="float" y="112" y-type="float"/>
+    </method>
+  </class>
+</root>

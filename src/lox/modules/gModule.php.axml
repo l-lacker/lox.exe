@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="gModule">
+    
+  
+  
+  
+  
+  
+  
+  <method name="doTimerAltAction">
+      <ifVar method="equals" method-type="" name="gpause" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <exit/>
+      <ifVar method="equals" method-type="" name="gstarted" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <exit/>
+      <ifVar method="equals" method-type="" name="gstarted" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <setVar name="geat" name-type="" value="0" value-type="string"/>
+    </method>
+  <method name="doTimer3Action">
+      <ifVar method="equals" method-type="" name="gpause" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <exit/>
+      <ifVar method="equals" method-type="" name="gstarted" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <exit/>
+      <ifVar method="equals" method-type="" name="gstarted" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="geat2" name-type="" not="" not-type="" value="0" value-type="integer"/>
+      <setVar name="glifetime" name-type="" value="15" value-type="string"/>
+      <setVar name="geat2" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doVidplayerAction">
+      <ifVar method="equals" method-type="" name="vidplayer" name-type="" not="" not-type="" value="240" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="yt_closed" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="view_yt_mode" name-type="" value="0" value-type="string"/>
+      <playMedia id="gamePlayer" id-type="string"/>
+      <setVar name="gvantipause" name-type="" value="0" value-type="string"/>
+      <elementEnabledOn object="panel7" object-type="object"/>
+      <elementDestroy object="browser" object-type="object"/>
+      <elementDestroy object="view_video_panel" object-type="object"/>
+      <closeBlock/>
+      <setVar name="vidplayer" name-type="" value="0" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="greater" method-type="" name="vidplayer" name-type="" not="" not-type="" value="0" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vidplayer" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doTimerAction">
+      <ifVar method="equals" method-type="" name="gstarted" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <elementHide object="panel5" object-type="object"/>
+      <setVar name="gstarted" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;timerAlt-&gt;start()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;timer3-&gt;start()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;vidplayer-&gt;start()" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="gstarted" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementHide object="form('MainForm')-&gt;infogw1" object-type="object"/>
+      <elementHide object="form('MainForm')-&gt;infogw2" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="gpause" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementHide object="form('MainForm')-&gt;infogw1" object-type="object"/>
+      <elementHide object="form('MainForm')-&gt;infogw2" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="gstarted" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementShow object="form('MainForm')-&gt;infogw1" object-type="object"/>
+      <elementShow object="form('MainForm')-&gt;infogw2" object-type="object"/>
+      <ifVar method="equals" method-type="" name="view_yt_mode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="glifetime" name-type="" value="2" value-type="string"/>
+      <else/>
+      <appendVar asString="" asString-type="" name="glifetime" name-type="" value="-1" value-type="string"/>
+      <elementSetText object="LFTcounter" object-type="object" relative="" relative-type="" value="glifetime" value-type="globalVariable"/>
+      <ifVar method="smaller" method-type="" name="glifetime" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <setVar name="gstarted" name-type="" value="0" value-type="string"/>
+      <stopMedia id="gamePlayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="gamePlayer" id-type="string" source="res://.data/audio/lox-death.mp3" source-type="string"/>
+      <elementEnabledOff object="panelAlt" object-type="object"/>
+      <elementEnabledOff object="panel7" object-type="object"/>
+      <elementEnabledOff object="panel6" object-type="object"/>
+      <elementDestroy object="pausebutton" object-type="object"/>
+      <closeBlock/>
+      <appendVar asString="" asString-type="" name="gseconds" name-type="" value="15" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="greater" method-type="" name="gseconds" name-type="" not="" not-type="" value="59" value-type="integer"/>
+      <openBlock/>
+      <setVar name="gseconds" name-type="" value="0" value-type="string"/>
+      <appendVar asString="" asString-type="" name="gminutes" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <elementSetText object="gseconds" object-type="object" relative="" relative-type="" value="gseconds" value-type="globalVariable"/>
+      <ifVar method="greater" method-type="" name="gminutes" name-type="" not="" not-type="" value="59" value-type="integer"/>
+      <openBlock/>
+      <setVar name="gminutes" name-type="" value="0" value-type="string"/>
+      <appendVar asString="" asString-type="" name="ghours" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <elementSetText object="gminutes" object-type="object" relative="" relative-type="" value="gminutes" value-type="globalVariable"/>
+      <ifVar method="greater" method-type="" name="ghours" name-type="" not="" not-type="" value="23" value-type="integer"/>
+      <openBlock/>
+      <setVar name="ghours" name-type="" value="0" value-type="string"/>
+      <appendVar asString="" asString-type="" name="gdays" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <elementSetText object="ghours" object-type="object" relative="" relative-type="" value="ghours" value-type="globalVariable"/>
+      <elementSetText object="gdays" object-type="object" relative="" relative-type="" value="gdays" value-type="globalVariable"/>
+      <ifVar method="greater" method-type="" name="glifetime" name-type="" not="" not-type="" value="10" value-type="integer"/>
+      <openBlock/>
+      <elementHide object="hiddensost" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\BlinkAnimationBehaviour" behaviour-type="string" object="hiddensost" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\InnerShadowEffectBehaviour" behaviour-type="string" object="LFTcounter" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="smaller" method-type="" name="glifetime" name-type="" not="" not-type="" value="11" value-type="integer"/>
+      <openBlock/>
+      <elementShow object="hiddensost" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\BlinkAnimationBehaviour" behaviour-type="string" object="hiddensost" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\InnerShadowEffectBehaviour" behaviour-type="string" object="LFTcounter" object-type="object"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

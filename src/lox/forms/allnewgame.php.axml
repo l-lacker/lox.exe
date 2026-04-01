@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="allnewgame">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAction">
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+      <phpLine expr="$text = 'Тут ваш текст....'; $timer = new TimerScript(); $timer-&gt;interval = 50; $timer-&gt;repeatable = true; $timer-&gt;on('action', function () use ($timer,$text){ global $i; $this-&gt;label-&gt;text .= $text[$i]; if ($i == Str::length($text)) { $this-&gt;angkb-&gt;stop(); $timer-&gt;stop(); $timer-&gt;free(); $i = -1; } $i++; }); $this-&gt;angkb-&gt;start(); $timer-&gt;start()" expr-type="expr"/>
+    </method>
+  <method name="doButtonAltAction">
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+      <phpLine expr="$text = 'Мусор Тут ваш текст....'; $timer = new TimerScript(); $timer-&gt;interval = 50; $timer-&gt;repeatable = true; $timer-&gt;on('action', function () use ($timer,$text){ global $i; $this-&gt;label-&gt;text .= $text[$i]; if ($i == Str::length($text)) { $this-&gt;angkb-&gt;stop(); $timer-&gt;stop(); $timer-&gt;free(); $i = -1; } $i++; }); $this-&gt;angkb-&gt;start(); $timer-&gt;start()" expr-type="expr"/>
+    </method>
+    <method name="doButton3Action">
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+      <phpLine expr="$text = 'Мусор Тут ваш текст....'; $timer = new TimerScript(); $timer-&gt;interval = 50; $timer-&gt;repeatable = true; $timer-&gt;on('action', function () use ($timer,$text){ global $i; $this-&gt;label-&gt;text .= $text[$i]; if ($i == Str::length($text)) { $this-&gt;angkb-&gt;stop(); $timer-&gt;stop(); $timer-&gt;free(); $i = -1; } $i++; }); $this-&gt;angkb-&gt;start(); $timer-&gt;start()" expr-type="expr"/>
+    </method>
+  <method name="doImageAltClickLeft">
+      <elementHide object="~sender" object-type="object"/>
+    </method>
+  </class>
+</root>

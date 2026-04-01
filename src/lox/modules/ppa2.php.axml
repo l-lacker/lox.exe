@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="ppa2">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doTimerAction">
+      <ifVar method="equals" method-type="" name="vtb_loadingapi" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_errorapi" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="inapp2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$arrowpuk = $GLOBALS['vtb_maxarrow']" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="redcall" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="rightfunc" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="rightfunc" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_backfunc" name-type="" not="" not-type="" value="menuexit" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="ok" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="leftfunc" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="leftfunc" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_inappp" name-type="" not="" not-type="" value="masic" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_masicplaying" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_masicplaying" name-type="" value="" value-type="string"/>
+      <elementLoadContent object="image_masicplayer_control" object-type="object" path="res://.data/img/play-white.png" path-type="string" sync="" sync-type=""/>
+      <phpLine expr="$this-&gt;masicplay-&gt;pause()" expr-type="expr"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="vtb_masicplaying" name-type="" value="1" value-type="string"/>
+      <elementLoadContent object="image_masicplayer_control" object-type="object" path="res://.data/img/pause-white.png" path-type="string" sync="" sync-type=""/>
+      <phpLine expr="$this-&gt;masicplay-&gt;play()" expr-type="expr"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_backfunc" name-type="" not="" not-type="" value="menuexit" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementHide object="panel_media" object-type="object"/>
+      <elementSetX object="panel" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panel" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_maxarrow" name-type="" value="6" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="podcasts" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="tomedia" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementHide object="panel_media" object-type="object"/>
+      <elementSetX object="panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panel3" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_maxarrow" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="masic" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="tomedia" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementHide object="panel_media" object-type="object"/>
+      <elementSetX object="mediaView" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="mediaView" object-type="object"/>
+      <phpLine expr="$this-&gt;videoplayer-&gt;play()" expr-type="expr"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_buttonshideapi" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_maxarrow" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="video" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="tomedia" value-type="string"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_inappp" name-type="" not="" not-type="" value="podcasts" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_podcastplaying" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_podcastplaying" name-type="" value="" value-type="string"/>
+      <elementSetText object="label7" object-type="object" relative="" relative-type="" value="Воспроизвести" value-type="string"/>
+      <phpLine expr="$this-&gt;podcastplay-&gt;pause()" expr-type="expr"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_podcastplaying" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label7" object-type="object" relative="" relative-type="" value="Поставить на паузу" value-type="string"/>
+      <phpLine expr="$this-&gt;podcastplay-&gt;play()" expr-type="expr"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;podcastplay-&gt;stop()" expr-type="expr"/>
+      <setVar name="vtb_podcastplaying" name-type="" value="" value-type="string"/>
+      <appendVar asString="" asString-type="" name="vtb_podcastlistnum" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label7" object-type="object" relative="" relative-type="" value="Воспроизвести" value-type="string"/>
+      <ifVar method="greater" method-type="" name="vtb_podcastlistnum" name-type="" not="" not-type="" value="6" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vtb_podcastlistnum" name-type="" value="-1" value-type="string"/>
+      <setVar name="vtb_errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_errorapi_label" name-type="" value="Ошибка!" value-type="string"/>
+      <setVar name="vtb_errorapi_text" name-type="" value="На данный момент не существует больше серий" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="$megameow = 'https://l-lacker.ru/app/podcasts/'.$GLOBALS['vtb_podcastlistnum'].'.mp3'" expr-type="expr"/>
+      <phpLine expr="$megameow2 = 'Подкаст №'.$GLOBALS['vtb_podcastlistnum']" expr-type="expr"/>
+      <phpLine expr="$this-&gt;podcastplay-&gt;open($megameow)" expr-type="expr"/>
+      <elementSetText object="label6" object-type="object" relative="" relative-type="" value="megameow2" value-type="variable"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;podcastplay-&gt;stop()" expr-type="expr"/>
+      <setVar name="vtb_podcastplaying" name-type="" value="" value-type="string"/>
+      <appendVar asString="" asString-type="" name="vtb_podcastlistnum" name-type="" value="-1" value-type="string"/>
+      <elementSetText object="label7" object-type="object" relative="" relative-type="" value="Воспроизвести" value-type="string"/>
+      <ifVar method="smaller" method-type="" name="vtb_podcastlistnum" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vtb_podcastlistnum" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_errorapi_label" name-type="" value="Ошибка!" value-type="string"/>
+      <setVar name="vtb_errorapi_text" name-type="" value="Не существует серии первее первой" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="$megameow = 'https://l-lacker.ru/app/podcasts/'.$GLOBALS['vtb_podcastlistnum'].'.mp3'" expr-type="expr"/>
+      <phpLine expr="$megameow2 = 'Подкаст №'.$GLOBALS['vtb_podcastlistnum']" expr-type="expr"/>
+      <phpLine expr="$this-&gt;podcastplay-&gt;open($megameow)" expr-type="expr"/>
+      <elementSetText object="label6" object-type="object" relative="" relative-type="" value="megameow2" value-type="variable"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="6" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_buttonshideapi" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_maxarrow" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="podcastsinfo" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="topodcasts" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_inappp" name-type="" not="" not-type="" value="masic" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="left" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_masicplaying" name-type="" value="" value-type="string"/>
+      <elementLoadContent object="image_masicplayer_control" object-type="object" path="res://.data/img/play-white.png" path-type="string" sync="" sync-type=""/>
+      <phpLine expr="$this-&gt;masicplay-&gt;stop()" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="right" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_errorapi_label" name-type="" value="Ошибка!" value-type="string"/>
+      <setVar name="vtb_errorapi_text" name-type="" value="Это устройство вмещает только одну композицию" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="up" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="-24" y-type="float"/>
+      <appendVar asString="" asString-type="" name="vtb_arrowcount" name-type="" value="-1" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="down" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="1" not-type="" value="arrowpuk" value-type="variable"/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="24" y-type="float"/>
+      <appendVar asString="" asString-type="" name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="rightfunc" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_backfunc" name-type="" not="" not-type="" value="topodcasts" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <elementSetX object="panel" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panel" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_buttonshideapi" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_maxarrow" name-type="" value="6" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="podcasts" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="tomedia" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_backfunc" name-type="" not="" not-type="" value="tomedia" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementHide object="panel" object-type="object"/>
+      <elementHide object="panel3" object-type="object"/>
+      <elementHide object="mediaView" object-type="object"/>
+      <phpLine expr="$this-&gt;videoplayer-&gt;stop()" expr-type="expr"/>
+      <elementShow object="panel_media" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_buttonshideapi" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_maxarrow" name-type="" value="3" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="media" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="menuexit" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_subapp" name-type="" not="" not-type="" value="mediaopen" value-type="string"/>
+      <openBlock/>
+      <elementSetY object="panel_media" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="magicrect_control" object-type="object" relative="" relative-type="" value="21" value-type="integer"/>
+      <setVar name="vtb_subapp" name-type="" value="media" value-type="string"/>
+      <setVar name="vtb_maxarrow" name-type="" value="3" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="media" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="menuexit" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_media_alreadyopened" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_media_alreadyopened" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_loadingapi" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;videoplayer-&gt;open('https://l-lacker.ru/app/elcome2005_1.mp4')" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <phpLine expr="$this-&gt;podcastplay-&gt;open('https://l-lacker.ru/app/podcasts/1.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;masicplay-&gt;open('https://l-lacker.ru/app/vtb/tranz.mp3')" expr-type="expr"/>
+      <elementLoadContent object="label_about_podcast" object-type="object" path="https://l-lacker.ru/app/podcasts/info.txt" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <setVar name="vtb_loadingapi" name-type="" value="" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

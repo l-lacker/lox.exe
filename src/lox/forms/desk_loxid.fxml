@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304" prefWidth="672" styleClass="">
+  <children>
+    <Panel backgroundColor="#030e2cb4" borderColor="#ffffff" borderRadius="15" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="176" prefWidth="672" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="43" layoutY="24" prefHeight="24.578125" prefWidth="585.96484375" styleClass="label " text="Давай продолжим с lox.exe ID — это быстро и безопасно" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="22"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="10" layoutY="56" prefHeight="17.875" prefWidth="654.3359375" styleClass="label " text="Поверь, оно того стоит: это облачное сохранение данных и расширенные возможности" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="16"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button" layoutX="24" layoutY="96" prefHeight="48" prefWidth="304" styleClass="x-flat-button " text="Войти через Telegram" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="buttonAlt" layoutX="344" layoutY="96" opacity="0.23170731707317" prefHeight="48" prefWidth="304" styleClass="x-flat-button " text="Классический вход (e-mail)" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="19"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="" id="data-buttonAlt" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+    <FlatButton alignment="CENTER" borderRadius="10" clickColor="#181818" color="#00000000" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#666666" id="button3" layoutX="216" layoutY="216" opacity="0.65" prefHeight="24" prefWidth="240" styleClass="x-flat-button " text="Продолжить без входа" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="Arial" size="15"/>
+      </font>
+    </FlatButton>
+    <Data cursor="DEFAULT" enabled="1" id="data-button3" visible="1"/>
+    <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="0" layoutY="56" prefHeight="27" prefWidth="672" styleClass="label " text="Ну пожалуйста... Подумай..." textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="Arial" size="24"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label3" visible=""/>
+    <FlatButton alignment="CENTER" borderRadius="10" clickColor="#181818" color="#00000000" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#666666" id="button4" layoutX="624" layoutY="80" opacity="0.29634146341463" prefHeight="16" prefWidth="32" styleClass="x-flat-button " text="Нет." textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="Arial" size="11"/>
+      </font>
+    </FlatButton>
+    <Data cursor="DEFAULT" enabled="1" id="data-button4" visible=""/>
+    <Panel backgroundColor="#030e2cb4" borderColor="#ffffff" borderRadius="15" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panelAlt" layoutX="680" layoutY="200" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="176" prefWidth="672" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label4" layoutX="124" layoutY="24" prefHeight="24.578125" prefWidth="423.693359375" styleClass="label " text="Хорошо. Введи свою юзерку в телеграме" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="22"/>
+          </font>
+        </LabelEx>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label5" layoutX="44" layoutY="56" prefHeight="17.875" prefWidth="424.0625" styleClass="label " text="Это то публичное имя, начинающееся с собачки. Можем" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="16"/>
+          </font>
+        </LabelEx>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button5" layoutX="416" layoutY="96" prefHeight="48" prefWidth="192" styleClass="x-flat-button " text="Продолжить" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-label4" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label5" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-button5" visible="1"/>
+        <Hyperlink alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="link" layoutX="473" layoutY="55" prefHeight="21" prefWidth="104" styleClass="hyperlink " text="помочь" textAlignment="LEFT" wrapText="false">
+          <font>
+            <Font name="Arial" size="16"/>
+          </font>
+        </Hyperlink>
+        <Data cursor="DEFAULT" enabled="1" id="data-link" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label6" layoutX="527" layoutY="56" prefHeight="17.875" prefWidth="101.6484375" styleClass="label " text=", если его нет" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="16"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label6" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label7" layoutX="72" layoutY="75" prefHeight="80" prefWidth="120" styleClass="label " text="\@" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="35"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label7" visible="1"/>
+        <com.jfoenix.controls.JFXTextField alignment="CENTER_LEFT" editable="true" focusColor="#4059a9" focusTraversable="true" id="edit" layoutX="112" layoutY="98" prefColumnCount="12" prefHeight="42" prefWidth="296" promptText="onetimeusername" text="" unFocusColor="#4d4d4d">
+          <font>
+            <Font name="Arial" size="30"/>
+          </font>
+          <styleClass xmlns:fx="http://javafx.com/fxml">
+            <String fx:value="text-input"/>
+            <String fx:value="text-field"/>
+            <String fx:value="jfx-text-field"/>
+          </styleClass>
+        </com.jfoenix.controls.JFXTextField>
+        <Data cursor="DEFAULT" enabled="1" id="data-edit" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="30" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button6" layoutX="640" layoutY="8" prefHeight="25" prefWidth="25" styleClass="x-flat-button " text="×" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="20"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button6" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panelAlt" visible="1"/>
+    <Panel backgroundColor="#030e2cb4" borderColor="#ffffff" borderRadius="15" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel3" layoutX="680" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="176" prefWidth="672" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label8" layoutX="76" layoutY="16" prefHeight="24.578125" prefWidth="519.814453125" styleClass="label " text="Прежде всего, зайди в Телеграмчик и добавь бота" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="22"/>
+          </font>
+        </LabelEx>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button7" layoutX="264" layoutY="112" prefHeight="48" prefWidth="272" styleClass="x-flat-button " text="Хорошо, я добавил(а)" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </FlatButton>
+        <Hyperlink alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="linkAlt" layoutX="264" layoutY="64" prefHeight="48" prefWidth="272" styleClass="hyperlink " text="\@llackersupportbot" textAlignment="LEFT" wrapText="false">
+          <font>
+            <Font name="Arial" size="25"/>
+          </font>
+        </Hyperlink>
+        <FlatButton alignment="CENTER" borderRadius="30" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button8" layoutX="640" layoutY="8" prefHeight="25" prefWidth="25" styleClass="x-flat-button " text="×" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="20"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-label8" visible="1"/>
+        <Data cursor="DEFAULT" enabled="" id="data-button7" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-linkAlt" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-button8" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="104" id="image" layoutX="136" layoutY="56" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="104">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/qr_loxbot.png" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label9" layoutX="264" layoutY="56" prefHeight="14.5234375" prefWidth="57.8017578125" styleClass="label " text="lox.exe ID" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label9" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel3" visible="1"/>
+    <Panel backgroundColor="#030e2cb4" borderColor="#ffffff" borderRadius="15" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel4" layoutX="680" layoutY="400" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="176" prefWidth="672" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label10" layoutX="124" layoutY="24" prefHeight="24.578125" prefWidth="423.2314453125" styleClass="label " text="Теперь введи полученный 6-значный код" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="22"/>
+          </font>
+        </LabelEx>
+        <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label11" layoutX="44" layoutY="46" prefHeight="56" prefWidth="592" styleClass="label " text="Предполагается, что ты добавил(а) бота и правильно ввел(а) юзерку.&#10;Если хочешь что-то изменить, нажми синюю кнопку с крестиком" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="14"/>
+          </font>
+        </LabelEx>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button9" layoutX="344" layoutY="104" prefHeight="48" prefWidth="192" styleClass="x-flat-button " text="Продолжить" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </FlatButton>
+        <com.jfoenix.controls.JFXTextField alignment="CENTER" editable="true" focusColor="#4059a9" focusTraversable="true" id="editAlt" layoutX="144" layoutY="106" prefColumnCount="12" prefHeight="42" prefWidth="192" promptText="XXXXXX" text="" unFocusColor="#4d4d4d">
+          <font>
+            <Font name="Arial" size="30"/>
+          </font>
+          <styleClass xmlns:fx="http://javafx.com/fxml">
+            <String fx:value="text-input"/>
+            <String fx:value="text-field"/>
+            <String fx:value="jfx-text-field"/>
+          </styleClass>
+        </com.jfoenix.controls.JFXTextField>
+        <FlatButton alignment="CENTER" borderRadius="30" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button10" layoutX="640" layoutY="8" prefHeight="25" prefWidth="25" styleClass="x-flat-button " text="×" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="20"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-label10" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label11" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-button9" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-editAlt" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-button10" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel4" visible="1"/>
+    <Panel backgroundColor="#030e2cb4" borderColor="#ffffff" borderRadius="15" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel5" layoutX="0" layoutY="312" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="176" prefWidth="672" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label12" layoutX="191" layoutY="16" prefHeight="24.578125" prefWidth="289.4697265625" styleClass="label " text="Идёт общение с сервером..." textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="22"/>
+          </font>
+        </LabelEx>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label13" layoutX="224" layoutY="48" prefHeight="17.875" prefWidth="223.078125" styleClass="label " text="Это не займёт много времени" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="16"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label12" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label13" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="96" id="imageAlt" layoutX="0" layoutY="74" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="672">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-imageAlt" image=".data/img/lox-server-talk.png" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel5" visible="1"/>
+    <Panel backgroundColor="#030e2cb4" borderColor="#ffffff" borderRadius="15" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel6" layoutX="0" layoutY="512" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="176" prefWidth="672" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="96" id="image3" layoutX="568" layoutY="72" mosaic="false" mosaicGap="0" opacity="0.47560975609756" proportional="false" stretch="true" styleClass="" textFill="#000000" width="96">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label14" layoutX="101" layoutY="24" prefHeight="24.578125" prefWidth="469.8740234375" styleClass="label " text="Произошла ошибка при обращении к серверу" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="22"/>
+          </font>
+        </LabelEx>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label15" layoutX="117" layoutY="56" prefHeight="17.875" prefWidth="438.0625" styleClass="label " text="Возможно, у тебя беды с интернетом или у нас лёг сервер" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="16"/>
+          </font>
+        </LabelEx>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button11" layoutX="80" layoutY="96" prefHeight="48" prefWidth="248" styleClass="x-flat-button " text="Повторить попытку" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </FlatButton>
+        <FlatButton alignment="CENTER" borderRadius="30" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button12" layoutX="640" layoutY="8" prefHeight="25" prefWidth="25" styleClass="x-flat-button " text="×" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="20"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-label14" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label15" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-button11" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-button12" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-image3" image=".data/img/lox-server-talk-fail.png" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button19" layoutX="344" layoutY="96" opacity="0.85365853658537" prefHeight="48" prefWidth="248" styleClass="x-flat-button " text="Войти без lox.exe ID" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="19"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button19" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel6" visible="1"/>
+    <Panel backgroundColor="#030e2cb4" borderColor="#ffffff" borderRadius="15" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel7" layoutX="680" layoutY="600" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="304" prefWidth="672" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label16" layoutX="24" layoutY="24" prefHeight="21.2265625" prefWidth="554.62744140625" styleClass="label " text="&gt; Я не знаю, есть ли у меня юзерка! Как это проверить?" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold Italic" size="19"/>
+          </font>
+        </LabelEx>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label17" layoutX="24" layoutY="48" prefHeight="56" prefWidth="624" styleClass="label " text="[На ПК] Telegram -&gt; Кнопка &quot;Меню&quot; (слева сверху) -&gt; Настройки -&gt; Мой профиль -&gt; Имя пользователя&#10;[Android] Telegram -&gt; Боковое меню -&gt; Настройки -&gt; Имя пользователя&#10;[iPhone] Telegram -&gt; Справа снизу кнопка &quot;Настройки&quot; -&gt; сверху &quot;Изм.&quot; -&gt; Имя пользователя" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="13"/>
+          </font>
+        </LabelEx>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button13" layoutX="416" layoutY="160" prefHeight="48" prefWidth="192" styleClass="x-flat-button " text="Продолжить" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </FlatButton>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label19" layoutX="72" layoutY="139" prefHeight="80" prefWidth="120" styleClass="label " text="\@" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="35"/>
+          </font>
+        </LabelEx>
+        <com.jfoenix.controls.JFXTextField alignment="CENTER_LEFT" editable="true" focusColor="#4059a9" focusTraversable="true" id="edit3" layoutX="112" layoutY="162" prefColumnCount="12" prefHeight="42" prefWidth="296" promptText="onetimeusername" text="" unFocusColor="#4d4d4d">
+          <font>
+            <Font name="Arial" size="30"/>
+          </font>
+          <styleClass xmlns:fx="http://javafx.com/fxml">
+            <String fx:value="text-input"/>
+            <String fx:value="text-field"/>
+            <String fx:value="jfx-text-field"/>
+          </styleClass>
+        </com.jfoenix.controls.JFXTextField>
+        <FlatButton alignment="CENTER" borderRadius="30" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button14" layoutX="640" layoutY="8" prefHeight="25" prefWidth="25" styleClass="x-flat-button " text="×" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="20"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-label16" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label17" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-button13" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label19" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-edit3" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-button14" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label18" layoutX="24" layoutY="112" prefHeight="21.2265625" prefWidth="592.99853515625" styleClass="label " text="&gt; Отлично, у меня получилось найти (и поставить) юзерку!" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold Italic" size="19"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label18" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label20" layoutX="24" layoutY="136" prefHeight="24" prefWidth="624" styleClass="label " text="Классно! Теперь ты можешь её вбить просто сюда:" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label20" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label21" layoutX="24" layoutY="216" prefHeight="21.2265625" prefWidth="477.69970703125" styleClass="label " text="&gt; Пфф, сдалась мне ваша юзерка! Хочу вбить ID!" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold Italic" size="19"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label21" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label22" layoutX="24" layoutY="240" prefHeight="40" prefWidth="624" styleClass="label " text="Не вопрос! Не знаем, правда, зачем — мы бы и так автоматически привязали ID на случай смены юзерки. Тем не менее, получи ID профиля где-нибудь и вбей сюда:" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label22" visible="1"/>
+        <com.jfoenix.controls.JFXTextField alignment="CENTER_LEFT" editable="true" focusColor="#4059a9" focusTraversable="true" id="edit4" layoutX="436" layoutY="256" prefColumnCount="12" prefHeight="21" prefWidth="96" promptText="36265675" text="" unFocusColor="#4d4d4d">
+          <font>
+            <Font name="Arial" size="12"/>
+          </font>
+          <styleClass xmlns:fx="http://javafx.com/fxml">
+            <String fx:value="text-input"/>
+            <String fx:value="text-field"/>
+            <String fx:value="jfx-text-field"/>
+          </styleClass>
+        </com.jfoenix.controls.JFXTextField>
+        <Data cursor="DEFAULT" enabled="1" id="data-edit4" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="5" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button15" layoutX="536" layoutY="259" prefHeight="17" prefWidth="96" styleClass="x-flat-button " text="Продолжить" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="12"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button15" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel7" visible="1"/>
+    <Panel backgroundColor="#030e2cb4" borderColor="#ffffff" borderRadius="15" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel8" layoutX="0" layoutY="712" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="304" prefWidth="672" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label23" layoutX="115" layoutY="24" prefHeight="24.578125" prefWidth="441.826171875" styleClass="label " text="На этот экран, возможно, не влезет lox.exe" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="22"/>
+          </font>
+        </LabelEx>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label24" layoutX="59" layoutY="56" prefHeight="17.875" prefWidth="554.421875" styleClass="label " text="Поэтому предложим тебе решить проблему оптимальным для тебя путём" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="16"/>
+          </font>
+        </LabelEx>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button16" layoutX="32" layoutY="224" prefHeight="48" prefWidth="192" styleClass="x-flat-button " text="На весь экран" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-label23" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label24" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-button16" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button17" layoutX="240" layoutY="224" prefHeight="48" prefWidth="192" styleClass="x-flat-button " text="Уменьшить высоту" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="19"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button17" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#0d5481" color="#073c5d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#0b649c" id="button18" layoutX="448" layoutY="224" prefHeight="48" prefWidth="192" styleClass="x-flat-button " text="Оставить как есть" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="19"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button18" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="104" id="image4" layoutX="32" layoutY="96" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="608">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image4" image=".data/img/smsel_1.png" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel8" visible="1"/>
+  </children>
+</AnchorPane>

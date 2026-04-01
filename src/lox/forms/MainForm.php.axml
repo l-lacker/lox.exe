@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="MainForm">
+    
+  
+  
+  
+  
+  <method name="doStartCloseOldAct">
+      <elementHide object="startMenu" object-type="object"/>
+      <elementHide object="startClose" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+    
+  
+  
+  
+    
+  
+  
+  
+  <method name="doLoadStatusMouseEn">
+      <elementSetText object="PODSKAZKA" object-type="object" relative="" relative-type="" value="Не бывает загрузки без ошибок" value-type="string"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+    
+  
+    
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doHacktextMouseMove">
+      <elementFocus object="hackedit" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doHackeditMouseExit">
+      <elementShow object="wincursor" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doBuy_2Act">
+      <ifVar method="smaller" method-type="" name="a" name-type="" not="" not-type="" value="50" value-type="integer"/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <appendVar asString="" asString-type="" name="a" name-type="" value="-50" value-type="string"/>
+      <ifVar method="smaller" method-type="" name="a" name-type="" not="" not-type="" value="100" value-type="integer"/>
+      <elementEnabledOff object="b_Sbros" object-type="object"/>
+      <ifVar method="smaller" method-type="" name="a" name-type="" not="" not-type="" value="1000" value-type="integer"/>
+      <elementEnabledOff object="b_Zakladki" object-type="object"/>
+      <ifVar method="smaller" method-type="" name="a" name-type="" not="" not-type="" value="9999" value-type="integer"/>
+      <openBlock/>
+      <elementHide object="sorry2" object-type="object"/>
+      <elementHide object="sorry1" object-type="object"/>
+      <elementEnabledOn object="tereb1" object-type="object"/>
+      <closeBlock/>
+      <elementSetText object="balance_store" object-type="object" relative="" relative-type="" value="a" value-type="globalVariable"/>
+      <elementSetText object="balance_store" object-type="object" relative="1" relative-type="" value=" ₽" value-type="string"/>
+      <elementSetText object="balance" object-type="object" relative="" relative-type="" value="a" value-type="globalVariable"/>
+      <elementSetText object="label63" object-type="object" relative="" relative-type="" value="До следующей такой покупки 30 секунд" value-type="string"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementLoadContent object="calendar_main" object-type="object" path="https://l-lacker.ru/app/calendar/" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="30000" value-type="integer"/>
+      <elementSetText object="label63" object-type="object" relative="" relative-type="" value="Категория: Онлайн-контент | Цена: 50 ₽" value-type="string"/>
+      <ifVar method="greater" method-type="" name="a" name-type="" not="" not-type="" value="49" value-type="integer"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  <method name="doButton6Action">
+      <elementDestroy object="panel4" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doKeyDownCtrl+U">
+      <ifVar method="equals" method-type="" name="cum_admin" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <setVar name="cum_admin" name-type="" value="unavailable" value-type="string"/>
+      <ifVar method="equals" method-type="" name="cum_admin" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <setVar name="cum_admin" name-type="" value="2" value-type="string"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doCtrlMpanelMouseDrag">
+      <setVar name="evermoved" name-type="" value="1" value-type="string"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doB_SbrosAction">
+      <ifVar method="smaller" method-type="" name="a" name-type="" not="" not-type="" value="100" value-type="integer"/>
+      <openBlock/>
+      <elementSetText object="PODSKAZKA" object-type="object" relative="" relative-type="" value="Невозможно совершить покупку! У Вас не хватает средств." value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="a" name-type="" value="0" value-type="string"/>
+      <elementSetText object="balance_store" object-type="object" relative="" relative-type="" value="0 ₽" value-type="string"/>
+      <elementSetText object="balance" object-type="object" relative="" relative-type="" value="Ты бомж рублей" value-type="string"/>
+      <elementHide object="sorry2" object-type="object"/>
+      <elementHide object="sorry1" object-type="object"/>
+      <elementEnabledOff object="link4" object-type="object"/>
+      <elementEnabledOff object="link5" object-type="object"/>
+      <elementEnabledOff object="link6" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="link4" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="link5" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="link6" object-type="object"/>
+      <elementEnabledOn object="tereb1" object-type="object"/>
+      <elementEnabledOff object="b_Zakladki" object-type="object"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doStartOpenLunaCl">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="PODSKAZKA" object-type="object" relative="" relative-type="" value="Ответь, пожалуйста, на вопрос в прозрачном окне, тогда и получится открыть &quot;пуск&quot;. Спасибо за понимание." value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementShow object="startMenu" object-type="object"/>
+      <elementShow object="startClose" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doHackeditMouseEnter">
+      <elementHide object="wincursor" object-type="object"/>
+      <elementFocus object="~sender" object-type="object"/>
+    </method>
+  <method name="doUpdate2Action">
+      <elementSetText object="PODSKAZKA" object-type="object" relative="" relative-type="" value="Вы можете скачать обновление вручную на сайте l-lacker.ru" value-type="string"/>
+      <elementDestroy object="update1" object-type="object"/>
+      <elementDestroy object="~sender" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doHackeditKeyDownUp">
+      <ifText method="equals" method-type="" not="" not-type="" object="~sender" object-type="object" string="" string-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="lastsaved" value-type="globalVariable"/>
+    </method>
+  
+  
+  <method name="doB_ZakladkiAction">
+      <ifVar method="smaller" method-type="" name="a" name-type="" not="" not-type="" value="1000" value-type="integer"/>
+      <openBlock/>
+      <elementSetText object="PODSKAZKA" object-type="object" relative="" relative-type="" value="Невозможно совершить покупку! У Вас не хватает средств." value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="zakladki_get" name-type="" value="1" value-type="string"/>
+      <elementShow object="bmAdded" object-type="object"/>
+      <elementShow object="cmd_darkmode" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="hacktext" object-type="object"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  <method name="doNoticloseButtonClickLeft">
+      <elementHide object="image13" object-type="object"/>
+      <elementHide object="noticloseButton" object-type="object"/>
+      <elementHide object="PODSKAZKA" object-type="object"/>
+      <elementHide object="label" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  <method name="doImage5ClickLeft">
+      <elementHide object="~sender" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doCtrlMpanelMouseDown">
+      <phpLine expr="$e-&gt;sender-&gt;toFront()" expr-type="expr"/>
+    </method>
+  
+  <method name="doFragment13MouseDown">
+      <phpLine expr="$e-&gt;sender-&gt;toFront()" expr-type="expr"/>
+    </method>
+  
+  <method name="doFragmentMouseDown">
+      <phpLine expr="$e-&gt;sender-&gt;toFront()" expr-type="expr"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doStartOpenZuneCl">
+      <elementShow object="startMenu" object-type="object"/>
+      <elementShow object="startClose" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doFragment5MouseEnter">
+      <elementSetY object="~sender" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="~sender" object-type="object" value="1" value-type="float"/>
+    </method>
+  
+  <method name="doFragment5MouseExit">
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="~sender" object-type="object" value="0" value-type="float"/>
+      <elementSetY object="~sender" object-type="object" relative="" relative-type="" value="-33" value-type="integer"/>
+      <ifVar method="equals" method-type="" name="killfs" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <fullScreenDisable/>
+      <elementDestroy object="~sender" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doUpdate1Action">
+      <setVar name="updneedclicked" name-type="" value="1" value-type="string"/>
+      <loadForm form="blocked" form-type="form" savePosition="" savePosition-type="" saveSize="" saveSize-type=""/>
+    </method>
+  
+  
+  
+  <method name="doStartCloseClickLeft">
+      <setVar name="startopened" name-type="" value="" value-type="string"/>
+      <elementHide object="startMenu" object-type="object"/>
+      <elementHide object="startClose" object-type="object"/>
+    </method>
+  <method name="doFsEnableAction">
+      <elementEnabledOff object="fsEnable" object-type="object"/>
+      <elementEnabledOff object="fsIgnore" object-type="object"/>
+      <setVar name="resch" name-type="" value="1" value-type="string"/>
+      <elementShow object="fragment5" object-type="object"/>
+      <elementHide object="fragment11" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="200" duration-type="integer" object="fragment10" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="200" duration-type="integer" object="fsEnable" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="200" duration-type="integer" object="fsIgnore" object-type="object" value="0" value-type="float"/>
+      <elementDestroy object="fragment10" object-type="object"/>
+      <elementDestroy object="fsEnable" object-type="object"/>
+      <elementDestroy object="fsIgnore" object-type="object"/>
+      <fullScreenEnable/>
+    </method>
+  
+  
+  <method name="doStartOpenZuneClick">
+      <setVar name="startopened" name-type="" value="" value-type="string"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="startMenu" object-type="object"/>
+      <elementShow object="startMenu" object-type="object"/>
+      <elementShow object="startClose" object-type="object"/>
+    </method>
+  <method name="doStartOpenLunaClick">
+      <setVar name="startopened" name-type="" value="1" value-type="string"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="startMenu" object-type="object"/>
+      <elementShow object="startMenu" object-type="object"/>
+      <elementShow object="startClose" object-type="object"/>
+    </method>
+  <method name="doStartOpenClick">
+      <setVar name="startopened" name-type="" value="1" value-type="string"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="startMenu" object-type="object"/>
+      <elementShow object="startMenu" object-type="object"/>
+      <elementShow object="startClose" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  <method name="doImageAltClickLeft">
+      <phpLine expr="if (str::contains($GLOBALS['loxconfig'], 'FdvXbKnQbdp6CI5Qh8EXSoa6psgps')) //" expr-type="expr"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <elementShow object="image13" object-type="object"/>
+      <elementShow object="noticloseButton" object-type="object"/>
+      <elementShow object="PODSKAZKA" object-type="object"/>
+      <elementShow object="label" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doRect5MouseUpLeft">
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="~sender" object-type="object" x="32" x-type="float" y="160" y-type="float"/>
+    </method>
+  <method name="doRect5MouseDrag">
+      <phpLine expr="$anime2s = $this-&gt;rect5-&gt;y" expr-type="expr"/>
+      <setVar name="anime3s" name-type="" value="anime2s" value-type="variable"/>
+      <ifVar method="smaller" method-type="" name="anime3s" name-type="" not="" not-type="" value="24" value-type="integer"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="anime3sallow" name-type="" not="1" not-type="" value="2" value-type="integer"/>
+      <openBlock/>
+      <setVar name="anime3sallow" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="greater" method-type="" name="anime3s" name-type="" not="" not-type="" value="160" value-type="integer"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="anime3sallow" name-type="" not="1" not-type="" value="4" value-type="integer"/>
+      <openBlock/>
+      <setVar name="anime3sallow" name-type="" value="3" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="anime3sallow" name-type="" not="" not-type="" value="2" value-type="integer"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="anime3sallow" name-type="" not="" not-type="" value="4" value-type="integer"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <appendVar asString="" asString-type="" name="a" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="b" name-type="" value="1" value-type="string"/>
+      <ifVar method="greater" method-type="" name="a" name-type="" not="" not-type="" value="9999" value-type="integer"/>
+      <setVar name="a" name-type="" value="9999" value-type="string"/>
+      <phpLine expr="$this-&gt;balance-&gt;text = $GLOBALS['a']" expr-type="expr"/>
+      <phpLine expr="$GLOBALS['c'] = $GLOBALS['a'].' ₽'" expr-type="expr"/>
+      <phpLine expr="$this-&gt;balance_store-&gt;text = $GLOBALS['c']" expr-type="expr"/>
+      <ifVar method="greater" method-type="" name="a" name-type="" not="" not-type="" value="99" value-type="integer"/>
+      <elementEnabledOn object="b_Sbros" object-type="object"/>
+      <else/>
+      <elementEnabledOff object="b_Sbros" object-type="object"/>
+      <ifVar method="equals" method-type="" name="zakladki_get" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <ifVar method="greater" method-type="" name="a" name-type="" not="" not-type="" value="999" value-type="integer"/>
+      <elementEnabledOn object="b_Zakladki" object-type="object"/>
+      <else/>
+      <elementEnabledOff object="b_Zakladki" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="a" name-type="" not="" not-type="" value="9999" value-type="string"/>
+      <openBlock/>
+      <elementShow object="sorry1" object-type="object"/>
+      <elementShow object="sorry2" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="anime3sallow" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <setVar name="anime3sallow" name-type="" value="2" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="anime3sallow" name-type="" not="" not-type="" value="3" value-type="integer"/>
+      <openBlock/>
+      <setVar name="anime3sallow" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  <method name="doLinkAction">
+      <setVar name="a" name-type="" value="9900" value-type="string"/>
+      <phpLine expr="$this-&gt;balance-&gt;text = $GLOBALS['a']" expr-type="expr"/>
+      <phpLine expr="$GLOBALS['c'] = $GLOBALS['a'].' ₽'" expr-type="expr"/>
+      <phpLine expr="$this-&gt;balance_store-&gt;text = $GLOBALS['c']" expr-type="expr"/>
+    </method>
+  <method name="doButton4Action">
+      <elementSetText object="hacktext" object-type="object" relative="" relative-type="" value="Извиняюсь" value-type="string"/>
+      <elementHide object="~sender" object-type="object"/>
+    </method>
+  <method name="doHackenterAction">
+      <elementSetText object="hacktext" object-type="object" relative="" relative-type="" value="Ты мудославина зачем жмёшь &quot;ввод&quot; если можно жать Enter??? Лишнюю кнопку я теперь заблокировал для тупых... Время ты своё не ценишь на перенаведение курсора на всякие говнокнопки..." value-type="string"/>
+      <elementShow object="button4" object-type="object"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementFocus object="hackedit" object-type="object"/>
+    </method>
+  <method name="doHackeditGlobalKeyDownEnter">
+      <ifText method="equals" method-type="" not="" not-type="" object="~sender" object-type="object" string="" string-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementHide object="button4" object-type="object"/>
+      <elementHide object="hacktext" object-type="object"/>
+      <phpLine expr="$GLOBALS['lastsaved'] = uiText($e-&gt;sender)" expr-type="expr"/>
+      <elementSetText object="hacktext" object-type="object" relative="" relative-type="" value="НЕТ ТАКОЙ КОМАНДЫ!!! (их кстати обязательно вводить с маленькой буквы)" value-type="string"/>
+      <ifText method="equals" method-type="" not="" not-type="" object="~sender" object-type="object" string="help" string-type="string"/>
+      <phpLine expr="Element::setText($this-&gt;hacktext, &quot;Помощь!!!\nloxver - версию узнать\npink - тему сменить\n\nИсполняемые файлы:\nmoney-hack.lox\naloflash.lox&quot;);" expr-type="expr"/>
+      <ifText method="equals" method-type="" not="" not-type="" object="~sender" object-type="object" string="loxver" string-type="string"/>
+      <phpLine expr="Element::setText($this-&gt;hacktext, &quot;lox, версия 9\nАвтор: l-lacker\nПриложение предоставлено в некоммерческих целях, не собирает никаких данных и регулируется через универсальное меню Ctrl+M. По всем вопросам вы можете связаться с автором, необходимые контактные данные предоставлены на ресурсе https://l-lacker.ru\nНекоторые элементы в приложении принадлежат Microsoft и показаны лишь в иллюстративных целях&quot;);" expr-type="expr"/>
+      <ifText method="equals" method-type="" not="" not-type="" object="~sender" object-type="object" string="vovaflash.lox" string-type="string"/>
+      <phpLine expr="Element::setText($this-&gt;hacktext, &quot;Мы понимаем, что хочется ввести эту команду по привычке, но всё же название бренда изменилось и следовательно название этой утилиты тоже&quot;);" expr-type="expr"/>
+      <ifText method="equals" method-type="" not="" not-type="" object="~sender" object-type="object" string="elbrusblock" string-type="string"/>
+      <openBlock/>
+      <setVar name="blocktime" name-type="" value="2" value-type="string"/>
+      <showForm form="blocked" form-type="form"/>
+      <hideForm form="MainForm" form-type="form"/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="~sender" object-type="object" string="pink" string-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="pinkmode" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::setText($this-&gt;hacktext, &quot;Наслаждайся, ёпта!&quot;);" expr-type="expr"/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="startOpen" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="startOpenLuna" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="startOpenZune" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="image3" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="wallpaper" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="imageAlt" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="startClose" object-type="object"/>
+      <setVar name="pinkmode" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="Element::setText($this-&gt;hacktext, &quot;Ну что, насладился?&quot;);" expr-type="expr"/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="startOpen" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="startOpenLuna" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="startOpenZune" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="image3" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="wallpaper" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="imageAlt" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="startClose" object-type="object"/>
+      <setVar name="pinkmode" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="~sender" object-type="object" string="money-hack.lox" string-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="avmode" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementSetText object="hacktext" object-type="object" relative="" relative-type="" value="Заданное приложение открыто" value-type="string"/>
+      <elementSetX object="fragment" object-type="object" relative="" relative-type="" value="464" value-type="integer"/>
+      <elementSetY object="fragment" object-type="object" relative="" relative-type="" value="80" value-type="integer"/>
+      <elementShow object="fragment" object-type="object"/>
+      <elementEnabledOn object="fragment" object-type="object"/>
+      <elementSetX object="rect" object-type="object" relative="" relative-type="" value="280" value-type="integer"/>
+      <elementSetY object="rect" object-type="object" relative="" relative-type="" value="201" value-type="integer"/>
+      <elementShow object="rect" object-type="object"/>
+      <sleep sync="" sync-type="" value="200" value-type="integer"/>
+      <elementHide object="rect" object-type="object"/>
+      <sleep sync="" sync-type="" value="200" value-type="integer"/>
+      <elementShow object="rect" object-type="object"/>
+      <sleep sync="" sync-type="" value="200" value-type="integer"/>
+      <elementHide object="rect" object-type="object"/>
+      <sleep sync="" sync-type="" value="200" value-type="integer"/>
+      <elementShow object="rect" object-type="object"/>
+      <sleep sync="" sync-type="" value="200" value-type="integer"/>
+      <elementHide object="rect" object-type="object"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="avuses" name-type="" value="1" value-type="string"/>
+      <elementSetText object="hacktext" object-type="object" relative="" relative-type="" value="Модуль &quot;Антивирус Куранир&quot; заблокировал данное приложение. Причина: модификация ядра системы до перезапуска lox.exe" value-type="string"/>
+      <elementSetText object="kolvouses" object-type="object" relative="" relative-type="" value="Заблокировано: " value-type="string"/>
+      <elementSetText object="kolvouses" object-type="object" relative="1" relative-type="" value="avuses" value-type="globalVariable"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="~sender" object-type="object" string="aloflash.lox" string-type="string"/>
+      <openBlock/>
+      <phpLine expr="if (str::contains($GLOBALS['loxconfig'], 'UiVTW4uOJNN1rq8sqnq9rSpaHkuRI')) //" expr-type="expr"/>
+      <openBlock/>
+      <elementSetText object="hacktext" object-type="object" relative="" relative-type="" value="Возможность прошива устройства заблокирована конфигурацией системы" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementSetText object="hacktext" object-type="object" relative="" relative-type="" value="Заданное приложение открыто" value-type="string"/>
+      <elementSetX object="fragment13" object-type="object" relative="" relative-type="" value="520" value-type="integer"/>
+      <elementSetY object="fragment13" object-type="object" relative="" relative-type="" value="80" value-type="integer"/>
+      <elementShow object="fragment13" object-type="object"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <closeBlock/>
+      <closeBlock/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+      <elementShow object="hacktext" object-type="object"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doScreensaverMouseMove">
+      <setVar name="ss_run" name-type="" value="0" value-type="string"/>
+      <elementHide object="~sender" object-type="object"/>
+      <phpLine expr="$scaleAnim = new ScaleAnimationBehaviour(); $scaleAnim-&gt;scale = 1; $scaleAnim-&gt;duration = 500; $scaleAnim-&gt;apply($this-&gt;wincursor)" expr-type="expr"/>
+    </method>
+  
+  
+  
+  
+  <method name="doAtph_runAction">
+      <elementHide object="~sender" object-type="object"/>
+      <phpLine expr="$formTitle = &quot;lox\\forms\\phone&quot;" expr-type="expr"/>
+      <phpLine expr="$form = new $formTitle" expr-type="expr"/>
+      <phpLine expr="$form-&gt;showInFragment($this-&gt;phoneForm)" expr-type="expr"/>
+    </method>
+  
+  
+  
+  
+  
+    
+  <method name="doPateph_runAct">
+      <elementHide object="~sender" object-type="object"/>
+      <phpLine expr="$formTitle = &quot;lox\\forms\\patephone&quot;" expr-type="expr"/>
+      <phpLine expr="$form = new $formTitle" expr-type="expr"/>
+      <phpLine expr="$form-&gt;showInFragment($this-&gt;fragment16)" expr-type="expr"/>
+    </method>
+  <method name="doPateph_runAction">
+      <elementHide object="~sender" object-type="object"/>
+      <phpLine expr="$formTitle = &quot;lox\\forms\\patephone&quot;" expr-type="expr"/>
+      <phpLine expr="$form = new $formTitle" expr-type="expr"/>
+      <phpLine expr="$form-&gt;showInFragment($this-&gt;fragment16)" expr-type="expr"/>
+    </method>
+  
+  
+    
+  
+  
+  <method name="doIzol_runAction">
+      <elementHide object="~sender" object-type="object"/>
+      <phpLine expr="$formTitle = &quot;lox\\forms\\izolyator&quot;" expr-type="expr"/>
+      <phpLine expr="$form = new $formTitle" expr-type="expr"/>
+      <phpLine expr="$form-&gt;showInFragment($this-&gt;fragment7)" expr-type="expr"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doKur_runAction">
+      <elementHide object="~sender" object-type="object"/>
+      <phpLine expr="$formTitle = &quot;lox\\forms\\kuranir&quot;" expr-type="expr"/>
+      <phpLine expr="$form = new $formTitle" expr-type="expr"/>
+      <phpLine expr="$form-&gt;showInFragment($this-&gt;fragment8)" expr-type="expr"/>
+    </method>
+  
+  
+  <method name="doMypc_runAction">
+      <elementHide object="~sender" object-type="object"/>
+      <phpLine expr="$formTitle = &quot;lox\\forms\\my_system&quot;" expr-type="expr"/>
+      <phpLine expr="$form = new $formTitle" expr-type="expr"/>
+      <phpLine expr="$form-&gt;showInFragment($this-&gt;fragment4)" expr-type="expr"/>
+    </method>
+  
+  
+  <method name="doKeyDownCtrlM">
+      <ifVar method="equals" method-type="" name="w32running" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="w32running" name-type="" value="" value-type="string"/>
+      <elementShow object="wincursor" object-type="object"/>
+      <elementHide object="w93warning" object-type="object"/>
+      <elementHide object="w93browser" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <elementSetX object="CtrlMpanel" object-type="object" relative="" relative-type="" value="16" value-type="integer"/>
+      <elementSetY object="CtrlMpanel" object-type="object" relative="" relative-type="" value="16" value-type="integer"/>
+      <phpLine expr="$this-&gt;CtrlMpanel-&gt;scaleX = 0" expr-type="expr"/>
+      <phpLine expr="$this-&gt;CtrlMpanel-&gt;scaleY = 0" expr-type="expr"/>
+      <phpLine expr="$scaleAnim = new ScaleAnimationBehaviour()" expr-type="expr"/>
+      <phpLine expr="$scaleAnim-&gt;scale = 1.0" expr-type="expr"/>
+      <phpLine expr="$scaleAnim-&gt;duration = 250" expr-type="expr"/>
+      <phpLine expr="$scaleAnim-&gt;apply($this-&gt;CtrlMpanel)" expr-type="expr"/>
+      <behaviourEnable behaviour="behaviour\custom\ScaleAnimationBehaviour" behaviour-type="string" object="CtrlMpanel" object-type="object"/>
+      <elementToggle object="CtrlMpanel" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="250" duration-type="integer" object="CtrlMpanel" object-type="object" value="1" value-type="float"/>
+      <behaviourEnable behaviour="behaviour\custom\DropShadowEffectBehaviour" behaviour-type="string" object="CtrlMpanel" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\ScaleAnimationBehaviour" behaviour-type="string" object="CtrlMpanel" object-type="object"/>
+    </method>
+  
+  
+  <method name="doLabel6Click3x">
+      <ifVar method="equals" method-type="" name="LOX-DEBUG-MODE" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementShow object="link" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  <method name="doShowing">
+      <elementSetX object="fragment10" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="fragment10" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+    </method>
+  
+  
+  <method name="doClose">
+      <applicationShutdown/>
+    </method>
+  
+  
+  <method name="doKeyPress">
+      <setVar name="nowmouse_x" name-type="" value="rand(1,1000)" value-type="expr"/>
+      <elementHide object="screensaver" object-type="object"/>
+    </method>
+  <method name="doButtonAction">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <ifVar method="smaller" method-type="" name="worktimer" name-type="" not="" not-type="" value="5" value-type="integer"/>
+      <openBlock/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Вы слишком мало работали в lox.exe и кэш не накопился" value-type="string"/>
+      <sleep sync="" sync-type="" value="4000" value-type="integer"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Поработайте хотя бы 5 минут для активации очистки" value-type="string"/>
+      <sleep sync="" sync-type="" value="4000" value-type="integer"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Очистить кэш lox.exe для снижения потребления ОЗУ" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="smaller" method-type="" name="cachetimer" name-type="" not="" not-type="" value="5" value-type="integer"/>
+      <openBlock/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Вы слишком недавно чистили кэш, функция недоступна" value-type="string"/>
+      <sleep sync="" sync-type="" value="4000" value-type="integer"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Очистить кэш lox.exe для снижения потребления ОЗУ" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="greater" method-type="" name="worktimer" name-type="" not="" not-type="" value="4" value-type="integer"/>
+      <openBlock/>
+      <setVar name="cachetimer" name-type="" value="0" value-type="integer"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Очистка кэша..." value-type="string"/>
+      <phpLine expr="System::gc()" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="rand(2000,4000)" value-type="expr"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Теперь памяти стало свободно больше!" value-type="string"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Очистить кэш lox.exe для снижения потребления ОЗУ" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  <method name="doShow">
+      <phpLine expr="$this-&gt;xp_loadscr-&gt;toFront()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;whiteonlyfg-&gt;toFront()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;onStart-&gt;start()" expr-type="expr"/>
+    </method>
+  <method name="doFsIgnoreAction">
+      <elementEnabledOff object="fsEnable" object-type="object"/>
+      <elementEnabledOff object="fsIgnore" object-type="object"/>
+      <ifVar method="equals" method-type="" name="lox_totallight" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;timer-&gt;start()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;httpChecker-&gt;start()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;internetCheck-&gt;start()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;storeBalSync-&gt;start()" expr-type="expr"/>
+      <elementDestroy object="atph_run" object-type="object"/>
+      <phpLine expr="$formTitle = &quot;lox\\forms\\phone&quot;" expr-type="expr"/>
+      <phpLine expr="$form = new $formTitle" expr-type="expr"/>
+      <phpLine expr="$form-&gt;showInFragment($this-&gt;phoneForm)" expr-type="expr"/>
+      <elementDestroy object="pateph_run" object-type="object"/>
+      <phpLine expr="$formTitle = &quot;lox\\forms\\patephone&quot;" expr-type="expr"/>
+      <phpLine expr="$form = new $formTitle" expr-type="expr"/>
+      <phpLine expr="$form-&gt;showInFragment($this-&gt;fragment16)" expr-type="expr"/>
+      <phpLine expr="$formTitle = &quot;lox\\forms\\intercard&quot;" expr-type="expr"/>
+      <phpLine expr="$form = new $formTitle" expr-type="expr"/>
+      <phpLine expr="$form-&gt;showInFragment($this-&gt;fragment12)" expr-type="expr"/>
+      <elementDestroy object="izol_run" object-type="object"/>
+      <phpLine expr="$formTitle = &quot;lox\\forms\\izolyator&quot;" expr-type="expr"/>
+      <phpLine expr="$form = new $formTitle" expr-type="expr"/>
+      <phpLine expr="$form-&gt;showInFragment($this-&gt;fragment7)" expr-type="expr"/>
+      <phpLine expr="$formTitle = &quot;lox\\forms\\screensaver&quot;" expr-type="expr"/>
+      <phpLine expr="$form = new $formTitle" expr-type="expr"/>
+      <phpLine expr="$form-&gt;showInFragment($this-&gt;screensaver)" expr-type="expr"/>
+      <elementDestroy object="kur_run" object-type="object"/>
+      <phpLine expr="$formTitle = &quot;lox\\forms\\kuranir&quot;" expr-type="expr"/>
+      <phpLine expr="$form = new $formTitle" expr-type="expr"/>
+      <phpLine expr="$form-&gt;showInFragment($this-&gt;fragment8)" expr-type="expr"/>
+      <elementDestroy object="mypc_run" object-type="object"/>
+      <phpLine expr="$formTitle = &quot;lox\\forms\\my_system&quot;" expr-type="expr"/>
+      <phpLine expr="$form = new $formTitle" expr-type="expr"/>
+      <phpLine expr="$form-&gt;showInFragment($this-&gt;fragment4)" expr-type="expr"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;internetCheck-&gt;interval = 60000" expr-type="expr"/>
+      <phpLine expr="$this-&gt;internetCheck-&gt;start()" expr-type="expr"/>
+      <elementDestroy object="screensaver" object-type="object"/>
+      <closeBlock/>
+      <fadeTo continue="1" continue-type="" duration="200" duration-type="integer" object="fragment10" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="200" duration-type="integer" object="fsEnable" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="200" duration-type="integer" object="fsIgnore" object-type="object" value="0" value-type="float"/>
+      <phpLine expr="$screen = UXScreen::getPrimary()" expr-type="expr"/>
+      <phpLine expr="$width  = $screen-&gt;bounds['width']" expr-type="expr"/>
+      <phpLine expr="$height = $screen-&gt;bounds['height']" expr-type="expr"/>
+      <setVar name="width1" name-type="" value="width" value-type="variable"/>
+      <setVar name="height1" name-type="" value="height" value-type="variable"/>
+      <ifVar method="smaller" method-type="" name="height1" name-type="" not="" not-type="" value="800" value-type="integer"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;minHeight = 680" expr-type="expr"/>
+      <phpLine expr="$this-&gt;maxHeight = 680" expr-type="expr"/>
+      <closeBlock/>
+      <elementDestroy object="fragment10" object-type="object"/>
+      <elementDestroy object="fsEnable" object-type="object"/>
+      <elementDestroy object="fsIgnore" object-type="object"/>
+    </method>
+  </class>
+</root>

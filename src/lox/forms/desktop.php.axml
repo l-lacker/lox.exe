@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="desktop">
+    
+  
+  <method name="doImageMouseDownLeft">
+      <setVar name="wic" name-type="" value="1" value-type="string"/>
+      <elementLoadContent object="~sender" object-type="object" path="res://.data/img/mycomp2.png" path-type="string" sync="" sync-type=""/>
+    </method>
+  
+  
+  <method name="doImageMouseUpLeft">
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <setVar name="wic" name-type="" value="2" value-type="string"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton6MouseDownLeft">
+      <phpLine expr="$this-&gt;player-&gt;play()" expr-type="expr"/>
+    </method>
+  <method name="doButton6MouseUpLeft">
+      <phpLine expr="$this-&gt;player-&gt;stop()" expr-type="expr"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doPanel5MouseDrag">
+      <phpLine expr="$e-&gt;sender-&gt;toFront()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;panelAlt-&gt;toFront()" expr-type="expr"/>
+    </method>
+  <method name="doPanel6MouseDrag">
+      <phpLine expr="$e-&gt;sender-&gt;toFront()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;panelAlt-&gt;toFront()" expr-type="expr"/>
+    </method>
+  <method name="doPanel8MouseDrag">
+      <phpLine expr="$e-&gt;sender-&gt;toFront()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;panelAlt-&gt;toFront()" expr-type="expr"/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doPanelClick2x">
+      <ifVar method="equals" method-type="" name="appopened" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="wic" name-type="" not="1" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="supermenuopened" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementHide object="form('MainForm')-&gt;mydesktopsemihalf" object-type="object"/>
+      <elementHide object="label5" object-type="object"/>
+      <setVar name="supermenuopened" name-type="" value="" value-type="string"/>
+      <phpLine expr="$this-&gt;form('MainForm')-&gt;mydesktopsemihalf-&gt;toBack()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;form('MainForm')-&gt;mydesktop-&gt;toBack()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;form('MainForm')-&gt;wallpaper-&gt;toBack()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;form('MainForm')-&gt;fragment15-&gt;toBack()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  <method name="doShow">
+      <phpLine expr="$this-&gt;player-&gt;open('res://.data/audio/gudok.mp3')" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="3000" value-type="integer"/>
+      <phpLine expr="if (str::contains($GLOBALS['loxconfig'], 'QrLczvYKqa8s3vV49GvGIE9DEnn69')) //" expr-type="expr"/>
+      <openBlock/>
+      <behaviourDisable behaviour="behaviour\custom\DropShadowEffectBehaviour" behaviour-type="string" object="panel5" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\DropShadowEffectBehaviour" behaviour-type="string" object="panel6" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\DropShadowEffectBehaviour" behaviour-type="string" object="panel8" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  <method name="doImage6ClickLeft">
+      <appendVar asString="" asString-type="" name="w32runcnt" name-type="" value="1" value-type="string"/>
+      <setVar name="w32running" name-type="" value="1" value-type="string"/>
+      <elementHide object="form('MainForm')-&gt;wincursor" object-type="object"/>
+      <elementShow object="form('MainForm')-&gt;w93browser" object-type="object"/>
+      <elementShow object="form('MainForm')-&gt;w93warning" object-type="object"/>
+      <phpLine expr="$this-&gt;form('MainForm')-&gt;w93browser-&gt;toFront()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;form('MainForm')-&gt;w93warning-&gt;toFront()" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="w32runcnt" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="form('MainForm')-&gt;w93browser" object-type="object" path="https://v1.windows93.net/" path-type="string" sync="" sync-type=""/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="w93run" id-type="string" source="https://l-lacker.ru/app/masic/other/lox-w93run.mp3" source-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doImage7ClickLeft">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <sleep sync="" sync-type="" value="500" value-type="integer"/>
+      <phpLine expr="$genius = Stream::getContents('https://l-lacker.ru/app/lox-configurator.exe')" expr-type="expr"/>
+      <phpLine expr="Stream::putContents('./lox-configurator.exe', $genius)" expr-type="expr"/>
+      <exec command="lox-configurator.exe" command-type="string" wait="" wait-type=""/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+    
+    
+    
+    
+    
+    
+  <method name="doButtonAction">
+      <fadeTo continue="1" continue-type="" duration="50" duration-type="integer" object="panelAlt" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="image" object-type="object" x="9" x-type="float" y="3" y-type="float"/>
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="panel5" object-type="object" x="840" x-type="float" y="24" y-type="float"/>
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="panel6" object-type="object" x="840" x-type="float" y="112" y-type="float"/>
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="panel8" object-type="object" x="840" x-type="float" y="256" y-type="float"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <setVar name="menu_opened" name-type="" value="" value-type="string"/>
+      <elementHide object="panelAlt" object-type="object"/>
+    </method>
+    
+    
+    <method name="doButton4Action">
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel3" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel3" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="50" duration-type="integer" object="panelAlt" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="50" duration-type="integer" object="panel3" object-type="object" value="1" value-type="float"/>
+      <setVar name="widgets_panel_open" name-type="" value="1" value-type="string"/>
+      <setVar name="menu_opened" name-type="" value="" value-type="string"/>
+      <elementHide object="panelAlt" object-type="object"/>
+    </method>
+  
+  <method name="doImage6MouseExit">
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="~sender" object-type="object" x="464" x-type="float" y="8" y-type="float"/>
+    <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <elementSetY object="~sender" object-type="object" relative="" relative-type="" value="8" value-type="integer"/>
+    </method>
+  
+  
+  
+  
+  <method name="doImage6MouseEnter">
+      <phpLine expr="$this-&gt;image6-&gt;toFront()" expr-type="expr"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="~sender" object-type="object" x="464" x-type="float" y="0" y-type="float"/>
+    </method>
+  <method name="doImage7MouseEnter">
+      <phpLine expr="$this-&gt;image7-&gt;toFront()" expr-type="expr"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="~sender" object-type="object" x="568" x-type="float" y="0" y-type="float"/>
+    </method>
+  
+  
+  
+  <method name="doImage8MouseEnter">
+      <phpLine expr="$this-&gt;image8-&gt;toFront()" expr-type="expr"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="~sender" object-type="object" x="674" x-type="float" y="0" y-type="float"/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doImage7MouseExit">
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="~sender" object-type="object" x="568" x-type="float" y="8" y-type="float"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <elementSetY object="~sender" object-type="object" relative="" relative-type="" value="8" value-type="integer"/>
+    </method>
+  <method name="doImage8MouseExit">
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="~sender" object-type="object" x="674" x-type="float" y="8" y-type="float"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <elementSetY object="~sender" object-type="object" relative="" relative-type="" value="8" value-type="integer"/>
+    </method>
+  
+  
+  
+  <method name="doImage8ClickLeft">
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="panelAlt" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="50" duration-type="integer" object="panelAlt" object-type="object" value="1" value-type="float"/>
+      <setVar name="menu_opened" name-type="" value="1" value-type="string"/>
+    </method>
+  
+  
+  
+  <method name="doImage10ClickLeft">
+      <fadeTo continue="" continue-type="" duration="50" duration-type="integer" object="panelAlt" object-type="object" value="0" value-type="float"/>
+      <setVar name="menu_opened" name-type="" value="" value-type="string"/>
+      <elementHide object="panelAlt" object-type="object"/>
+    </method>
+  
+  
+  <method name="doButton4MouseEnter">
+      <phpLine expr="$e-&gt;sender-&gt;textColor = &quot;white&quot;" expr-type="expr"/>
+    </method>
+  <method name="doButton4MouseExit">
+      <phpLine expr="$e-&gt;sender-&gt;textColor = &quot;black&quot;" expr-type="expr"/>
+    </method>
+  <method name="doButtonAltMouseEnter">
+      <phpLine expr="$e-&gt;sender-&gt;textColor = &quot;white&quot;" expr-type="expr"/>
+    </method>
+  <method name="doButton3MouseEnter">
+      <phpLine expr="$e-&gt;sender-&gt;textColor = &quot;white&quot;" expr-type="expr"/>
+    </method>
+  <method name="doButtonMouseEnter">
+      <phpLine expr="$e-&gt;sender-&gt;textColor = &quot;white&quot;" expr-type="expr"/>
+    </method>
+  <method name="doButtonAltMouseExit">
+      <phpLine expr="$e-&gt;sender-&gt;textColor = &quot;black&quot;" expr-type="expr"/>
+    </method>
+  <method name="doButton3MouseExit">
+      <phpLine expr="$e-&gt;sender-&gt;textColor = &quot;black&quot;" expr-type="expr"/>
+    </method>
+  <method name="doButtonMouseExit">
+      <phpLine expr="$e-&gt;sender-&gt;textColor = &quot;black&quot;" expr-type="expr"/>
+    </method>
+  
+  <method name="doButton3Action">
+      <ifVar method="equals" method-type="" name="icons_hidden" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementHide object="image" object-type="object"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="  Показать иконки" value-type="string"/>
+      <setVar name="icons_hidden" name-type="" value="1" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementShow object="image" object-type="object"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="  Скрыть иконки" value-type="string"/>
+      <setVar name="icons_hidden" name-type="" value="" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  <method name="doPanelMouseDownLeft">
+      <ifVar method="equals" method-type="" name="widget_is_moving" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="widgets_panel_open" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <fadeTo continue="" continue-type="" duration="50" duration-type="integer" object="panel3" object-type="object" value="0" value-type="float"/>
+      <elementHide object="panel3" object-type="object"/>
+      <setVar name="widgets_panel_open" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="wic" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="image" object-type="object" path="res://.data/img/mycomp1.png" path-type="string" sync="" sync-type=""/>
+      <setVar name="wic" name-type="" value="" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="menu_opened" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="menu_opened" name-type="" value="2" value-type="string"/>
+      <fadeTo continue="" continue-type="" duration="50" duration-type="integer" object="panelAlt" object-type="object" value="0" value-type="float"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <setVar name="menu_opened" name-type="" value="" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="supermenuopened" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="supermenuopened" name-type="" value="1" value-type="string"/>
+      <ifVar method="equals" method-type="" name="resch" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementShow object="label5" object-type="object"/>
+      <closeBlock/>
+      <elementShow object="form('MainForm')-&gt;mydesktopsemihalf" object-type="object"/>
+      <phpLine expr="$this-&gt;form('MainForm')-&gt;mydesktopsemihalf-&gt;toFront()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;form('MainForm')-&gt;mydesktop-&gt;toFront()" expr-type="expr"/>
+      <closeBlock/>
+    </method>
+  <method name="doPanelClickRight">
+      <elementShow object="image" object-type="object"/>
+      <elementSetText object="button3" object-type="object" relative="" relative-type="" value="  Скрыть иконки" value-type="string"/>
+      <setVar name="icons_hidden" name-type="" value="" value-type="string"/>
+    </method>
+  <method name="doButtonAltAction">
+      <elementHide object="image" object-type="object"/>
+      <sleep sync="" sync-type="" value="10" value-type="integer"/>
+      <elementShow object="image" object-type="object"/>
+      <sleep sync="" sync-type="" value="40" value-type="integer"/>
+    </method>
+  
+  <method name="doPanel9ClickLeft">
+      <elementEnabledOff object="panel9" object-type="object"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="panel12" object-type="object" x="0" x-type="float" y="768" y-type="float"/>
+      <elementHide object="panel9" object-type="object"/>
+      <elementHide object="halfprozr" object-type="object"/>
+      <setVar name="appopened" name-type="" value="" value-type="string"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;wallpaper" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;startMenu" object-type="object"/>
+    </method>
+  <method name="doButton5Action">
+      <ifVar method="equals" method-type="" name="widget_open_time" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;panel3-&gt;toBack()" expr-type="expr"/>
+      <setVar name="widget_is_moving" name-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="panel" object-type="object"/>
+      <elementSetX object="panel5" object-type="object" relative="" relative-type="" value="144" value-type="integer"/>
+      <elementSetY object="panel5" object-type="object" relative="" relative-type="" value="160" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel5" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel5" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="panel5" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panel5" object-type="object" x="840" x-type="float" y="24" y-type="float"/>
+      <setVar name="widget_open_time" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;panel3-&gt;toFront()" expr-type="expr"/>
+      <setVar name="widget_is_moving" name-type="" value="" value-type="string"/>
+      <elementEnabledOn object="panel" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <fadeTo continue="" continue-type="" duration="100" duration-type="integer" object="panel5" object-type="object" value="0" value-type="float"/>
+      <elementHide object="panel5" object-type="object"/>
+      <setVar name="widget_open_time" name-type="" value="" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  <method name="doButton7Action">
+      <ifVar method="equals" method-type="" name="widget_open_battery" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;panel3-&gt;toBack()" expr-type="expr"/>
+      <setVar name="widget_is_moving" name-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="panel" object-type="object"/>
+      <elementSetX object="panel6" object-type="object" relative="" relative-type="" value="144" value-type="integer"/>
+      <elementSetY object="panel6" object-type="object" relative="" relative-type="" value="160" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel6" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel6" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="panel6" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panel6" object-type="object" x="840" x-type="float" y="112" y-type="float"/>
+      <setVar name="widget_open_battery" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;panel3-&gt;toFront()" expr-type="expr"/>
+      <setVar name="widget_is_moving" name-type="" value="" value-type="string"/>
+      <elementEnabledOn object="panel" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <fadeTo continue="" continue-type="" duration="100" duration-type="integer" object="panel6" object-type="object" value="0" value-type="float"/>
+      <elementHide object="panel6" object-type="object"/>
+      <setVar name="widget_open_battery" name-type="" value="" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  <method name="doButton8Action">
+      <ifVar method="equals" method-type="" name="widget_open_gudelka" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;panel3-&gt;toBack()" expr-type="expr"/>
+      <setVar name="widget_is_moving" name-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="panel" object-type="object"/>
+      <elementSetX object="panel8" object-type="object" relative="" relative-type="" value="144" value-type="integer"/>
+      <elementSetY object="panel8" object-type="object" relative="" relative-type="" value="160" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel8" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel8" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="panel8" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panel8" object-type="object" x="840" x-type="float" y="256" y-type="float"/>
+      <setVar name="widget_open_gudelka" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;panel3-&gt;toFront()" expr-type="expr"/>
+      <setVar name="widget_is_moving" name-type="" value="" value-type="string"/>
+      <elementEnabledOn object="panel" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <fadeTo continue="" continue-type="" duration="100" duration-type="integer" object="panel8" object-type="object" value="0" value-type="float"/>
+      <elementHide object="panel8" object-type="object"/>
+      <setVar name="widget_open_gudelka" name-type="" value="" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doImageClick2x">
+      <elementShow object="panel9" object-type="object"/>
+      <elementEnabledOn object="panel9" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="panel12" object-type="object" x="0" x-type="float" y="520" y-type="float"/>
+      <ifVar method="equals" method-type="" name="resch" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementShow object="halfprozr" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="lox_totallight" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;wallpaper" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;startMenu" object-type="object"/>
+      <closeBlock/>
+      <elementLoadContent object="image" object-type="object" path="res://.data/img/mycomp1.png" path-type="string" sync="" sync-type=""/>
+      <setVar name="appopened" name-type="" value="1" value-type="string"/>
+      <setVar name="wic" name-type="" value="" value-type="string"/>
+    </method>
+  </class>
+</root>

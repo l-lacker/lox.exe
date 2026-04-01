@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="browser">
+    <behaviour brightness="-0.24390243902439" contrast="0" enabled="" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label9">
+    <behaviour brightness="-1" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panel">
+    <behaviour enabled="" radius="10" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panel5">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="4.8780487804878" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button6">
+    <behaviour color="#f2f2f2" offsetX="-3" offsetY="3" radius="9.2682926829268" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button7">
+    <behaviour color="#f2f2f2" offsetX="3" offsetY="3" radius="9.2682926829268" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panel6">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="4.88" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button9">
+    <behaviour color="#f2f2f2" offsetX="0" offsetY="3" radius="9.2682926829268" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panel3">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="4.88" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panelAlt">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="4.88" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button4">
+    <behaviour color="#f2f2f2" offsetX="0" offsetY="3" radius="9.2682926829268" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+</behaviours>

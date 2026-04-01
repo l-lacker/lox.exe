@@ -1,0 +1,49 @@
+{
+  "props": {
+    "disabled": false
+  },
+  "components": {
+    "vidplayer": {
+      "type": "script\\TimerScript",
+      "x": 32,
+      "y": 272,
+      "props": {
+        "interval": "1000",
+        "repeatable": "1",
+        "autoStart": false
+      }
+    },
+    "timer3": {
+      "type": "script\\TimerScript",
+      "x": 32,
+      "y": 192,
+      "props": {
+        "interval": 60000,
+        "repeatable": "1",
+        "autoStart": false
+      }
+    },
+    "timerAlt": {
+      "type": "script\\TimerScript",
+      "x": 32,
+      "y": 112,
+      "props": {
+        "disabled": false,
+        "interval": 120000,
+        "repeatable": "1",
+        "autoStart": false
+      }
+    },
+    "timer": {
+      "type": "script\\TimerScript",
+      "x": 32,
+      "y": 32,
+      "props": {
+        "disabled": true,
+        "interval": 1000,
+        "repeatable": "1",
+        "autoStart": false
+      }
+    }
+  }
+}

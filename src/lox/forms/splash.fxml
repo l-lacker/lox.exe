@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488" prefWidth="785" styleClass="">
+  <children>
+    <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="491" id="image" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="785">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/lox-splash-v10-bg.png" visible="1"/>
+    <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="491" id="imageAlt" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="785">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-imageAlt" image=".data/img/lox-splash-v10-fg.png" visible="1"/>
+    <com.jfoenix.controls.JFXSpinner focusTraversable="false" id="progressIndicator" layoutX="704" layoutY="40" prefHeight="24" prefWidth="24" progress="-1" radius="16" styleClass="progress-indicator jfx-spinner "/>
+    <Data cursor="DEFAULT" enabled="1" id="data-progressIndicator" visible="1"/>
+    <LabelEx alignment="CENTER_RIGHT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="344" layoutY="45" prefHeight="18" prefWidth="352" styleClass="label " text="[1/7] Инициализация" textAlignment="RIGHT" textFill="#333333" underline="false" wrapText="false">
+      <font>
+        <Font name="Tahoma" size="14"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="10" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel" layoutX="56" layoutY="88" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="296" prefWidth="672" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="16" layoutY="16" prefHeight="16.7578125" prefWidth="465.08056640625" styleClass="label " text="При запуске программы обнаружены некоторые особенности" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="15"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="16" layoutY="37" prefHeight="14.5234375" prefWidth="409.32861328125" styleClass="label " text="Они могут повлиять на дальнейший опыт взаимодействия с lox.exe" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+        <TextArea editable="false" focusTraversable="true" id="textArea" layoutX="16" layoutY="64" prefColumnCount="40" prefHeight="168" prefWidth="640" promptText="" styleClass="text-input text-area " text="" wrapText="true">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </TextArea>
+        <Data cursor="DEFAULT" enabled="1" id="data-textArea" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button" layoutX="16" layoutY="240" prefHeight="40" prefWidth="192" styleClass="button " text="Продолжить" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="18"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-button" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="buttonAlt" layoutX="216" layoutY="240" prefHeight="40" prefWidth="192" styleClass="button " text="Закрыть lox.exe" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="18"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-buttonAlt" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label4" layoutX="416" layoutY="244" prefHeight="40" prefWidth="240" styleClass="label " text="Нажмите клавишу S, чтобы активировать облегчённый режим при запуске" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label4" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel" visible=""/>
+    <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label5" layoutX="56" layoutY="440" prefHeight="24" prefWidth="440" styleClass="label " text="При запуске программы будет активирован облегчённый режим" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+      <font>
+        <Font name="Arial" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label5" visible=""/>
+    <Panel backgroundColor="#ffffff" borderColor="#ffffff" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="govno_warning" layoutX="792" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="441" prefWidth="704" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="50" id="image23" layoutX="24" layoutY="16" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="50">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image23" image=".data/img/govno-warning.png" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label18" layoutX="88" layoutY="19" prefHeight="24" prefWidth="552" styleClass="label " text="Критическая ошибка! Дальнейший запуск невозможен." textAlignment="LEFT" textFill="#ff0000" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial Bold" size="18"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label18" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label19" layoutX="24" layoutY="80" prefHeight="88" prefWidth="616" styleClass="label " text="Lightshot нацелен на тупых, неопытных юзеров ПК — это шпионское ПО с ограниченным функционалом, тесное сотрудничество с Яндексом (даже инсталлятор предлагает поставить Браузер и строку поиска, где бы вы ещё могли такое увидеть?), а также он ужасно неудобен и даже не умеет блюрить информацию на скриншотах." textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label19" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label20" layoutX="24" layoutY="152" prefHeight="56" prefWidth="352" styleClass="label " text="Но ещё есть время всё исправить!" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+          <font>
+            <Font name="System Bold" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label20" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label21" layoutX="24" layoutY="224" prefHeight="112" prefWidth="88" styleClass="label " text="1.&#10;2.&#10;3." textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="20"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label21" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button3" layoutX="48" layoutY="224" prefHeight="26" prefWidth="304" styleClass="button " text="Запустите деинсталлятор Lightshot" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </Button>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button4" layoutX="48" layoutY="256" prefHeight="26" prefWidth="304" styleClass="button " text="Установите ShareX, крутецкую альтернативу" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-button3" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button5" layoutX="48" layoutY="288" prefHeight="26" prefWidth="304" styleClass="button " text="Нажмите сюда для проверки" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-button5" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label23" layoutX="24" layoutY="192" prefHeight="18.62109375" prefWidth="375.9423828125" styleClass="label " text="Жмите на эти пункты по порядку и следуйте инструкциям." textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label23" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label24" layoutX="24" layoutY="328" prefHeight="20" prefWidth="664" styleClass="label " text="Проверка не пройдена (говно ещё установлено)" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold Italic" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label24" visible=""/>
+        <Data cursor="DEFAULT" enabled="1" id="data-button4" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image3" layoutX="536" layoutY="376" mosaic="false" mosaicGap="0" proportional="true" stretch="true" styleClass="" textFill="#000000" width="152">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image3" image=".data/img/lox-logo.png" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label6" layoutX="88" layoutY="44" prefHeight="17.291015625" prefWidth="60.60107421875" styleClass="label " text="Причина:" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label6" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label7" layoutX="152" layoutY="44" prefHeight="19" prefWidth="536" styleClass="label " text="на компьютере установлен говнософт" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label7" visible="1"/>
+        <ImageViewEx autoSize="true" centered="false" focusTraversable="false" height="97" id="image4" layoutX="432" layoutY="280" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="243">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image4" image=".data/img/noti.png" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label8" layoutX="464" layoutY="288" prefHeight="16" prefWidth="184" styleClass="label " text="Подсказка" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="11"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label8" visible=""/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="PODSKAZKA" layoutX="440" layoutY="306" prefHeight="48" prefWidth="224" styleClass="label " text="Я всегда помогу тебе разобраться с интуитивно понятным интерфейсом!" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="11"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-PODSKAZKA" visible=""/>
+        <ImageViewEx autoSize="false" centered="true" focusTraversable="false" height="18" id="noticloseButton" layoutX="652" layoutY="284" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="18">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data clickImage=".data/img/noticlose3.png" cursor="DEFAULT" enabled="1" hoverImage=".data/img/noticlose2.png" id="data-noticloseButton" image=".data/img/noticlose.png" visible=""/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-govno_warning" visible="1"/>
+    <Hyperlink alignment="CENTER_RIGHT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="link" layoutX="512" layoutY="62" opacity="0.3" prefHeight="16" prefWidth="184" styleClass="hyperlink " text="нажми, если этот этап повис" textAlignment="LEFT" wrapText="false">
+      <font>
+        <Font name="Arial" size="10"/>
+      </font>
+    </Hyperlink>
+    <Data cursor="DEFAULT" enabled="1" id="data-link" visible=""/>
+  </children>
+</AnchorPane>

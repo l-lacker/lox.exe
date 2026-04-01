@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="link">
+    <behaviour brightness="0.70731707317073" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="edit">
+    <behaviour allowedSymbols="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_" matchCase="1" maxLength="32" type="behaviour\custom\KeyInputRuleBehaviour"/>
+  </target>
+  <target id="linkAlt">
+    <behaviour brightness="0.70731707317073" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="editAlt">
+    <behaviour allowedSymbols="0123456789" matchCase="" maxLength="6" type="behaviour\custom\KeyInputRuleBehaviour"/>
+  </target>
+  <target id="edit3">
+    <behaviour allowedSymbols="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_" matchCase="1" maxLength="32" type="behaviour\custom\KeyInputRuleBehaviour"/>
+  </target>
+  <target id="edit4">
+    <behaviour allowedSymbols="0123456789" matchCase="1" maxLength="32" type="behaviour\custom\KeyInputRuleBehaviour"/>
+  </target>
+</behaviours>

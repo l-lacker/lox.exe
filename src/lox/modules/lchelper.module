@@ -1,0 +1,25 @@
+{
+  "props": [],
+  "components": {
+    "verticlock": {
+      "type": "script\\TimerScript",
+      "x": 32,
+      "y": 112,
+      "props": {
+        "interval": 500,
+        "repeatable": "1",
+        "autoStart": false
+      }
+    },
+    "helperlc": {
+      "type": "script\\TimerScript",
+      "x": 32,
+      "y": 32,
+      "props": {
+        "interval": 100,
+        "repeatable": "1",
+        "autoStart": false
+      }
+    }
+  }
+}

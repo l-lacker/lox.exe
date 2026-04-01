@@ -1,0 +1,29 @@
+{
+  "props": [],
+  "components": {
+    "videoplayer": {
+      "type": "script\\MediaPlayerScript",
+      "x": 112,
+      "y": 32,
+      "props": {
+        "loop": true,
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0",
+        "view": "mediaView"
+      }
+    },
+    "timer": {
+      "type": "script\\TimerScript",
+      "x": 32,
+      "y": 32,
+      "props": {
+        "disabled": false,
+        "interval": 100,
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    }
+  }
+}

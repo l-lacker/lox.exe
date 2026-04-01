@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="vpmod">
+    
+  
+  
+  
+  
+  
+  
+  <method name="doTimerAction">
+      <ifVar method="equals" method-type="" name="vt_vpload" name-type="" not="" not-type="" value="5" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_vpload" name-type="" value="" value-type="string"/>
+      <elementSetX object="panel" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel" object-type="object" relative="" relative-type="" value="312" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="panel" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="panelAlt" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="panel3" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="mainpanel" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="272" value-type="integer"/>
+      <elementSetX object="panel3" object-type="object" relative="" relative-type="" value="536" value-type="integer"/>
+      <elementEnabledOn object="panel" object-type="object"/>
+      <elementShow object="mainpanel" object-type="object"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <elementShow object="panel3" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_vpload" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_vpload" name-type="" value="" value-type="string"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="176" y-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="mainpanel" object-type="object" value="1" value-type="float"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="imageAlt">
+    <behaviour color="#000000" offsetX="0" offsetY="0" radius="6.5853658536585" spread="0.14634146341463" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="image3">
+    <behaviour brightness="-1" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label4">
+    <behaviour color="#000000" offsetX="0" offsetY="0" radius="3.6585365853659" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label5">
+    <behaviour color="#000000" offsetX="0" offsetY="0" radius="3.6585365853659" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="image5">
+    <behaviour brightness="-1" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="image6">
+    <behaviour brightness="-1" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="image7">
+    <behaviour delay="0" duration="1000" enabled="" negative="" repeatCount="-1" type="behaviour\custom\RotateAnimationBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panel5">
+    <behaviour diffuseConstant="1.7560975609756" specularConstant="0.76341463414634" specularExponent="30.731707317073" surfaceScale="2.9634146341463" type="behaviour\custom\LightingEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button8">
+    <behaviour diffuseConstant="1.27" specularConstant="0.23" specularExponent="20" surfaceScale="1.5" type="behaviour\custom\LightingEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button9">
+    <behaviour diffuseConstant="1.27" specularConstant="0.23" specularExponent="20" surfaceScale="1.5" type="behaviour\custom\LightingEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button11">
+    <behaviour diffuseConstant="1.27" specularConstant="0.23" specularExponent="20" surfaceScale="1.5" type="behaviour\custom\LightingEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button12">
+    <behaviour diffuseConstant="1.27" specularConstant="0.23" specularExponent="20" surfaceScale="1.5" type="behaviour\custom\LightingEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button13">
+    <behaviour diffuseConstant="1.27" specularConstant="0.23" specularExponent="20" surfaceScale="1.5" type="behaviour\custom\LightingEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panel6">
+    <behaviour diffuseConstant="1.7560975609756" specularConstant="0.76341463414634" specularExponent="30.731707317073" surfaceScale="2.9634146341463" type="behaviour\custom\LightingEffectBehaviour" when="ALWAYS"/>
+  </target>
+</behaviours>

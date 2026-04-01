@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="lowres">
+    <method name="doImageMouseEnter">
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Эта кнопка закроет приложение" value-type="string"/>
+    </method>
+  <method name="doImageMouseExit">
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+    </method>
+  <method name="doImageAltMouseEnter">
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Эта кнопка вернёт приложение в экранный режим (однако назад вернуться не выйдет)" value-type="string"/>
+    </method>
+  <method name="doImageAltMouseExit">
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+    </method>
+  <method name="doImage3MouseEnter">
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Эта кнопка свернёт приложение в панель задач" value-type="string"/>
+    </method>
+  <method name="doImage3MouseExit">
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+    </method>
+  <method name="doImage3ClickLeft">
+      <minimizeForm form="MainForm" form-type="form" restore="" restore-type=""/>
+    </method>
+  
+  <method name="doImageClickLeft">
+      <applicationShutdown/>
+    </method>
+  
+  
+  <method name="doImageAltClickLeft">
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Сдвиньте куда-нибудь курсор, и вы не сможете вернуться в полноэкранный режим" value-type="string"/>
+      <setVar name="killfs" name-type="" value="1" value-type="string"/>
+      <setVar name="resch" name-type="" value="" value-type="string"/>
+    </method>
+  </class>
+</root>

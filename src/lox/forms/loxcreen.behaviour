@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="label">
+    <behaviour color="#000000" enabled="" offsetX="0" offsetY="0" radius="4.0740740740741" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+    <behaviour format="HH:mm" type="behaviour\custom\WatchMakerBehaviour"/>
+  </target>
+  <target id="labelAlt">
+    <behaviour color="#000000" enabled="" offsetX="0" offsetY="0" radius="4.0740740740741" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+    <behaviour format="dd.MM.YYYY" type="behaviour\custom\WatchMakerBehaviour"/>
+  </target>
+  <target id="wallpaper">
+    <behaviour radius="33.333333333333" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label3">
+    <behaviour animated="1" delay="1000" duration="250" maxOpacity="1" minOpacity="0.3" repeatCount="-1" type="behaviour\custom\BlinkAnimationBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label4">
+    <behaviour animated="1" delay="500" duration="500" maxOpacity="1" minOpacity="0.3" repeatCount="-1" type="behaviour\custom\BlinkAnimationBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label5">
+    <behaviour animated="1" delay="0" duration="750" maxOpacity="1" minOpacity="0.3" repeatCount="-1" type="behaviour\custom\BlinkAnimationBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panelAlt">
+    <behaviour animated="" direction="LEFT_RIGHT" gridX="1" gridY="1" limitedByParent="1" opacity="0.5" opacityEnabled="" type="behaviour\custom\DraggingBehaviour"/>
+  </target>
+  <target id="panel4">
+    <behaviour animated="1" direction="LEFT_RIGHT" gridX="1" gridY="1" limitedByParent="1" opacity="0.5" opacityEnabled="" type="behaviour\custom\DraggingBehaviour"/>
+    <behaviour delay="0" duration="100" initialScale="1" repeatCount="-1" scale="0.85" type="behaviour\custom\ScaleAnimationBehaviour" when="CLICK"/>
+  </target>
+  <target id="label12">
+    <behaviour color="#000000" enabled="" offsetX="0" offsetY="0" radius="4.0740740740741" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+    <behaviour format="dd.MM.YYYY" type="behaviour\custom\WatchMakerBehaviour"/>
+  </target>
+  <target id="panel6">
+    <behaviour delay="0" duration="100" initialScale="1" repeatCount="-1" scale="0.85" type="behaviour\custom\ScaleAnimationBehaviour" when="CLICK"/>
+  </target>
+</behaviours>

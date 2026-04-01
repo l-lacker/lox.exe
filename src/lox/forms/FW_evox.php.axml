@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="FW_evox">
+    
+  
+  
+  
+  <method name="doButtonAction">
+      <elementSetX object="halfprozr" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="halfprozr" object-type="object" relative="" relative-type="" value="20" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halfprozr" object-type="object" value="0" value-type="float"/>
+      <elementShow object="halfprozr" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="halfprozr" object-type="object" value="0.5" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panelAlt" object-type="object" x="0" x-type="float" y="20" y-type="float"/>
+    </method>
+  
+  <method name="doLinkAction">
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halfprozr" object-type="object" value="0" value-type="float"/>
+    <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="272" value-type="integer"/>
+    <elementHide object="halfprozr" object-type="object"/>
+    </method>
+  <method name="doButtonAltAction">
+      <browse url="https://vk.com/sobral_li_llacker_pc" url-type="string"/>
+    </method>
+  </class>
+</root>

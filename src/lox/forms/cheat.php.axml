@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="cheat">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAction">
+      <elementHide object="form('MainForm')-&gt;fragment" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAltAction">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementShow object="form('MainForm')-&gt;magicachievements" object-type="object"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="5" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="19" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="57" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="128" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="236" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="577" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="912" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="2564" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="2048" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="1337" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="L33T" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="228" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="0LD" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="3RR0R" value-type="string"/>
+      <sleep sync="" sync-type="" value="20" value-type="integer"/>
+      <elementSetText object="form('MainForm')-&gt;balance" object-type="object" relative="" relative-type="" value="ERROR" value-type="string"/>
+      <elementHide object="form('MainForm')-&gt;magicachievements" object-type="object"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <elementHide object="form('MainForm')-&gt;fragment" object-type="object"/>
+      <sleep sync="" sync-type="" value="1500" value-type="integer"/>
+      <elementSetX object="form('MainForm')-&gt;copyingfiles" object-type="object" relative="" relative-type="" value="120" value-type="integer"/>
+      <elementSetY object="form('MainForm')-&gt;copyingfiles" object-type="object" relative="" relative-type="" value="24" value-type="integer"/>
+      <elementShow object="form('MainForm')-&gt;copyingfiles" object-type="object"/>
+      <sleep sync="" sync-type="" value="200" value-type="integer"/>
+      <elementHide object="form('MainForm')-&gt;copyingfiles" object-type="object"/>
+      <sleep sync="" sync-type="" value="2900" value-type="integer"/>
+      <elementSetX object="form('MainForm')-&gt;copyingfiles" object-type="object" relative="" relative-type="" value="456" value-type="integer"/>
+      <elementSetY object="form('MainForm')-&gt;copyingfiles" object-type="object" relative="" relative-type="" value="136" value-type="integer"/>
+      <elementShow object="form('MainForm')-&gt;copyingfiles" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;copyingfiles" object-type="object"/>
+      <sleep sync="" sync-type="" value="200" value-type="integer"/>
+      <elementHide object="form('MainForm')-&gt;copyingfiles" object-type="object"/>
+      <sleep sync="" sync-type="" value="3000" value-type="integer"/>
+      <elementLoadContent object="form('MainForm')-&gt;image9" object-type="object" path="https://l-lacker.ru/app/update/sausage.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;image10" object-type="object" path="https://l-lacker.ru/app/update/magic-bank.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;wallpaper" object-type="object" path="https://l-lacker.ru/app/update/telewick-starts.jpg" path-type="string" sync="" sync-type=""/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;image11" object-type="object"/>
+      <setVar name="podskmode" name-type="" value="1" value-type="string"/>
+      <elementSetText object="form('MainForm')-&gt;terebitsa2" object-type="object" relative="" relative-type="" value="Дёргаем..." value-type="string"/>
+      <elementSetText object="form('MainForm')-&gt;tereb1" object-type="object" relative="" relative-type="" value="Передёрнуть" value-type="string"/>
+      <elementSetText object="form('MainForm')-&gt;camkill1" object-type="object" relative="" relative-type="" value="З О С И" value-type="string"/>
+      <elementSetText object="form('MainForm')-&gt;camkill2" object-type="object" relative="" relative-type="" value="А В Т Е" value-type="string"/>
+      <elementSetText object="form('MainForm')-&gt;camkill3" object-type="object" relative="" relative-type="" value="П А А" value-type="string"/>
+      <elementLoadContent object="form('MainForm')-&gt;magicstoreimage" object-type="object" path="https://l-lacker.ru/app/update/magic-store-hell.png" path-type="string" sync="" sync-type=""/>
+    </method>
+  </class>
+</root>

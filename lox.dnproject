@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project author="l-lacker" authorOS="Windows XP" createdAt="1604422292574" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="lox" packageName="lox" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1775071541650">
+  <tree>
+    <expanded>
+    <path src=""/>
+      <path src="/src"/>
+      <path src="/src/.data"/>
+      <path src="/src/.data/audio"/>
+      <path src="/src/.data/img"/>
+      <path src="/src/.data/vid"/>
+      <path src="/src/.theme"/>
+      <path src="/src/lox"/>
+    </expanded>
+  </tree>
+  <openedFiles>
+  <file src="lox.dnproject"/>
+    <file src="src/lox/forms/splash.php"/>
+    <file selected="1" src="src/lox/modules/MainModule.php"/>
+    <file src="src/lox/forms/MainForm.php"/>
+    <file src="src/lox/forms/blocked.php"/>
+    <file src="src/lox/forms/cheat.php"/>
+    <file src="src/lox/forms/store.php"/>
+    <file src="src/lox/modules/PhoneModule.php"/>
+    <file src="src/lox/forms/phone.php"/>
+    <file src="src/lox/forms/ctrlm.php"/>
+    <file src="src/lox/forms/deepSettings.php"/>
+    <file src="src/lox/modules/gModule.php"/>
+    <file src="src/lox/forms/game.php"/>
+    <file src="src/lox/forms/wifiSettings.php"/>
+    <file src="src/lox/modules/agModule.php"/>
+    <file src="src/lox/forms/appGallery.php"/>
+    <file src="src/lox/forms/my_system.php"/>
+    <file src="src/lox/forms/lowres.php"/>
+    <file src="src/lox/forms/themes.php"/>
+    <file src="src/lox/modules/izolhelper.php"/>
+    <file src="src/lox/forms/izolyator.php"/>
+    <file src="src/lox/modules/kurmodule.php"/>
+    <file src="src/lox/forms/kuranir.php"/>
+    <file src="src/lox/modules/game2.php"/>
+    <file src="src/lox/forms/game2.php"/>
+    <file src="src/lox/forms/interwarn.php"/>
+    <file src="src/lox/modules/icm.php"/>
+    <file src="src/lox/forms/intercard.php"/>
+    <file src="src/lox/forms/vovaflash.php"/>
+    <file src="src/lox/forms/FW_evox.php"/>
+    <file src="src/lox/modules/mechatmodule.php"/>
+    <file src="src/lox/forms/mechat.php"/>
+    <file src="src/lox/forms/appCalc.php"/>
+    <file src="src/lox/modules/luckyHelper.php"/>
+    <file src="src/lox/forms/appLucky.php"/>
+    <file src="src/lox/modules/pushhelper.php"/>
+    <file src="src/lox/forms/pushpanel.php"/>
+    <file src="src/lox/modules/lchelper.php"/>
+    <file src="src/lox/forms/loxcreen.php"/>
+    <file src="src/lox/forms/lcpush.php"/>
+    <file src="src/lox/forms/techdif.php"/>
+    <file src="src/lox/modules/deskmod.php"/>
+    <file src="src/lox/forms/desktop.php"/>
+    <file src="src/lox/modules/vpmod.php"/>
+    <file src="src/lox/forms/vovapay.php"/>
+    <file src="src/lox/modules/volpolmod.php"/>
+    <file src="src/lox/forms/volpol.php"/>
+    <file src="src/lox/modules/pphaudio.php"/>
+    <file src="src/lox/modules/pphm.php"/>
+    <file src="src/lox/forms/pphui.php"/>
+    <file src="src/lox/modules/pphs.php"/>
+    <file src="src/lox/forms/patephone.php"/>
+    <file src="src/lox/modules/rgbaccent.php"/>
+    <file src="src/lox/modules/ppa1.php"/>
+    <file src="src/lox/forms/pphui_app1.php"/>
+    <file src="src/lox/modules/ppa2.php"/>
+    <file src="src/lox/forms/pphui_app2.php"/>
+    <file src="src/lox/modules/ang.php"/>
+    <file src="src/lox/forms/allnewgame.php"/>
+    <file src="src/lox/modules/ssmod.php"/>
+    <file src="src/lox/forms/screensaver.php"/>
+    <file src="src/lox/modules/welcomemodule.php"/>
+    <file src="src/lox/forms/welcome.php"/>
+    <file src="src/lox/forms/lightmodenote.php"/>
+    <file src="src/lox/forms/desk_loxid.php"/>
+  </openedFiles>
+  <files/>
+  <behaviours>
+  <behaviour class="ide\project\behaviours\BundleProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\PhpProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\JavaPlatformBehaviour"/>
+    <behaviour class="ide\project\behaviours\GuiFrameworkProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\RunBuildProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\ShareProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\BackupProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\GradleProjectBehaviour"/>
+  </behaviours>
+</project>

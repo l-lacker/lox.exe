@@ -1,0 +1,14 @@
+{
+  "props": [],
+  "components": {
+    "dirChooser": {
+      "type": "script\\DirectoryChooserScript",
+      "x": 48,
+      "y": 48,
+      "props": {
+        "inputNode": "",
+        "actionNode": ""
+      }
+    }
+  }
+}

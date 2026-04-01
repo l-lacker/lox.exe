@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="vovapay">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAction">
+      <setVar name="vt_vpload" name-type="" value="3" value-type="string"/>
+      <elementEnabledOff object="panel" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel3" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="1000" duration-type="integer" object="panel" object-type="object" value="0.5" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="250" duration-type="integer" object="panelAlt" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="panel3" object-type="object" value="1" value-type="float"/>
+    </method>
+  
+  
+  
+  <method name="doLinkAction">
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="mainpanel" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="panelAlt" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="panel3" object-type="object" value="0" value-type="float"/>
+      <displace continue="" continue-type="" duration="250" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="312" y-type="float"/>
+      <setVar name="vt_vpload" name-type="" value="6" value-type="string"/>
+    </method>
+  
+  
+  <method name="doPanelMouseDownLeft">
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="mainpanel" object-type="object" value="0" value-type="float"/>
+      <phpLine expr="$this-&gt;panel-&gt;scaleX = 1" expr-type="expr"/>
+      <phpLine expr="$this-&gt;panel-&gt;scaleY = 1" expr-type="expr"/>
+      <phpLine expr="$scaleAnim = new ScaleAnimationBehaviour()" expr-type="expr"/>
+      <phpLine expr="$scaleAnim-&gt;scale = 0.7" expr-type="expr"/>
+      <phpLine expr="$scaleAnim-&gt;duration = 250" expr-type="expr"/>
+      <phpLine expr="$scaleAnim-&gt;apply($this-&gt;panel)" expr-type="expr"/>
+      <behaviourEnable behaviour="behaviour\custom\ScaleAnimationBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <ifVar method="smaller" method-type="" name="vt_vpload" name-type="" not="" not-type="" value="2" value-type="integer"/>
+      <openBlock/>
+      <displace continue="" continue-type="" duration="250" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="-50" y-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <displace continue="" continue-type="" duration="250" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="50" y-type="float"/>
+      <closeBlock/>
+      <setVar name="vt_vpload" name-type="" value="2" value-type="string"/>
+    </method>
+  <method name="doPanelMouseUpLeft">
+      <phpLine expr="$this-&gt;panel-&gt;scaleX = 0.7" expr-type="expr"/>
+      <phpLine expr="$this-&gt;panel-&gt;scaleY = 0.7" expr-type="expr"/>
+      <phpLine expr="$scaleAnim = new ScaleAnimationBehaviour()" expr-type="expr"/>
+      <phpLine expr="$scaleAnim-&gt;scale = 1" expr-type="expr"/>
+      <phpLine expr="$scaleAnim-&gt;duration = 250" expr-type="expr"/>
+      <phpLine expr="$scaleAnim-&gt;apply($this-&gt;panel)" expr-type="expr"/>
+      <behaviourEnable behaviour="behaviour\custom\ScaleAnimationBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <phpLine expr="$anime2 = $this-&gt;panel-&gt;x" expr-type="expr"/>
+      <setVar name="anime3" name-type="" value="anime2" value-type="variable"/>
+      <ifVar method="smaller" method-type="" name="anime3" name-type="" not="" not-type="" value="-100" value-type="integer"/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="panel" object-type="object" x="-200" x-type="float" y="72" y-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="panel" object-type="object" x="-8" x-type="float" y="72" y-type="float"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_vpload" name-type="" not="" not-type="" value="2" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="panelAlt" object-type="object" value="1" value-type="float"/>
+      <closeBlock/>
+      <exit/>
+      <displace continue="" continue-type="" duration="250" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="50" y-type="float"/>
+    </method>
+  </class>
+</root>

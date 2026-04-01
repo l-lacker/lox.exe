@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="vovaflash">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doCheckboxAltClickLeft">
+      <ifVar method="equals" method-type="" name="vtfl_ffw" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtfl_ffw" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="vtfl_selmodes" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="vtfl_ffw" name-type="" value="" value-type="string"/>
+      <appendVar asString="" asString-type="" name="vtfl_selmodes" name-type="" value="-1" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doCheckboxClickLeft">
+      <ifVar method="equals" method-type="" name="vtfl_unlockbl" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtfl_unlockbl" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="vtfl_selmodes" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="vtfl_unlockbl" name-type="" value="" value-type="string"/>
+      <appendVar asString="" asString-type="" name="vtfl_selmodes" name-type="" value="-1" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doCheckbox3ClickLeft">
+      <ifVar method="equals" method-type="" name="vtfl_lf" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtfl_lf" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="vtfl_selmodes" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="vtfl_lf" name-type="" value="" value-type="string"/>
+      <appendVar asString="" asString-type="" name="vtfl_selmodes" name-type="" value="-1" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  <method name="doCheckbox5ClickLeft">
+      <ifVar method="equals" method-type="" name="vtfl_caal" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtfl_caal" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="vtfl_selmodes" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="vtfl_caal" name-type="" value="" value-type="string"/>
+      <appendVar asString="" asString-type="" name="vtfl_selmodes" name-type="" value="-1" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  <method name="doButtonAction">
+      <elementSetX object="panel" object-type="object" relative="" relative-type="" value="8" value-type="integer"/>
+      <elementSetY object="panel" object-type="object" relative="" relative-type="" value="64" value-type="integer"/>
+      <elementShow object="panel" object-type="object"/>
+    </method>
+  <method name="doButton8Action">
+      <elementHide object="panel" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doCheckbox4ClickLeft">
+      <ifVar method="equals" method-type="" name="vtfl_vtabypass" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtfl_vtabypass" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="vtfl_vtabypass" name-type="" value="" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton11Action">
+      <elementHide object="~sender" object-type="object"/>
+      <elementSetHeight object="textArea" object-type="object" relative="" relative-type="" value="56" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="semihalf" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="textArea" object-type="object" x="8" x-type="float" y="216" y-type="float"/>
+    <elementHide object="semihalf" object-type="object"/>
+    </method>
+  <method name="doButton10Action">
+      <elementSetX object="semihalf" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="semihalf" object-type="object" relative="" relative-type="" value="56" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="semihalf" object-type="object" value="0" value-type="float"/>
+      <elementShow object="semihalf" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="semihalf" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="textArea" object-type="object" x="8" x-type="float" y="64" y-type="float"/>
+      <elementSetHeight object="textArea" object-type="object" relative="" relative-type="" value="208" value-type="integer"/>
+      <elementSetX object="button11" object-type="object" relative="" relative-type="" value="352" value-type="integer"/>
+      <elementSetY object="button11" object-type="object" relative="" relative-type="" value="64" value-type="integer"/>
+      <elementShow object="button11" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doRestlinkAction">
+      <browse url="https://t.me/repost_llacker" url-type="string"/>
+    </method>
+  
+  <method name="doButton12Action">
+      <elementHide object="buttonAlt" object-type="object"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementSetX object="restimg" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="restimg" object-type="object" relative="" relative-type="" value="56" value-type="integer"/>
+      <elementSetX object="restlink" object-type="object" relative="" relative-type="" value="272" value-type="integer"/>
+      <elementSetY object="restlink" object-type="object" relative="" relative-type="" value="148" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="restimg" object-type="object" value="0" value-type="float"/>
+      <elementShow object="restimg" object-type="object"/>
+      <elementShow object="restlink" object-type="object"/>
+      <playMedia id="bricksound" id-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1000" duration-type="integer" object="restimg" object-type="object" value="1" value-type="float"/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doButton3Action">
+      <elementHide object="form('MainForm')-&gt;fragment13" object-type="object"/>
+    </method>
+  <method name="doButton4Action">
+      <elementSetText object="textArea" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+    </method>
+  
+  
+  <method name="doShow">
+      <elementSetText object="textArea" object-type="object" relative="" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Flash Tool was successfully launched with lox.exe" value-type="string"/>
+    </method>
+  <method name="doButton9Action">
+      <ifVar method="equals" method-type="" name="vtfl_devsel" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Please select your device before rebooting" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="loxstat_opened" name-type="" not="1" not-type="" value="other" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Please close all the applications before rebooting" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vttorch" name-type="" not="" not-type="" value="enabled" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Please disable the torch before rebooting" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="fpmode" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Rebooting into the Fastpoop mode..." value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <setVar name="fpmode" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Rebooting into the system..." value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <setVar name="fpmode" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton14Action">
+      <browse url="https://vk.com/sobral_li_llacker_pc" url-type="string"/>
+    </method>
+  <method name="doButton13Action">
+      <elementShow object="panelAlt" object-type="object"/>
+    </method>
+  
+  <method name="doButton15Action">
+      <elementHide object="panelAlt" object-type="object"/>
+      <elementEnabledOn object="checkboxAlt" object-type="object"/>
+      <elementEnabledOn object="button" object-type="object"/>
+      <elementHide object="button13" object-type="object"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+    </method>
+  <method name="doButton16Action">
+      <elementHide object="panelAlt" object-type="object"/>
+    </method>
+  <method name="doButton5Action">
+      <setVar name="vt_selected_fw" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="al0-stock-rom-v1.zip" value-type="string"/>
+      <elementEnabledOn object="button7" object-type="object"/>
+    </method>
+  <method name="doButton6Action">
+      <setVar name="vt_selected_fw" name-type="" value="2" value-type="string"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="al0-evox-android12-port.zip" value-type="string"/>
+      <elementEnabledOn object="button7" object-type="object"/>
+    </method>
+  <method name="doButton7Action">
+      <ifVar method="equals" method-type="" name="vt_selected_fw" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="/usr/bricktool/FW/al0-stock-rom-v1.zip" value-type="string"/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] ROM selected: &quot;al0-stock-rom-v1.zip&quot;" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <elementHide object="panel" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_selected_fw" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="/usr/bricktool/FW/al0-evox-android12-port.zip" value-type="string"/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] ROM selected: &quot;al0-evox-android12-port.zip&quot;" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <elementHide object="panel" object-type="object"/>
+      <closeBlock/>
+    </method>
+  <method name="doComboboxAction">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="vtfl_devsel" name-type="" value="1" value-type="string"/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Selected Device: &quot;alotech 0&quot;" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+    </method>
+  
+  
+  <method name="doButtonAltAction">
+      <ifVar method="equals" method-type="" name="vtfl_devsel" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Please select a device to get started" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="smaller" method-type="" name="vtfl_selmodes" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Please select any mode to start" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <setVar name="vtfl_confirm" name-type="" value="" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="fpmode" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Please reboot into Fastpoop mode before performing anything" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtp_bl_unlocked" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] The device isn't OEM unlocked! The flasher can't do anything" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="loxstat_opened" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Please reboot into system and open at least one application, then close it before flashing" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="loxstat_opened" name-type="" not="1" not-type="" value="other" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Please reboot into system and close all the applications before flashing" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtfl_selmodes" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtfl_confirm" name-type="" value="" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtfl_confirm" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <ifVar method="greater" method-type="" name="vtfl_selmodes" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <setVar name="vtfl_confirm" name-type="" value="1" value-type="string"/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] You have selected " value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="vtfl_selmodes" value-type="globalVariable"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value=" modes at the same time (recommended: max.1 not including bypass). Click &quot;Flash&quot; button again to confirm." value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <closeBlock/>
+      <setVar name="vtfl_confirm" name-type="" value="" value-type="string"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementEnabledOff object="checkbox" object-type="object"/>
+      <elementEnabledOff object="checkboxAlt" object-type="object"/>
+      <elementEnabledOff object="checkbox3" object-type="object"/>
+      <elementEnabledOff object="checkbox4" object-type="object"/>
+      <elementEnabledOff object="checkbox5" object-type="object"/>
+      <elementEnabledOff object="button" object-type="object"/>
+      <elementEnabledOff object="button9" object-type="object"/>
+      <elementEnabledOff object="button10" object-type="object"/>
+      <ifVar method="equals" method-type="" name="vtfl_unlockbl" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtp_bl2_unlocked" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtp_bl2_unlocked" name-type="" value="1" value-type="string"/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Bootloader unlocked successfully!" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Bootloader is already unlocked, no action needed" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtfl_ffw" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtp_bl2_unlocked" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vt_selected_fw" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Please select firmware, then try flash again" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Flashing SUCCESS! Rebooting to the system..." value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_selected_fw" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_selected_fw_rb" name-type="" value="1" value-type="string"/>
+      <setVar name="fpmode" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_selected_fw" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_selected_fw_rb" name-type="" value="2" value-type="string"/>
+      <setVar name="fpmode" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] Bootloader isn't unlocked! I can't flash any firmware" value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtfl_caal" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] You have selected &quot;Clean All and Lock&quot;, so phone is bricked now..." value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <setVar name="brick_mode" name-type="" value="caal" value-type="string"/>
+      <elementShow object="button12" object-type="object"/>
+      <openUrlMedia autoplay="" autoplay-type="flag" id="bricksound" id-type="string" source="https://l-lacker.ru/app/helpdesk-sound.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtfl_vtabypass" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] You have not selected ATA bypass, so phone thinks it's stolen and it is bricked now..." value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <setVar name="brick_mode" name-type="" value="account" value-type="string"/>
+      <elementShow object="button12" object-type="object"/>
+      <openUrlMedia autoplay="" autoplay-type="flag" id="bricksound" id-type="string" source="https://l-lacker.ru/app/helpdesk-sound.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtfl_lf" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="[" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="labeltime" value-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="] You have selected &quot;Lock Flasher&quot;, so flasher is locked now..." value-type="string"/>
+      <phpLine expr="$this-&gt;textArea-&gt;end()" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtfl_lf" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementEnabledOn object="checkbox" object-type="object"/>
+      <elementEnabledOn object="checkboxAlt" object-type="object"/>
+      <elementEnabledOn object="checkbox3" object-type="object"/>
+      <elementEnabledOn object="checkbox4" object-type="object"/>
+      <elementEnabledOn object="checkbox5" object-type="object"/>
+      <elementEnabledOn object="button" object-type="object"/>
+      <elementEnabledOn object="button9" object-type="object"/>
+      <elementEnabledOn object="button10" object-type="object"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

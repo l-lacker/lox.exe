@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="themes">
+    
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  <method name="doButtonAltAction">
+      <elementLoadContent object="form('MainForm')-&gt;wincursor" object-type="object" path="res://.data/img/2-windows-cursor.png" path-type="string" sync="" sync-type=""/>
+    </method>
+  <method name="doButtonAction">
+      <elementLoadContent object="form('MainForm')-&gt;wincursor" object-type="object" path="res://.data/img/windows-cursor.png" path-type="string" sync="" sync-type=""/>
+    </method>
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton3Action">
+      <ifVar method="equals" method-type="" name="cursor_shadow" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="cursor_shadow" name-type="" value="1" value-type="string"/>
+      <behaviourEnable behaviour="behaviour\custom\DropShadowEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;wincursor" object-type="object"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="отключить" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="cursor_shadow" name-type="" value="0" value-type="string"/>
+      <behaviourDisable behaviour="behaviour\custom\DropShadowEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;wincursor" object-type="object"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="включить" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton4Action">
+      <ifVar method="equals" method-type="" name="cursor_zer" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="cursor_zer" name-type="" value="1" value-type="string"/>
+      <behaviourEnable behaviour="behaviour\custom\ReflectionEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;wincursor" object-type="object"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="отключить" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="cursor_zer" name-type="" value="0" value-type="string"/>
+      <behaviourDisable behaviour="behaviour\custom\ReflectionEffectBehaviour" behaviour-type="string" object="form('MainForm')-&gt;wincursor" object-type="object"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="включить" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <closeBlock/>
+    </method>
+  <method name="doTheme3ClickL">
+      <elementHide object="form('MainForm')-&gt;startOpenLuna" object-type="object"/>
+      <elementLoadContent object="form('MainForm')-&gt;wallpaper" object-type="object" path="res://.data/img/New Bliss.jpg" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;image3" object-type="object" path="res://.data/img/2-menu.png" path-type="string" sync="" sync-type=""/>
+      <setVar name="cursor_type" name-type="" value="royale" value-type="string"/>
+      <elementLoadContent object="form('MainForm')-&gt;wincursor" object-type="object" path="res://.data/img/2-windows-cursor.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;startClose" object-type="object" path="res://.data/img/2-start-clicked.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;imageAlt" object-type="object" path="res://.data/img/2-tray.png" path-type="string" sync="" sync-type=""/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton13Action">
+      <ifVar method="equals" method-type="" name="lox-freecats" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Разблокируйте в l-lacker Lucky" value-type="string"/>
+      <stopMedia id="loxerr" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="loxerr" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="ОБОИ С БЕСПЛАТНЫМИ КОТЯТАМИ" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementLoadContent object="form('MainForm')-&gt;wallpaper" object-type="object" path="res://.data/img/bestwallever.jpg" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+    </method>
+  <method name="doButton5Action">
+      <ifVar method="equals" method-type="" name="wallmode" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="включить" value-type="string"/>
+      <elementHide object="form('MainForm')-&gt;wallpaper" object-type="object"/>
+      <setVar name="wallmode" name-type="" value="1" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="wallmode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="отключить" value-type="string"/>
+      <elementShow object="form('MainForm')-&gt;wallpaper" object-type="object"/>
+      <setVar name="wallmode" name-type="" value="0" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doPanelAltMouseDrag">
+      <setVar name="windowthemes_moved" name-type="" value="1" value-type="string"/>
+    </method>
+  <method name="doImage4ClickLeft">
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="rect" object-type="object" value="0" value-type="float"/>
+      <ifVar method="equals" method-type="" name="windowthemes_moved" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementHide object="rect" object-type="object"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <elementEnabledOn object="panel" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="panelAlt" object-type="object" x="208" x-type="float" y="176" y-type="float"/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <moveTo continue="" continue-type="" duration="50" duration-type="integer" object="panelAlt" object-type="object" x="208" x-type="float" y="176" y-type="float"/>
+      <elementHide object="rect" object-type="object"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <elementEnabledOn object="panel" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton14MouseEnter">
+      <elementLoadContent object="image6" object-type="object" path="res://.data/img/thprev-1.jpg" path-type="string" sync="" sync-type=""/>
+    </method>
+  <method name="doButton15MouseEnter">
+      <elementLoadContent object="image6" object-type="object" path="res://.data/img/thprev-2.jpg" path-type="string" sync="" sync-type=""/>
+    </method>
+  <method name="doButton16MouseEnter">
+      <elementLoadContent object="image6" object-type="object" path="res://.data/img/thprev-3.jpg" path-type="string" sync="" sync-type=""/>
+    </method>
+  
+  <method name="doTheme1ClickLeft">
+      <elementSetX object="panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panel3" object-type="object"/>
+    </method>
+  <method name="doTheme3ClickLeft">
+      <elementEnabledOff object="panel" object-type="object"/>
+      <elementHide object="rect" object-type="object"/>
+      <elementSetX object="rect" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="rect" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="rect" object-type="object" value="0" value-type="float"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="208" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="176" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <elementShow object="rect" object-type="object"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="rect" object-type="object" value="0.5" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="50" duration-type="integer" object="panelAlt" object-type="object" x="208" x-type="float" y="168" y-type="float"/>
+      <setVar name="windowthemes_moved" name-type="" value="0" value-type="string"/>
+    </method>
+  <method name="doImage6Click">
+      <elementHide object="panel3" object-type="object"/>
+    </method>
+  <method name="doButton10Action">
+      <elementShow object="progressIndicator" object-type="object"/>
+      <elementLoadContent object="form('MainForm')-&gt;wallpaper" object-type="object" path="https://l-lacker.ru/app/walls/5.jpg" path-type="string" sync="" sync-type=""/>
+      <elementHide object="progressIndicator" object-type="object"/>
+    </method>
+  <method name="doButton9Action">
+      <elementShow object="progressIndicator" object-type="object"/>
+      <elementLoadContent object="form('MainForm')-&gt;wallpaper" object-type="object" path="https://l-lacker.ru/app/walls/4.jpg" path-type="string" sync="" sync-type=""/>
+      <elementHide object="progressIndicator" object-type="object"/>
+    </method>
+  <method name="doButton8Action">
+      <elementShow object="progressIndicator" object-type="object"/>
+      <elementLoadContent object="form('MainForm')-&gt;wallpaper" object-type="object" path="https://l-lacker.ru/app/walls/3.jpg" path-type="string" sync="" sync-type=""/>
+      <elementHide object="progressIndicator" object-type="object"/>
+    </method>
+  <method name="doButton7Action">
+      <elementShow object="progressIndicator" object-type="object"/>
+      <elementLoadContent object="form('MainForm')-&gt;wallpaper" object-type="object" path="https://l-lacker.ru/app/walls/2.jpg" path-type="string" sync="" sync-type=""/>
+      <elementHide object="progressIndicator" object-type="object"/>
+    </method>
+  <method name="doButton6Action">
+      <elementShow object="progressIndicator" object-type="object"/>
+      <elementLoadContent object="form('MainForm')-&gt;wallpaper" object-type="object" path="https://l-lacker.ru/app/walls/1.jpg" path-type="string" sync="" sync-type=""/>
+      <elementHide object="progressIndicator" object-type="object"/>
+    </method>
+  <method name="doButton11Action">
+      <elementShow object="progressIndicator" object-type="object"/>
+      <elementLoadContent object="form('MainForm')-&gt;wallpaper" object-type="object" path="https://l-lacker.ru/app/walls/6.jpg" path-type="string" sync="" sync-type=""/>
+      <elementHide object="progressIndicator" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  <method name="doLinkAction">
+      <elementHide object="progressIndicatorAlt" object-type="object"/>
+      <elementEnabledOn object="button12" object-type="object"/>
+    </method>
+  <method name="doButton12Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementShow object="progressIndicatorAlt" object-type="object"/>
+      <elementShow object="link" object-type="object"/>
+      <elementLoadContent object="form('MainForm')-&gt;wallpaper" object-type="object" path="edit" path-type="object" sync="" sync-type=""/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="rect" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="50" duration-type="integer" object="panelAlt" object-type="object" x="208" x-type="float" y="176" y-type="float"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <elementHide object="link" object-type="object"/>
+      <elementHide object="progressIndicatorAlt" object-type="object"/>
+      <elementHide object="rect" object-type="object"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <elementEnabledOn object="panel" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+    </method>
+  
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doImage7ClickLeft">
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="rect" object-type="object" value="0" value-type="float"/>
+      <ifVar method="equals" method-type="" name="window2themes_moved" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementHide object="rect" object-type="object"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementEnabledOn object="panel" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="panel4" object-type="object" x="98" x-type="float" y="108" y-type="float"/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <moveTo continue="" continue-type="" duration="50" duration-type="integer" object="panel4" object-type="object" x="98" x-type="float" y="108" y-type="float"/>
+      <elementHide object="rect" object-type="object"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementEnabledOn object="panel" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  <method name="doPanel4MouseDrag">
+      <setVar name="window2themes_moved" name-type="" value="1" value-type="string"/>
+    </method>
+  <method name="doButton21Action">
+      <ifVar method="smaller" method-type="" name="wallselected_th" name-type="" not="" not-type="" value="30" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="wallselected_th" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label20" object-type="object" relative="" relative-type="" value="'Фон №'.$GLOBALS['wallselected_th'].''" value-type="expr"/>
+      <elementLoadContent object="image10" object-type="object" path="&quot;res://.data/img/ssimg&quot;.$GLOBALS['wallselected_th'].&quot;.jpg&quot;" path-type="expr" sync="" sync-type=""/>
+      <closeBlock/>
+    </method>
+  <method name="doButton20Action">
+      <ifVar method="greater" method-type="" name="wallselected_th" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="wallselected_th" name-type="" value="-1" value-type="string"/>
+      <elementSetText object="label20" object-type="object" relative="" relative-type="" value="'Фон №'.$GLOBALS['wallselected_th'].''" value-type="expr"/>
+      <elementLoadContent object="image10" object-type="object" path="&quot;res://.data/img/ssimg&quot;.$GLOBALS['wallselected_th'].&quot;.jpg&quot;" path-type="expr" sync="" sync-type=""/>
+      <closeBlock/>
+    </method>
+  <method name="doTheme2ClickLeft">
+      <ifVar method="equals" method-type="" name="lox_totallight" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <openMedia autoplay="1" autoplay-type="flag" id="errlight" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <elementEnabledOff object="panel" object-type="object"/>
+      <elementHide object="rect" object-type="object"/>
+      <elementSetX object="rect" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="rect" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="rect" object-type="object" value="0" value-type="float"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="98" value-type="integer"/>
+      <elementSetY object="panel4" object-type="object" relative="" relative-type="" value="108" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <elementShow object="rect" object-type="object"/>
+      <elementShow object="panel4" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="rect" object-type="object" value="0.5" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="50" duration-type="integer" object="panel4" object-type="object" x="98" x-type="float" y="84" y-type="float"/>
+      <setVar name="window2themes_moved" name-type="" value="0" value-type="string"/>
+    </method>
+  <method name="doButton14Action">
+      <fadeTo continue="" continue-type="" duration="50" duration-type="integer" object="form('MainForm')-&gt;whiteonlyfg" object-type="object" value="0" value-type="float"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="themechpl" id-type="string" source="res://.data/audio/themech.mp3" source-type="string"/>
+      <elementShow object="form('MainForm')-&gt;whiteonlyfg" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1500" duration-type="integer" object="form('MainForm')-&gt;whiteonlyfg" object-type="object" value="1" value-type="float"/>
+      <elementHide object="panel3" object-type="object"/>
+      <elementHide object="form('MainForm')-&gt;startOpen" object-type="object"/>
+      <elementHide object="form('MainForm')-&gt;startOpenZune" object-type="object"/>
+      <elementShow object="form('MainForm')-&gt;startOpenLuna" object-type="object"/>
+      <elementLoadContent object="form('MainForm')-&gt;wallpaper" object-type="object" path="res://.data/img/Windows XP.jpg" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;image3" object-type="object" path="res://.data/img/menu.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;wincursor" object-type="object" path="res://.data/img/windows-cursor.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;startClose" object-type="object" path="res://.data/img/start-clicked.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;imageAlt" object-type="object" path="res://.data/img/tray.png" path-type="string" sync="" sync-type=""/>
+      <setVar name="startopened" name-type="" value="" value-type="string"/>
+      <elementHide object="form('MainForm')-&gt;startMenu" object-type="object"/>
+      <elementHide object="form('MainForm')-&gt;startClose" object-type="object"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="themechs" id-type="string" source="res://.data/audio/xp-themeon.mp3" source-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1500" duration-type="integer" object="form('MainForm')-&gt;whiteonlyfg" object-type="object" value="0" value-type="float"/>
+      <elementHide object="form('MainForm')-&gt;whiteonlyfg" object-type="object"/>
+    </method>
+  <method name="doButton15Action">
+      <fadeTo continue="" continue-type="" duration="50" duration-type="integer" object="form('MainForm')-&gt;whiteonlyfg" object-type="object" value="0" value-type="float"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="themechpl" id-type="string" source="res://.data/audio/themech.mp3" source-type="string"/>
+      <elementShow object="form('MainForm')-&gt;whiteonlyfg" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1500" duration-type="integer" object="form('MainForm')-&gt;whiteonlyfg" object-type="object" value="1" value-type="float"/>
+      <elementShow object="form('MainForm')-&gt;startOpen" object-type="object"/>
+      <elementHide object="panel3" object-type="object"/>
+      <elementHide object="form('MainForm')-&gt;startOpenLuna" object-type="object"/>
+      <elementHide object="form('MainForm')-&gt;startOpenZune" object-type="object"/>
+      <elementLoadContent object="form('MainForm')-&gt;wallpaper" object-type="object" path="res://.data/img/New Bliss.jpg" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;image3" object-type="object" path="res://.data/img/2-menu.png" path-type="string" sync="" sync-type=""/>
+      <setVar name="cursor_type" name-type="" value="royale" value-type="string"/>
+      <elementLoadContent object="form('MainForm')-&gt;wincursor" object-type="object" path="res://.data/img/2-windows-cursor.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;startClose" object-type="object" path="res://.data/img/2-start-clicked.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;imageAlt" object-type="object" path="res://.data/img/2-tray.png" path-type="string" sync="" sync-type=""/>
+      <setVar name="startopened" name-type="" value="" value-type="string"/>
+      <elementHide object="form('MainForm')-&gt;startMenu" object-type="object"/>
+      <elementHide object="form('MainForm')-&gt;startClose" object-type="object"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="themechs" id-type="string" source="res://.data/audio/lh-themeon.mp3" source-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1500" duration-type="integer" object="form('MainForm')-&gt;whiteonlyfg" object-type="object" value="0" value-type="float"/>
+      <elementHide object="form('MainForm')-&gt;whiteonlyfg" object-type="object"/>
+    </method>
+  <method name="doButton16Action">
+      <fadeTo continue="" continue-type="" duration="50" duration-type="integer" object="form('MainForm')-&gt;whiteonlyfg" object-type="object" value="0" value-type="float"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="themechpl" id-type="string" source="res://.data/audio/themech.mp3" source-type="string"/>
+      <elementShow object="form('MainForm')-&gt;whiteonlyfg" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1500" duration-type="integer" object="form('MainForm')-&gt;whiteonlyfg" object-type="object" value="1" value-type="float"/>
+      <elementShow object="form('MainForm')-&gt;startOpenZune" object-type="object"/>
+      <elementHide object="panel3" object-type="object"/>
+      <elementHide object="form('MainForm')-&gt;startOpenLuna" object-type="object"/>
+      <elementHide object="form('MainForm')-&gt;startOpen" object-type="object"/>
+      <elementLoadContent object="form('MainForm')-&gt;wallpaper" object-type="object" path="res://.data/img/Zune.jpg" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;image3" object-type="object" path="res://.data/img/3-menu.png" path-type="string" sync="" sync-type=""/>
+      <setVar name="cursor_type" name-type="" value="royale" value-type="string"/>
+      <elementLoadContent object="form('MainForm')-&gt;wincursor" object-type="object" path="res://.data/img/2-windows-cursor.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;startClose" object-type="object" path="res://.data/img/3-start-clicked.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="form('MainForm')-&gt;imageAlt" object-type="object" path="res://.data/img/3-tray.png" path-type="string" sync="" sync-type=""/>
+      <setVar name="startopened" name-type="" value="" value-type="string"/>
+      <elementHide object="form('MainForm')-&gt;startMenu" object-type="object"/>
+      <elementHide object="form('MainForm')-&gt;startClose" object-type="object"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="themechs" id-type="string" source="res://.data/audio/wm-themeon.mp3" source-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1500" duration-type="integer" object="form('MainForm')-&gt;whiteonlyfg" object-type="object" value="0" value-type="float"/>
+      <elementHide object="form('MainForm')-&gt;whiteonlyfg" object-type="object"/>
+    </method>
+  </class>
+</root>

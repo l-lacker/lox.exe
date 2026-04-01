@@ -1,0 +1,28 @@
+{
+  "props": [],
+  "components": {
+    "checkerTimer": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 112,
+      "props": {
+        "interval": "1000",
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    },
+    "player": {
+      "type": "script\\MediaPlayerScript",
+      "x": 48,
+      "y": 32,
+      "props": {
+        "loop": true,
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0",
+        "view": "mediaView"
+      }
+    }
+  }
+}

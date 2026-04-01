@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="phoneKeyboard">
+    <method name="doButton11Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="1" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton12Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="2" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton13Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="3" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton14Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="4" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton15Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="5" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton16Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="6" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton17Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="7" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton18Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="8" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton19Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="9" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton20Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="0" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton22Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="q" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton23Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="w" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton24Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="e" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton25Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="r" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton26Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="t" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton27Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="y" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton28Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="u" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton29Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="i" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton30Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="o" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton31Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="p" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton32Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="a" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton33Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="s" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton34Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="d" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton35Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="f" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton36Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="g" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton37Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="h" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton38Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="j" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton39Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="k" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton40Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="l" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton41Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="z" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton42Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="x" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton43Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="c" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton44Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="v" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton45Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="b" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton46Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="n" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton47Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="m" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton48Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="?" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton49Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="." value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton51Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="/" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton52Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="-" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton53Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value="&amp;" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    <method name="doButton54Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value=" " value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+    
+    <method name="doButton55Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="mt2" name-type="" value=":" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+  
+  <method name="doButton50Action">
+      <ifVar method="equals" method-type="" name="usemode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="general" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="general" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <closeBlock/>
+      <setVar name="mt2" name-type="" value="https://" value-type="string"/>
+      <elementSetText object="mobiletest" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+  
+  
+  
+  
+  
+  </class>
+</root>

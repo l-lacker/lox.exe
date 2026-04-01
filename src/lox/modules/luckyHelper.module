@@ -1,0 +1,126 @@
+{
+  "props": [],
+  "components": {
+    "playerTicks": {
+      "type": "script\\MediaPlayerScript",
+      "x": 48,
+      "y": 752,
+      "props": {
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "playerVoiceQ2": {
+      "type": "script\\MediaPlayerScript",
+      "x": 48,
+      "y": 672,
+      "props": {
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "playerVoiceQ": {
+      "type": "script\\MediaPlayerScript",
+      "x": 48,
+      "y": 592,
+      "props": {
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "playerVoice": {
+      "type": "script\\MediaPlayerScript",
+      "x": 48,
+      "y": 512,
+      "props": {
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "playerMainPitch": {
+      "type": "script\\MediaPlayerScript",
+      "x": 48,
+      "y": 432,
+      "props": {
+        "loop": true,
+        "autoplay": false,
+        "volume": 0.0,
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "playerMain": {
+      "type": "script\\MediaPlayerScript",
+      "x": 48,
+      "y": 352,
+      "props": {
+        "loop": true,
+        "autoplay": false,
+        "volume": 0.35,
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "playerHelper": {
+      "type": "script\\MediaPlayerScript",
+      "x": 48,
+      "y": 272,
+      "props": {
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0",
+        "view": "mediaView"
+      }
+    },
+    "luckyHelper": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 192,
+      "props": {
+        "disabled": false,
+        "interval": 1000,
+        "repeatable": "1",
+        "autoStart": false
+      }
+    },
+    "luckym1": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 112,
+      "props": {
+        "interval": 3000,
+        "repeatable": "1",
+        "autoStart": false
+      }
+    },
+    "comments": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 32,
+      "props": {
+        "interval": 2500,
+        "repeatable": "1",
+        "autoStart": false
+      }
+    },
+    "timer": {
+      "type": "script\\TimerScript",
+      "x": 128,
+      "y": 32,
+      "props": {
+        "interval": 100,
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    }
+  }
+}

@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="patephone">
+    <method name="doButtonMouseDownLeft">
+      <setVar name="vtb_arrow" name-type="" value="up" value-type="string"/>
+    </method>
+  
+    
+    
+  <method name="doButtonAltMouseDownLeft">
+      <setVar name="vtb_arrow" name-type="" value="down" value-type="string"/>
+    </method>
+    
+    
+    
+    
+  
+  
+  
+  
+    
+    
+    
+    
+  
+  
+  <method name="doButtonMouseEnter">
+      <phpLine expr="$this-&gt;button-&gt;toFront()" expr-type="expr"/>
+    </method>
+  <method name="doButton6MouseEnter">
+      <phpLine expr="$this-&gt;button6-&gt;toFront()" expr-type="expr"/>
+    </method>
+  <method name="doButton5MouseEnter">
+      <phpLine expr="$this-&gt;button5-&gt;toFront()" expr-type="expr"/>
+    </method>
+  <method name="doButtonAltMouseEnter">
+      <phpLine expr="$this-&gt;buttonAlt-&gt;toFront()" expr-type="expr"/>
+    </method>
+  <method name="doButton6MouseDownLeft">
+      <setVar name="vtb_arrow" name-type="" value="right" value-type="string"/>
+    </method>
+  <method name="doButton5MouseDownLeft">
+      <setVar name="vtb_arrow" name-type="" value="left" value-type="string"/>
+    </method>
+    
+    
+    
+  <method name="doButton7MouseDownLeft">
+      <setVar name="vtb_arrow" name-type="" value="ok" value-type="string"/>
+    </method>
+  
+  
+  
+  
+    
+  
+    
+    
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton8MouseDownLeft">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="cipherblock" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-1.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton9MouseDownLeft">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="cipherblock" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-2.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="2" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton10MouseDownLeft">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="cipherblock" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-3.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="3" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <method name="doButton13MouseDownLeft">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="cipherblock" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-4.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton14MouseDownLeft">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="cipherblock" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-5.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="5" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton15MouseDownLeft">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="cipherblock" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-6.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="6" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton16MouseDownLeft">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="cipherblock" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-7.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="7" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton17MouseDownLeft">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="cipherblock" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-8.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="8" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton18MouseDownLeft">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="cipherblock" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-9.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="9" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton20MouseDownLeft">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="cipherblock" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-0.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doButton21MouseDownLeft">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="cipherblock" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-pound.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="#" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doButton19MouseDownLeft">
+      <setVar name="vtb_availstar" name-type="" value="1" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="cipherblock" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-star.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="*" value-type="string"/>
+      <closeBlock/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <ifVar method="equals" method-type="" name="vtb_availstar" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_cipherblock" name-type="" value="+" value-type="string"/>
+      <setVar name="vtb_availstar" name-type="" value="" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doLabelClickLeft">
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="vtb_brightcount" value-type="globalVariable"/>
+    </method>
+  
+  
+  <method name="doFeatureButtonKeyDownL">
+      <setVar name="vtb_arrow" name-type="" value="left" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDownRi">
+      <setVar name="vtb_arrow" name-type="" value="right" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDow">
+      <setVar name="vtb_arrow" name-type="" value="up" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDownD">
+      <setVar name="vtb_arrow" name-type="" value="down" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyUpAnyDirect">
+      <setVar name="vtb_arrowcl" name-type="" value="1" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDownEn">
+      <setVar name="vtb_arrow" name-type="" value="leftfunc" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDown">
+      <setVar name="vtb_arrow" name-type="" value="rightfunc" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDownBacksp">
+      <setVar name="vtb_arrow" name-type="" value="rightfunc" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDownSp">
+      <setVar name="vtb_arrow" name-type="" value="leftfunc" value-type="string"/>
+    </method>
+  <method name="doButton3MouseDownLeft">
+      <setVar name="vtb_arrow" name-type="" value="leftfunc" value-type="string"/>
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doButtonMouseUpLeft">
+      <setVar name="vtb_arrowcl" name-type="" value="1" value-type="string"/>
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doButton5MouseUpLeft">
+      <setVar name="vtb_arrowcl" name-type="" value="1" value-type="string"/>
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doButtonAltMouseUpLeft">
+      <setVar name="vtb_arrowcl" name-type="" value="1" value-type="string"/>
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doButton6MouseUpLeft">
+      <setVar name="vtb_arrowcl" name-type="" value="1" value-type="string"/>
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doButton7MouseUpLeft">
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doButton4MouseDownLeft">
+      <setVar name="vtb_arrow" name-type="" value="rightfunc" value-type="string"/>
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doButton12MouseDownLeft">
+      <setVar name="vtb_arrow" name-type="" value="redcall" value-type="string"/>
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doButton11MouseDownLeft">
+      <setVar name="vtb_arrow" name-type="" value="greencall" value-type="string"/>
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doButton22KeyDownL">
+      <setVar name="vtb_arrow" name-type="" value="left" value-type="string"/>
+    </method>
+  <method name="doButton22KeyDownRi">
+      <setVar name="vtb_arrow" name-type="" value="right" value-type="string"/>
+    </method>
+  <method name="doButton22KeyDow">
+      <setVar name="vtb_arrow" name-type="" value="up" value-type="string"/>
+    </method>
+  <method name="doButton22KeyDownD">
+      <setVar name="vtb_arrow" name-type="" value="down" value-type="string"/>
+    </method>
+  <method name="doButton22KeyUpAnyDirect">
+      <setVar name="vtb_arrowcl" name-type="" value="1" value-type="string"/>
+    </method>
+  
+  
+  
+  <method name="doButton22KeyDownSp">
+      <setVar name="vtb_arrow" name-type="" value="leftfunc" value-type="string"/>
+    </method>
+  
+  
+  <method name="doButton22KeyDownBacksp">
+      <setVar name="vtb_arrow" name-type="" value="rightfunc" value-type="string"/>
+    </method>
+  <method name="doButton22KeyDown">
+      <setVar name="vtb_arrow" name-type="" value="redcall" value-type="string"/>
+    </method>
+  <method name="doButton22KeyDownEn">
+      <setVar name="vtb_arrow" name-type="" value="ok" value-type="string"/>
+    </method>
+  <method name="doRectClickLeft">
+      <elementFocus object="FeatureButton" object-type="object"/>
+      <setVar name="vtb_errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_errorapi_label" name-type="" value="Ошибка!" value-type="string"/>
+      <setVar name="vtb_errorapi_text" name-type="" value="Данное устройство не обладает сенсорным дисплеем" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDownSpace">
+      <setVar name="vtb_arrow" name-type="" value="leftfunc" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDownEnter">
+      <setVar name="vtb_arrow" name-type="" value="ok" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyUpAnyDirection">
+      <setVar name="vtb_arrowcl" name-type="" value="1" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDownLeft">
+      <setVar name="vtb_arrow" name-type="" value="left" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDownRight">
+      <setVar name="vtb_arrow" name-type="" value="right" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDownUp">
+      <setVar name="vtb_arrow" name-type="" value="up" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDownDown">
+      <setVar name="vtb_arrow" name-type="" value="down" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDownEsc">
+      <setVar name="vtb_arrow" name-type="" value="redcall" value-type="string"/>
+    </method>
+  <method name="doFeatureButtonKeyDownBackspace">
+      <setVar name="vtb_arrow" name-type="" value="rightfunc" value-type="string"/>
+    </method>
+  
+  
+  <method name="doCipherFeatureKeyDown1">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-1.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doCipherFeatureKeyDown2">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-2.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="2" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doCipherFeatureKeyDown3">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-3.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="3" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doCipherFeatureKeyDown4">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-4.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doCipherFeatureKeyDown5">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-5.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="5" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doCipherFeatureKeyDown6">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-6.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="6" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doCipherFeatureKeyDown7">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-7.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="7" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doCipherFeatureKeyDown8">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-8.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="8" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doCipherFeatureKeyDown9">
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;open('res://.data/audio/DTMF-9.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;play()" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vtb_cipherblock" name-type="" value="9" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doFeatureButtonKeyDownAnyDigit">
+      <elementFocus object="CipherFeature" object-type="object"/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="cipherblock" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doCipherFeatureKeyDownEnter">
+      <setVar name="vtb_arrow" name-type="" value="ok" value-type="string"/>
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doCipherFeatureKeyDownSpace">
+      <setVar name="vtb_arrow" name-type="" value="leftfunc" value-type="string"/>
+      <elementFocus object="CipherFeature" object-type="object"/>
+    </method>
+  <method name="doCipherFeatureKeyDownBackspace">
+      <setVar name="vtb_arrow" name-type="" value="rightfunc" value-type="string"/>
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doCipherFeatureKeyDownEsc">
+      <setVar name="vtb_arrow" name-type="" value="redcall" value-type="string"/>
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doButton8MouseUpLeft">
+      <phpLine expr="$this-&gt;dtmfsound-&gt;stop()" expr-type="expr"/>
+      <elementFocus object="CipherFeature" object-type="object"/>
+    </method>
+  <method name="doCipherFeatureKeyUpAnyDigit">
+      <phpLine expr="$this-&gt;dtmfsound-&gt;stop()" expr-type="expr"/>
+    </method>
+  <method name="doButton9MouseUpLeft">
+      <phpLine expr="$this-&gt;dtmfsound-&gt;stop()" expr-type="expr"/>
+      <elementFocus object="CipherFeature" object-type="object"/>
+    </method>
+  <method name="doButton10MouseUpLeft">
+      <phpLine expr="$this-&gt;dtmfsound-&gt;stop()" expr-type="expr"/>
+      <elementFocus object="CipherFeature" object-type="object"/>
+    </method>
+  <method name="doButton13MouseUpLeft">
+      <phpLine expr="$this-&gt;dtmfsound-&gt;stop()" expr-type="expr"/>
+      <elementFocus object="CipherFeature" object-type="object"/>
+    </method>
+  <method name="doButton14MouseUpLeft">
+      <phpLine expr="$this-&gt;dtmfsound-&gt;stop()" expr-type="expr"/>
+      <elementFocus object="CipherFeature" object-type="object"/>
+    </method>
+  <method name="doButton15MouseUpLeft">
+      <phpLine expr="$this-&gt;dtmfsound-&gt;stop()" expr-type="expr"/>
+      <elementFocus object="CipherFeature" object-type="object"/>
+    </method>
+  <method name="doButton16MouseUpLeft">
+      <phpLine expr="$this-&gt;dtmfsound-&gt;stop()" expr-type="expr"/>
+      <elementFocus object="CipherFeature" object-type="object"/>
+    </method>
+  <method name="doButton17MouseUpLeft">
+      <phpLine expr="$this-&gt;dtmfsound-&gt;stop()" expr-type="expr"/>
+      <elementFocus object="CipherFeature" object-type="object"/>
+    </method>
+  <method name="doButton18MouseUpLeft">
+      <phpLine expr="$this-&gt;dtmfsound-&gt;stop()" expr-type="expr"/>
+      <elementFocus object="CipherFeature" object-type="object"/>
+    </method>
+  <method name="doButton19MouseUpLeft">
+      <setVar name="vtb_availstar" name-type="" value="" value-type="string"/>
+      <elementFocus object="CipherFeature" object-type="object"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;stop()" expr-type="expr"/>
+    </method>
+  <method name="doButton20MouseUpLeft">
+      <phpLine expr="$this-&gt;dtmfsound-&gt;stop()" expr-type="expr"/>
+      <elementFocus object="CipherFeature" object-type="object"/>
+    </method>
+  <method name="doButton21MouseUpLeft">
+      <phpLine expr="$this-&gt;dtmfsound-&gt;stop()" expr-type="expr"/>
+      <elementFocus object="CipherFeature" object-type="object"/>
+    </method>
+  <method name="doRectMouseEnter">
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doImageClick">
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  <method name="doImageMouseEnter">
+      <elementFocus object="FeatureButton" object-type="object"/>
+    </method>
+  </class>
+</root>

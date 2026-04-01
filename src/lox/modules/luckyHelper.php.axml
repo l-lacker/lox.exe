@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="luckyHelper">
+    
+  
+  
+  
+  <method name="doLuckym1Action">
+      <ifVar method="equals" method-type="" name="luckymode" name-type="" not="" not-type="" value="fiveslides" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="luckyslide" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;image3-&gt;image = $this-&gt;tempimg1-&gt;image" expr-type="expr"/>
+      <setVar name="luckyslide" name-type="" value="2" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyslide" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;image3-&gt;image = $this-&gt;tempimg2-&gt;image" expr-type="expr"/>
+      <setVar name="luckyslide" name-type="" value="3" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyslide" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;image3-&gt;image = $this-&gt;tempimg3-&gt;image" expr-type="expr"/>
+      <setVar name="luckyslide" name-type="" value="4" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyslide" name-type="" not="" not-type="" value="4" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;image3-&gt;image = $this-&gt;tempimg4-&gt;image" expr-type="expr"/>
+      <setVar name="luckyslide" name-type="" value="5" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyslide" name-type="" not="" not-type="" value="5" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;image3-&gt;image = $this-&gt;tempimg5-&gt;image" expr-type="expr"/>
+      <setVar name="luckyslide" name-type="" value="" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <closeBlock/>
+    </method>
+  <method name="doCommentsAction">
+      <ifVar method="equals" method-type="" name="luckycomms" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="labelAlt" object-type="object" path="https://l-lacker.ru/app/lucky/randcomm.php" path-type="string" sync="" sync-type=""/>
+      <stopMedia id="commpop" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="commpop" id-type="string" source="res://.data/audio/pop.mp3" source-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doLuckyHelperAction">
+      <ifVar method="equals" method-type="" name="luckymode" name-type="" not="" not-type="" value="gameend" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckymode" name-type="" value="" value-type="string"/>
+      <elementHide object="LABEL_count" object-type="object"/>
+      <elementHide object="LABEL_truequests" object-type="object"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <elementLoadContent object="image3" object-type="object" path="res://.data/img/trans.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="imageAlt" object-type="object" path="res://.data/img/llucky-overlay6.png" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="button9" object-type="object" relative="" relative-type="" value="Включить" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="panel" object-type="object" value="0" value-type="float"/>
+      <setVar name="luckycomms" name-type="" value="0" value-type="string"/>
+      <setVar name="unlockluckystore" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;playerMain-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMainPitch-&gt;stop()" expr-type="expr"/>
+      <playMedia id="luckyendmasic" id-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckymode" name-type="" not="" not-type="" value="ingameprepare" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckymode" name-type="" value="" value-type="string"/>
+      <appendVar asString="" asString-type="" name="luckyqc" name-type="" value="1" value-type="string"/>
+      <setVar name="luckyprikol1" name-type="" value="'https://l-lacker.ru/app/lucky/bg/'.$GLOBALS['luckyqc'].'.png'" value-type="expr"/>
+      <elementLoadContent object="tempimg5" object-type="object" path="$GLOBALS['luckyprikol1']" path-type="expr" sync="" sync-type=""/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;image3-&gt;image = $this-&gt;tempimg5-&gt;image" expr-type="expr"/>
+      <elementLoadContent object="luckycount" object-type="variable" path="https://l-lacker.ru/app/lucky/config.php?mode=main&amp;get=count" path-type="string" sync="" sync-type=""/>
+      <setVar name="luckycount2" name-type="" value="luckycount" value-type="variable"/>
+      <closeBlock/>
+      <phpLine expr="$luckyprikol11 = 'https://l-lacker.ru/app/lucky/voice/'.$GLOBALS['luckyqc'].'.mp3'" expr-type="expr"/>
+      <setVar name="luckyprikol11" name-type="" value="luckyprikol11" value-type="variable"/>
+      <phpLine expr="$this-&gt;playerVoice-&gt;open($luckyprikol11)" expr-type="expr"/>
+      <elementLoadContent object="luckyqlab_future" object-type="variable" path="'https://l-lacker.ru/app/lucky/config.php?mode=gq&amp;n='.$GLOBALS['luckyqc'].'&amp;subq=0'" path-type="expr" sync="" sync-type=""/>
+      <elementLoadContent object="luckyqansw1_future" object-type="variable" path="'https://l-lacker.ru/app/lucky/config.php?mode=gq&amp;n='.$GLOBALS['luckyqc'].'&amp;subq=1'" path-type="expr" sync="" sync-type=""/>
+      <elementLoadContent object="luckyqansw2_future" object-type="variable" path="'https://l-lacker.ru/app/lucky/config.php?mode=gq&amp;n='.$GLOBALS['luckyqc'].'&amp;subq=2'" path-type="expr" sync="" sync-type=""/>
+      <elementLoadContent object="luckyqansw3_future" object-type="variable" path="'https://l-lacker.ru/app/lucky/config.php?mode=gq&amp;n='.$GLOBALS['luckyqc'].'&amp;subq=3'" path-type="expr" sync="" sync-type=""/>
+      <phpLine expr="$GLOBALS['luckyqlab_future'] = $luckyqlab_future" expr-type="expr"/>
+      <phpLine expr="$GLOBALS['luckyqansw1_future'] = $luckyqansw1_future" expr-type="expr"/>
+      <phpLine expr="$GLOBALS['luckyqansw2_future'] = $luckyqansw2_future" expr-type="expr"/>
+      <phpLine expr="$GLOBALS['luckyqansw3_future'] = $luckyqansw3_future" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckymode" name-type="" not="" not-type="" value="ingame" value-type="string"/>
+      <openBlock/>
+      <setVar name="llucky_sbrosfreq" name-type="" value="1" value-type="string"/>
+      <setVar name="llucky_madesbros" name-type="" value="0" value-type="string"/>
+      <elementEnabledOn object="button_answ1" object-type="object"/>
+      <elementEnabledOn object="button_answ2" object-type="object"/>
+      <elementEnabledOn object="button_answ3" object-type="object"/>
+      <elementShow object="button_answ1" object-type="object"/>
+      <elementShow object="button_answ2" object-type="object"/>
+      <elementShow object="button_answ3" object-type="object"/>
+      <elementHide object="panel_infoanswer" object-type="object"/>
+      <setVar name="luckymode" name-type="" value="" value-type="string"/>
+      <setVar name="lucky_selectedansw" name-type="" value="" value-type="string"/>
+      <setVar name="lucky_kostyl" name-type="" value="false" value-type="string"/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckytruanswer" name-type="" value="3" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckytruanswer" name-type="" value="3" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckytruanswer" name-type="" value="3" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="4" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckytruanswer" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="5" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckytruanswer" name-type="" value="2" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="6" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckytruanswer" name-type="" value="3" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="7" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckytruanswer" name-type="" value="2" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="8" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckytruanswer" name-type="" value="3" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="9" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckytruanswer" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="10" value-type="string"/>
+      <openBlock/>
+      <openUrlMedia autoplay="" autoplay-type="flag" id="luckyendmasic" id-type="string" source="https://l-lacker.ru/app/lucky/game-win.mp3" source-type="string"/>
+      <setVar name="luckytruanswer" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+      <phpLine expr="$luckyprikol122 = 'https://l-lacker.ru/app/lucky/voice/'.$GLOBALS['luckyqc'].'q2.mp3'" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoiceQ2-&gt;open($luckyprikol122)" expr-type="expr"/>
+      <phpLine expr="$luckyprikol12 = 'https://l-lacker.ru/app/lucky/voice/'.$GLOBALS['luckyqc'].'q.mp3'" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoiceQ-&gt;open($luckyprikol12)" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="llucky_boost2" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;playerVoice-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoice-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$luckyprikol2 = $this-&gt;playerVoice-&gt;media-&gt;duration" expr-type="expr"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="$luckyprikol2 = '10'" expr-type="expr"/>
+      <closeBlock/>
+      <sleep sync="" sync-type="" value="luckyprikol2" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="llucky_madesbros" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <setVar name="llucky_sbrosfreq" name-type="" value="0" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="luckyquest" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="luckyquest" id-type="string" source="res://.data/audio/lucky-newquestion.mp3" source-type="string"/>
+      <elementSetY object="OVERALL_panelquestion" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetText object="QUESTION_label" object-type="object" relative="" relative-type="" value="luckyqlab_future" value-type="globalVariable"/>
+      <elementSetText object="ANSWER1_label" object-type="object" relative="" relative-type="" value="luckyqansw1_future" value-type="globalVariable"/>
+      <elementSetText object="ANSWER2_label" object-type="object" relative="" relative-type="" value="luckyqansw2_future" value-type="globalVariable"/>
+      <elementSetText object="ANSWER3_label" object-type="object" relative="" relative-type="" value="luckyqansw3_future" value-type="globalVariable"/>
+      <elementShow object="OVERALL_panelquestion" object-type="object"/>
+      <setVar name="luckyprikol4" name-type="" value="'Отвечено на '.$GLOBALS['luckyqc'].' вопросов из '.$GLOBALS['luckycount2'].''" value-type="expr"/>
+      <elementSetText object="LABEL_truequests" object-type="object" relative="" relative-type="" value="luckyprikol4" value-type="globalVariable"/>
+      <phpLine expr="$this-&gt;playerTicks-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerTicks-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoiceQ-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoiceQ-&gt;play()" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="6000" value-type="integer"/>
+      <elementLoadContent object="luckylocalansw" object-type="variable" path="'https://l-lacker.ru/app/lucky/config.php?mode=gq&amp;n='.$GLOBALS['luckyqc'].'&amp;subq=truansw'" path-type="expr" sync="" sync-type=""/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="1" not-type="" value="10" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckymode" name-type="" value="ingameprepare" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="10" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckymode" name-type="" value="" value-type="string"/>
+      <appendVar asString="" asString-type="" name="luckyqc" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <sleep sync="" sync-type="" value="4000" value-type="integer"/>
+      <elementHide object="OVERALL_panelquestion" object-type="object"/>
+      <ifVar method="equals" method-type="" name="llucky_boost2" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;playerVoiceQ2-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoiceQ2-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$luckyprikol3 = $this-&gt;playerVoiceQ2-&gt;media-&gt;duration" expr-type="expr"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="$luckyprikol3 = '10'" expr-type="expr"/>
+      <closeBlock/>
+      <sleep sync="" sync-type="" value="luckyprikol3" value-type="variable"/>
+      <setVar name="luckymode" name-type="" value="answget" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckymode" name-type="" not="" not-type="" value="answget" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="llucky_boost3" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckymode" name-type="" value="" value-type="string"/>
+      <ifVar method="equals" method-type="" name="lucky_kostyl" name-type="" not="" not-type="" value="true" value-type="string"/>
+      <openBlock/>
+      <elementShow object="panel_infoanswer" object-type="object"/>
+      <elementLoadContent object="image13" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="label_infoanswer" object-type="object" relative="" relative-type="" value="Вы ответили верно!" value-type="string"/>
+      <elementShow object="OVERALL_panelquestion" object-type="object"/>
+      <stopMedia id="luckyressound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="luckyressound" id-type="string" source="res://.data/audio/lucky-correct.mp3" source-type="string"/>
+      <appendVar asString="" asString-type="" name="lucky_points" name-type="" value="25" value-type="string"/>
+      <phpLine expr="$lucky_points2 = $GLOBALS['lucky_points']" expr-type="expr"/>
+      <setVar name="lucky_points_text" name-type="" value="Счёт: " value-type="string"/>
+      <appendVar asString="1" asString-type="" name="lucky_points_text" name-type="" value="lucky_points2" value-type="variable"/>
+      <elementSetText object="LABEL_count" object-type="object" relative="" relative-type="" value="lucky_points_text" value-type="globalVariable"/>
+      <setVar name="lucky_store_points_text" name-type="" value="Ваш счёт: " value-type="string"/>
+      <appendVar asString="1" asString-type="" name="lucky_store_points_text" name-type="" value="lucky_points2" value-type="variable"/>
+      <appendVar asString="1" asString-type="" name="lucky_store_points_text" name-type="" value=" очков" value-type="string"/>
+      <elementSetText object="store_ochcount" object-type="object" relative="" relative-type="" value="lucky_store_points_text" value-type="globalVariable"/>
+      <phpLine expr="$this-&gt;image3-&gt;image = $this-&gt;tempimg5-&gt;image" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <elementHide object="OVERALL_panelquestion" object-type="object"/>
+      <elementHide object="panel_infoanswer" object-type="object"/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="11" value-type="integer"/>
+      <openBlock/>
+      <setVar name="luckymode" name-type="" value="gameend" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="luckymode" name-type="" value="ingame" value-type="string"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="lucky_kostyl" name-type="" not="" not-type="" value="false" value-type="string"/>
+      <openBlock/>
+      <elementShow object="panel_infoanswer" object-type="object"/>
+      <elementLoadContent object="image13" object-type="object" path="res://.data/img/lsyst-fail.png" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="label_infoanswer" object-type="object" relative="" relative-type="" value="Вы ответили неверно! :(" value-type="string"/>
+      <elementShow object="OVERALL_panelquestion" object-type="object"/>
+      <stopMedia id="luckyressound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="luckyressound" id-type="string" source="res://.data/audio/lucky-incorrect.mp3" source-type="string"/>
+      <phpLine expr="$this-&gt;image3-&gt;image = $this-&gt;tempimg5-&gt;image" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <elementHide object="OVERALL_panelquestion" object-type="object"/>
+      <elementHide object="panel_infoanswer" object-type="object"/>
+      <ifVar method="equals" method-type="" name="luckyqc" name-type="" not="" not-type="" value="11" value-type="integer"/>
+      <openBlock/>
+      <setVar name="luckymode" name-type="" value="gameend" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="luckymode" name-type="" value="ingame" value-type="string"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementShow object="panel_infoanswer" object-type="object"/>
+      <elementLoadContent object="image13" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="label_infoanswer" object-type="object" relative="" relative-type="" value="Вы ответили верно!" value-type="string"/>
+      <elementShow object="OVERALL_panelquestion" object-type="object"/>
+      <stopMedia id="luckyressound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="luckyressound" id-type="string" source="res://.data/audio/lucky-correct.mp3" source-type="string"/>
+      <appendVar asString="" asString-type="" name="lucky_points" name-type="" value="25" value-type="string"/>
+      <phpLine expr="$lucky_points2 = $GLOBALS['lucky_points']" expr-type="expr"/>
+      <setVar name="lucky_points_text" name-type="" value="Счёт: " value-type="string"/>
+      <appendVar asString="1" asString-type="" name="lucky_points_text" name-type="" value="lucky_points2" value-type="variable"/>
+      <elementSetText object="LABEL_count" object-type="object" relative="" relative-type="" value="lucky_points_text" value-type="globalVariable"/>
+      <setVar name="lucky_store_points_text" name-type="" value="Ваш счёт: " value-type="string"/>
+      <appendVar asString="1" asString-type="" name="lucky_store_points_text" name-type="" value="lucky_points2" value-type="variable"/>
+      <appendVar asString="1" asString-type="" name="lucky_store_points_text" name-type="" value=" очков" value-type="string"/>
+      <elementSetText object="store_ochcount" object-type="object" relative="" relative-type="" value="lucky_store_points_text" value-type="globalVariable"/>
+      <phpLine expr="$this-&gt;image3-&gt;image = $this-&gt;tempimg5-&gt;image" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="200" value-type="integer"/>
+      <elementHide object="OVERALL_panelquestion" object-type="object"/>
+      <elementHide object="panel_infoanswer" object-type="object"/>
+      <setVar name="luckymode" name-type="" value="gameend" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+    </method>
+  
+  
+  <method name="doTimerAction">
+      <phpLine expr="$volumeow2 = $GLOBALS['vt_volcol']/100" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoice-&gt;volume = $volumeow2" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoiceQ-&gt;volume = $volumeow2" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoiceQ2-&gt;volume = $volumeow2" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerTicks-&gt;volume = $volumeow2" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="luckypitched" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$volumeow = 35/$GLOBALS['vt_volcol']" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMainPitch-&gt;volume = 0.0" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMain-&gt;volume = $volumeow" expr-type="expr"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="$volumeow = 35/$GLOBALS['vt_volcol']" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMain-&gt;volume = 0.0" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMainPitch-&gt;volume = $volumeow" expr-type="expr"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

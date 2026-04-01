@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="lcpush">
+    
+  
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAction">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel6" object-type="object" x="-256" x-type="float" y="0" y-type="float"/>
+      <elementSetY object="panel" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel" object-type="object" x="-272" x-type="float" y="0" y-type="float"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  <method name="doButton5Action">
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel6" object-type="object" x="256" x-type="float" y="0" y-type="float"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel" object-type="object" x="272" x-type="float" y="0" y-type="float"/>
+    </method>
+  
+  
+  <method name="doButton7Action">
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel6" object-type="object" x="256" x-type="float" y="0" y-type="float"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panelAlt" object-type="object" x="272" x-type="float" y="0" y-type="float"/>
+    </method>
+  <method name="doButtonAltAction">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel6" object-type="object" x="-256" x-type="float" y="0" y-type="float"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panelAlt" object-type="object" x="-272" x-type="float" y="0" y-type="float"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  <method name="doButton3Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel6" object-type="object" x="-256" x-type="float" y="0" y-type="float"/>
+      <elementSetY object="panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel3" object-type="object" x="-272" x-type="float" y="0" y-type="float"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  
+  <method name="doButton4Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel6" object-type="object" x="-256" x-type="float" y="0" y-type="float"/>
+      <elementSetY object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel4" object-type="object" x="-272" x-type="float" y="0" y-type="float"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  <method name="doButton10Action">
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel6" object-type="object" x="256" x-type="float" y="0" y-type="float"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel4" object-type="object" x="272" x-type="float" y="0" y-type="float"/>
+    </method>
+  <method name="doButton8Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="lc_needhelp" name-type="" value="1" value-type="string"/>
+      <sleep sync="" sync-type="" value="500" value-type="integer"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  <method name="doButton9Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="lc_needhelp" name-type="" value="1" value-type="string"/>
+      <sleep sync="" sync-type="" value="500" value-type="integer"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  <method name="doButton6Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panelAlt" object-type="object" x="-256" x-type="float" y="0" y-type="float"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Сообщение успешно отправлено!" value-type="string"/>
+      <elementSetY object="panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel3" object-type="object" x="-272" x-type="float" y="0" y-type="float"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  </class>
+</root>

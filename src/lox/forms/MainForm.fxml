@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768" prefWidth="1024" styleClass="">
+  <children>
+    <ImageViewEx AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" autoSize="false" centered="false" focusTraversable="false" height="768" id="xp_loadscr" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="1024">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <FragmentPane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER" focusTraversable="false" id="screensaver" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="768" prefWidth="1024" spacing="0" styleClass="fragment-pane "/>
+    <Panel AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" backgroundColor="#ffffff" borderColor="#ffffff" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="whiteonlyfg" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="768" prefWidth="1024" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children/>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <LabelEx AnchorPane.bottomAnchor="31" alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="w93warning" layoutX="8" layoutY="720" prefHeight="15.9609375" prefWidth="240.767578125" styleClass="label " text="Нажмите Ctrl+M для возвращения в lox.exe" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Italic" size="12"/>
+      </font>
+    </LabelEx>
+    <WebView AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="true" id="w93browser" layoutX="0" layoutY="0" prefHeight="768" prefWidth="1024"/>
+    <FragmentPane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER" focusTraversable="false" id="fragment15" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="768" prefWidth="1024" spacing="0" styleClass="fragment-pane "/>
+    <ImageViewEx AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" autoSize="false" centered="false" focusTraversable="false" height="768" id="wallpaper" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="1024">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <FragmentPane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" alignment="CENTER" focusTraversable="false" id="mydesktop" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="768" prefWidth="1024" spacing="0" styleClass="fragment-pane "/>
+    <Panel AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" backgroundColor="#00000080" borderColor="#00000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="mydesktopsemihalf" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="768" prefWidth="1024" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children/>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <ImageViewEx AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="64" autoSize="false" centered="false" focusTraversable="false" height="30" id="image3" layoutX="0" layoutY="738" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="960">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <ImageViewEx AnchorPane.rightAnchor="16" autoSize="true" centered="false" focusTraversable="false" height="24" id="nointernet2" layoutX="984" layoutY="16" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="24">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <LabelEx AnchorPane.rightAnchor="48" alignment="TOP_RIGHT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="nointernet1" layoutX="712" layoutY="19" prefHeight="24" prefWidth="264" styleClass="label " text="Некоторый контент не загружен" textAlignment="RIGHT" textFill="#ffffff" underline="false" wrapText="true">
+      <font>
+        <Font name="Arial" size="13"/>
+      </font>
+    </LabelEx>
+    <ImageViewEx AnchorPane.bottomAnchor="0" autoSize="false" centered="false" focusTraversable="false" height="30" id="startOpen" layoutX="0" layoutY="738" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="112">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" hoverImage=".data/img/2-start-naveden.png" id="data-startOpen" image=".data/img/2-start.png" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-imageAlt" image=".data/img/2-tray.png" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-image3" image=".data/img/2-menu.png" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-label" visible=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-PODSKAZKA" visible=""/>
+    <TabPaneEx AnchorPane.bottomAnchor="30" focusTraversable="true" id="startMenu" layoutX="0" layoutY="202" prefHeight="536" prefWidth="728" styleClass="tab-pane " tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Пуск">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="518" prefWidth="728" styleClass="">
+              <children>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="516" id="image" layoutX="0" layoutY="2" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="728">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="516" id="calendar_main" layoutX="0" layoutY="2" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="728">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-calendar_main" image=".data/img/lox-calendar.png" visible="1"/>
+                <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label39" layoutX="617" layoutY="20" prefHeight="29" prefWidth="88" styleClass="label " text="00:00" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="16"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label39" visible="1"/>
+                <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment12" layoutX="465" layoutY="369" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="92" prefWidth="231" spacing="0" styleClass="fragment-pane "/>
+                <Data content="lightmodenote" cursor="DEFAULT" enabled="1" id="data-fragment12" visible=""/>
+                <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/lox-menu-inetproblems.jpg" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Интернет">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" styleClass="">
+              <children>
+                <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment7" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" spacing="0" styleClass="fragment-pane "/>
+                <Data content="lightmodenote" cursor="DEFAULT" enabled="1" id="data-fragment7" visible="1"/>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="izol_run" layoutX="48" layoutY="32" prefHeight="32" prefWidth="152" styleClass="button " text="Запустить Интернет" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-izol_run" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="MeChat">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="520" prefWidth="728" styleClass="">
+              <children>
+                <Rectangle arcHeight="0" arcWidth="0" fill="#ffffff" focusTraversable="false" height="520" id="rect4" layoutX="0" layoutY="0" stroke="#ffffff" strokeType="INSIDE" strokeWidth="2" styleClass="" width="728"/>
+                <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="16" layoutY="16" prefHeight="31.921875" prefWidth="86.16796875" styleClass="label " text="MeChat" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Bold Italic" size="24"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+                <Data cursor="DEFAULT" enabled="1" id="data-rect4" visible="1"/>
+                <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment14" layoutX="16" layoutY="56" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="440" prefWidth="696" spacing="0" styleClass="fragment-pane "/>
+                <Data content="mechat" cursor="DEFAULT" enabled="1" id="data-fragment14" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Патефон">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="520" prefWidth="728" styleClass="">
+              <children>
+                <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment16" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="520" prefWidth="728" spacing="0" styleClass="fragment-pane "/>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="520" id="image6" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="728">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data content="lightmodenote" cursor="DEFAULT" enabled="1" id="data-fragment16" visible="1"/>
+                <Data cursor="DEFAULT" enabled="" id="data-image6" image=".data/img/alotech-phone-b.png" visible="1"/>
+                <LabelEx alignment="TOP_RIGHT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="504" layoutY="16" prefHeight="88" prefWidth="208" styleClass="label " text="новый тип устройства в lox.exe&#10;(альфа-версия)" textAlignment="RIGHT" textFill="#333333" underline="false" wrapText="true">
+                  <font>
+                    <Font name="System Italic" size="12"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="pateph_run" layoutX="288" layoutY="64" prefHeight="32" prefWidth="152" styleClass="button " text="Запустить Патефон" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-pateph_run" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Телефон">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" styleClass="">
+              <children>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="515" id="image20" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="728">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <FragmentPane alignment="CENTER" focusTraversable="false" id="phoneForm" layoutX="8" layoutY="8" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="502" prefWidth="712" spacing="0" styleClass="fragment-pane "/>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="515" id="image_torch" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="728">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="70" id="image8" layoutX="624" layoutY="24" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="78">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-image8" image=".data/img/lox-camcpu-logo.png" visible="1"/>
+                <Data content="lightmodenote" cursor="DEFAULT" enabled="1" id="data-phoneForm" visible="1"/>
+                <Data cursor="DEFAULT" enabled="1" id="data-image20" image=".data/img/alotech-phone.png" visible="1"/>
+                <Data cursor="DEFAULT" enabled="" id="data-image_torch" image=".data/img/vovatech-phone-torch-enabled.png" visible=""/>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="atph_run" layoutX="56" layoutY="40" prefHeight="32" prefWidth="152" styleClass="button " text="Запустить Телефон" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-atph_run" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Банк">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" styleClass="">
+              <children>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="144" id="image9" layoutX="496" layoutY="32" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="200">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-image9" image=".data/img/cucumber-003.png" visible="1"/>
+                <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label6" layoutX="16" layoutY="16" prefHeight="56" prefWidth="352" styleClass="label " text="Волшебный заработок" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Bold" size="25"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label6" visible="1"/>
+                <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label7" layoutX="16" layoutY="56" prefHeight="40" prefWidth="264" styleClass="label " text="Ваш баланс:" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="15"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label7" visible="1"/>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="272" id="image10" layoutX="16" layoutY="96" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="456">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-image10" image=".data/img/LRisfXx.jpeg" visible="1"/>
+                <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="balance" layoutX="184" layoutY="288" prefHeight="56" prefWidth="264" styleClass="label " text="Ты бомж рублей" textAlignment="LEFT" textFill="#2e8026" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="34"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-balance" visible="1"/>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="tereb1" layoutX="480" layoutY="200" prefHeight="56" prefWidth="240" styleClass="button " text="Теребить" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Bold" size="25"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-tereb1" visible="1"/>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="240" id="image11" layoutX="480" layoutY="264" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="240">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-image11" image=".data/img/h3YnoMr.png" visible="1"/>
+                <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label8" layoutX="480" layoutY="272" prefHeight="34" prefWidth="240" styleClass="label " text="ДОСТИЖЕНИЯ" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="27"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label8" visible="1"/>
+                <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label9" layoutX="488" layoutY="312" prefHeight="48" prefWidth="48" styleClass="label " text="100" textAlignment="LEFT" textFill="#00ff00" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Bold" size="20"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label9" visible="1"/>
+                <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label10" layoutX="536" layoutY="312" prefHeight="48" prefWidth="176" styleClass="label " text="Открывается кнопка сброса заработка" textAlignment="LEFT" textFill="#00ff00" underline="false" wrapText="true">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label10" visible="1"/>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="b_Sbros" layoutX="488" layoutY="344" prefHeight="24" prefWidth="224" styleClass="button " text="Сброс" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="" id="data-b_Sbros" visible="1"/>
+                <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label11" layoutX="488" layoutY="376" prefHeight="48" prefWidth="56" styleClass="label " text="1000" textAlignment="LEFT" textFill="#00ff00" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Bold" size="20"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label11" visible="1"/>
+                <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label12" layoutX="544" layoutY="376" prefHeight="40" prefWidth="152" styleClass="label " text="Добавляется тёмная тема для командной строки" textAlignment="LEFT" textFill="#00ff00" underline="false" wrapText="true">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label12" visible="1"/>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="b_Zakladki" layoutX="488" layoutY="408" prefHeight="25" prefWidth="224" styleClass="button " text="Добавить" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="13"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="" id="data-b_Zakladki" visible="1"/>
+                <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label13" layoutX="488" layoutY="440" prefHeight="48" prefWidth="64" styleClass="label " text="10000" textAlignment="LEFT" textFill="#00ff00" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Bold" size="20"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label13" visible="1"/>
+                <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label14" layoutX="560" layoutY="440" prefHeight="40" prefWidth="152" styleClass="label " text="Можно вывести деньги на реальный счёт" textAlignment="LEFT" textFill="#00ff00" underline="false" wrapText="true">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label14" visible="1"/>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="buttonAlt" layoutX="488" layoutY="472" prefHeight="25" prefWidth="224" styleClass="button " text="Вывести деньги                 " textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="13"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="" id="data-buttonAlt" visible="1"/>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="20" id="image12" layoutX="619" layoutY="474" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="72">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-image12" image=".data/img/NIdWQwm.png" visible="1"/>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="64" id="sorry1" layoutX="264" layoutY="280" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="64">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-sorry1" image=".data/img/AWtq8Mo.png" visible=""/>
+                <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="sorry2" layoutX="336" layoutY="288" prefHeight="64" prefWidth="96" styleClass="label " text="Невозможно уместить в поле более 4-х символов" textAlignment="LEFT" textFill="#2e8026" underline="false" wrapText="true">
+                  <font>
+                    <Font name="System Regular" size="11"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-sorry2" visible=""/>
+                <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="bmAdded" layoutX="488" layoutY="412" prefHeight="17" prefWidth="224" styleClass="label " text="Добавлено на весь сеанс; проверьте!" textAlignment="LEFT" textFill="#ffff4d" underline="false" wrapText="true">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-bmAdded" visible=""/>
+                <Rectangle arcHeight="0" arcWidth="0" fill="#cce6ff00" focusTraversable="false" height="64" id="rectAlt" layoutX="488" layoutY="120" stroke="#ff0000" strokeType="INSIDE" strokeWidth="2" styleClass="" width="104"/>
+                <Data cursor="DEFAULT" enabled="1" id="data-rectAlt" visible="1"/>
+                <Rectangle arcHeight="0" arcWidth="0" fill="#e4e9ee" focusTraversable="false" height="64" id="terebitsa1" layoutX="480" layoutY="192" stroke="#e4e9ee" strokeType="INSIDE" strokeWidth="2" styleClass="" width="240"/>
+                <Data cursor="DEFAULT" enabled="1" id="data-terebitsa1" visible=""/>
+                <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="terebitsa2" layoutX="488" layoutY="208" prefHeight="16" prefWidth="160" styleClass="label " text="Теребится..." textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="11"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-terebitsa2" visible=""/>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="240" id="magicachievements" layoutX="480" layoutY="264" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="240">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-magicachievements" image=".data/img/magic-achievements.png" visible=""/>
+                <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label37" layoutX="160" layoutY="64" prefHeight="21.28125" prefWidth="309.5078125" styleClass="label " text="Автокликер включен!!! (1 клик/10 сек)" textAlignment="LEFT" textFill="#ff0000" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Bold Italic" size="16"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label37" visible=""/>
+                <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel" layoutX="480" layoutY="16" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="240" prefWidth="240" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+                  <children>
+                    <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="160" id="image7" layoutX="40" layoutY="40" mosaic="false" mosaicGap="0" proportional="false" rotate="342.43902439024" stretch="true" styleClass="" textFill="#000000" width="168">
+                      <font>
+                        <Font name="System Regular" size="12"/>
+                      </font>
+                    </ImageViewEx>
+                    <Data cursor="DEFAULT" enabled="1" id="data-image7" image=".data/img/cucumber-003.png" visible="1"/>
+                    <Rectangle arcHeight="0" arcWidth="0" fill="#cce6ff00" focusTraversable="false" height="64" id="rect5" layoutX="32" layoutY="160" stroke="#ff0000" strokeType="INSIDE" strokeWidth="2" styleClass="" width="104"/>
+                    <Data cursor="DEFAULT" enabled="1" id="data-rect5" visible="1"/>
+                  </children>
+                  <titleFont>
+                    <Font name="System Regular" size="12"/>
+                  </titleFont>
+                </Panel>
+                <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+                <Hyperlink alignment="CENTER_RIGHT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="link" layoutX="328" layoutY="16" prefHeight="16" prefWidth="144" styleClass="hyperlink " text="hack mode" textAlignment="RIGHT" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Hyperlink>
+                <Data cursor="DEFAULT" enabled="1" id="data-link" visible=""/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="CMD">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="520" prefWidth="728" styleClass="">
+              <children>
+                <Rectangle arcHeight="0" arcWidth="0" fill="#000000" focusTraversable="false" height="520" id="cmd_darkmode" layoutX="0" layoutY="0" stroke="#000000" strokeType="INSIDE" strokeWidth="2" styleClass="" width="728"/>
+                <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="hacktext" layoutX="16" layoutY="64" prefHeight="432" prefWidth="696" styleClass="label " text="lox (ver.9)&#10;Copyright l-lacker, 2022&#10;&#10;Добро пожаловать в командную строку!&#10;Здесь всё просто — вводишь команды и жмёшь Enter.&#10;Для получения списка команд введи help.&#10;&#10;Лайфхак:&#10;Для перехода к последней команде жми стрелку вверх&#10;(работает, если поле не пустое)." textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+                  <font>
+                    <Font name="System Regular" size="14"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-hacktext" visible="1"/>
+                <Data cursor="DEFAULT" enabled="1" id="data-hackedit" visible="1"/>
+                <Data cursor="DEFAULT" enabled="1" id="data-hackenter" visible="1"/>
+                <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="hackedit" layoutX="16" layoutY="24" prefColumnCount="12" prefHeight="32" prefWidth="592" promptText="Команды отличаются от виндовых, поэтому вводите help..." styleClass="text-input text-field " text="">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </TextField>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="hackenter" layoutX="616" layoutY="24" prefHeight="32" prefWidth="96" styleClass="button " text="Ввод" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-cmd_darkmode" visible=""/>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button4" layoutX="16" layoutY="112" prefHeight="32" prefWidth="144" styleClass="button " text="Извиниться" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Bold" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-button4" visible=""/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Куранир">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" styleClass="">
+              <children>
+                <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment8" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" spacing="0" styleClass="fragment-pane "/>
+                <Data content="lightmodenote" cursor="DEFAULT" enabled="1" id="data-fragment8" visible="1"/>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="kur_run" layoutX="48" layoutY="32" prefHeight="32" prefWidth="152" styleClass="button " text="Запустить Куранир" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-kur_run" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Игра">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" styleClass="">
+              <children>
+                <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment3" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" spacing="0" styleClass="fragment-pane "/>
+                <Data content="game" cursor="DEFAULT" enabled="1" id="data-fragment3" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="TrueИгра">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" styleClass="">
+              <children>
+                <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment9" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" spacing="0" styleClass="fragment-pane "/>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="516" id="image5" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="728">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-image5" image=".data/img/z-player.png" visible=""/>
+                <Data content="allnewgame" cursor="DEFAULT" enabled="1" id="data-fragment9" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Магазин">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" styleClass="">
+              <children>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="128" id="magicstoreimage" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="728">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-magicstoreimage" image=".data/img/magic-store.png" visible="1"/>
+                <Separator focusTraversable="false" id="separator8" layoutX="264" layoutY="128" orientation="VERTICAL" prefHeight="384" prefWidth="8" styleClass="separator "/>
+                <Data cursor="DEFAULT" enabled="1" id="data-separator8" visible="1"/>
+                <Data cursor="DEFAULT" enabled="1" id="data-balance_store" visible="1"/>
+                <FragmentPane alignment="CENTER" focusTraversable="false" id="fragmentAlt" layoutX="0" layoutY="128" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="384" prefWidth="728" spacing="0" styleClass="fragment-pane "/>
+                <Data content="store" cursor="DEFAULT" enabled="1" id="data-fragmentAlt" visible="1"/>
+                <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="balance_store" layoutX="8" layoutY="160" prefHeight="23.94140625" prefWidth="26.0419921875" styleClass="label " text="0 ₽" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Bold" size="18"/>
+                  </font>
+                </LabelEx>
+                <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="384" id="image4" layoutX="0" layoutY="128" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="728">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-image4" image=".data/img/card-use.png" visible=""/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Мой ПК">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" styleClass="">
+              <children>
+                <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment4" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" spacing="0" styleClass="fragment-pane "/>
+                <Data content="lightmodenote" cursor="DEFAULT" enabled="1" id="data-fragment4" visible="1"/>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="mypc_run" layoutX="48" layoutY="32" prefHeight="32" prefWidth="152" styleClass="button " text="Запустить ПК-тест" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-mypc_run" visible="1"/>
+                <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button" layoutX="360" layoutY="8" prefHeight="32" prefWidth="360" styleClass="button " text="Очистить кэш lox.exe для снижения потребления ОЗУ" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Bold" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-button" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Темы">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" styleClass="">
+              <children>
+                <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment6" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="516" prefWidth="728" spacing="0" styleClass="fragment-pane "/>
+                <Data content="themes" cursor="DEFAULT" enabled="1" id="data-fragment6" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPaneEx>
+    <Data cursor="DEFAULT" draggable="NONE" enabled="1" id="data-startMenu" visible=""/>
+    <ImageViewEx AnchorPane.bottomAnchor="-2" AnchorPane.rightAnchor="-2" autoSize="false" centered="false" focusTraversable="false" height="32" id="imageAlt" layoutX="954" layoutY="738" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="72">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-startClose" image=".data/img/2-start-clicked.png" visible=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-image13" image=".data/img/noti-2.png" visible=""/>
+    <Data clickImage=".data/img/noticlose3.png" cursor="DEFAULT" enabled="1" hoverImage=".data/img/noticlose2.png" id="data-noticloseButton" image=".data/img/noticlose.png" visible=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-nointernet1" visible="1"/>
+    <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment" layoutX="1048" layoutY="368" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="176" prefWidth="432" spacing="0" styleClass="fragment-pane "/>
+    <Data content="cheat" cursor="DEFAULT" enabled="" id="data-fragment" visible=""/>
+    <Rectangle arcHeight="0" arcWidth="0" fill="#ffffff00" focusTraversable="false" height="30" id="rect" layoutX="1048" layoutY="32" stroke="#ff0000" strokeType="INSIDE" strokeWidth="2" styleClass="" width="72"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rect" visible=""/>
+    <ImageViewEx autoSize="true" centered="false" focusTraversable="false" height="169" id="copyingfiles" layoutX="1048" layoutY="560" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="381">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-copyingfiles" image=".data/img/file-copying.png" visible=""/>
+    <ImageViewEx autoSize="true" centered="false" focusTraversable="false" height="21" id="wincursor" layoutX="1048" layoutY="216" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="12">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-wincursor" image=".data/img/windows-cursor.png" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-nointernet2" image=".data/img/cloud-off-outline.png" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-wallpaper" image=".data/img/lox-alpha-wallpaper.png" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label47" layoutX="1128" layoutY="32" prefHeight="16" prefWidth="96" styleClass="label " text="test" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="" id="data-label47" visible=""/>
+    <Data content="ctrlm" cursor="DEFAULT" enabled="1" id="data-CtrlMpanel" visible=""/>
+    <ImageViewEx AnchorPane.bottomAnchor="8" AnchorPane.rightAnchor="16" autoSize="false" centered="false" focusTraversable="false" height="104" id="image13" layoutX="760" layoutY="656" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="248">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <LabelEx AnchorPane.bottomAnchor="88" AnchorPane.rightAnchor="46" alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="794" layoutY="664" prefHeight="16" prefWidth="184" styleClass="label " text="Подсказка" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="11"/>
+      </font>
+    </LabelEx>
+    <LabelEx AnchorPane.bottomAnchor="38" AnchorPane.rightAnchor="31" alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="PODSKAZKA" layoutX="769" layoutY="682" prefHeight="48" prefWidth="224" styleClass="label " text="Добро пожаловать в lox.exe!" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+      <font>
+        <Font name="System Regular" size="11"/>
+      </font>
+    </LabelEx>
+    <ImageViewEx AnchorPane.bottomAnchor="90" AnchorPane.rightAnchor="26" autoSize="false" centered="true" focusTraversable="false" height="18" id="noticloseButton" layoutX="980" layoutY="660" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="18">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <FragmentPane alignment="CENTER" focusTraversable="false" id="CtrlMpanel" layoutX="1048" layoutY="72" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="104" prefWidth="144" spacing="0" styleClass="fragment-pane "/>
+    <Panel AnchorPane.bottomAnchor="576" backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="5" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel4" layoutX="192" layoutY="88" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="104" prefWidth="328" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label25" layoutX="8" layoutY="8" prefHeight="16" prefWidth="312" styleClass="label " text="Поздравляем с получением приза в игре!" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label25" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label26" layoutX="8" layoutY="27" prefHeight="56" prefWidth="312" styleClass="label " text="Чтобы воспользоваться, перейдите по следующему пути:&#10;Телефон&gt;Настройки&gt;Темы&gt;Тайная тема" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="11"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label26" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button6" layoutX="128" layoutY="64" prefHeight="24" prefWidth="64" styleClass="button " text="ОК" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="11"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" id="data-button6" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="Segoe UI" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="" id="data-panel4" visible=""/>
+    <Panel AnchorPane.rightAnchor="16" backgroundColor="#ffffff" borderColor="#ffffff" borderRadius="5" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="internetend" layoutX="696" layoutY="48" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="76" prefWidth="312" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="true" centered="false" focusTraversable="false" height="50" id="image15" layoutX="8" layoutY="8" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="50">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image15" image=".data/img/govno-warning.png" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label33" layoutX="64" layoutY="14" prefHeight="40" prefWidth="240" styleClass="label " text="Проблемы с Интернет-соединением" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label33" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label34" layoutX="64" layoutY="32" prefHeight="40" prefWidth="240" styleClass="label " text="Если всё заработает, мы Вам об этом сообщим и разблокируем браузеры" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="11"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label34" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-internetend" visible=""/>
+    <Panel AnchorPane.rightAnchor="16" backgroundColor="#ffffff" borderColor="#ffffff" borderRadius="5" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="internetstart" layoutX="696" layoutY="48" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="76" prefWidth="312" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image16" layoutX="8" layoutY="16" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="48">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label35" layoutX="64" layoutY="14" prefHeight="40" prefWidth="240" styleClass="label " text="Вы снова в Интернете!" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="12"/>
+          </font>
+        </LabelEx>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label36" layoutX="64" layoutY="32" prefHeight="40" prefWidth="240" styleClass="label " text="Думаю, Вас это должно порадовать, так как доступ снова ко всему открыт!" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="11"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image16" image=".data/img/cucumber-003.png" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label35" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label36" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-internetstart" visible=""/>
+    <Data content="lowres" cursor="DEFAULT" enabled="1" id="data-fragment5" visible=""/>
+    <ImageViewEx AnchorPane.bottomAnchor="0" autoSize="false" centered="false" focusTraversable="false" height="30" id="startOpenLuna" layoutX="0" layoutY="738" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="112">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" hoverImage=".data/img/start-naveden.png" id="data-startOpenLuna" image=".data/img/start.png" visible=""/>
+    <Button AnchorPane.bottomAnchor="-1" AnchorPane.rightAnchor="72" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="update1" layoutX="776" layoutY="737" prefHeight="32" prefWidth="176" styleClass="button " text="Доступно обновление!" textAlignment="CENTER" textFill="#ff0000" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12"/>
+      </font>
+    </Button>
+    <Data cursor="DEFAULT" enabled="1" id="data-update1" visible=""/>
+    <Hyperlink AnchorPane.bottomAnchor="15" AnchorPane.rightAnchor="75" alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="update2" layoutX="941" layoutY="736" prefHeight="17" prefWidth="8" styleClass="hyperlink " text="х" textAlignment="LEFT" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </Hyperlink>
+    <Data cursor="DEFAULT" enabled="1" id="data-update2" visible=""/>
+    <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment10" layoutX="0" layoutY="776" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="768" prefWidth="1024" spacing="0" styleClass="fragment-pane "/>
+    <Data content="welcome" cursor="DEFAULT" enabled="1" id="data-fragment10" visible="1"/>
+    <com.jfoenix.controls.JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="fsEnable" layoutX="1208" layoutY="72" prefHeight="56" prefWidth="184" style="-fx-background-color: white;" styleClass="button jfx-button " text="Да" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="25"/>
+      </font>
+    </com.jfoenix.controls.JFXButton>
+    <Data cursor="DEFAULT" enabled="1" id="data-fsEnable" visible="1"/>
+    <com.jfoenix.controls.JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="fsIgnore" layoutX="824" layoutY="16" prefHeight="56" prefWidth="184" style="-fx-background-color: white;" styleClass="button jfx-button " text="Нет" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="25"/>
+      </font>
+    </com.jfoenix.controls.JFXButton>
+    <Data cursor="DEFAULT" enabled="1" id="data-fsIgnore" visible="1"/>
+    <Data content="interwarn" cursor="DEFAULT" enabled="1" id="data-fragment11" visible=""/>
+    <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment13" layoutX="1048" layoutY="272" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="280" prefWidth="480" spacing="0" styleClass="fragment-pane "/>
+    <Data content="vovaflash" cursor="DEFAULT" enabled="1" id="data-fragment13" visible=""/>
+    <ImageViewEx AnchorPane.bottomAnchor="3" autoSize="false" centered="false" focusTraversable="false" height="24" id="infogw1" layoutX="112" layoutY="741" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="24">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-infogw1" image=".data/img/govno-warning.png" visible=""/>
+    <LabelEx AnchorPane.bottomAnchor="7" alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="infogw2" layoutX="144" layoutY="744" prefHeight="17" prefWidth="480" styleClass="label " text="У Вас работает &quot;Игра 1&quot;. Если Вы в неё не играете, нажмите кнопку &quot;Пауза&quot;" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-infogw2" visible=""/>
+    <ImageViewEx AnchorPane.bottomAnchor="0" autoSize="false" centered="false" focusTraversable="false" height="30" id="startOpenZune" layoutX="0" layoutY="738" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="112">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" hoverImage=".data/img/3-start-naveden.png" id="data-startOpenZune" image=".data/img/3-start.png" visible=""/>
+    <ImageViewEx AnchorPane.bottomAnchor="0" autoSize="false" centered="false" focusTraversable="false" height="30" id="startClose" layoutX="0" layoutY="738" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="112">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data content="techdif" cursor="DEFAULT" enabled="1" id="data-fragment15" visible=""/>
+    <Data content="desktop" cursor="DEFAULT" enabled="1" id="data-mydesktop" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-mydesktopsemihalf" visible=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-w93browser" url="" visible=""/>
+    <Data cursor="DEFAULT" enabled="" id="data-w93warning" visible=""/>
+    <FragmentPane AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" alignment="CENTER" focusTraversable="false" id="fragment5" layoutX="0" layoutY="-33" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="36" prefWidth="1024" spacing="0" styleClass="fragment-pane "/>
+    <FragmentPane alignment="CENTER" focusTraversable="false" id="fragment11" layoutX="0" layoutY="1384" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="160" prefWidth="1024" spacing="0" styleClass="fragment-pane "/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label48" layoutX="1128" layoutY="48" prefHeight="16" prefWidth="96" styleClass="label " text="test2" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="" id="data-label48" visible=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-whiteonlyfg" visible=""/>
+    <Data content="lightmodenote" cursor="DEFAULT" enabled="1" id="data-screensaver" visible=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-xp_loadscr" image=".data/img/xp_loadscreen.png" visible=""/>
+  </children>
+</AnchorPane>

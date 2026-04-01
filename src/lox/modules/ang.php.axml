@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="ang">
+    
+  
+  <method name="doAngkbAction">
+      <phpLine expr="$cock = rand(1,20); Media::open('res://.data/audio/kb'.$cock.'.mp3', true, 'kb'.$cock.'s')" expr-type="expr"/>
+    </method>
+  </class>
+</root>

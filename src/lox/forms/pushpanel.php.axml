@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="pushpanel">
+    
+    
+    
+    
+    <method name="doButton20_onAction">
+      <elementHide object="~sender" object-type="object"/>
+      <elementHide object="form('MainForm')-&gt;image_torch" object-type="object"/>
+      <setVar name="vttorch" name-type="" value="disabled" value-type="string"/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doButton22Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="blockpp" name-type="" value="1" value-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halfprozr" object-type="object" value="0" value-type="float"/>
+      <elementShow object="halfprozr" object-type="object"/>
+      <elementSetX object="halfprozr" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetX object="panelWifi" object-type="object" relative="" relative-type="" value="280" value-type="integer"/>
+      <elementSetY object="panelWifi" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="halfprozr" object-type="object" value="0.5" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panelWifi" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  
+  <method name="doButtonAction">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="halfprozr" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panelWifi" object-type="object" x="280" x-type="float" y="0" y-type="float"/>
+      <elementHide object="halfprozr" object-type="object"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <setVar name="blockpp" name-type="" value="0" value-type="string"/>
+    </method>
+    
+    
+  <method name="doButton24Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="blockpp" name-type="" value="1" value-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halfprozr" object-type="object" value="0" value-type="float"/>
+      <elementShow object="halfprozr" object-type="object"/>
+      <elementSetX object="halfprozr" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetX object="panelMasic" object-type="object" relative="" relative-type="" value="280" value-type="integer"/>
+      <elementSetY object="panelMasic" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="halfprozr" object-type="object" value="0.5" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panelMasic" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  <method name="doButtonAltAction">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="halfprozr" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panelMasic" object-type="object" x="280" x-type="float" y="0" y-type="float"/>
+      <elementHide object="halfprozr" object-type="object"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <setVar name="blockpp" name-type="" value="0" value-type="string"/>
+    </method>
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton3Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Загрузка..." value-type="string"/>
+      <elementLoadContent object="rzhopa" object-type="variable" path="https://l-lacker.ru/app/masic/p/info.php?service=access" path-type="string" sync="" sync-type=""/>
+      <setVar name="masic_rzhopa" name-type="" value="rzhopa" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="masic_rzhopa" name-type="" not="1" not-type="" value="true" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Сервис недоступен" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <elementLoadContent object="rzhopa2" object-type="variable" path="https://l-lacker.ru/app/masic/p/info.php?service=count" path-type="string" sync="" sync-type=""/>
+      <setVar name="masic_count" name-type="" value="rzhopa2" value-type="variable"/>
+      <elementLoadContent object="rzhopa3" object-type="variable" path="https://l-lacker.ru/app/masic/p/info.php?service=pages" path-type="string" sync="" sync-type=""/>
+      <setVar name="masic_pages" name-type="" value="rzhopa3" value-type="variable"/>
+      <setVar name="masic_nowpages" name-type="" value="Страница 1 из " value-type="string"/>
+      <appendVar asString="1" asString-type="" name="masic_nowpages" name-type="" value="rzhopa3" value-type="variable"/>
+      <elementSetText object="masic_pages_count" object-type="object" relative="" relative-type="" value="masic_nowpages" value-type="globalVariable"/>
+      <elementLoadContent object="masic_title_1" object-type="object" path="https://l-lacker.ru/app/masic/p/info.php?masic=1&amp;info=name" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="masic_lastupd_1" object-type="object" path="https://l-lacker.ru/app/masic/p/info.php?masic=1&amp;info=date" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="masic_title_2" object-type="object" path="https://l-lacker.ru/app/masic/p/info.php?masic=2&amp;info=name" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="masic_lastupd_2" object-type="object" path="https://l-lacker.ru/app/masic/p/info.php?masic=2&amp;info=date" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="masic_title_3" object-type="object" path="https://l-lacker.ru/app/masic/p/info.php?masic=3&amp;info=name" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="masic_lastupd_3" object-type="object" path="https://l-lacker.ru/app/masic/p/info.php?masic=3&amp;info=date" path-type="string" sync="" sync-type=""/>
+      <phpLine expr="$this-&gt;lnfr-&gt;open('https://l-lacker.ru/app/masic/p/lnfr.mp3')" expr-type="expr"/>
+      <setVar name="masic_now_page" name-type="" value="1" value-type="string"/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton10Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="halfprozr" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panelMasic" object-type="object" x="280" x-type="float" y="0" y-type="float"/>
+      <elementHide object="halfprozr" object-type="object"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <setVar name="blockpp" name-type="" value="0" value-type="string"/>
+    </method>
+  
+  
+  <method name="doButton9ClickRight">
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Скрытая функция?" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Правой кнопкой мыши вы остановили сам трек, а не альбом." value-type="string"/>
+      <ifVar method="equals" method-type="" name="masic_nowplaying" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;timer-&gt;stop()" expr-type="expr"/>
+      <setVar name="masic_helper" name-type="" value="" value-type="string"/>
+      <phpLine expr="$this-&gt;masicplayer-&gt;stop()" expr-type="expr"/>
+      <elementHide object="button9" object-type="object"/>
+      <elementShow object="button11" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="masic_nowplaying" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;timer-&gt;stop()" expr-type="expr"/>
+      <setVar name="masic_helper" name-type="" value="" value-type="string"/>
+      <phpLine expr="$this-&gt;masicplayer2-&gt;stop()" expr-type="expr"/>
+      <elementHide object="button9" object-type="object"/>
+      <elementShow object="button11" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doButton11Action">
+      <elementHide object="button11" object-type="object"/>
+      <elementShow object="button9" object-type="object"/>
+      <setVar name="masic_helper" name-type="" value="playing" value-type="string"/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Внимание" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="После этого трека радио не будет продолжено автоматически." value-type="string"/>
+      <ifVar method="equals" method-type="" name="masic_nowplaying" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;masicplayer-&gt;play()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="masic_nowplaying" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;masicplayer2-&gt;play()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doButton4Action">
+      <setVar name="masic_load_link" name-type="" value="https://l-lacker.ru/app/masic/p/random.php?alb=rand" value-type="string"/>
+      <setVar name="masic_helper" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label9" object-type="object" relative="" relative-type="" value="rand(1,99999)" value-type="expr"/>
+      <elementSetText object="label6" object-type="object" relative="" relative-type="" value="Загрузка..." value-type="string"/>
+      <phpLine expr="$this-&gt;masicplayer-&gt;open($GLOBALS['masic_load_link'])" expr-type="expr"/>
+      <elementHide object="button10" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\RotateAnimationBehaviour" behaviour-type="string" object="image7" object-type="object"/>
+      <elementShow object="button10" object-type="object"/>
+      <elementSetText object="label6" object-type="object" relative="" relative-type="" value="Используйте панель уведомлений для управления треками" value-type="string"/>
+      <phpLine expr="$this-&gt;timer-&gt;start()" expr-type="expr"/>
+      <elementShow object="panel5" object-type="object"/>
+      <setVar name="headphicon" name-type="" value="1" value-type="string"/>
+    </method>
+  <method name="doButton5Action">
+      <setVar name="masic_load_link" name-type="" value="https://l-lacker.ru/app/masic/p/random.php?alb=1" value-type="string"/>
+      <setVar name="masic_helper" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label9" object-type="object" relative="" relative-type="" value="rand(1,99999)" value-type="expr"/>
+      <elementSetText object="label6" object-type="object" relative="" relative-type="" value="Загрузка..." value-type="string"/>
+      <phpLine expr="$this-&gt;masicplayer-&gt;open($GLOBALS['masic_load_link'])" expr-type="expr"/>
+      <elementHide object="button10" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\RotateAnimationBehaviour" behaviour-type="string" object="image7" object-type="object"/>
+      <elementShow object="button10" object-type="object"/>
+      <elementSetText object="label6" object-type="object" relative="" relative-type="" value="Используйте панель уведомлений для управления треками" value-type="string"/>
+      <phpLine expr="$this-&gt;timer-&gt;start()" expr-type="expr"/>
+      <elementShow object="panel5" object-type="object"/>
+      <setVar name="headphicon" name-type="" value="1" value-type="string"/>
+    </method>
+  <method name="doButton6Action">
+      <setVar name="masic_load_link" name-type="" value="https://l-lacker.ru/app/masic/p/random.php?alb=2" value-type="string"/>
+      <setVar name="masic_helper" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label9" object-type="object" relative="" relative-type="" value="rand(1,99999)" value-type="expr"/>
+      <elementSetText object="label6" object-type="object" relative="" relative-type="" value="Загрузка..." value-type="string"/>
+      <phpLine expr="$this-&gt;masicplayer-&gt;open($GLOBALS['masic_load_link'])" expr-type="expr"/>
+      <elementHide object="button10" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\RotateAnimationBehaviour" behaviour-type="string" object="image7" object-type="object"/>
+      <elementShow object="button10" object-type="object"/>
+      <elementSetText object="label6" object-type="object" relative="" relative-type="" value="Используйте панель уведомлений для управления треками" value-type="string"/>
+      <phpLine expr="$this-&gt;timer-&gt;start()" expr-type="expr"/>
+      <elementShow object="panel5" object-type="object"/>
+      <setVar name="headphicon" name-type="" value="1" value-type="string"/>
+    </method>
+  <method name="doButton7Action">
+      <setVar name="masic_load_link" name-type="" value="https://l-lacker.ru/app/masic/p/random.php?alb=3" value-type="string"/>
+      <setVar name="masic_helper" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label9" object-type="object" relative="" relative-type="" value="rand(1,99999)" value-type="expr"/>
+      <elementSetText object="label6" object-type="object" relative="" relative-type="" value="Загрузка..." value-type="string"/>
+      <phpLine expr="$this-&gt;masicplayer-&gt;open($GLOBALS['masic_load_link'])" expr-type="expr"/>
+      <elementHide object="button10" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\RotateAnimationBehaviour" behaviour-type="string" object="image7" object-type="object"/>
+      <elementShow object="button10" object-type="object"/>
+      <elementSetText object="label6" object-type="object" relative="" relative-type="" value="Используйте панель уведомлений для управления треками" value-type="string"/>
+      <phpLine expr="$this-&gt;timer-&gt;start()" expr-type="expr"/>
+      <elementShow object="panel5" object-type="object"/>
+      <setVar name="headphicon" name-type="" value="1" value-type="string"/>
+    </method>
+  <method name="doButton8Action">
+      <phpLine expr="$this-&gt;timer-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;lnfr-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;masicplayer-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;masicplayer2-&gt;stop()" expr-type="expr"/>
+      <setVar name="masic_helper" name-type="" value="" value-type="string"/>
+      <setVar name="masic_megazhopa" name-type="" value="" value-type="string"/>
+      <appendVar asString="" asString-type="" name="masic_stopcount" name-type="" value="1" value-type="string"/>
+      <elementHide object="panel5" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="544" value-type="integer"/>
+      <behaviourDisable behaviour="behaviour\custom\RotateAnimationBehaviour" behaviour-type="string" object="image7" object-type="object"/>
+      <elementHide object="button11" object-type="object"/>
+      <elementShow object="button9" object-type="object"/>
+      <setVar name="headphicon" name-type="" value="" value-type="string"/>
+    </method>
+  <method name="doButton9Action">
+      <appendVar asString="" asString-type="" name="masic_stopcount" name-type="" value="1" value-type="string"/>
+      <ifVar method="equals" method-type="" name="masic_nowplaying" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;timer-&gt;stop()" expr-type="expr"/>
+      <setVar name="masic_helper" name-type="" value="" value-type="string"/>
+      <phpLine expr="$this-&gt;masicplayer-&gt;pause()" expr-type="expr"/>
+      <elementHide object="button9" object-type="object"/>
+      <elementShow object="button11" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="masic_nowplaying" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;timer-&gt;stop()" expr-type="expr"/>
+      <setVar name="masic_helper" name-type="" value="" value-type="string"/>
+      <phpLine expr="$this-&gt;masicplayer2-&gt;pause()" expr-type="expr"/>
+      <elementHide object="button9" object-type="object"/>
+      <elementShow object="button11" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doButton20_offAction">
+      <ifVar method="equals" method-type="" name="vt_collink" name-type="" not="" not-type="" value="greyslim" value-type="string"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Телефон слишком тонкий" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="В ваш супер-тонкий телефон не влез фонарик. Поменяйте его через &quot;Магазин&quot;." value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <elementShow object="button20_on" object-type="object"/>
+      <elementShow object="form('MainForm')-&gt;image_torch" object-type="object"/>
+      <setVar name="vttorch" name-type="" value="enabled" value-type="string"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+  
+  
+  <method name="doButton13Action">
+      <elementHide object="panel6" object-type="object"/>
+      <ifVar method="equals" method-type="" name="openpanel" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_usedvol" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton12Action">
+      <elementHide object="panel6" object-type="object"/>
+      <setVar name="vt_usedvol" name-type="" value="5" value-type="string"/>
+    </method>
+  <method name="doButton23Action">
+      <ifVar method="equals" method-type="" name="lox_totallight" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Нет нужды в aloPay" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Вы находитесь в Light-режиме, и здесь для Вас магазин всегда открыт!" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="vt_vvpload" name-type="" value="1" value-type="string"/>
+      <setVar name="vt_makeblur" name-type="" value="1" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <ifVar method="equals" method-type="" name="vt_vpload" name-type="" not="1" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_vpload" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Извини" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Локс крин залочен" value-type="string"/>
+    </method>
+  </class>
+</root>

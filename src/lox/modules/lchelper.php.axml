@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="lchelper">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doVerticlockAction">
+      <elementLoadContent object="camera1" object-type="variable" path="https://l-lacker.ru/app/calendar/clock/h.php" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="camera2" object-type="variable" path="https://l-lacker.ru/app/calendar/clock/m.php" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="label10" object-type="object" relative="" relative-type="" value="camera1" value-type="variable"/>
+      <elementSetText object="label11" object-type="object" relative="" relative-type="" value="camera2" value-type="variable"/>
+      <phpLine expr="$this-&gt;verticlock-&gt;interval = 30000" expr-type="expr"/>
+    </method>
+  <method name="doHelperlcAction">
+      <ifVar method="equals" method-type="" name="lc_needhelp" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="lc_needhelp" name-type="" value="" value-type="string"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementHide object="label" object-type="object"/>
+      <elementHide object="labelAlt" object-type="object"/>
+      <elementSetX object="panel7" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="panelAlt" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="250" duration-type="integer" object="panel5" object-type="object" value="0" value-type="float"/>
+      <elementHide object="panel5" object-type="object"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

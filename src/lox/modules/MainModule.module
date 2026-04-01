@@ -1,0 +1,80 @@
+{
+  "props": {
+    "version": "v.10",
+    "author": "l-lacker",
+    "description": "lox.exe"
+  },
+  "components": {
+    "scriptAlt": {
+      "type": "script\\MacroScript",
+      "x": 48,
+      "y": 512,
+      "props": {
+        "runOnApply": true,
+        "runOnce": true
+      }
+    },
+    "script": {
+      "type": "script\\MacroScript",
+      "x": 48,
+      "y": 432,
+      "props": {
+        "runOnApply": true,
+        "runOnce": true
+      }
+    },
+    "storeBalSync": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 352,
+      "props": {
+        "disabled": false,
+        "interval": "1000",
+        "repeatable": "1",
+        "autoStart": false
+      }
+    },
+    "httpChecker": {
+      "type": "bundle\\http\\HttpChecker",
+      "x": 48,
+      "y": 272,
+      "props": {
+        "url": "https://l-lacker.ru/app/update/lox.php?s=intercheck",
+        "checkInterval": "10000",
+        "autoStart": false
+      }
+    },
+    "internetCheck": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 192,
+      "props": {
+        "interval": 10000,
+        "repeatable": "1",
+        "autoStart": false
+      }
+    },
+    "onStart": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 112,
+      "props": {
+        "disabled": false,
+        "interval": 1,
+        "repeatable": false,
+        "autoStart": false
+      }
+    },
+    "timer": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 32,
+      "props": {
+        "disabled": false,
+        "interval": 60000,
+        "repeatable": "1",
+        "autoStart": false
+      }
+    }
+  }
+}

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="splash">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doKeyDownS">
+      <elementSetText object="label4" object-type="object" relative="" relative-type="" value="ОК" value-type="string"/>
+      <elementShow object="label5" object-type="object"/>
+      <setVar name="lox_totallight" name-type="" value="1" value-type="string"/>
+    </method>
+  
+  
+  
+  <method name="doTextAreaClick">
+      <elementFocus object="button" object-type="object"/>
+    </method>
+  
+  
+  <method name="doButton3Action">
+      <exec command="C:\Program Files (x86)\Skillbrains\lightshot\unins000.exe" command-type="string" wait="" wait-type=""/>
+      <minimizeForm form="~sender" form-type="form" restore="" restore-type=""/>
+    </method>
+    <method name="doButton4Action">
+      <browse url="https://getsharex.com/" url-type="string"/>
+      <minimizeForm form="~sender" form-type="form" restore="" restore-type=""/>
+    </method>
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton5Action">
+      <ifDirExists file="C:\Program Files (x86)\Skillbrains\lightshot" file-type="string" not="" not-type=""/>
+      <openBlock/>
+      <elementShow object="label24" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementDestroy object="govno_warning" object-type="object"/>
+      <closeBlock/>
+    </method>
+    
+  <method name="doNoticloseButtonClickLeft">
+      <elementSetText object="PODSKAZKA" object-type="object" relative="" relative-type="" value="Я всегда помогу тебе разобраться с интуитивно понятным интерфейсом!" value-type="string"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  <method name="doLinkClickRight">
+      <loadForm form="MainForm" form-type="form" savePosition="" savePosition-type="" saveSize="" saveSize-type=""/>
+    </method>
+  <method name="doLinkClickLeft">
+      <setVar name="lox_totallight" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="startuperrorcounter" name-type="" value="1" value-type="string"/>
+      <elementHide object="label4" object-type="object"/>
+      <elementShow object="label5" object-type="object"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="$GLOBALS['startuperrorcounter'].'. Вашей системе стало слишком худо, и она не хочет выдавать базовую информацию. Похоже, это Wine или древняя винда. Через 5 секунд запускаюсь в лайт-режиме...'" value-type="expr"/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <elementShow object="panel" object-type="object"/>
+      <elementFocus object="button" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="100" duration-type="integer" object="progressIndicator" object-type="object" value="0" value-type="float"/>
+      <displace continue="1" continue-type="" duration="300" duration-type="integer" object="progressIndicator" object-type="object" x="40" x-type="float" y="0" y-type="float"/>
+      <moveTo continue="" continue-type="" duration="300" duration-type="integer" object="label" object-type="object" x="376" x-type="float" y="45" y-type="float"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <sleep sync="" sync-type="" value="5000" value-type="integer"/>
+      <loadForm form="MainForm" form-type="form" savePosition="" savePosition-type="" saveSize="" saveSize-type=""/>
+    </method>
+  
+  
+  
+  
+  <method name="doShow">
+      <sleep sync="" sync-type="" value="500" value-type="integer"/>
+      <setVar name="LOX-DEBUG-MODE" name-type="" value="1" value-type="string"/>
+      <setVar name="worktimer" name-type="" value="0" value-type="string"/>
+      <setVar name="ctrlm_pass" name-type="" value="password1" value-type="string"/>
+      <setVar name="hackmode" name-type="" value="1" value-type="string"/>
+      <setVar name="avmode" name-type="" value="1" value-type="string"/>
+      <setVar name="mwifi_on" name-type="" value="1" value-type="string"/>
+      <setVar name="glifetime" name-type="" value="100" value-type="string"/>
+      <setVar name="geat2" name-type="" value="1" value-type="string"/>
+      <setVar name="video_now" name-type="" value="1" value-type="string"/>
+      <setVar name="cum_admin" name-type="" value="loginstatus" value-type="string"/>
+      <setVar name="usemode" name-type="" value="1" value-type="string"/>
+      <setVar name="cum_admin" name-type="" value="welcome" value-type="string"/>
+      <setVar name="lvNoWait" name-type="" value="1" value-type="string"/>
+      <setVar name="ghours" name-type="" value="0" value-type="string"/>
+      <setVar name="gminutes" name-type="" value="0" value-type="string"/>
+      <setVar name="gdays" name-type="" value="0" value-type="string"/>
+      <setVar name="loxstat_other" name-type="" value="0 сек — прочее" value-type="string"/>
+      <setVar name="loxstat_settings" name-type="" value="0 сек" value-type="string"/>
+      <setVar name="loxstat_browser" name-type="" value="0 сек" value-type="string"/>
+      <setVar name="loxstat_loxvideos" name-type="" value="0 сек" value-type="string"/>
+      <setVar name="loxstat_gallery" name-type="" value="0 сек" value-type="string"/>
+      <setVar name="loxstat_calc" name-type="" value="0 сек" value-type="string"/>
+      <setVar name="loxstat_lucky" name-type="" value="0 сек" value-type="string"/>
+      <setVar name="msg_sender" name-type="" value="1" value-type="string"/>
+      <setVar name="luckyqc" name-type="" value="0" value-type="string"/>
+      <setVar name="vt_volcol" name-type="" value="100" value-type="string"/>
+      <setVar name="vt_volch2" name-type="" value="meow2" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="home" value-type="string"/>
+      <setVar name="vtb_mainmenusel_lr" name-type="" value="0" value-type="string"/>
+      <setVar name="vtb_mainmenusel_ud" name-type="" value="0" value-type="string"/>
+      <setVar name="vtb_brightcount" name-type="" value="0" value-type="string"/>
+      <setVar name="vtb_widgetsenabled" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_sounds_1en" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_sounds_2en" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_sounds_3en" name-type="" value="1" value-type="string"/>
+      <setVar name="anime3sallow" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_podcastlistnum" name-type="" value="1" value-type="string"/>
+      <setVar name="wallcnt" name-type="" value="1" value-type="string"/>
+      <setVar name="ss_mode" name-type="" value="2" value-type="string"/>
+      <setVar name="wallselected_th" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="[2/7] Проверка совместимости с компьютером" value-type="string"/>
+      <elementShow object="link" object-type="object"/>
+      <ifFileExists file="C:/Users/$userName/AppData/Local/Temp/f64c8d4c-be26-46d3-a4ec-47bf45bc0feb.tmp" file-type="magicString" not="" not-type=""/>
+      <openBlock/>
+      <setVar name="blockcomp" name-type="" value="1" value-type="string"/>
+      <showForm form="blocked" form-type="form"/>
+      <hideForm form="~sender" form-type="form"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="contains" method-type="" name="datasuperlox" name-type="" not="" not-type="" value="Celeron" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="startuperrorcounter" name-type="" value="1" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="$GLOBALS['startuperrorcounter'].'. У вас стоит Селерон в качестве процессора, возможно он не запустит lox.exe в стандартном режиме'" value-type="expr"/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="contains" method-type="" name="datasuperlox" name-type="" not="" not-type="" value="Pentium" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="startuperrorcounter" name-type="" value="1" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="$GLOBALS['startuperrorcounter'].'. У вас стоит Пентиум в качестве процессора. Возможно у вас и стоит хорошая модель по типу гиперпня, но в противном случае lox.exe может не запуститься в стандартном режиме'" value-type="expr"/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="contains" method-type="" name="datasuperlox" name-type="" not="" not-type="" value="Atom" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="startuperrorcounter" name-type="" value="1" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="$GLOBALS['startuperrorcounter'].'. У вас стоит Интел Атом в качестве процессора, возможно он не запустит lox.exe в стандартном режиме из-за своей производительности и графики GMA'" value-type="expr"/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="contains" method-type="" name="datasuperlox" name-type="" not="" not-type="" value="Athlon" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="startuperrorcounter" name-type="" value="1" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="$GLOBALS['startuperrorcounter'].'. У вас стоит Атлон в качестве процессора. И хотя это может быть хорошая модель по типу 200GE, в противном случае возможно lox.exe не запустится в стандартном режиме'" value-type="expr"/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="contains" method-type="" name="datasuperlox" name-type="" not="" not-type="" value="Sempron" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="startuperrorcounter" name-type="" value="1" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="$GLOBALS['startuperrorcounter'].'. У вас стоит Семпрон в качестве процессора, возможно он не запустит lox.exe в стандартном режиме'" value-type="expr"/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <closeBlock/>
+      <setVar name="sup_fram" name-type="" value="Windows::getFreeRAM()" value-type="expr"/>
+      <ifVar method="smaller" method-type="" name="sup_fram" name-type="" not="" not-type="" value="1073741824" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="startuperrorcounter" name-type="" value="1" value-type="string"/>
+      <elementSetText object="textArea" object-type="object" relative="1" relative-type="" value="$GLOBALS['startuperrorcounter'].'. У вас свободно менее 1 Гб ОЗУ (общий объём не учитывается), возможно из-за этого lox.exe не запустится в стандартном режиме'" value-type="expr"/>
+      <phpLine expr="Element::appendText($this-&gt;textArea, &quot;\n&quot;);" expr-type="expr"/>
+      <closeBlock/>
+      <ifDirExists file="C:\Program Files (x86)\Skillbrains\lightshot" file-type="string" not="" not-type=""/>
+      <openBlock/>
+      <elementSetX object="govno_warning" object-type="object" relative="" relative-type="" value="40" value-type="integer"/>
+      <elementSetY object="govno_warning" object-type="object" relative="" relative-type="" value="24" value-type="integer"/>
+      <setVar name="govno-detected" name-type="" value="1" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementDestroy object="govno_warning" object-type="object"/>
+      <closeBlock/>
+      <elementHide object="link" object-type="object"/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="[3/7] Чтение конфигурации программы" value-type="string"/>
+      <ifFileExists file="./lox-loader.exe" file-type="string" not="" not-type=""/>
+      <openBlock/>
+      <phpLine expr="fs::delete('./lox-loader.exe')" expr-type="expr"/>
+      <closeBlock/>
+      <elementShow object="panel" object-type="object"/>
+      <elementFocus object="button" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="100" duration-type="integer" object="progressIndicator" object-type="object" value="0" value-type="float"/>
+      <displace continue="1" continue-type="" duration="300" duration-type="integer" object="progressIndicator" object-type="object" x="40" x-type="float" y="0" y-type="float"/>
+      <moveTo continue="" continue-type="" duration="300" duration-type="integer" object="label" object-type="object" x="376" x-type="float" y="45" y-type="float"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <loadForm form="MainForm" form-type="form" savePosition="" savePosition-type="" saveSize="" saveSize-type=""/>
+    </method>
+  </class>
+</root>

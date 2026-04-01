@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="interwarn">
+    <method name="doButtonAction">
+      <elementHide object="form('MainForm')-&gt;fragment11" object-type="object"/>
+    </method>
+  
+  
+  <method name="doShow">
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <ifVar method="smaller" method-type="" name="height1" name-type="" not="" not-type="" value="800" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="button" object-type="object" relative="" relative-type="" value="912" value-type="integer"/>
+      <elementSetY object="button" object-type="object" relative="" relative-type="" value="8" value-type="integer"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

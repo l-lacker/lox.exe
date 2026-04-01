@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480" prefWidth="265" styleClass="">
+  <children>
+    <Panel backgroundColor="#0000004b" borderColor="#00000000" borderRadius="15" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel6" layoutX="8" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="144" prefWidth="248" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <FlatButton alignment="CENTER_LEFT" borderRadius="15" clickColor="#00000066" color="#00000000" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#00000033" id="button" layoutX="8" layoutY="8" prefHeight="32" prefWidth="232" styleClass="x-flat-button " text="  Свернуть уведомление" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Calibri" size="18"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button" visible="1"/>
+        <FlatButton alignment="CENTER_LEFT" borderRadius="15" clickColor="#00000066" color="#00000000" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#00000033" id="buttonAlt" layoutX="8" layoutY="40" prefHeight="32" prefWidth="232" styleClass="x-flat-button " text="  Ответить Александру" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Calibri" size="18"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-buttonAlt" visible="1"/>
+        <FlatButton alignment="CENTER_LEFT" borderRadius="15" clickColor="#00000066" color="#00000000" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#00000033" id="button3" layoutX="8" layoutY="72" prefHeight="32" prefWidth="232" styleClass="x-flat-button " text="  Пометить как прочитанное" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Calibri" size="18"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button3" visible="1"/>
+        <FlatButton alignment="CENTER_LEFT" borderRadius="15" clickColor="#00000066" color="#00000000" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#00000033" id="button4" layoutX="8" layoutY="104" prefHeight="32" prefWidth="232" styleClass="x-flat-button " text="  Прочие настройки" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Calibri" size="18"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button4" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel6" visible="1"/>
+    <Panel backgroundColor="#0000004b" borderColor="#00000000" borderRadius="15" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel" layoutX="280" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="106" prefWidth="248" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#00000066" color="#0000001b" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#00000033" id="button8" layoutX="8" layoutY="64" prefHeight="32" prefWidth="64" styleClass="x-flat-button " text="Да" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Calibri Bold" size="18"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button8" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="16" layoutY="16" prefHeight="48" prefWidth="216" styleClass="label " text="Вы действительно желаете свернуть уведомление?" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Bold" size="15"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#00000066" color="#0000001b" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#00000033" id="button5" layoutX="80" layoutY="64" prefHeight="32" prefWidth="64" styleClass="x-flat-button " text="Нет" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Calibri" size="18"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button5" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+    <Panel backgroundColor="#0000004b" borderColor="#00000000" borderRadius="15" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panelAlt" layoutX="280" layoutY="112" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="120" prefWidth="248" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#00000066" color="#0000001b" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#00000033" id="button6" layoutX="8" layoutY="80" prefHeight="32" prefWidth="96" styleClass="x-flat-button " text="Ответить" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Calibri Bold" size="18"/>
+          </font>
+        </FlatButton>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#00000066" color="#0000001b" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#00000033" id="button7" layoutX="112" layoutY="80" prefHeight="32" prefWidth="80" styleClass="x-flat-button " text="Отмена" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Calibri" size="18"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button6" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-button7" visible="1"/>
+        <TextArea editable="true" focusTraversable="true" id="textArea" layoutX="8" layoutY="16" prefColumnCount="40" prefHeight="56" prefWidth="232" promptText="" styleClass="text-input text-area " text="" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </TextArea>
+        <Data cursor="DEFAULT" enabled="1" id="data-textArea" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panelAlt" visible="1"/>
+    <Panel backgroundColor="#0000004b" borderColor="#00000000" borderRadius="15" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel3" layoutX="280" layoutY="240" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="120" prefWidth="248" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#00000066" color="#0000001b" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#00000033" id="button9" layoutX="92" layoutY="72" prefHeight="32" prefWidth="64" styleClass="x-flat-button " text="ОК" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Calibri Bold" size="18"/>
+          </font>
+        </FlatButton>
+        <LabelEx alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="32" layoutY="16" prefHeight="48" prefWidth="184" styleClass="label " text="Сообщение помечено как прочитанное" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Bold" size="15"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-button9" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel3" visible="1"/>
+    <Panel backgroundColor="#0000004b" borderColor="#00000000" borderRadius="15" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel4" layoutX="280" layoutY="368" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="144" prefWidth="248" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#00000066" color="#0000001b" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#00000033" id="button10" layoutX="8" layoutY="104" prefHeight="32" prefWidth="64" styleClass="x-flat-button " text="Да" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Calibri Bold" size="18"/>
+          </font>
+        </FlatButton>
+        <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="16" layoutY="16" prefHeight="19.951171875" prefWidth="137.57080078125" styleClass="label " text="Прочие настройки" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Bold" size="15"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-button10" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+        <com.jfoenix.controls.JFXToggleButton alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="toggleButton" layoutX="8" layoutY="40" prefHeight="32" prefWidth="232" selected="true" styleClass="toggle-button jfx-toggle-button " text="Разрешить уведомления" textAlignment="LEFT" textFill="#333333" toggleColor="#009688" toggleLineColor="#77c2bb" unToggleColor="#fafafa" unToggleLineColor="#999999" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </com.jfoenix.controls.JFXToggleButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-toggleButton" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel4" visible="1"/>
+  </children>
+</AnchorPane>

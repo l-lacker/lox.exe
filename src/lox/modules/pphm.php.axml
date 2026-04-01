@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="pphm">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doMainmenuAction">
+      <ifVar method="equals" method-type="" name="vtb_errorapi" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="mainmenu" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="ok" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="leftfunc" value-type="string"/>
+      <closeBlock/>
+      <phpLine expr="$vtb_temp1 = $GLOBALS['vtb_mainmenusel_lr']" expr-type="expr"/>
+      <phpLine expr="$vtb_temp2 = $GLOBALS['vtb_mainmenusel_ud']" expr-type="expr"/>
+      <setVar name="vtb_mainmenusel_total" name-type="" value="vtb_temp1" value-type="variable"/>
+      <appendVar asString="1" asString-type="" name="vtb_mainmenusel_total" name-type="" value="," value-type="string"/>
+      <appendVar asString="1" asString-type="" name="vtb_mainmenusel_total" name-type="" value="vtb_temp2" value-type="variable"/>
+      <elementSetText object="label3" object-type="object" relative="" relative-type="" value="vtb_mainmenusel_total" value-type="globalVariable"/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="leftfunc" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_mainmenusel_total" name-type="" not="" not-type="" value="2,2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="inapp" value-type="string"/>
+      <setVar name="vtb_subapp" name-type="" value="settingsopen" value-type="string"/>
+      <elementSetX object="app1_activity" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="app1_activity" object-type="object" relative="" relative-type="" value="16" value-type="integer"/>
+      <elementShow object="app1_activity" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_mainmenusel_total" name-type="" not="" not-type="" value="2,1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="inapp2" value-type="string"/>
+      <setVar name="vtb_subapp" name-type="" value="mediaopen" value-type="string"/>
+      <elementSetX object="app2_activity" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="app2_activity" object-type="object" relative="" relative-type="" value="16" value-type="integer"/>
+      <elementShow object="app2_activity" object-type="object"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="redcall" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="rightfunc" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="rightfunc" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="home" value-type="string"/>
+      <elementSetText object="label1_down" object-type="object" relative="" relative-type="" value="Меню" value-type="string"/>
+      <elementSetText object="label2_down" object-type="object" relative="" relative-type="" value="Актив" value-type="string"/>
+      <elementLoadContent object="menu_down_icon" object-type="object" path="res://.data/img/vtb-bs-menu.png" path-type="string" sync="" sync-type=""/>
+      <fadeTo continue="1" continue-type="" duration="100" duration-type="integer" object="menu_prozr" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="100" duration-type="integer" object="activity_menu" object-type="object" x="0" x-type="float" y="248" y-type="float"/>
+      <elementHide object="menu_prozr" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="left" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <ifVar method="greater" method-type="" name="vtb_mainmenusel_lr" name-type="" not="" not-type="" value="0" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vtb_mainmenusel_lr" name-type="" value="-1" value-type="string"/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="rect" object-type="object" x="-48" x-type="float" y="0" y-type="float"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="right" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <ifVar method="smaller" method-type="" name="vtb_mainmenusel_lr" name-type="" not="" not-type="" value="2" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vtb_mainmenusel_lr" name-type="" value="1" value-type="string"/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="rect" object-type="object" x="48" x-type="float" y="0" y-type="float"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="up" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <ifVar method="greater" method-type="" name="vtb_mainmenusel_ud" name-type="" not="" not-type="" value="0" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vtb_mainmenusel_ud" name-type="" value="-1" value-type="string"/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="rect" object-type="object" x="0" x-type="float" y="-56" y-type="float"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="down" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <ifVar method="smaller" method-type="" name="vtb_mainmenusel_ud" name-type="" not="" not-type="" value="2" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vtb_mainmenusel_ud" name-type="" value="1" value-type="string"/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="rect" object-type="object" x="0" x-type="float" y="56" y-type="float"/>
+      <closeBlock/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  
+  <method name="doNumnabAction">
+      <ifVar method="equals" method-type="" name="vtb_loadingapi" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="numnab" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_opened" name-type="" value="callwait" value-type="string"/>
+      <phpLine expr="$this-&gt;gudoksound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;callsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;gudoksound-&gt;play()" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="vtb_longgudok" value-type="globalVariable"/>
+      <phpLine expr="$this-&gt;calluisound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;calluisound-&gt;open('res://.data/audio/Call_Connect.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;calluisound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_opened" name-type="" value="numnab1" value-type="string"/>
+      <phpLine expr="$this-&gt;gudoksound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;callsound-&gt;play()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="numnab1" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vtb_callsecs" name-type="" value="1" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_callsecs" name-type="" not="" not-type="" value="60" value-type="integer"/>
+      <openBlock/>
+      <setVar name="vtb_callsecs" name-type="" value="0" value-type="string"/>
+      <appendVar asString="" asString-type="" name="vtb_callmins" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <phpLine expr="$rzhaka0 = $GLOBALS['vtb_callmins']" expr-type="expr"/>
+      <phpLine expr="$rzhaka = $GLOBALS['vtb_callsecs']" expr-type="expr"/>
+      <setVar name="vtb_calltime" name-type="" value="" value-type="string"/>
+      <ifVar method="smaller" method-type="" name="vtb_callmins" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <setVar name="vtb_calltime" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="vtb_calltime" name-type="" value="rzhaka0" value-type="variable"/>
+      <appendVar asString="1" asString-type="" name="vtb_calltime" name-type="" value=":" value-type="string"/>
+      <ifVar method="smaller" method-type="" name="vtb_callsecs" name-type="" not="" not-type="" value="10" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="1" asString-type="" name="vtb_calltime" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="vtb_calltime" name-type="" value="rzhaka" value-type="variable"/>
+      <elementSetText object="callcounter" object-type="object" relative="" relative-type="" value="vtb_calltime" value-type="globalVariable"/>
+      <closeBlock/>
+    </method>
+  
+  
+  <method name="doTimerAction">
+      <ifVar method="equals" method-type="" name="vtb_buttonshideapi" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementHide object="menu_down_icon" object-type="object"/>
+      <elementHide object="label1_down" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementShow object="menu_down_icon" object-type="object"/>
+      <elementShow object="label1_down" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_loadingapi" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementShow object="window_loadingapi" object-type="object"/>
+      <elementSetX object="window_loadingapi" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementHide object="window_loadingapi" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_widgetsenabledapi" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_widgetsenabledapi" name-type="" value="" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_widgetsenabled" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementShow object="image" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementHide object="image" object-type="object"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_errorapi" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_errorapi" name-type="" value="" value-type="string"/>
+      <moveTo continue="" continue-type="" duration="100" duration-type="integer" object="apierror_window" object-type="object" x="0" x-type="float" y="224" y-type="float"/>
+      <elementHide object="apierror_prozr" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_errorapi" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="ok" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_errorapi" name-type="" value="3" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="rightfunc" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_errorapi" name-type="" value="3" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="redcall" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_errorapi" name-type="" value="3" value-type="string"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_errorapi" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_errorapi" name-type="" value="2" value-type="string"/>
+      <elementSetText object="apierror_label" object-type="object" relative="" relative-type="" value="vtb_errorapi_label" value-type="globalVariable"/>
+      <elementSetText object="apierror_text" object-type="object" relative="" relative-type="" value="vtb_errorapi_text" value-type="globalVariable"/>
+      <phpLine expr="$this-&gt;errorsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;errorsound-&gt;play()" expr-type="expr"/>
+      <elementSetX object="apierror_prozr" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="apierror_prozr" object-type="object" relative="" relative-type="" value="16" value-type="integer"/>
+      <elementSetY object="apierror_window" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementShow object="apierror_prozr" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="apierror_window" object-type="object" x="0" x-type="float" y="120" y-type="float"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="numnab1" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="leftfunc" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_callrecen" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_callrecen" name-type="" value="1" value-type="string"/>
+      <elementShow object="callrecsplash" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\BlinkAnimationBehaviour" behaviour-type="string" object="callrecsplash" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_callrecen" name-type="" value="" value-type="string"/>
+      <elementHide object="callrecsplash" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\BlinkAnimationBehaviour" behaviour-type="string" object="callrecsplash" object-type="object"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="rightfunc" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="redcall" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="redcall" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_opened" name-type="" value="endingcall" value-type="string"/>
+      <behaviourEnable behaviour="behaviour\custom\BlinkAnimationBehaviour" behaviour-type="string" object="callcounter" object-type="object"/>
+      <phpLine expr="$this-&gt;callsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;calluisound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;calluisound-&gt;open('res://.data/audio/Call_Disconnect.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;calluisound-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;callsound-&gt;open('https://l-lacker.ru/app/vtb/pranks/random.php')" expr-type="expr"/>
+      <setVar name="vtb_longgudok" name-type="" value="rand(2000,8000)" value-type="expr"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <behaviourDisable behaviour="behaviour\custom\BlinkAnimationBehaviour" behaviour-type="string" object="callcounter" object-type="object"/>
+      <elementShow object="callcounter" object-type="object"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementHide object="numnab_activity" object-type="object"/>
+      <setVar name="vtb_opened" name-type="" value="home" value-type="string"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="callwait" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="1" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_errorapi_label" name-type="" value="Недоступно" value-type="string"/>
+      <setVar name="vtb_errorapi_text" name-type="" value="Сначала дождитесь завершения гудка" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <elementShow object="nb_activity" object-type="object"/>
+      <elementSetX object="nb_activity" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetText object="label4" object-type="object" relative="" relative-type="" value="vtb_cipherblock" value-type="globalVariable"/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="rightfunc" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="redcall" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="redcall" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_opened" name-type="" value="home" value-type="string"/>
+      <setVar name="vtb_cipherblock" name-type="" value="" value-type="string"/>
+      <elementHide object="nb_activity" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="leftfunc" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="greencall" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="ok" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="greencall" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="greencall" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="numnab" value-type="string"/>
+      <elementSetText object="callcounter" object-type="object" relative="" relative-type="" value="Вызываю..." value-type="string"/>
+      <elementSetText object="label8" object-type="object" relative="" relative-type="" value="$this-&gt;label4-&gt;text" value-type="expr"/>
+      <setVar name="vtb_callsecs" name-type="" value="0" value-type="string"/>
+      <setVar name="vtb_callmins" name-type="" value="" value-type="string"/>
+      <elementShow object="numnab_activity" object-type="object"/>
+      <elementHide object="nb_activity" object-type="object"/>
+      <setVar name="vtb_cipherblock" name-type="" value="" value-type="string"/>
+      <elementSetX object="numnab_activity" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="home" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="cipherblock" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_opened" name-type="" value="cipherblock" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="ok" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="leftfunc" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="leftfunc" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="mainmenu" value-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="menu_prozr" object-type="object" value="0" value-type="float"/>
+      <elementShow object="menu_prozr" object-type="object"/>
+      <elementShow object="activity_menu" object-type="object"/>
+      <elementSetX object="menu_prozr" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="menu_prozr" object-type="object" relative="" relative-type="" value="16" value-type="integer"/>
+      <elementSetX object="activity_menu" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activity_menu" object-type="object" relative="" relative-type="" value="248" value-type="integer"/>
+      <elementSetText object="label1_down" object-type="object" relative="" relative-type="" value="Выбрать" value-type="string"/>
+      <elementSetText object="label2_down" object-type="object" relative="" relative-type="" value="Назад" value-type="string"/>
+      <elementLoadContent object="menu_down_icon" object-type="object" path="res://.data/img/vtb-bs-ok.png" path-type="string" sync="" sync-type=""/>
+      <fadeTo continue="1" continue-type="" duration="100" duration-type="integer" object="menu_prozr" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="activity_menu" object-type="object" x="0" x-type="float" y="16" y-type="float"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="rightfunc" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_backfunc" name-type="" not="" not-type="" value="menuexit" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_backfunc" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="mainmenu" value-type="string"/>
+      <elementHide object="app1_activity" object-type="object"/>
+      <elementHide object="app2_activity" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="redcall" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_backfunc" name-type="" not="" not-type="" value="menuexit" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_backfunc" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_opened" name-type="" value="home" value-type="string"/>
+      <elementSetText object="label1_down" object-type="object" relative="" relative-type="" value="Меню" value-type="string"/>
+      <elementSetText object="label2_down" object-type="object" relative="" relative-type="" value="Актив" value-type="string"/>
+      <elementLoadContent object="menu_down_icon" object-type="object" path="res://.data/img/vtb-bs-menu.png" path-type="string" sync="" sync-type=""/>
+      <elementHide object="app1_activity" object-type="object"/>
+      <elementHide object="app2_activity" object-type="object"/>
+      <elementHide object="menu_prozr" object-type="object"/>
+      <elementHide object="activity_menu" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

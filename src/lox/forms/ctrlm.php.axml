@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="ctrlm">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton6Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="worktimer" value-type="globalVariable"/>
+      <moveTo continue="" continue-type="" duration="500" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <sleep sync="" sync-type="" value="10000" value-type="integer"/>
+      <moveTo continue="" continue-type="" duration="500" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="120" y-type="float"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  </class>
+</root>

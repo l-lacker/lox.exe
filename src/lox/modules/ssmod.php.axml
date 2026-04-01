@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="ssmod">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doTimerAction">
+      <ifVar method="equals" method-type="" name="ss_run" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="to11" name-type="" value="rand(1,842)" value-type="expr"/>
+      <setVar name="to22" name-type="" value="rand(1,716)" value-type="expr"/>
+      <ifVar method="equals" method-type="" name="ssimgbgm" name-type="" not="" not-type="" value="predefrand" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="ssimgcnt" name-type="" value="1" value-type="string"/>
+      <ifVar method="equals" method-type="" name="ssimgcnt" name-type="" not="" not-type="" value="4" value-type="string"/>
+      <openBlock/>
+      <setVar name="ssimgcnt" name-type="" value="0" value-type="string"/>
+      <elementLoadContent object="imageAlt" object-type="object" path="'res://.data/img/ssimg'.rand(1,30).'.jpg'" path-type="expr" sync="" sync-type=""/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="ssimgbgm" name-type="" not="" not-type="" value="predef" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="imageAlt" object-type="object" path="'res://.data/img/ssimg'.rand(1,30).'.jpg'" path-type="expr" sync="" sync-type=""/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="ssimgbgm" name-type="" not="" not-type="" value="custom" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="imageAlt" object-type="object" path="'res://.data/img/ssimg'.rand(1,30).'.jpg'" path-type="expr" sync="" sync-type=""/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="ss_mode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetX object="image" object-type="object" relative="" relative-type="" value="to11" value-type="globalVariable"/>
+      <elementSetY object="image" object-type="object" relative="" relative-type="" value="to22" value-type="globalVariable"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="ss_mode" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <fadeTo continue="" continue-type="" duration="500" duration-type="integer" object="image" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="image" object-type="object" relative="" relative-type="" value="to11" value-type="globalVariable"/>
+      <elementSetY object="image" object-type="object" relative="" relative-type="" value="to22" value-type="globalVariable"/>
+      <fadeTo continue="" continue-type="" duration="500" duration-type="integer" object="image" object-type="object" value="1" value-type="float"/>
+      <exit/>
+      <closeBlock/>
+      <exit/>
+    </method>
+  </class>
+</root>

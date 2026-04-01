@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="appCalc">
+    
+  
+    
+  
+  
+  
+  
+  
+  
+  <method name="doButton6Action">
+      <elementHide object="panelAlt" object-type="object"/>
+    </method>
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doMininotipanelClickLeft">
+      <elementHide object="~sender" object-type="object"/>
+    </method>
+  
+  
+  
+  <method name="doButton15Action">
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="1" not-type="" value="arythact" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Сначала добавьте действие" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calcclickcount" name-type="" value="0" value-type="string"/>
+      <setVar name="zapyatcount" name-type="" value="0" value-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="skob" value-type="string"/>
+      <appendVar asString="" asString-type="" name="skob1count" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="(" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton19Action">
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="arythact" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Доступно после числа или скобки" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="arythact" value-type="string"/>
+      <setVar name="calcclickcount" name-type="" value="0" value-type="string"/>
+      <setVar name="zapyatcount" name-type="" value="0" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="-" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  
+  
+  <method name="doButton17Action">
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="arythact" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Доступно после числа или скобки" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Не из пустоты же делать проценты" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="greater" method-type="" name="calcclickcount" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="32" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="num" value-type="string"/>
+      <appendVar asString="" asString-type="" name="calcclickcount" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="/100" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  
+  
+  
+  <method name="doButton18Action">
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Число и так будет положительным" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="arythact" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Доступно после числа или скобки" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="arythact" value-type="string"/>
+      <setVar name="calcclickcount" name-type="" value="0" value-type="string"/>
+      <setVar name="zapyatcount" name-type="" value="0" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="+" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButton20Action">
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Зачем умножать пустоту?" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="arythact" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Доступно после числа или скобки" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="arythact" value-type="string"/>
+      <setVar name="calcclickcount" name-type="" value="0" value-type="string"/>
+      <setVar name="zapyatcount" name-type="" value="0" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="*" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButton21MouseExit">
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="label_calc_2" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="label_calc_2" object-type="object" x="16" x-type="float" y="0" y-type="float"/>
+    </method>
+  
+  <method name="doButton12Action">
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="" value-type="string"/>
+      <setVar name="calcschet" name-type="" value="" value-type="string"/>
+      <setVar name="skob1count" name-type="" value="" value-type="string"/>
+      <setVar name="skob2count" name-type="" value="" value-type="string"/>
+      <setVar name="calcclickcount" name-type="" value="0" value-type="string"/>
+      <setVar name="zapyatcount" name-type="" value="0" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="0" value-type="string"/>
+    </method>
+  
+  
+  <method name="doButton20ClickRight">
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Зачем делить пустоту?" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="arythact" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Доступно после числа или скобки" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="arythact" value-type="string"/>
+      <setVar name="calcclickcount" name-type="" value="0" value-type="string"/>
+      <setVar name="zapyatcount" name-type="" value="0" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="/" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  
+  
+  
+  <method name="doButton16Action">
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="1" not-type="" value="num" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Добавьте число перед скобкой" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <appendVar asString="" asString-type="" name="skob2count" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$superkek = $GLOBALS['skob2count']" expr-type="expr"/>
+      <ifVar method="smaller" method-type="" name="skob1count" name-type="" not="" not-type="" value="superkek" value-type="variable"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="skob2count" name-type="" value="-1" value-type="string"/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Нельзя закрыть скобку" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calcclickcount" name-type="" value="0" value-type="string"/>
+      <setVar name="zapyatcount" name-type="" value="0" value-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="skob" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value=")" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton24Action">
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <appendVar asString="" asString-type="" name="calcschet" name-type="" value="-7" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButton25Action">
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <appendVar asString="" asString-type="" name="calcschet" name-type="" value="7" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButton26Action">
+      <elementHide object="panelSeven" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="haflprozr" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panelModeSel" object-type="object" x="0" x-type="float" y="-288" y-type="float"/>
+      <elementHide object="haflprozr" object-type="object"/>
+      <elementHide object="panelModeSel" object-type="object"/>
+    </method>
+  <method name="doButton27Action">
+      <elementShow object="panelSeven" object-type="object"/>
+      <setVar name="calcschet" name-type="" value="1000" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="1000" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="haflprozr" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panelModeSel" object-type="object" x="0" x-type="float" y="-288" y-type="float"/>
+      <elementHide object="haflprozr" object-type="object"/>
+      <elementHide object="panelModeSel" object-type="object"/>
+    </method>
+  
+  <method name="doButton23Action">
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="" value-type="string"/>
+      <setVar name="calcschet" name-type="" value="1000" value-type="string"/>
+      <setVar name="skob1count" name-type="" value="" value-type="string"/>
+      <setVar name="skob2count" name-type="" value="" value-type="string"/>
+      <setVar name="calcclickcount" name-type="" value="0" value-type="string"/>
+      <setVar name="zapyatcount" name-type="" value="0" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="1000" value-type="string"/>
+    </method>
+  <method name="doButton22Action">
+      <elementSetX object="panelModeSel" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelModeSel" object-type="object" relative="" relative-type="" value="-288" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="haflprozr" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="haflprozr" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="haflprozr" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelModeSel" object-type="object"/>
+      <elementShow object="haflprozr" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="haflprozr" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="100" duration-type="integer" object="mininotipanel" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panelModeSel" object-type="object" x="0" x-type="float" y="-16" y-type="float"/>
+      <setVar name="calclastsymb" name-type="" value="" value-type="string"/>
+      <setVar name="calcschet" name-type="" value="" value-type="string"/>
+      <setVar name="skob1count" name-type="" value="" value-type="string"/>
+      <setVar name="skob2count" name-type="" value="" value-type="string"/>
+      <setVar name="calcclickcount" name-type="" value="0" value-type="string"/>
+      <setVar name="zapyatcount" name-type="" value="0" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="0" value-type="string"/>
+      <elementHide object="mininotipanel" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="mininotipanel" object-type="object" value="1" value-type="float"/>
+    </method>
+  <method name="doButton10Action">
+      <ifVar method="greater" method-type="" name="calcclickcount" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="num" value-type="string"/>
+      <appendVar asString="" asString-type="" name="calcclickcount" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="9" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButton7Action">
+      <ifVar method="greater" method-type="" name="calcclickcount" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="num" value-type="string"/>
+      <appendVar asString="" asString-type="" name="calcclickcount" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="6" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButton3Action">
+      <ifVar method="greater" method-type="" name="calcclickcount" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="num" value-type="string"/>
+      <appendVar asString="" asString-type="" name="calcclickcount" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="3" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButton9Action">
+      <ifVar method="greater" method-type="" name="calcclickcount" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="num" value-type="string"/>
+      <appendVar asString="" asString-type="" name="calcclickcount" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="8" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButton5Action">
+      <ifVar method="greater" method-type="" name="calcclickcount" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="num" value-type="string"/>
+      <appendVar asString="" asString-type="" name="calcclickcount" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="5" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButtonAltAction">
+      <ifVar method="greater" method-type="" name="calcclickcount" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="num" value-type="string"/>
+      <appendVar asString="" asString-type="" name="calcclickcount" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="2" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButton8Action">
+      <ifVar method="greater" method-type="" name="calcclickcount" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="num" value-type="string"/>
+      <appendVar asString="" asString-type="" name="calcclickcount" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="7" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButton4Action">
+      <ifVar method="greater" method-type="" name="calcclickcount" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="num" value-type="string"/>
+      <appendVar asString="" asString-type="" name="calcclickcount" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="4" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButtonAction">
+      <ifVar method="greater" method-type="" name="calcclickcount" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="num" value-type="string"/>
+      <appendVar asString="" asString-type="" name="calcclickcount" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButton11Action">
+      <ifVar method="greater" method-type="" name="calcclickcount" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="calclastsymb" name-type="" value="num" value-type="string"/>
+      <appendVar asString="" asString-type="" name="calcclickcount" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="0" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButton13Action">
+      <ifVar method="greater" method-type="" name="calcclickcount" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <setVar name="calclastsymb" name-type="" value="num" value-type="string"/>
+      <appendVar asString="" asString-type="" name="calcclickcount" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="00" value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  <method name="doButton14Action">
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <setVar name="calcschet" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="greater" method-type="" name="zapyatcount" name-type="" not="" not-type="" value="0" value-type="integer"/>
+      <openBlock/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="greater" method-type="" name="calcclickcount" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="zap" value-type="string"/>
+      <appendVar asString="" asString-type="" name="zapyatcount" name-type="" value="1" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="calcschet" name-type="" value="." value-type="string"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+    </method>
+  
+  
+  <method name="doButton21Action">
+      <ifVar method="endsWidth" method-type="" name="calcschet" name-type="" not="" not-type="" value="/0" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="На ноль делить нельзя" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Пустое выражение" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="calclastsymb" name-type="" not="" not-type="" value="arythact" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Недопустимое выражение" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <phpLine expr="$rzhach = $GLOBALS['skob2count']" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="skob1count" name-type="" not="1" not-type="" value="rzhach" value-type="variable"/>
+      <openBlock/>
+      <elementSetText object="mininotitext" object-type="object" relative="" relative-type="" value="Закройте все открытые скобки" value-type="string"/>
+      <elementShow object="mininotipanel" object-type="object"/>
+      <stopMedia id="calcerrs" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcerrs" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <stopMedia id="calcsound" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="calcsound" id-type="string" source="res://.data/audio/kb-click.mp3" source-type="string"/>
+      <setVar name="calclastsymb" name-type="" value="ravno" value-type="string"/>
+      <setVar name="calcclickcount" name-type="" value="0" value-type="string"/>
+      <setVar name="zapyatcount" name-type="" value="0" value-type="string"/>
+      <elementSetText object="label_calc_2" object-type="object" relative="" relative-type="" value="calcschet" value-type="globalVariable"/>
+      <phpLine expr="$kek2 = $GLOBALS['calcschet']" expr-type="expr"/>
+      <phpLine expr="$kek = eval(&quot;return $kek2;&quot;)" expr-type="expr"/>
+      <phpLine expr="$GLOBALS['calcschet'] = $kek" expr-type="expr"/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="kek" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="calcschet" name-type="" not="" not-type="" value="3600" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="лучший проц" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="calcschet" name-type="" not="" not-type="" value="659" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="кирик" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="calcschet" name-type="" not="" not-type="" value="12" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="топ число" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="calcschet" name-type="" not="" not-type="" value="300" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label_calc_1" object-type="object" relative="" relative-type="" value="сам соси!!!!" value-type="string"/>
+      <closeBlock/>
+      <elementSetX object="label_calc_2" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="label_calc_2" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="label_calc_2" object-type="object" value="0" value-type="float"/>
+      <elementShow object="label_calc_2" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="label_calc_2" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="label_calc_2" object-type="object" x="8" x-type="float" y="0" y-type="float"/>
+    </method>
+  </class>
+</root>

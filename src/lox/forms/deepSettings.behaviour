@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="image5">
+    <behaviour delay="0" duration="1000" enabled="" negative="" repeatCount="-1" type="behaviour\custom\RotateAnimationBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label32">
+    <behaviour delay="0" duration="500" negative="" repeatCount="-1" type="behaviour\custom\RotateAnimationBehaviour" when="CLICK"/>
+    <behaviour animated="1" direction="ALL" gridX="1" gridY="1" limitedByParent="1" opacity="0.5" opacityEnabled="" type="behaviour\custom\DraggingBehaviour"/>
+  </target>
+  <target id="progressIndicator">
+    <behaviour brightness="1" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="image8">
+    <behaviour brightness="-0.31707317073171" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="CLICK"/>
+  </target>
+  <target id="image">
+    <behaviour brightness="-0.31707317073171" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="CLICK"/>
+  </target>
+  <target id="imageAlt">
+    <behaviour brightness="-0.31707317073171" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="CLICK"/>
+  </target>
+  <target id="image3">
+    <behaviour brightness="-0.31707317073171" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="CLICK"/>
+  </target>
+  <target id="image4">
+    <behaviour brightness="-0.31707317073171" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="CLICK"/>
+  </target>
+</behaviours>

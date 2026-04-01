@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="wifiSettings">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doNetButton1Action">
+      <ifVar method="equals" method-type="" name="wificonnected" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <elementHide object="halftrans" object-type="object"/>
+      <elementSetX object="halftrans" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="halftrans" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetX object="wifiNotConnected" object-type="object" relative="" relative-type="" value="272" value-type="integer"/>
+      <elementSetY object="halftrans" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halftrans" object-type="object" value="0" value-type="float"/>
+      <elementShow object="halftrans" object-type="object"/>
+      <elementShow object="wifiNotConnected" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="halftrans" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="wifiNotConnected" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <closeBlock/>
+    </method>
+  <method name="doButtonAction">
+      <ifVar method="equals" method-type="" name="searchwifi" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <setVar name="searchwifi" name-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementSetText object="label3" object-type="object" relative="" relative-type="" value="Подождите..." value-type="string"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="label3" object-type="object" x="40" x-type="float" y="10" y-type="float"/>
+      <elementSetText object="label3" object-type="object" relative="" relative-type="" value="Поиск сетей..." value-type="string"/>
+      <elementShow object="progressIndicator" object-type="object"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <elementShow object="netButton1" object-type="object"/>
+      <elementShow object="netInfo1_1" object-type="object"/>
+      <elementShow object="netInfo1_2" object-type="object"/>
+      <elementShow object="netInfo1_3" object-type="object"/>
+      <elementShow object="netInfo1_4" object-type="object"/>
+      <sleep sync="" sync-type="" value="8000" value-type="integer"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <elementSetText object="label3" object-type="object" relative="" relative-type="" value="Сетей больше не найдено" value-type="string"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="label3" object-type="object" x="8" x-type="float" y="10" y-type="float"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <setVar name="searchwifi" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButtonAltAction">
+      <appendVar asString="" asString-type="" name="zero_counter" name-type="" value="1" value-type="string"/>
+      <elementSetText object="zero_count" object-type="object" relative="" relative-type="" value="zero_counter" value-type="globalVariable"/>
+      <appendVar asString="1" asString-type="" name="asterisk_counter" name-type="" value="*" value-type="string"/>
+      <elementSetText object="passwordLabel" object-type="object" relative="" relative-type="" value="asterisk_counter" value-type="globalVariable"/>
+      <ifVar method="equals" method-type="" name="zero_counter" name-type="" not="" not-type="" value="8" value-type="integer"/>
+      <elementSetX object="strelka" object-type="object" relative="" relative-type="" value="176" value-type="integer"/>
+      <ifVar method="equals" method-type="" name="zero_counter" name-type="" not="" not-type="" value="9" value-type="integer"/>
+      <openBlock/>
+      <elementSetX object="strelka" object-type="object" relative="" relative-type="" value="72" value-type="integer"/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="zero_count" object-type="object"/>
+      <elementShow object="toomuch" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\BlinkAnimationBehaviour" behaviour-type="string" object="hiddensost" object-type="object"/>
+      <elementShow object="hiddensost" object-type="object"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton3Action">
+      <setVar name="zero_counter" name-type="" value="0" value-type="string"/>
+      <elementSetText object="zero_count" object-type="object" relative="" relative-type="" value="zero_counter" value-type="globalVariable"/>
+      <setVar name="asterisk_counter" name-type="" value="" value-type="string"/>
+      <elementSetText object="passwordLabel" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="zero_count" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\BlinkAnimationBehaviour" behaviour-type="string" object="hiddensost" object-type="object"/>
+      <elementHide object="hiddensost" object-type="object"/>
+      <elementHide object="toomuch" object-type="object"/>
+      <elementSetX object="strelka" object-type="object" relative="" relative-type="" value="8" value-type="integer"/>
+    </method>
+  
+  <method name="doButton4Action">
+      <ifVar method="equals" method-type="" name="zero_counter" name-type="" not="" not-type="" value="8" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="netInfo1_3" object-type="object" relative="" relative-type="" value="Подключено" value-type="string"/>
+      <elementHide object="wifiNotConnected" object-type="object"/>
+      <elementHide object="halftrans" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <stopMedia id="wifierr" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="wifierr" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

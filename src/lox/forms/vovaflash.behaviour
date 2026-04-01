@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="labeltime">
+    <behaviour format="HH:mm:ss" type="behaviour\custom\WatchMakerBehaviour"/>
+  </target>
+</behaviours>

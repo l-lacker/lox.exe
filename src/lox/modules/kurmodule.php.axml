@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="kurmodule">
+    <method name="doCheckerTimerAction">
+      <ifVar method="equals" method-type="" name="kurchecked" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="kurallow" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="kurchecked" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;player-&gt;open('https://l-lacker.ru/app/lox-sites/hack/lkursec.mp4')" expr-type="expr"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

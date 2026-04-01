@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240" prefWidth="168" styleClass="">
+  <children>
+    <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="240" id="wall" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="168">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-statusbar_icons" image=".data/img/vtb-icons.png" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-statusbar_time" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-statusbar" image=".data/img/3-menu.png" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-wall" image=".data/img/vtb-wall.png" visible="1"/>
+    <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="157" id="image" layoutX="0" layoutY="16" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="168">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/vtb-widgets.png" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-activity_menu" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel_down" visible="1"/>
+    <Rectangle arcHeight="0" arcWidth="0" fill="#000000" focusTraversable="false" height="200" id="menu_prozr" layoutX="176" layoutY="16" stroke="#000000" strokeType="INSIDE" strokeWidth="2" styleClass="" width="168"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-menu_prozr" visible="1"/>
+    <Panel backgroundColor="#000000" borderColor="#000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="activity_menu" layoutX="0" layoutY="248" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="200" prefWidth="168" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <Rectangle arcHeight="0" arcWidth="0" fill="#4d4d4d" focusTraversable="false" height="56" id="rect" layoutX="8" layoutY="16" stroke="#4d4d4d" strokeType="INSIDE" strokeWidth="2" styleClass="" width="56"/>
+        <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="8" layoutY="0" prefHeight="17" prefWidth="152" styleClass="label " text="Меню" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Tahoma Bold" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image4" layoutX="16" layoutY="24" mosaic="false" mosaicGap="0" opacity="0.35" proportional="false" stretch="true" styleClass="" textFill="#000000" width="40">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image4" image=".data/img/vtb-icon-callhist.png" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image5" layoutX="64" layoutY="24" mosaic="false" mosaicGap="0" opacity="0.35" proportional="false" stretch="true" styleClass="" textFill="#000000" width="40">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image5" image=".data/img/vtb-icon-contacts.png" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image6" layoutX="112" layoutY="24" mosaic="false" mosaicGap="0" opacity="0.35" proportional="false" stretch="true" styleClass="" textFill="#000000" width="40">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image6" image=".data/img/vtb-icon-simmenu.png" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image7" layoutX="16" layoutY="80" mosaic="false" mosaicGap="0" opacity="0.35" proportional="false" stretch="true" styleClass="" textFill="#000000" width="40">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image7" image=".data/img/vtb-icon-calculator.png" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image8" layoutX="64" layoutY="80" mosaic="false" mosaicGap="0" opacity="0.35" proportional="false" stretch="true" styleClass="" textFill="#000000" width="40">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image8" image=".data/img/vtb-icon-sms.png" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image9" layoutX="112" layoutY="80" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="40">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image9" image=".data/img/vtb-icon-gallery.png" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image10" layoutX="16" layoutY="136" mosaic="false" mosaicGap="0" opacity="0.35" proportional="false" stretch="true" styleClass="" textFill="#000000" width="40">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image10" image=".data/img/vtb-icon-files.png" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image11" layoutX="64" layoutY="136" mosaic="false" mosaicGap="0" opacity="0.35" proportional="false" stretch="true" styleClass="" textFill="#000000" width="40">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image11" image=".data/img/vtb-icon-camera.png" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image12" layoutX="112" layoutY="136" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="40">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image12" image=".data/img/vtb-icon-settings.png" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-rect" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-apierror_prozr" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-nb_activity" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-numnab_activity" visible="1"/>
+    <Rectangle arcHeight="0" arcWidth="0" fill="#000000" focusTraversable="false" height="200" id="app_prozr" layoutX="176" layoutY="248" stroke="#000000" strokeType="INSIDE" strokeWidth="2" styleClass="" width="168"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-app_prozr" visible="1"/>
+    <FragmentPane alignment="CENTER" focusTraversable="false" id="app1_activity" layoutX="352" layoutY="248" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="200" prefWidth="168" spacing="0" styleClass="fragment-pane "/>
+    <Data content="pphui_app1" cursor="DEFAULT" enabled="1" id="data-app1_activity" visible="1"/>
+    <Panel backgroundColor="#ffffff" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel_down" layoutX="0" layoutY="216" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="32" prefWidth="170" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <Data cursor="DEFAULT" enabled="1" id="data-imageAlt" image=".data/img/vtb-podlozhka.png" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label1_down" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-menu_down_icon" image=".data/img/vtb-bs-menu.png" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label2_down" visible="1"/>
+        <ImageViewEx autoSize="true" centered="false" focusTraversable="false" height="24" id="imageAlt" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="168">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label1_down" layoutX="8" layoutY="3" prefHeight="17" prefWidth="56" styleClass="label " text="Меню" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="24" id="menu_down_icon" layoutX="72" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="24">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <LabelEx alignment="CENTER_RIGHT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label2_down" layoutX="112" layoutY="3" prefHeight="17" prefWidth="48" styleClass="label " text="Актив" textAlignment="RIGHT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Panel backgroundColor="#00000000" borderColor="#00000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="nb_activity" layoutX="544" layoutY="16" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="328" prefWidth="178" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="200" id="image16" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="176">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <ImageViewEx autoSize="true" centered="false" focusTraversable="false" height="24" id="image18" layoutX="0" layoutY="200" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="168">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="24" id="image19" layoutX="72" layoutY="200" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="24">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <LabelEx alignment="CENTER_RIGHT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label5" layoutX="112" layoutY="203" prefHeight="17" prefWidth="48" styleClass="label " text="Назад" textAlignment="RIGHT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image16" image=".data/img/vtb-wall.png" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-image18" image=".data/img/vtb-podlozhka.png" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-image19" image=".data/img/vtb-bs-ok.png" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label5" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="8" layoutY="203" prefHeight="17" prefWidth="56" styleClass="label " text="Вызов" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label4" layoutX="16" layoutY="8" prefHeight="184" prefWidth="144" styleClass="label " text="0000000000000000000000000000" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Tahoma" size="35"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label4" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Panel backgroundColor="#00000000" borderColor="#00000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="numnab_activity" layoutX="744" layoutY="16" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="328" prefWidth="178" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="200" id="image17" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="176">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <ImageViewEx autoSize="true" centered="false" focusTraversable="false" height="24" id="image20" layoutX="0" layoutY="200" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="168">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <LabelEx alignment="CENTER_RIGHT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label6" layoutX="80" layoutY="203" prefHeight="17" prefWidth="80" styleClass="label " text="Завершить" textAlignment="RIGHT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label7" layoutX="8" layoutY="203" prefHeight="17" prefWidth="56" styleClass="label " text="Запись" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <LabelEx alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label8" layoutX="8" layoutY="88" prefHeight="32" prefWidth="152" styleClass="label " text="88005553535" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Tahoma Bold" size="15"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image17" image=".data/img/vtb-wall.png" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-image20" image=".data/img/vtb-podlozhka.png" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label6" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label7" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label8" visible="1"/>
+        <LabelEx alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="callcounter" layoutX="8" layoutY="112" prefHeight="32" prefWidth="152" styleClass="label " text="Вызываю..." textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Tahoma" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-callcounter" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="56" id="image21" layoutX="56" layoutY="24" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="56">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image21" image=".data/img/vtb-contact.png" visible="1"/>
+        <Panel backgroundColor="#ff0000" borderColor="#ff0000" borderRadius="16" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="callrecsplash" layoutX="35" layoutY="136" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="24" prefWidth="96" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <Circle fill="#ffffff" focusTraversable="false" id="circle" layoutX="20" layoutY="12" radius="8" stroke="#ffffff" strokeType="INSIDE" strokeWidth="2" styleClass=""/>
+            <Data cursor="DEFAULT" enabled="1" id="data-circle" visible="1"/>
+            <LabelEx alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label10" layoutX="28" layoutY="4" prefHeight="8" prefWidth="56" styleClass="label " text="Запись" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+              <font>
+                <Font name="Tahoma" size="13"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-label10" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="System Regular" size="12"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-callrecsplash" visible=""/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="16" id="statusbar" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="168">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="16" id="statusbar_icons" layoutX="120" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="48">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="statusbar_time" layoutX="3" layoutY="1" prefHeight="14" prefWidth="64" styleClass="label " text="20:00" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="Tahoma" size="11"/>
+      </font>
+    </LabelEx>
+    <FragmentPane alignment="CENTER" focusTraversable="false" id="app2_activity" layoutX="528" layoutY="248" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="200" prefWidth="168" spacing="0" styleClass="fragment-pane "/>
+    <Data content="pphui_app2" cursor="DEFAULT" enabled="1" id="data-app2_activity" visible="1"/>
+    <Panel backgroundColor="#00000000" borderColor="#00000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="window_loadingapi" layoutX="936" layoutY="16" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="228" prefWidth="172" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="200" id="image22" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="168">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Panel backgroundColor="#ffffff" borderColor="#ffffff" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel" layoutX="0" layoutY="144" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="82" prefWidth="170" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label9" layoutX="8" layoutY="8" prefHeight="15" prefWidth="152" styleClass="label " text="Подождите..." textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+              <font>
+                <Font name="Tahoma Bold" size="12"/>
+              </font>
+            </LabelEx>
+            <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="56" id="image23" layoutX="0" layoutY="24" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="168">
+              <font>
+                <Font name="System Regular" size="12"/>
+              </font>
+            </ImageViewEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-label9" visible="1"/>
+            <Data cursor="DEFAULT" enabled="1" id="data-image23" image=".data/img/lox-waiter.png" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="System Regular" size="12"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-image22" image=".data/img/vtb-dots-semihalf.png" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-window_loadingapi" visible="1"/>
+    <Panel backgroundColor="#00000000" borderColor="#00000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="apierror_prozr" layoutX="360" layoutY="16" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="328" prefWidth="176" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <Data cursor="DEFAULT" enabled="1" id="data-image3" image=".data/img/vtb-podlozhka.png" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-image13" image=".data/img/vtb-bs-ok.png" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-image14" image=".data/img/vtb-dots-semihalf.png" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-apierror_window" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="200" id="image14" layoutX="0" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="168">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Panel backgroundColor="#ffffff" borderColor="#ffffff" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="apierror_window" layoutX="0" layoutY="120" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="80" prefWidth="168" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="32" id="image15" layoutX="8" layoutY="8" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="32">
+              <font>
+                <Font name="System Regular" size="12"/>
+              </font>
+            </ImageViewEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-image15" image=".data/img/AWtq8Mo.png" visible="1"/>
+            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="apierror_label" layoutX="48" layoutY="8" prefHeight="17" prefWidth="112" styleClass="label " text="Ошибка!" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+              <font>
+                <Font name="Tahoma Bold" size="12"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-apierror_label" visible="1"/>
+            <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="apierror_text" layoutX="48" layoutY="24" prefHeight="48" prefWidth="112" styleClass="label " text="Текст ошибки" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="true">
+              <font>
+                <Font name="Tahoma" size="11"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-apierror_text" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="System Regular" size="12"/>
+          </titleFont>
+        </Panel>
+        <ImageViewEx autoSize="true" centered="false" focusTraversable="false" height="24" id="image3" layoutX="0" layoutY="200" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="168">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="24" id="image13" layoutX="72" layoutY="200" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="24">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <LabelEx alignment="CENTER_RIGHT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="112" layoutY="203" prefHeight="17" prefWidth="48" styleClass="label " text="Скрыть" textAlignment="RIGHT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+  </children>
+</AnchorPane>

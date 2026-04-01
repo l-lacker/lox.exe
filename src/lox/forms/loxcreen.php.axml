@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="loxcreen">
+    
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doOnetimehelperMouseEnter">
+      <elementHide object="~sender" object-type="object"/>
+      <phpLine expr="$this-&gt;helperlc-&gt;start()" expr-type="expr"/>
+      <exit/>
+    </method>
+  
+  
+  
+  
+  
+  
+  <method name="doPanel6ClickLeft">
+      <fadeTo continue="" continue-type="" duration="100" duration-type="integer" object="fragment" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panel6" object-type="object" x="8" x-type="float" y="136" y-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="panelAlt" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="250" duration-type="integer" object="panel5" object-type="object" value="0" value-type="float"/>
+      <elementHide object="panel5" object-type="object"/>
+    </method>
+  
+  <method name="doPanel4MouseUp">
+      <phpLine expr="$anime3 = $this-&gt;panel4-&gt;x" expr-type="expr"/>
+      <setVar name="anime4" name-type="" value="anime3" value-type="variable"/>
+      <ifVar method="smaller" method-type="" name="anime4" name-type="" not="" not-type="" value="9" value-type="integer"/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel5" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="fragment" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel5" object-type="object"/>
+      <elementSetX object="panel5" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel5" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetX object="fragment" object-type="object" relative="" relative-type="" value="264" value-type="integer"/>
+      <elementSetX object="panel6" object-type="object" relative="" relative-type="" value="8" value-type="integer"/>
+      <elementSetY object="panel6" object-type="object" relative="" relative-type="" value="136" value-type="integer"/>
+      <moveTo continue="" continue-type="" duration="50" duration-type="integer" object="panel4" object-type="object" x="8" x-type="float" y="136" y-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="panelAlt" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="250" duration-type="integer" object="panel5" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panel6" object-type="object" x="8" x-type="float" y="8" y-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="100" duration-type="integer" object="fragment" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="100" duration-type="integer" object="fragment" object-type="object" x="0" x-type="float" y="64" y-type="float"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="$anime = $this-&gt;panelAlt-&gt;x" expr-type="expr"/>
+      <setVar name="anime2" name-type="" value="anime" value-type="variable"/>
+      <ifVar method="smaller" method-type="" name="anime2" name-type="" not="" not-type="" value="64" value-type="integer"/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="panel4" object-type="object" x="8" x-type="float" y="136" y-type="float"/>
+      <closeBlock/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doPanelAltMouseUpLeft">
+      <phpLine expr="$anime = $this-&gt;panelAlt-&gt;x" expr-type="expr"/>
+      <setVar name="anime2" name-type="" value="anime" value-type="variable"/>
+      <ifVar method="greater" method-type="" name="anime2" name-type="" not="" not-type="" value="64" value-type="integer"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;helperlc-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;verticlock-&gt;stop()" expr-type="expr"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="panelAlt" object-type="object" x="264" x-type="float" y="0" y-type="float"/>
+      <setVar name="lc_unlockmode" name-type="" value="1" value-type="string"/>
+      <fadeTo continue="" continue-type="" duration="250" duration-type="integer" object="panel" object-type="object" value="0" value-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="panelAlt" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

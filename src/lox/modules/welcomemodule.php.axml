@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="welcomemodule">
+    <method name="doHoverScriptAction">
+      <phpLine expr="$this-&gt;hoverPlayer-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;hoverPlayer-&gt;play()" expr-type="expr"/>
+    </method>
+  <method name="doClickScriptAction">
+      <phpLine expr="$this-&gt;clickPlayer-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;clickPlayer-&gt;play()" expr-type="expr"/>
+    </method>
+  </class>
+</root>

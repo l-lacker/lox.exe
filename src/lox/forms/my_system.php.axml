@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="my_system">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton7Action">
+      <setVar name="sd_pi_kakahi" name-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="button6" object-type="object"/>
+      <elementEnabledOff object="button7" object-type="object"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="Симпл димпл (1) или поп ит (2)?" value-type="string"/>
+      <elementSetText object="button9" object-type="object" relative="" relative-type="" value="1" value-type="string"/>
+      <elementSetText object="button10" object-type="object" relative="" relative-type="" value="2" value-type="string"/>
+      <elementShow object="button9" object-type="object"/>
+      <elementShow object="button10" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton6Action">
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="Пол? (мужской или женский)" value-type="string"/>
+      <elementEnabledOff object="button6" object-type="object"/>
+      <elementEnabledOff object="button7" object-type="object"/>
+      <elementShow object="button9" object-type="object"/>
+      <elementShow object="button10" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAltAction">
+      <elementSetText object="dop1" object-type="variable" relative="" relative-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="buttonAlt" object-type="object"/>
+      <elementEnabledOff object="button3" object-type="object"/>
+      <elementSetText object="label17" object-type="object" relative="" relative-type="" value="OK" value-type="string"/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <elementLoadContent object="image7" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="labelProcessor" object-type="object" relative="" relative-type="" value="Повышенного качества (1/1 б.)" value-type="string"/>
+    </method>
+  
+  <method name="doButton4Action">
+      <elementSetText object="dop2" object-type="variable" relative="" relative-type="" value="0" value-type="string"/>
+      <elementEnabledOff object="button4" object-type="object"/>
+      <elementEnabledOff object="button5" object-type="object"/>
+      <elementSetText object="label8" object-type="object" relative="" relative-type="" value="OK" value-type="string"/>
+      <elementLoadContent object="image8" object-type="object" path="res://.data/img/lsyst-fail.png" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="labelVideoCard" object-type="object" relative="" relative-type="" value="Устаревшей модели (0/1 б.)" value-type="string"/>
+    </method>
+  <method name="doButton5Action">
+      <elementSetText object="dop2" object-type="variable" relative="" relative-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="button4" object-type="object"/>
+      <elementEnabledOff object="button5" object-type="object"/>
+      <elementSetText object="label8" object-type="object" relative="" relative-type="" value="OK" value-type="string"/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <elementLoadContent object="image8" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="labelVideoCard" object-type="object" relative="" relative-type="" value="Свежая (от 2017 и новее) (1/1 б.)" value-type="string"/>
+    </method>
+  <method name="doButton9Action">
+      <ifVar method="equals" method-type="" name="sd_pi_kakahi" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="labelOthers" object-type="object" relative="" relative-type="" value="Вы выбрали симпл димпл (1/1 б.)" value-type="string"/>
+      <elementSetText object="label23" object-type="object" relative="" relative-type="" value="Хороший выбор" value-type="string"/>
+      <elementLoadContent object="image9" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="ОК" value-type="string"/>
+      <elementShow object="image6" object-type="object"/>
+      <elementShow object="button8" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="Категория годности?" value-type="string"/>
+      <elementShow object="button11" object-type="object"/>
+      <elementShow object="button12" object-type="object"/>
+      <elementShow object="button13" object-type="object"/>
+      <elementShow object="button14" object-type="object"/>
+      <elementShow object="button15" object-type="object"/>
+      <closeBlock/>
+      <elementEnabledOff object="button9" object-type="object"/>
+      <elementEnabledOff object="button10" object-type="object"/>
+    </method>
+  <method name="doButton10Action">
+      <ifVar method="equals" method-type="" name="sd_pi_kakahi" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="labelOthers" object-type="object" relative="" relative-type="" value="Вы выбрали поп ит (1/1 б.)" value-type="string"/>
+      <elementSetText object="label23" object-type="object" relative="" relative-type="" value="Хороший выбор" value-type="string"/>
+      <elementLoadContent object="image9" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="button9" object-type="object"/>
+      <elementEnabledOff object="button10" object-type="object"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="ОК" value-type="string"/>
+      <elementShow object="image6" object-type="object"/>
+      <elementShow object="button8" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="sd_pi_kakahi" name-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="button9" object-type="object"/>
+      <elementEnabledOff object="button10" object-type="object"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="Симпл димпл (1) или поп ит (2)?" value-type="string"/>
+      <elementSetText object="button11" object-type="object" relative="" relative-type="" value="1" value-type="string"/>
+      <elementSetText object="button12" object-type="object" relative="" relative-type="" value="2" value-type="string"/>
+      <elementShow object="button11" object-type="object"/>
+      <elementShow object="button12" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  <method name="doButton14Action">
+      <elementSetText object="labelOthers" object-type="object" relative="" relative-type="" value="Ну и лошара! (0/1 б.)" value-type="string"/>
+      <elementSetText object="label23" object-type="object" relative="" relative-type="" value="Прям реально лох с категорией Г" value-type="string"/>
+      <elementLoadContent object="image9" object-type="object" path="res://.data/img/lsyst-fail.png" path-type="string" sync="" sync-type=""/>
+      <elementEnabledOff object="button11" object-type="object"/>
+      <elementEnabledOff object="button12" object-type="object"/>
+      <elementEnabledOff object="button13" object-type="object"/>
+      <elementEnabledOff object="button14" object-type="object"/>
+      <elementEnabledOff object="button15" object-type="object"/>
+      <elementShow object="image6" object-type="object"/>
+      <elementShow object="button8" object-type="object"/>
+    </method>
+  
+  
+  <method name="doButton11Action">
+      <ifVar method="equals" method-type="" name="sd_pi_kakahi" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="labelOthers" object-type="object" relative="" relative-type="" value="Вы выбрали симпл димпл (1/1 б.)" value-type="string"/>
+      <elementSetText object="label23" object-type="object" relative="" relative-type="" value="Хороший выбор" value-type="string"/>
+      <elementLoadContent object="image9" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="button11" object-type="object"/>
+      <elementEnabledOff object="button12" object-type="object"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="ОК" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementSetText object="labelOthers" object-type="object" relative="" relative-type="" value="Ну и лошара! (0/1 б.)" value-type="string"/>
+      <elementSetText object="label23" object-type="object" relative="" relative-type="" value="Прям реально лох с категорией А" value-type="string"/>
+      <elementLoadContent object="image9" object-type="object" path="res://.data/img/lsyst-fail.png" path-type="string" sync="" sync-type=""/>
+      <elementEnabledOff object="button11" object-type="object"/>
+      <elementEnabledOff object="button12" object-type="object"/>
+      <elementEnabledOff object="button13" object-type="object"/>
+      <elementEnabledOff object="button14" object-type="object"/>
+      <elementEnabledOff object="button15" object-type="object"/>
+      <closeBlock/>
+      <elementShow object="image6" object-type="object"/>
+      <elementShow object="button8" object-type="object"/>
+    </method>
+  <method name="doButton12Action">
+      <ifVar method="equals" method-type="" name="sd_pi_kakahi" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="labelOthers" object-type="object" relative="" relative-type="" value="Вы выбрали поп ит (1/1 б.)" value-type="string"/>
+      <elementSetText object="label23" object-type="object" relative="" relative-type="" value="Хороший выбор" value-type="string"/>
+      <elementLoadContent object="image9" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="button11" object-type="object"/>
+      <elementEnabledOff object="button12" object-type="object"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="ОК" value-type="string"/>
+      <elementShow object="image6" object-type="object"/>
+      <elementShow object="button8" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementSetText object="labelOthers" object-type="object" relative="" relative-type="" value="Ну хотя бы что-то (1/1 б.)" value-type="string"/>
+      <elementSetText object="label23" object-type="object" relative="" relative-type="" value="Повезло, что не А или Г" value-type="string"/>
+      <elementLoadContent object="image9" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="button11" object-type="object"/>
+      <elementEnabledOff object="button12" object-type="object"/>
+      <elementEnabledOff object="button13" object-type="object"/>
+      <elementEnabledOff object="button14" object-type="object"/>
+      <elementEnabledOff object="button15" object-type="object"/>
+      <closeBlock/>
+      <elementShow object="image6" object-type="object"/>
+      <elementShow object="button8" object-type="object"/>
+    </method>
+  
+  
+  <method name="doButton13Action">
+      <elementSetText object="labelOthers" object-type="object" relative="" relative-type="" value="Ничего себе тебе с категорией повезло (1/1 б.)" value-type="string"/>
+      <elementSetText object="label23" object-type="object" relative="" relative-type="" value="Аж категория В (но ещё не Д)" value-type="string"/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <elementLoadContent object="image9" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <elementEnabledOff object="button11" object-type="object"/>
+      <elementEnabledOff object="button12" object-type="object"/>
+      <elementEnabledOff object="button13" object-type="object"/>
+      <elementEnabledOff object="button14" object-type="object"/>
+      <elementEnabledOff object="button15" object-type="object"/>
+      <elementShow object="image6" object-type="object"/>
+      <elementShow object="button8" object-type="object"/>
+    </method>
+  <method name="doButton15Action">
+      <elementSetText object="labelOthers" object-type="object" relative="" relative-type="" value="Ничего себе тебе с категорией повезло (1/1 б.)" value-type="string"/>
+      <elementSetText object="label23" object-type="object" relative="" relative-type="" value="Аж категорию Д выбил, круто ведь" value-type="string"/>
+      <elementLoadContent object="image9" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="button11" object-type="object"/>
+      <elementEnabledOff object="button12" object-type="object"/>
+      <elementEnabledOff object="button13" object-type="object"/>
+      <elementEnabledOff object="button14" object-type="object"/>
+      <elementEnabledOff object="button15" object-type="object"/>
+      <elementShow object="image6" object-type="object"/>
+      <elementShow object="button8" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doShow">
+      <phpLine expr="$screen = UXScreen::getPrimary()" expr-type="expr"/>
+      <phpLine expr="$width  = $screen-&gt;bounds['width']" expr-type="expr"/>
+      <phpLine expr="$height = $screen-&gt;bounds['height']" expr-type="expr"/>
+      <setVar name="width1" name-type="" value="width" value-type="variable"/>
+      <setVar name="height1" name-type="" value="height" value-type="variable"/>
+    </method>
+  
+  <method name="doButton3Action">
+      <elementSetText object="dop1" object-type="variable" relative="" relative-type="" value="0" value-type="string"/>
+      <elementEnabledOff object="buttonAlt" object-type="object"/>
+      <elementEnabledOff object="button3" object-type="object"/>
+      <elementSetText object="label17" object-type="object" relative="" relative-type="" value="OK" value-type="string"/>
+      <elementLoadContent object="image7" object-type="object" path="res://.data/img/lsyst-fail.png" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="labelProcessor" object-type="object" relative="" relative-type="" value="Невысокого качества (0/1 б.)" value-type="string"/>
+    </method>
+  
+  
+  
+  <method name="doButton8Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <phpLine expr="Element::setText($this-&gt;label25, 'Итог: '.$GLOBALS['ochkolvo'].'/9')" expr-type="expr"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="image11" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panelAlt" object-type="object" x="0" x-type="float" y="296" y-type="float"/>
+      <elementHide object="image11" object-type="object"/>
+    </method>
+  <method name="doButtonAction">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementHide object="image10" object-type="object"/>
+      <elementSetText object="label3" object-type="object" relative="" relative-type="" value="Автоматическая проверка запущена" value-type="string"/>
+      <setVar name="ochkolvo" name-type="" value="0" value-type="string"/>
+      <phpLine expr="$disk = $_ENV['SystemDrive']" expr-type="expr"/>
+      <elementSetText object="labelDiskLetter" object-type="object" relative="" relative-type="" value="disk" value-type="variable"/>
+      <setVar name="gdisk" name-type="" value="disk" value-type="variable"/>
+      <ifText method="startsWith" method-type="" not="" not-type="" object="disk" object-type="variable" string="C:" string-type="string"/>
+      <openBlock/>
+      <appendVar asString="1" asString-type="" name="gdisk" name-type="" value=", как у нормальных людей (1/1 б.)" value-type="string"/>
+      <elementLoadContent object="image" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <appendVar asString="1" asString-type="" name="gdisk" name-type="" value=", как у меньшинств (0/1 б.)" value-type="string"/>
+      <elementLoadContent object="image" object-type="object" path="res://.data/img/lsyst-fail.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <elementSetText object="labelDiskLetter" object-type="object" relative="" relative-type="" value="gdisk" value-type="globalVariable"/>
+      <setVar name="res_b1" name-type="" value="0" value-type="string"/>
+      <elementLoadContent object="imageAlt" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <ifVar method="greater" method-type="" name="width1" name-type="" not="" not-type="" value="1279" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="1" asString-type="" name="lhelper1" name-type="" value="), ширина ОК" value-type="string"/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="res_b1" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <appendVar asString="1" asString-type="" name="lhelper1" name-type="" value="), ширина ОК" value-type="string"/>
+      <elementLoadContent object="imageAlt" object-type="object" path="res://.data/img/lsyst-fail.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <ifVar method="greater" method-type="" name="height1" name-type="" not="" not-type="" value="799" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="1" asString-type="" name="lhelper2" name-type="" value=", высота ОК" value-type="string"/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="res_b1" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <appendVar asString="1" asString-type="" name="lhelper2" name-type="" value=", высота FAIL" value-type="string"/>
+      <elementLoadContent object="imageAlt" object-type="object" path="res://.data/img/lsyst-fail.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <phpLine expr="Element::setText($this-&gt;labelResolution, $GLOBALS['height1'].'p ('.$GLOBALS['width1'].'x'.$GLOBALS['height1'].$GLOBALS['lhelper1'].$GLOBALS['lhelper2'].' ('.$GLOBALS['res_b1'].'/2 б.)')" expr-type="expr"/>
+      <ifDirExists file="C:\Program Files\ShareX" file-type="string" not="" not-type=""/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <elementLoadContent object="image3" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="labelSoftTaste" object-type="object" relative="" relative-type="" value="Прекрасный вкус, уважаю (1/1 б.)" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementLoadContent object="image3" object-type="object" path="res://.data/img/lsyst-fail.png" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="labelSoftTaste" object-type="object" relative="" relative-type="" value="Вкус не столь прекрасен, как хотелось бы (0/1 б.)" value-type="string"/>
+      <closeBlock/>
+      <phpLine expr="$osName = System::getProperty('os.name')" expr-type="expr"/>
+      <ifText method="contains" method-type="" not="" not-type="" object="osName" object-type="variable" string="Windows" string-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <setVar name="lhelper3" name-type="" value=", хорошо что не Linux (1/1 б.)" value-type="string"/>
+      <elementLoadContent object="image4" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="lhelper4" name-type="" value=", чмырливая система (0/1 б.)" value-type="string"/>
+      <elementLoadContent object="image4" object-type="object" path="res://.data/img/lsyst-fail.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <phpLine expr="Element::setText($this-&gt;labelOS, $osName.$GLOBALS['lhelper3'].$GLOBALS['lhelper4'])" expr-type="expr"/>
+      <phpLine expr="$osVersion = System::getProperty('os.version')" expr-type="expr"/>
+      <setVar name="lOSver" name-type="" value="NT " value-type="string"/>
+      <appendVar asString="1" asString-type="" name="lOSver" name-type="" value="osVersion" value-type="variable"/>
+      <ifText method="startsWith" method-type="" not="1" not-type="" object="osVersion" object-type="variable" string="6" string-type="string"/>
+      <openBlock/>
+      <appendVar asString="1" asString-type="" name="lOSver" name-type="" value=" (как Вы вообще тут запустили?) (0/1 б.)" value-type="string"/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="osVersion" object-type="variable" string="10.0" string-type="string"/>
+      <openBlock/>
+      <setVar name="lOSver" name-type="" value="NT 10.0 (ядро 10+/Server 2016+, поддерживается) (1/1 б.)" value-type="string"/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="osVersion" object-type="variable" string="6.0" string-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="image5" object-type="object" path="res://.data/img/lsyst-fail.png" path-type="string" sync="" sync-type=""/>
+      <appendVar asString="1" asString-type="" name="lOSver" name-type="" value=" (ядро Vista/Server 2008, не поддерживается) (0/1 б.)" value-type="string"/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="osVersion" object-type="variable" string="6.1" string-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="image5" object-type="object" path="res://.data/img/lsyst-fail.png" path-type="string" sync="" sync-type=""/>
+      <appendVar asString="1" asString-type="" name="lOSver" name-type="" value=" (ядро 7/Server 2008 R2, не поддерживается) (0/1 б.)" value-type="string"/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="osVersion" object-type="variable" string="6.2" string-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="image5" object-type="object" path="res://.data/img/lsyst-fail.png" path-type="string" sync="" sync-type=""/>
+      <appendVar asString="1" asString-type="" name="lOSver" name-type="" value=" (ядро 8.0/Server 2012, не поддерживается) (0/1 б.)" value-type="string"/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="osVersion" object-type="variable" string="6.3" string-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="image5" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <appendVar asString="1" asString-type="" name="lOSver" name-type="" value=" (ядро 8.1/Server 2012 R2, поддерживается) (1/1 б.)" value-type="string"/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="osVersion" object-type="variable" string="10.0" string-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="image5" object-type="object" path="res://.data/img/lsyst-ok.png" path-type="string" sync="" sync-type=""/>
+      <appendVar asString="1" asString-type="" name="lOSver" name-type="" value=" (ядро 10/11, Server 2016/19, поддерживается) (1/1 б.)" value-type="string"/>
+      <appendVar asString="" asString-type="" name="ochkolvo" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <elementSetText object="labelOSver" object-type="object" relative="" relative-type="" value="lOSver" value-type="globalVariable"/>
+      <elementSetText object="label3" object-type="object" relative="" relative-type="" value="Автоматическая проверка завершена" value-type="string"/>
+      <elementShow object="image11" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <elementEnabledOn object="panel" object-type="object"/>
+    </method>
+  </class>
+</root>

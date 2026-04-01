@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="separator">
+    <behaviour brightness="-0.78" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button">
+    <behaviour color="#b3b3b399" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="separatorAlt">
+    <behaviour brightness="-0.78" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="separator3">
+    <behaviour brightness="-0.78" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="buttonAlt">
+    <behaviour color="#b3b3b399" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button3">
+    <behaviour color="#b3b3b399" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button4">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button5">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button6">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button7">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button8">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button9">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button10">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button11">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button12">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button13">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button14">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button16">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="1.22" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panel3">
+    <behaviour color="#b3b3b3" enabled="" offsetX="0" offsetY="0" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+</behaviours>

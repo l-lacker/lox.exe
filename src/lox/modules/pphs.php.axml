@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="pphs">
+    
+  
+  
+  
+  <method name="doBrightsyncAction">
+      <ifVar method="equals" method-type="" name="vtb_brightchan" name-type="" not="" not-type="" value="down" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_brightchan" name-type="" value="" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_brightcount" name-type="" not="1" not-type="" value="0.8" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vtb_brightcount" name-type="" value="0.2" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="400" duration-type="integer" object="rect" object-type="object" value="vtb_brightcount" value-type="globalVariable"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_brightchan" name-type="" not="" not-type="" value="up" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_brightchan" name-type="" value="" value-type="string"/>
+      <ifVar method="smaller" method-type="" name="vtb_brightcount" name-type="" not="1" not-type="" value="0" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vtb_brightcount" name-type="" value="-0.2" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="400" duration-type="integer" object="rect" object-type="object" value="vtb_brightcount" value-type="globalVariable"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

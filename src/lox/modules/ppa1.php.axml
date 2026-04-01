@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="ppa1">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doTimerAction">
+      <ifVar method="equals" method-type="" name="vtb_errorapi" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_opened" name-type="" not="" not-type="" value="inapp" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$arrowpuk = $GLOBALS['vtb_maxarrow']" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="redcall" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="rightfunc" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="rightfunc" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_backfunc" name-type="" not="" not-type="" value="menuexit" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="ok" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="leftfunc" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="leftfunc" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_backfunc" name-type="" not="" not-type="" value="menuexit" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementHide object="panel_settings" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_maxarrow" name-type="" value="5" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="screen" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="tosettings" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementHide object="panel_settings" object-type="object"/>
+      <elementSetX object="panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panel3" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_maxarrow" name-type="" value="4" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="sound" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="tosettings" value-type="string"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_inappp" name-type="" not="" not-type="" value="screen" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_brightchan" name-type="" value="up" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_brightchan" name-type="" value="down" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_widgetsenabled" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_widgetsenabled" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_widgetsenabledapi" name-type="" value="1" value-type="string"/>
+      <elementLoadContent object="image4" object-type="object" path="res://.data/img/vtb-selected.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_widgetsenabled" name-type="" value="" value-type="string"/>
+      <setVar name="vtb_widgetsenabledapi" name-type="" value="1" value-type="string"/>
+      <elementLoadContent object="image4" object-type="object" path="res://.data/img/vtb-unselected.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="4" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_errorapi_label" name-type="" value="Недоступно" value-type="string"/>
+      <setVar name="vtb_errorapi_text" name-type="" value="Функция будет введена позднее" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="5" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <elementSetX object="panel5" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panel5" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_maxarrow" name-type="" value="4" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="screenaccents" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="toscreen" value-type="string"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <newLine/>
+      <comment text="здесь начинается большая жопа со звуком" text-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_inappp" name-type="" not="" not-type="" value="sound" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_sounds_1en" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_sounds_1en" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;volume = 1" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementLoadContent object="image" object-type="object" path="res://.data/img/vtb-selected.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="vtb_sounds_1en" name-type="" value="" value-type="string"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;volume = 0" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementLoadContent object="image" object-type="object" path="res://.data/img/vtb-unselected.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_sounds_2en" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_sounds_2en" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;errorsound-&gt;volume = 1" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementLoadContent object="imageAlt" object-type="object" path="res://.data/img/vtb-selected.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="vtb_sounds_2en" name-type="" value="" value-type="string"/>
+      <phpLine expr="$this-&gt;errorsound-&gt;volume = 0" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementLoadContent object="imageAlt" object-type="object" path="res://.data/img/vtb-unselected.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_sounds_3en" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_sounds_3en" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;volume = 1" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementLoadContent object="image3" object-type="object" path="res://.data/img/vtb-selected.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="vtb_sounds_3en" name-type="" value="" value-type="string"/>
+      <phpLine expr="$this-&gt;dtmfsound-&gt;volume = 0" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementLoadContent object="image3" object-type="object" path="res://.data/img/vtb-unselected.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="4" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;ringsound-&gt;open('https://l-lacker.ru/app/masic/rings/1.mp3')" expr-type="expr"/>
+      <elementHide object="panel3" object-type="object"/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panel4" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_maxarrow" name-type="" value="6" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="ringtoneselector" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="toaudio" value-type="string"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_inappp" name-type="" not="" not-type="" value="ringtoneselector" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;ringsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;ringsound-&gt;play()" expr-type="expr"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementSetX object="panel" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panel" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_maxarrow" name-type="" value="2" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="ringtonelistener" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="tors" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_inappp" name-type="" not="" not-type="" value="ringtonelistener" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;ringsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;donesound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;donesound-&gt;play()" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;ringsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <closeBlock/>
+      <elementHide object="panel" object-type="object"/>
+      <elementSetX object="panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panel3" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_maxarrow" name-type="" value="4" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="sound" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="tosettings" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <comment text="конец жопы со звуками" text-type="string"/>
+      <newLine/>
+      <ifVar method="equals" method-type="" name="vtb_inappp" name-type="" not="" not-type="" value="screenaccents" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_rgbaccent" name-type="" value="default" value-type="string"/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;fillColor = &quot;1a3399&quot;" expr-type="expr"/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;strokeColor = &quot;1a3399&quot;" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_rgbaccent" name-type="" value="webos" value-type="string"/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;fillColor = &quot;b20148&quot;" expr-type="expr"/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;strokeColor = &quot;b20148&quot;" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;fillColor = &quot;fe0000&quot;" expr-type="expr"/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;strokeColor = &quot;fe0000&quot;" expr-type="expr"/>
+      <setVar name="vtb_rgbaccent" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <phpLine expr="$this-&gt;donesound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;donesound-&gt;play()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="rightfunc" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_backfunc" name-type="" not="" not-type="" value="tosettings" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <elementHide object="panel3" object-type="object"/>
+      <elementShow object="panel_settings" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_inappp" name-type="" value="settings" value-type="string"/>
+      <setVar name="vtb_maxarrow" name-type="" value="4" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="menuexit" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_backfunc" name-type="" not="" not-type="" value="toscreen" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementHide object="panel5" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_maxarrow" name-type="" value="5" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="screen" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="tosettings" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_backfunc" name-type="" not="" not-type="" value="toaudio" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementShow object="panel3" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_inappp" name-type="" value="audio" value-type="string"/>
+      <setVar name="vtb_maxarrow" name-type="" value="4" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="tosettings" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_backfunc" name-type="" not="" not-type="" value="tors" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;ringsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;ringsound-&gt;open('https://l-lacker.ru/app/masic/rings/1.mp3')" expr-type="expr"/>
+      <elementHide object="panel" object-type="object"/>
+      <elementShow object="panel4" object-type="object"/>
+      <moveTo continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="21" y-type="float"/>
+      <setVar name="vtb_maxarrow" name-type="" value="6" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="ringtoneselector" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="toaudio" value-type="string"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="up" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="-24" y-type="float"/>
+      <appendVar asString="" asString-type="" name="vtb_arrowcount" name-type="" value="-1" value-type="string"/>
+      <closeBlock/>
+      <setVar name="vtb_inappp_rzhop" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrow" name-type="" not="" not-type="" value="down" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;touchsound-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;touchsound-&gt;play()" expr-type="expr"/>
+      <setVar name="vtb_arrow" name-type="" value="" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="1" not-type="" value="arrowpuk" value-type="variable"/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="magicrect_control" object-type="object" x="0" x-type="float" y="24" y-type="float"/>
+      <appendVar asString="" asString-type="" name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <setVar name="vtb_inappp_rzhop" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_inappp_rzhop" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_inappp_rzhop" name-type="" value="" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_inappp" name-type="" not="" not-type="" value="ringtoneselector" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;ringsound-&gt;open('https://l-lacker.ru/app/masic/rings/1.mp3')" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;ringsound-&gt;open('https://l-lacker.ru/app/masic/rings/2.mp3')" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;ringsound-&gt;open('https://l-lacker.ru/app/masic/rings/3.mp3')" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="4" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;ringsound-&gt;open('https://l-lacker.ru/app/masic/rings/4.mp3')" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="5" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;ringsound-&gt;open('https://l-lacker.ru/app/masic/rings/5.mp3')" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_arrowcount" name-type="" not="" not-type="" value="6" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;ringsound-&gt;open('https://l-lacker.ru/app/masic/rings/6.mp3')" expr-type="expr"/>
+      <closeBlock/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_subapp" name-type="" not="" not-type="" value="settingsopen" value-type="string"/>
+      <openBlock/>
+      <elementSetY object="panel_settings" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="magicrect_control" object-type="object" relative="" relative-type="" value="21" value-type="integer"/>
+      <setVar name="vtb_subapp" name-type="" value="settings" value-type="string"/>
+      <setVar name="vtb_maxarrow" name-type="" value="4" value-type="string"/>
+      <setVar name="vtb_arrowcount" name-type="" value="1" value-type="string"/>
+      <setVar name="vtb_inappp" name-type="" value="settings" value-type="string"/>
+      <setVar name="vtb_backfunc" name-type="" value="menuexit" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

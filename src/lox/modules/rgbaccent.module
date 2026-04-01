@@ -1,0 +1,15 @@
+{
+  "props": [],
+  "components": {
+    "rgbaccent": {
+      "type": "script\\TimerScript",
+      "x": 32,
+      "y": 32,
+      "props": {
+        "interval": "1000",
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    }
+  }
+}

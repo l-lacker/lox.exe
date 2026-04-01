@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="volpolmod">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doTimerAction">
+      <ifVar method="equals" method-type="" name="vt_voltim" name-type="" not="" not-type="" value="20" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_volch" name-type="" value="" value-type="string"/>
+      <setVar name="vt_volch2" name-type="" value="meow1" value-type="string"/>
+      <setVar name="vt_voltim" name-type="" value="" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_volch" name-type="" not="" not-type="" value="no" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vt_voltim" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_volch" name-type="" not="" not-type="" value="up" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_voltim" name-type="" value="" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vt_volch2" name-type="" not="" not-type="" value="meow2" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_volch2" name-type="" value="meow3" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="greater" method-type="" name="vt_volcol" name-type="" not="" not-type="" value="90" value-type="integer"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_volcol" name-type="" not="" not-type="" value="90" value-type="integer"/>
+      <openBlock/>
+      <setVar name="vt_volcol" name-type="" value="100" value-type="string"/>
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="rectAlt" object-type="object" x="0" x-type="float" y="-8" y-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vt_volcol" name-type="" value="10" value-type="string"/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="rectAlt" object-type="object" x="0" x-type="float" y="-8" y-type="float"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_volch" name-type="" not="" not-type="" value="down" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_voltim" name-type="" value="" value-type="string"/>
+      <ifVar method="smaller" method-type="" name="vt_usedvol" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <setVar name="vt_usedvol" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_volch2" name-type="" not="" not-type="" value="meow2" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_volch2" name-type="" value="meow3" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="smaller" method-type="" name="vt_volcol" name-type="" not="" not-type="" value="10" value-type="integer"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_volcol" name-type="" not="" not-type="" value="10" value-type="integer"/>
+      <openBlock/>
+      <setVar name="vt_volcol" name-type="" value="0" value-type="string"/>
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="rectAlt" object-type="object" x="0" x-type="float" y="80" y-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vt_volcol" name-type="" value="-10" value-type="string"/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="rectAlt" object-type="object" x="0" x-type="float" y="8" y-type="float"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_volcol" name-type="" not="" not-type="" value="100" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="image" object-type="object" path="res://.data/img/volume-high.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_volcol" name-type="" not="" not-type="" value="70" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="image" object-type="object" path="res://.data/img/volume-high.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_volcol" name-type="" not="" not-type="" value="60" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="image" object-type="object" path="res://.data/img/volume-medium.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_volcol" name-type="" not="" not-type="" value="20" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="image" object-type="object" path="res://.data/img/volume-medium.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_volcol" name-type="" not="" not-type="" value="20" value-type="string"/>
+      <openBlock/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="image" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_volcol" name-type="" not="" not-type="" value="10" value-type="string"/>
+      <openBlock/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="image" object-type="object"/>
+      <elementLoadContent object="image" object-type="object" path="res://.data/img/volume-medium.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <ifVar method="smaller" method-type="" name="vt_volcol" name-type="" not="" not-type="" value="10" value-type="integer"/>
+      <openBlock/>
+      <elementLoadContent object="image" object-type="object" path="res://.data/img/volume-mute.png" path-type="string" sync="" sync-type=""/>
+      <closeBlock/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="vt_volcol" value-type="globalVariable"/>
+    </method>
+  </class>
+</root>

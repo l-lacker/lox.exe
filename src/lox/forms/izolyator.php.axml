@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="izolyator">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAltAction">
+      <elementSetText object="form('MainForm')-&gt;label" object-type="object" relative="" relative-type="" value="edit" value-type="object"/>
+      <elementSetText object="form('MainForm')-&gt;PODSKAZKA" object-type="object" relative="" relative-type="" value="textArea" value-type="object"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="browser" object-type="object"/>
+      <elementEnabledOn object="browser" object-type="object"/>
+    </method>
+  <method name="doButton3Action">
+      <elementHide object="panelAlt" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="browser" object-type="object"/>
+      <elementEnabledOn object="browser" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doImage4ClickLeft">
+      <elementSetX object="image5" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="image5" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+    </method>
+  <method name="doImage5ClickLeft">
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <elementHide object="~sender" object-type="object"/>
+    </method>
+  
+  
+  
+  <method name="doBrowserFail">
+      <ifVar method="equals" method-type="" name="nointernet" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="meowcount" name-type="" value="1" value-type="string"/>
+      <elementShow object="button" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="meowcount" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="label9" object-type="object"/>
+      <elementSetText object="label9" object-type="object" relative="" relative-type="" value="Произошла ошибка!" value-type="string"/>
+      <stopMedia id="broerr" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="broerr" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <closeBlock/>
+      <elementHide object="progressIndicator" object-type="object"/>
+    </method>
+  <method name="doBrowserRunning">
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="label9" object-type="object"/>
+      <elementSetText object="label9" object-type="object" relative="" relative-type="" value="Пожалуйста, подождите..." value-type="string"/>
+      <elementShow object="progressIndicator" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAction">
+      <phpLine expr="$this-&gt;browser-&gt;engine-&gt;userAgent = 'Opera/9.80 (Windows NT 5.2; WOW64; U; MRA 6.0 (build 5650); ru) Presto/2.10.289 Version/12.02'" expr-type="expr"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementLoadContent object="browser" object-type="object" path="https://l-lacker.ru/app/lox-sites/main-page" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="5000" value-type="integer"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doButton6Action">
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="panel5" object-type="object" x="16" x-type="float" y="544" y-type="float"/>
+      <phpLine expr="$this-&gt;browser-&gt;engine-&gt;history-&gt;goBack()" expr-type="expr"/>
+    </method>
+  <method name="doButton7Action">
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="panel5" object-type="object" x="16" x-type="float" y="544" y-type="float"/>
+      <phpLine expr="$this-&gt;browser-&gt;engine-&gt;reload()" expr-type="expr"/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doButton4Act">
+      <elementHide object="panel3" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="browser" object-type="object"/>
+      <elementEnabledOn object="browser" object-type="object"/>
+    </method>
+  
+  <method name="doButton5Action">
+      <elementSetText object="editAlt" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doEditAltKeyUpUp">
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="izol_lasturl" value-type="globalVariable"/>
+    </method>
+  <method name="doButton4Action">
+      <elementHide object="panel3" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="browser" object-type="object"/>
+      <elementEnabledOn object="browser" object-type="object"/>
+    </method>
+  <method name="doEditAltKeyUpEnter">
+      <phpLine expr="$this-&gt;browser-&gt;engine-&gt;userAgent = 'Opera/9.80 (Windows NT 5.2; WOW64; U; MRA 6.0 (build 5650); ru) Presto/2.10.289 Version/12.02'" expr-type="expr"/>
+      <phpLine expr="$urltotemp = $GLOBALS['izolserv_urlsv']" expr-type="expr"/>
+      <setVar name="izol_lasturl" name-type="" value="$e-&gt;sender-&gt;text" value-type="expr"/>
+      <ifText method="equals" method-type="" not="" not-type="" object="~sender" object-type="object" string="" string-type="string"/>
+      <openBlock/>
+      <stopMedia id="izolerr" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="izolerr" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="~sender" object-type="object" string="." string-type="string"/>
+      <openBlock/>
+      <stopMedia id="izolerr" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="izolerr" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifText method="contains" method-type="" not="" not-type="" object="~sender" object-type="object" string="." string-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="iztemp_availstatus1" name-type="" not="" not-type="" value="yes" value-type="string"/>
+      <openBlock/>
+      <setVar name="urltogo" name-type="" value="urltotemp" value-type="variable"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="urltogo" name-type="" value="https://" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="urltogo" name-type="" value="https://l-lacker.ru/app/lox-sites/searcher?q=" value-type="string"/>
+      <closeBlock/>
+      <ifText method="endsWidth" method-type="" not="" not-type="" object="~sender" object-type="object" string="exe" string-type="string"/>
+      <openBlock/>
+      <setVar name="urltogo" name-type="" value="https://l-lacker.ru/app/lox-sites/searcher?q=" value-type="string"/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="urltogo" name-type="" value="$e-&gt;sender-&gt;text" value-type="expr"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+      <elementLoadContent object="browser" object-type="object" path="urltogo" path-type="globalVariable" sync="" sync-type=""/>
+    </method>
+  
+  
+  
+  
+  <method name="doButton9Action">
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="panel6" object-type="object" x="112" x-type="float" y="544" y-type="float"/>
+      <phpLine expr="$this-&gt;browser-&gt;engine-&gt;userAgent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9A405'" expr-type="expr"/>
+      <elementLoadContent object="browser" object-type="object" path="https://youtube.com" path-type="string" sync="" sync-type=""/>
+    </method>
+  
+  <method name="doShowing">
+      <phpLine expr="$this-&gt;browser-&gt;engine-&gt;userAgent = 'Opera/9.80 (Windows NT 5.2; WOW64; U; MRA 6.0 (build 5650); ru) Presto/2.10.289 Version/12.02'" expr-type="expr"/>
+      <elementLoadContent object="iztemp_availstatus" object-type="variable" path="https://l-lacker.ru/app/svcheck.php?mode=availstatus" path-type="string" sync="" sync-type=""/>
+      <setVar name="iztemp_availstatus1" name-type="" value="iztemp_availstatus" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="iztemp_availstatus1" name-type="" not="" not-type="" value="yes" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="image5" object-type="object" path="https://l-lacker.ru/app/lox-sites/searcher/lox-safeview-intro.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="image7" object-type="object" path="https://l-lacker.ru/app/lox-sites/openvk-for-lox.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="iztemp_safelink" object-type="variable" path="https://l-lacker.ru/app/svcheck.php?mode=safelink" path-type="string" sync="" sync-type=""/>
+      <setVar name="izolserv_urlsv" name-type="" value="iztemp_safelink" value-type="variable"/>
+      <elementShow object="image3" object-type="object"/>
+      <elementShow object="image4" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doImage7Click2x">
+      <elementHide object="~sender" object-type="object"/>
+    </method>
+  <method name="doBrowserLoad">
+      <elementHide object="progressIndicator" object-type="object"/>
+      <phpLine expr="$this-&gt;labelAlt-&gt;text = $this-&gt;browser-&gt;engine-&gt;url" expr-type="expr"/>
+      <setVar name="loxizolmeow" name-type="" value="0" value-type="string"/>
+      <ifText method="startsWith" method-type="" not="1" not-type="" object="labelAlt" object-type="object" string="https://l-lacker.ru/" string-type="string"/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="panel5" object-type="object" x="16" x-type="float" y="448" y-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="panel5" object-type="object" x="16" x-type="float" y="544" y-type="float"/>
+      <closeBlock/>
+      <ifText method="startsWith" method-type="" not="" not-type="" object="labelAlt" object-type="object" string="https://openvk-su.translate.goog/" string-type="string"/>
+      <openBlock/>
+      <elementShow object="image7" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementHide object="image7" object-type="object"/>
+      <closeBlock/>
+      <ifText method="startsWith" method-type="" not="" not-type="" object="labelAlt" object-type="object" string="https://www-youtube-com.translate.goog" string-type="string"/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="panel6" object-type="object" x="112" x-type="float" y="448" y-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="100" duration-type="integer" object="panel6" object-type="object" x="112" x-type="float" y="544" y-type="float"/>
+      <closeBlock/>
+      <ifText method="startsWith" method-type="" not="" not-type="" object="labelAlt" object-type="object" string="https://openvk.su/" string-type="string"/>
+      <openBlock/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="label9" object-type="object"/>
+      <elementSetText object="label9" object-type="object" relative="" relative-type="" value="Безопасный сайт" value-type="string"/>
+      <setVar name="loxizolmeow" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <ifText method="startsWith" method-type="" not="" not-type="" object="labelAlt" object-type="object" string="https://l-lacker.ru/" string-type="string"/>
+      <openBlock/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="label9" object-type="object"/>
+      <elementSetText object="label9" object-type="object" relative="" relative-type="" value="Сервер lox.exe (высокая безопасность)" value-type="string"/>
+      <setVar name="loxizolmeow" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="iztemp_availstatus1" name-type="" not="" not-type="" value="yes" value-type="string"/>
+      <openBlock/>
+      <ifText method="regex" method-type="" not="" not-type="" object="labelAlt" object-type="object" string="(.*)translate.goog(.*)" string-type="string"/>
+      <openBlock/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="label9" object-type="object"/>
+      <elementSetText object="label9" object-type="object" relative="" relative-type="" value="Двойная изоляция lox SafeView" value-type="string"/>
+      <setVar name="loxizolmeow" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="izol_proxyuses" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="loxizolmeow" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="label9" object-type="object"/>
+      <elementSetText object="label9" object-type="object" relative="" relative-type="" value="Ухудшенная безопасность (ваш IP)" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="greater" method-type="" name="lp_cnt" name-type="" not="" not-type="" value="0" value-type="integer"/>
+      <elementShow object="button" object-type="object"/>
+      <ifText method="contains" method-type="" not="1" not-type="" object="labelAlt" object-type="object" string="?mode" string-type="string"/>
+      <appendVar asString="" asString-type="" name="lp_cnt" name-type="" value="1" value-type="string"/>
+      <ifText method="equals" method-type="" not="" not-type="" object="labelAlt" object-type="object" string="https://l-lacker.ru/app/lox-sites/hack/index.php?mode=kurvid" string-type="string"/>
+      <openBlock/>
+      <setVar name="kurallow" name-type="" value="1" value-type="string"/>
+      <elementSetX object="panel3" object-type="object" relative="" relative-type="" value="201" value-type="integer"/>
+      <elementSetY object="panel3" object-type="object" relative="" relative-type="" value="204" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="~sender" object-type="object"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementShow object="panel3" object-type="object"/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="labelAlt" object-type="object" string="https://l-lacker.ru/app/lox-sites/hack/index.php?mode=traych" string-type="string"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="201" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="179" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="~sender" object-type="object"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

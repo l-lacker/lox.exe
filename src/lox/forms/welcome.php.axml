@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="welcome">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doShow">
+      <phpLine expr="$this-&gt;hoverPlayer-&gt;open('res://.data/audio/smHover.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;clickPlayer-&gt;open('res://.data/audio/smClick.mp3')" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <phpLine expr="$this-&gt;mediaView-&gt;open('src/.data/vid/lox-intro.mp4')" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="4000" value-type="integer"/>
+      <elementEnabledOff object="mediaView" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="500" duration-type="integer" object="mediaView" object-type="object" value="0" value-type="float"/>
+      <phpLine expr="$this-&gt;loopPlayer-&gt;open('res://.data/audio/smPsLoop.mp3')" expr-type="expr"/>
+      <moveTo continue="1" continue-type="" duration="180000" duration-type="integer" object="image" object-type="object" x="-1392" x-type="float" y="0" y-type="float"/>
+      <elementShow object="image" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="1000" duration-type="integer" object="image" object-type="object" value="0.5" value-type="float"/>
+    </method>
+  </class>
+</root>

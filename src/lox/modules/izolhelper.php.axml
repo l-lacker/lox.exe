@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="izolhelper">
+    <method name="doTimerAction">
+      <ifVar method="equals" method-type="" name="izol_proxyuses" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="izol_proxyuses" name-type="" value="1" value-type="string"/>
+      <elementSetX object="image5" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="image5" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="pushhelper">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doTimerAction">
+      <ifVar method="equals" method-type="" name="masic_helper" name-type="" not="" not-type="" value="playing" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="masic_playingwait" name-type="" value="1000" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="masic_helper" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="masic_helper" name-type="" value="" value-type="string"/>
+      <setVar name="masic_nowplaying" name-type="" value="1" value-type="string"/>
+      <setVar name="masic_playingwait" name-type="" value="" value-type="string"/>
+      <elementSetText object="label9" object-type="object" relative="" relative-type="" value="masic_stopcount" value-type="globalVariable"/>
+      <phpLine expr="$this-&gt;lnfr-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;masicplayer-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;masicplayer2-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;lnfr-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$masicmagic = $this-&gt;lnfr-&gt;media-&gt;duration" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="masicmagic" value-type="variable"/>
+      <setVar name="masic_helper" name-type="" value="playing" value-type="string"/>
+      <phpLine expr="$this-&gt;masicplayer-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$masicmagic2 = $this-&gt;masicplayer-&gt;media-&gt;duration" expr-type="expr"/>
+      <phpLine expr="$this-&gt;masicplayer2-&gt;open($GLOBALS['masic_load_link'])" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="masicmagic2" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="masic_stopcount" name-type="" not="" not-type="" value="$this-&gt;label9-&gt;text" value-type="expr"/>
+      <openBlock/>
+      <setVar name="masic_helper" name-type="" value="2" value-type="string"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="masic_helper" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <setVar name="masic_helper" name-type="" value="" value-type="string"/>
+      <setVar name="masic_nowplaying" name-type="" value="2" value-type="string"/>
+      <setVar name="masic_playingwait" name-type="" value="" value-type="string"/>
+      <elementSetText object="label9" object-type="object" relative="" relative-type="" value="masic_stopcount" value-type="globalVariable"/>
+      <phpLine expr="$this-&gt;lnfr-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;masicplayer-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;masicplayer2-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;lnfr-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$masicmagic = $this-&gt;lnfr-&gt;media-&gt;duration" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="masicmagic" value-type="variable"/>
+      <setVar name="masic_helper" name-type="" value="playing" value-type="string"/>
+      <phpLine expr="$this-&gt;masicplayer2-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$masicmagic2 = $this-&gt;masicplayer2-&gt;media-&gt;duration" expr-type="expr"/>
+      <phpLine expr="$this-&gt;masicplayer-&gt;open($GLOBALS['masic_load_link'])" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="masicmagic2" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="masic_stopcount" name-type="" not="" not-type="" value="$this-&gt;label9-&gt;text" value-type="expr"/>
+      <openBlock/>
+      <setVar name="masic_helper" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doTimerAltAction">
+      <ifVar method="equals" method-type="" name="vt_usedvol" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_usedvol" name-type="" value="2" value-type="string"/>
+      <elementShow object="panel6" object-type="object"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

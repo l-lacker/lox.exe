@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="game2">
+    
+  <method name="doImageAltMouseDownLeft">
+      <behaviourEnable behaviour="behaviour\custom\RotateAnimationBehaviour" behaviour-type="string" object="~sender" object-type="object"/>
+      <phpLine expr="$this-&gt;player-&gt;open('res://.data/audio/spinner-sound.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;player-&gt;play()" expr-type="expr"/>
+    </method>
+  <method name="doImageAltMouseUpLeft">
+      <behaviourDisable behaviour="behaviour\custom\RotateAnimationBehaviour" behaviour-type="string" object="~sender" object-type="object"/>
+      <phpLine expr="$this-&gt;player-&gt;stop()" expr-type="expr"/>
+    </method>
+  </class>
+</root>

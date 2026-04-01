@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="appGallery">
+    <method name="doButton1Act">
+      <setVar name="openpanel" name-type="" value="0" value-type="string"/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="notificationPanel" object-type="object" x="224" x-type="float" y="-192" y-type="float"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementSetX object="halftrans" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="halftrans" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <elementSetX object="wifiSettings" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="wifiSettings" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="wifiSettings" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halftrans" object-type="object" value="0" value-type="float"/>
+      <elementShow object="halftrans" object-type="object"/>
+      <elementShow object="wifiSettings" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="halftrans" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="wifiSettings" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="wifiSettings" object-type="object" x="224" x-type="float" y="112" y-type="float"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  <method name="doYes_buttonAct">
+      <elementHide object="~sender" object-type="object"/>
+      <elementShow object="progressIndicator" object-type="object"/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Загрузка..." value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Пожалуйста, подождите..." value-type="string"/>
+      <elementLoadContent object="is_gallery_accessible" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?service=access" path-type="string" sync="" sync-type=""/>
+      <setVar name="is_gal_ac" name-type="" value="is_gallery_accessible" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="is_gal_ac" name-type="" not="" not-type="" value="false" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Сервис заблокирован" value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="От сервера получен ответ, что этот сервис нужно заблокировать. Всё, можете закрывать это окно в телефоне." value-type="string"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="is_gal_ac" name-type="" not="1" not-type="" value="true" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Ошибка!" value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Либо сервер сдох, либо интернета нет — вариантов немного" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Ещё раз?" value-type="string"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <sleep sync="" sync-type="" value="250" value-type="integer"/>
+      <elementShow object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="is_gal_ac" name-type="" not="" not-type="" value="true" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Загрузка..." value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Подключение успешно, теперь загружаем альбомы..." value-type="string"/>
+      <elementLoadContent object="temp_phdown" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=1&amp;info=access" path-type="string" sync="" sync-type=""/>
+      <setVar name="temp2_phdown" name-type="" value="temp_phdown" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="temp2_phdown" name-type="" not="" not-type="" value="true" value-type="string"/>
+      <openBlock/>
+      <elementShow object="albButton1_1" object-type="object"/>
+      <elementShow object="albButton1_2" object-type="object"/>
+      <elementLoadContent object="alb_name" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=1&amp;info=name" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="albLabel1" object-type="object" relative="" relative-type="" value="alb_name" value-type="variable"/>
+      <elementLoadContent object="alb_date" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=1&amp;info=date" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="albDate1" object-type="object" relative="" relative-type="" value="alb_date" value-type="variable"/>
+      <closeBlock/>
+      <closeBlock/>
+    </method>
+    <method name="doNo_buttonAct">
+      <elementHide object="~sender" object-type="object"/>
+      <elementShow object="progressIndicator" object-type="object"/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Загрузка..." value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Пожалуйста, подождите..." value-type="string"/>
+      <elementLoadContent object="is_gallery_accessible" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?service=access" path-type="string" sync="" sync-type=""/>
+      <setVar name="is_gal_ac" name-type="" value="is_gallery_accessible" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="is_gal_ac" name-type="" not="" not-type="" value="false" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Сервис заблокирован" value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="От сервера получен ответ, что этот сервис нужно заблокировать. Всё, можете закрывать это окно в телефоне." value-type="string"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="is_gal_ac" name-type="" not="1" not-type="" value="true" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Ошибка!" value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Либо сервер сдох, либо интернета нет — вариантов немного" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Ещё раз?" value-type="string"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <sleep sync="" sync-type="" value="250" value-type="integer"/>
+      <elementShow object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="is_gal_ac" name-type="" not="" not-type="" value="true" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Загрузка..." value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Подключение успешно, теперь загружаем альбомы..." value-type="string"/>
+      <elementLoadContent object="temp_phdown" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=1&amp;info=access" path-type="string" sync="" sync-type=""/>
+      <setVar name="temp2_phdown" name-type="" value="temp_phdown" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="temp2_phdown" name-type="" not="" not-type="" value="true" value-type="string"/>
+      <openBlock/>
+      <elementShow object="albButton1_1" object-type="object"/>
+      <elementShow object="albButton1_2" object-type="object"/>
+      <elementLoadContent object="alb_name" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=1&amp;info=name" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="albLabel1" object-type="object" relative="" relative-type="" value="alb_name" value-type="variable"/>
+      <elementLoadContent object="alb_date" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=1&amp;info=date" path-type="string" sync="" sync-type=""/>
+      <elementSetText object="albDate1" object-type="object" relative="" relative-type="" value="alb_date" value-type="variable"/>
+      <closeBlock/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doNo_buttonAction">
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="halfprozr_albums" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="activityAlbumDownload" object-type="object" x="0" x-type="float" y="248" y-type="float"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelAlt" object-type="object"/>
+      <elementHide object="halfprozr_albums" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doPhButton1Action">
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel4" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel4" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="panel4" object-type="object" value="1" value-type="float"/>
+      <elementLoadContent object="photoView" object-type="object" path="alb1f" path-type="globalVariable" sync="" sync-type=""/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="photoView" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="progressIndicatorAlt" object-type="object" value="0" value-type="float"/>
+    </method>
+  
+  <method name="doPhotoViewClickLeft">
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="panel4" object-type="object" value="0" value-type="float"/>
+      <elementHide object="panel4" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="progressIndicatorAlt" object-type="object" value="1" value-type="float"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <elementSetY object="~sender" object-type="object" relative="" relative-type="" value="248" value-type="integer"/>
+    </method>
+  <method name="doPhButton2Action">
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel4" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel4" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="panel4" object-type="object" value="1" value-type="float"/>
+      <elementLoadContent object="photoView" object-type="object" path="alb2f" path-type="globalVariable" sync="" sync-type=""/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="photoView" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="progressIndicatorAlt" object-type="object" value="0" value-type="float"/>
+    </method>
+  <method name="doPhButton3Action">
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel4" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel4" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="panel4" object-type="object" value="1" value-type="float"/>
+      <elementLoadContent object="photoView" object-type="object" path="alb3f" path-type="globalVariable" sync="" sync-type=""/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="photoView" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="progressIndicatorAlt" object-type="object" value="0" value-type="float"/>
+    </method>
+  <method name="doPhButton4Action">
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel4" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel4" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="panel4" object-type="object" value="1" value-type="float"/>
+      <elementLoadContent object="photoView" object-type="object" path="alb4f" path-type="globalVariable" sync="" sync-type=""/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="photoView" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="progressIndicatorAlt" object-type="object" value="0" value-type="float"/>
+    </method>
+  <method name="doPhButton5Action">
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel4" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel4" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="panel4" object-type="object" value="1" value-type="float"/>
+      <elementLoadContent object="photoView" object-type="object" path="alb5f" path-type="globalVariable" sync="" sync-type=""/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="photoView" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="progressIndicatorAlt" object-type="object" value="0" value-type="float"/>
+    </method>
+  <method name="doPhButton6Action">
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel4" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel4" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="panel4" object-type="object" value="1" value-type="float"/>
+      <elementLoadContent object="photoView" object-type="object" path="alb6f" path-type="globalVariable" sync="" sync-type=""/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="photoView" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="progressIndicatorAlt" object-type="object" value="0" value-type="float"/>
+    </method>
+  <method name="doPhButton7Action">
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel4" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel4" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="panel4" object-type="object" value="1" value-type="float"/>
+      <elementLoadContent object="photoView" object-type="object" path="alb7f" path-type="globalVariable" sync="" sync-type=""/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="photoView" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="progressIndicatorAlt" object-type="object" value="0" value-type="float"/>
+    </method>
+  <method name="doPhButton8Action">
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel4" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel4" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="panel4" object-type="object" value="1" value-type="float"/>
+      <elementLoadContent object="photoView" object-type="object" path="alb8f" path-type="globalVariable" sync="" sync-type=""/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="photoView" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="progressIndicatorAlt" object-type="object" value="0" value-type="float"/>
+    </method>
+  <method name="doPhButton9Action">
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <elementHide object="panel4" object-type="object"/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="panel4" object-type="object" value="0" value-type="float"/>
+      <elementShow object="panel4" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="panel4" object-type="object" value="1" value-type="float"/>
+      <elementLoadContent object="photoView" object-type="object" path="alb9f" path-type="globalVariable" sync="" sync-type=""/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="photoView" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="progressIndicatorAlt" object-type="object" value="0" value-type="float"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doAlbButton1_2Action">
+      <elementSetText object="do_you_want_text" object-type="object" relative="" relative-type="" value="Желаете загрузить 1 альбом?" value-type="string"/>
+      <setVar name="albbg" name-type="" value="https://l-lacker.ru/app/albums/bg-a1.png" value-type="string"/>
+      <setVar name="alb1" name-type="" value="https://l-lacker.ru/app/albums/a1/mini1.png" value-type="string"/>
+      <setVar name="alb2" name-type="" value="https://l-lacker.ru/app/albums/a1/mini2.png" value-type="string"/>
+      <setVar name="alb3" name-type="" value="https://l-lacker.ru/app/albums/a1/mini3.png" value-type="string"/>
+      <setVar name="alb4" name-type="" value="https://l-lacker.ru/app/albums/a1/mini4.png" value-type="string"/>
+      <setVar name="alb5" name-type="" value="https://l-lacker.ru/app/albums/a1/mini5.png" value-type="string"/>
+      <setVar name="alb6" name-type="" value="https://l-lacker.ru/app/albums/a1/mini6.png" value-type="string"/>
+      <setVar name="alb7" name-type="" value="https://l-lacker.ru/app/albums/a1/mini7.png" value-type="string"/>
+      <setVar name="alb8" name-type="" value="https://l-lacker.ru/app/albums/a1/mini8.png" value-type="string"/>
+      <setVar name="alb9" name-type="" value="https://l-lacker.ru/app/albums/a1/mini9.png" value-type="string"/>
+      <setVar name="alb1f" name-type="" value="https://l-lacker.ru/app/albums/a1/full1.png" value-type="string"/>
+      <setVar name="alb2f" name-type="" value="https://l-lacker.ru/app/albums/a1/full2.png" value-type="string"/>
+      <setVar name="alb3f" name-type="" value="https://l-lacker.ru/app/albums/a1/full3.png" value-type="string"/>
+      <setVar name="alb4f" name-type="" value="https://l-lacker.ru/app/albums/a1/full4.png" value-type="string"/>
+      <setVar name="alb5f" name-type="" value="https://l-lacker.ru/app/albums/a1/full5.png" value-type="string"/>
+      <setVar name="alb6f" name-type="" value="https://l-lacker.ru/app/albums/a1/full6.png" value-type="string"/>
+      <setVar name="alb7f" name-type="" value="https://l-lacker.ru/app/albums/a1/full7.png" value-type="string"/>
+      <setVar name="alb8f" name-type="" value="https://l-lacker.ru/app/albums/a1/full8.png" value-type="string"/>
+      <setVar name="alb9f" name-type="" value="https://l-lacker.ru/app/albums/a1/full9.png" value-type="string"/>
+      <elementHide object="halfprozr_albums" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halfprozr_albums" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="halfprozr_albums" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="halfprozr_albums" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetX object="activityAlbumDownload" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityAlbumDownload" object-type="object" relative="" relative-type="" value="248" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelAlt" object-type="object"/>
+      <elementShow object="activityAlbumDownload" object-type="object"/>
+      <elementShow object="halfprozr_albums" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="halfprozr_albums" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="activityAlbumDownload" object-type="object" x="0" x-type="float" y="160" y-type="float"/>
+    </method>
+  <method name="doAlbButton2_2Action">
+      <elementSetText object="do_you_want_text" object-type="object" relative="" relative-type="" value="Желаете загрузить 2 альбом?" value-type="string"/>
+      <setVar name="albbg" name-type="" value="https://l-lacker.ru/app/albums/bg-a2.png" value-type="string"/>
+      <setVar name="alb1" name-type="" value="https://l-lacker.ru/app/albums/a2/mini1.png" value-type="string"/>
+      <setVar name="alb2" name-type="" value="https://l-lacker.ru/app/albums/a2/mini2.png" value-type="string"/>
+      <setVar name="alb3" name-type="" value="https://l-lacker.ru/app/albums/a2/mini3.png" value-type="string"/>
+      <setVar name="alb4" name-type="" value="https://l-lacker.ru/app/albums/a2/mini4.png" value-type="string"/>
+      <setVar name="alb5" name-type="" value="https://l-lacker.ru/app/albums/a2/mini5.png" value-type="string"/>
+      <setVar name="alb6" name-type="" value="https://l-lacker.ru/app/albums/a2/mini6.png" value-type="string"/>
+      <setVar name="alb7" name-type="" value="https://l-lacker.ru/app/albums/a2/mini7.png" value-type="string"/>
+      <setVar name="alb8" name-type="" value="https://l-lacker.ru/app/albums/a2/mini8.png" value-type="string"/>
+      <setVar name="alb9" name-type="" value="https://l-lacker.ru/app/albums/a2/mini9.png" value-type="string"/>
+      <setVar name="alb1f" name-type="" value="https://l-lacker.ru/app/albums/a2/full1.png" value-type="string"/>
+      <setVar name="alb2f" name-type="" value="https://l-lacker.ru/app/albums/a2/full2.png" value-type="string"/>
+      <setVar name="alb3f" name-type="" value="https://l-lacker.ru/app/albums/a2/full3.png" value-type="string"/>
+      <setVar name="alb4f" name-type="" value="https://l-lacker.ru/app/albums/a2/full4.png" value-type="string"/>
+      <setVar name="alb5f" name-type="" value="https://l-lacker.ru/app/albums/a2/full5.png" value-type="string"/>
+      <setVar name="alb6f" name-type="" value="https://l-lacker.ru/app/albums/a2/full6.png" value-type="string"/>
+      <setVar name="alb7f" name-type="" value="https://l-lacker.ru/app/albums/a2/full7.png" value-type="string"/>
+      <setVar name="alb8f" name-type="" value="https://l-lacker.ru/app/albums/a2/full8.png" value-type="string"/>
+      <setVar name="alb9f" name-type="" value="https://l-lacker.ru/app/albums/a2/full9.png" value-type="string"/>
+      <elementHide object="halfprozr_albums" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halfprozr_albums" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="halfprozr_albums" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="halfprozr_albums" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetX object="activityAlbumDownload" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityAlbumDownload" object-type="object" relative="" relative-type="" value="248" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelAlt" object-type="object"/>
+      <elementShow object="activityAlbumDownload" object-type="object"/>
+      <elementShow object="halfprozr_albums" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="halfprozr_albums" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="activityAlbumDownload" object-type="object" x="0" x-type="float" y="160" y-type="float"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doYes_buttonAction">
+      <elementSetX object="activityContentLoad" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityContentLoad" object-type="object" relative="" relative-type="" value="248" value-type="integer"/>
+      <elementShow object="activityContentLoad" object-type="object"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="activityAlbumDownload" object-type="object" x="0" x-type="float" y="248" y-type="float"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="activityContentLoad" object-type="object" x="0" x-type="float" y="136" y-type="float"/>
+      <elementHide object="activityAlbumDownload" object-type="object"/>
+      <elementLoadContent object="photoBG" object-type="object" path="albbg" path-type="globalVariable" sync="" sync-type=""/>
+      <elementLoadContent object="photo1" object-type="object" path="alb1" path-type="globalVariable" sync="" sync-type=""/>
+      <elementLoadContent object="photo2" object-type="object" path="alb2" path-type="globalVariable" sync="" sync-type=""/>
+      <elementLoadContent object="photo3" object-type="object" path="alb3" path-type="globalVariable" sync="" sync-type=""/>
+      <elementLoadContent object="photo4" object-type="object" path="alb4" path-type="globalVariable" sync="" sync-type=""/>
+      <elementLoadContent object="photo5" object-type="object" path="alb5" path-type="globalVariable" sync="" sync-type=""/>
+      <elementLoadContent object="photo6" object-type="object" path="alb6" path-type="globalVariable" sync="" sync-type=""/>
+      <elementLoadContent object="photo7" object-type="object" path="alb7" path-type="globalVariable" sync="" sync-type=""/>
+      <elementLoadContent object="photo8" object-type="object" path="alb8" path-type="globalVariable" sync="" sync-type=""/>
+      <elementLoadContent object="photo9" object-type="object" path="alb9" path-type="globalVariable" sync="" sync-type=""/>
+      <elementHide object="panel3" object-type="object"/>
+      <elementSetX object="panel3" object-type="object" relative="" relative-type="" value="264" value-type="integer"/>
+      <elementSetY object="panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <elementShow object="panel3" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="halfprozr_albums" object-type="object" value="0" value-type="float"/>
+      <setVar name="lgalshow" name-type="" value="1" value-type="string"/>
+      <setVar name="agHelper" name-type="" value="1" value-type="string"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="activityContentLoad" object-type="object" x="0" x-type="float" y="264" y-type="float"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="panel3" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <displace continue="" continue-type="" duration="250" duration-type="integer" object="panelAlt" object-type="object" x="-266" x-type="float" y="0" y-type="float"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelAlt" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel3" object-type="object"/>
+      <elementShow object="rect" object-type="object"/>
+      <elementHide object="halfprozr_albums" object-type="object"/>
+    </method>
+  <method name="doButtonAction">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementHide object="rect" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="-264" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <setVar name="lgalshow" name-type="" value="0" value-type="string"/>
+      <displace continue="1" continue-type="" duration="150" duration-type="integer" object="panel3" object-type="object" x="264" x-type="float" y="0" y-type="float"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="panelAlt" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <elementHide object="panel3" object-type="object"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <setVar name="agHelper" name-type="" value="0" value-type="string"/>
+    </method>
+  
+  <method name="doAlbButton3_2Action">
+      <elementSetText object="do_you_want_text" object-type="object" relative="" relative-type="" value="Желаете загрузить 3 альбом?" value-type="string"/>
+      <setVar name="albbg" name-type="" value="https://l-lacker.ru/app/albums/bg-a3.png" value-type="string"/>
+      <setVar name="alb1" name-type="" value="https://l-lacker.ru/app/albums/a3/mini1.png" value-type="string"/>
+      <setVar name="alb2" name-type="" value="https://l-lacker.ru/app/albums/a3/mini2.png" value-type="string"/>
+      <setVar name="alb3" name-type="" value="https://l-lacker.ru/app/albums/a3/mini3.png" value-type="string"/>
+      <setVar name="alb4" name-type="" value="https://l-lacker.ru/app/albums/a3/mini4.png" value-type="string"/>
+      <setVar name="alb5" name-type="" value="https://l-lacker.ru/app/albums/a3/mini5.png" value-type="string"/>
+      <setVar name="alb6" name-type="" value="https://l-lacker.ru/app/albums/a3/mini6.png" value-type="string"/>
+      <setVar name="alb7" name-type="" value="https://l-lacker.ru/app/albums/a3/mini7.png" value-type="string"/>
+      <setVar name="alb8" name-type="" value="https://l-lacker.ru/app/albums/a3/mini8.png" value-type="string"/>
+      <setVar name="alb9" name-type="" value="https://l-lacker.ru/app/albums/a3/mini9.png" value-type="string"/>
+      <setVar name="alb1f" name-type="" value="https://l-lacker.ru/app/albums/a3/full1.png" value-type="string"/>
+      <setVar name="alb2f" name-type="" value="https://l-lacker.ru/app/albums/a3/full2.png" value-type="string"/>
+      <setVar name="alb3f" name-type="" value="https://l-lacker.ru/app/albums/a3/full3.png" value-type="string"/>
+      <setVar name="alb4f" name-type="" value="https://l-lacker.ru/app/albums/a3/full4.png" value-type="string"/>
+      <setVar name="alb5f" name-type="" value="https://l-lacker.ru/app/albums/a3/full5.png" value-type="string"/>
+      <setVar name="alb6f" name-type="" value="https://l-lacker.ru/app/albums/a3/full6.png" value-type="string"/>
+      <setVar name="alb7f" name-type="" value="https://l-lacker.ru/app/albums/a3/full7.png" value-type="string"/>
+      <setVar name="alb8f" name-type="" value="https://l-lacker.ru/app/albums/a3/full8.png" value-type="string"/>
+      <setVar name="alb9f" name-type="" value="https://l-lacker.ru/app/albums/a3/full9.png" value-type="string"/>
+      <elementHide object="halfprozr_albums" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halfprozr_albums" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="halfprozr_albums" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="halfprozr_albums" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetX object="activityAlbumDownload" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityAlbumDownload" object-type="object" relative="" relative-type="" value="248" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelAlt" object-type="object"/>
+      <elementShow object="activityAlbumDownload" object-type="object"/>
+      <elementShow object="halfprozr_albums" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="halfprozr_albums" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="activityAlbumDownload" object-type="object" x="0" x-type="float" y="160" y-type="float"/>
+    </method>
+  
+  <method name="doButton1Action">
+      <elementHide object="~sender" object-type="object"/>
+      <elementShow object="progressIndicator" object-type="object"/>
+      <setVar name="agHelper" name-type="" value="0" value-type="string"/>
+      <phpLine expr="$this-&gt;timer-&gt;start()" expr-type="expr"/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Загрузка..." value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Пожалуйста, подождите..." value-type="string"/>
+      <ifVar method="equals" method-type="" name="nointernet" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="pherror" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="pherror" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Ошибка!" value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Либо сервер сдох, либо интернета нет — вариантов немного" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Ещё раз?" value-type="string"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <sleep sync="" sync-type="" value="250" value-type="integer"/>
+      <elementShow object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <elementLoadContent object="is_gallery_accessible" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?service=access" path-type="string" sync="" sync-type=""/>
+      <setVar name="is_gal_ac" name-type="" value="is_gallery_accessible" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="is_gal_ac" name-type="" not="" not-type="" value="false" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Сервис заблокирован" value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="От сервера получен ответ, что этот сервис нужно заблокировать. Всё, можете закрывать это окно в телефоне." value-type="string"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="is_gal_ac" name-type="" not="1" not-type="" value="true" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Ошибка!" value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Произошла странная реакция. Возможно, сервер сдох. Но если вы очень настойчивый, попробуйте ещё" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Ещё раз?" value-type="string"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <sleep sync="" sync-type="" value="250" value-type="integer"/>
+      <elementShow object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="is_gal_ac" name-type="" not="" not-type="" value="true" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Загрузка..." value-type="string"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="Подключение успешно, теперь загружаем альбомы..." value-type="string"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <elementLoadContent object="temp_phdown" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=1&amp;info=access" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <setVar name="temp2_phdown" name-type="" value="temp_phdown" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="temp2_phdown" name-type="" not="" not-type="" value="true" value-type="string"/>
+      <openBlock/>
+      <elementShow object="albButton1_1" object-type="object"/>
+      <elementShow object="albButton1_2" object-type="object"/>
+      <elementShow object="albLabel1" object-type="object"/>
+      <elementShow object="albDate1" object-type="object"/>
+      <elementShow object="albImage1" object-type="object"/>
+      <elementLoadContent object="alb_name" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=1&amp;info=name" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <elementSetText object="albLabel1" object-type="object" relative="" relative-type="" value="alb_name" value-type="variable"/>
+      <elementLoadContent object="alb_date" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=1&amp;info=date" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <elementSetText object="albDate1" object-type="object" relative="" relative-type="" value="alb_date" value-type="variable"/>
+      <elementLoadContent object="albImage1" object-type="object" path="https://l-lacker.ru/app/albums/preview-a1.png" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <closeBlock/>
+      <elementLoadContent object="temp_phdown" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=2&amp;info=access" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <setVar name="temp2_phdown" name-type="" value="temp_phdown" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="temp2_phdown" name-type="" not="" not-type="" value="true" value-type="string"/>
+      <openBlock/>
+      <elementShow object="albButton2_1" object-type="object"/>
+      <elementShow object="albButton2_2" object-type="object"/>
+      <elementShow object="albLabel2" object-type="object"/>
+      <elementShow object="albDate2" object-type="object"/>
+      <elementShow object="albImage2" object-type="object"/>
+      <elementLoadContent object="alb_name" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=2&amp;info=name" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <elementSetText object="albLabel2" object-type="object" relative="" relative-type="" value="alb_name" value-type="variable"/>
+      <elementLoadContent object="alb_date" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=2&amp;info=date" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <elementSetText object="albDate2" object-type="object" relative="" relative-type="" value="alb_date" value-type="variable"/>
+      <elementLoadContent object="albImage2" object-type="object" path="https://l-lacker.ru/app/albums/preview-a2.png" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <closeBlock/>
+      <elementLoadContent object="temp_phdown" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=3&amp;info=access" path-type="string" sync="" sync-type=""/>
+      <setVar name="temp2_phdown" name-type="" value="temp_phdown" value-type="variable"/>
+      <ifVar method="equals" method-type="" name="temp2_phdown" name-type="" not="" not-type="" value="true" value-type="string"/>
+      <openBlock/>
+      <elementShow object="albButton3_1" object-type="object"/>
+      <elementShow object="albButton3_2" object-type="object"/>
+      <elementShow object="albLabel3" object-type="object"/>
+      <elementShow object="albDate3" object-type="object"/>
+      <elementShow object="albImage3" object-type="object"/>
+      <elementLoadContent object="alb_name" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=3&amp;info=name" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <elementSetText object="albLabel3" object-type="object" relative="" relative-type="" value="alb_name" value-type="variable"/>
+      <elementLoadContent object="alb_date" object-type="variable" path="https://l-lacker.ru/app/albums/albinfo.php?album=3&amp;info=date" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <elementSetText object="albDate3" object-type="object" relative="" relative-type="" value="alb_date" value-type="variable"/>
+      <elementLoadContent object="albImage3" object-type="object" path="https://l-lacker.ru/app/albums/preview-a3.png" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <closeBlock/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <elementHide object="halfprozr_afterdl" object-type="object"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="256" value-type="integer"/>
+      <elementSetX object="halfprozr_afterdl" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="halfprozr_afterdl" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halfprozr_afterdl" object-type="object" value="0" value-type="float"/>
+      <elementShow object="halfprozr_afterdl" object-type="object"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="halfprozr_afterdl" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="panelAlt" object-type="object" x="0" x-type="float" y="0" y-type="float"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panel" object-type="object"/>
+      <elementDestroy object="halfprozr_afterdl" object-type="object"/>
+      <elementDestroy object="panel" object-type="object"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

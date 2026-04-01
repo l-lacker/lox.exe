@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="appLucky">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAltAction">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelMainBG" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelWelcome" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelAlt" object-type="object"/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelMainBG" object-type="object" x="2" x-type="float" y="-4" y-type="float"/>
+      <ifVar method="equals" method-type="" name="luckyprikol" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelWelcome" object-type="object" x="-8" x-type="float" y="-2" y-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelWelcome" object-type="object" x="0" x-type="float" y="-2" y-type="float"/>
+      <closeBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="-56" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="250" duration-type="integer" object="OVERALL_panel" object-type="object" value="0" value-type="float"/>
+      <elementHide object="OVERALL_panel" object-type="object"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  <method name="doButton8Action">
+      <elementHide object="OVERALL_panel2" object-type="object"/>
+      <elementShow object="OVERALL_panel" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doButton4Action">
+      <elementSetX object="OVERALL_panel2" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="OVERALL_panel2" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementHide object="OVERALL_panel" object-type="object"/>
+      <elementShow object="OVERALL_panel2" object-type="object"/>
+    </method>
+  <method name="doButton7Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="luckycomms" name-type="" value="0" value-type="string"/>
+      <setVar name="newcommmake" name-type="" value="$this-&gt;edit_name-&gt;text" value-type="expr"/>
+      <appendVar asString="1" asString-type="" name="newcommmake" name-type="" value=": " value-type="string"/>
+      <appendVar asString="1" asString-type="" name="newcommmake" name-type="" value="$this-&gt;edit_comm-&gt;text" value-type="expr"/>
+      <elementSetText object="labelAlt" object-type="object" relative="" relative-type="" value="newcommmake" value-type="globalVariable"/>
+      <elementHide object="OVERALL_panel2" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelMainBG" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelWelcome" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelAlt" object-type="object"/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelMainBG" object-type="object" x="2" x-type="float" y="-4" y-type="float"/>
+      <ifVar method="equals" method-type="" name="luckyprikol" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelWelcome" object-type="object" x="-8" x-type="float" y="-2" y-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelWelcome" object-type="object" x="0" x-type="float" y="-2" y-type="float"/>
+      <closeBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="-56" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="250" duration-type="integer" object="OVERALL_panel" object-type="object" value="0" value-type="float"/>
+      <stopMedia id="commpop" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="commpop" id-type="string" source="res://.data/audio/pop.mp3" source-type="string"/>
+      <elementHide object="OVERALL_panel" object-type="object"/>
+      <sleep sync="" sync-type="" value="2000" value-type="integer"/>
+      <setVar name="luckycomms" name-type="" value="1" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+    
+    
+  
+  <method name="doButton5Action">
+      <elementSetX object="OVERALL_panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="OVERALL_panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementHide object="OVERALL_panel" object-type="object"/>
+      <elementShow object="OVERALL_panel3" object-type="object"/>
+    </method>
+  <method name="doButton10Action">
+      <elementHide object="OVERALL_panel3" object-type="object"/>
+      <elementShow object="OVERALL_panel" object-type="object"/>
+    </method>
+  <method name="doButton9Action">
+      <ifVar method="equals" method-type="" name="luckycomms" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Выключить" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="panel" object-type="object" value="1" value-type="float"/>
+      <setVar name="luckycomms" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Включить" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="panel" object-type="object" value="0" value-type="float"/>
+      <setVar name="luckycomms" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  
+  <method name="doButton11Action">
+      <elementSetX object="OVERALL_panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="OVERALL_panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementHide object="OVERALL_panel" object-type="object"/>
+      <elementShow object="OVERALL_panel4" object-type="object"/>
+    </method>
+  <method name="doButton13Action">
+      <elementHide object="OVERALL_panel4" object-type="object"/>
+      <elementShow object="OVERALL_panel" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton_answ3Action">
+      <stopMedia id="luckyselector" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="luckyselector" id-type="string" source="res://.data/audio/lucky-select.mp3" source-type="string"/>
+      <elementHide object="~sender" object-type="object"/>
+      <elementEnabledOff object="button_answ1" object-type="object"/>
+      <elementEnabledOff object="button_answ2" object-type="object"/>
+      <setVar name="lucky_selectedansw" name-type="" value="3" value-type="string"/>
+      <phpLine expr="if ($GLOBALS['luckytruanswer'] == &quot;4&quot;) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="lucky_kostyl" name-type="" value="true" value-type="string"/>
+      <setVar name="lucky_kostyl2" name-type="" value="true" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <phpLine expr="if ($GLOBALS['luckytruanswer'] == &quot;3&quot;) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="lucky_kostyl" name-type="" value="true" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <phpLine expr="if ($GLOBALS['luckytruanswer'] != &quot;3&quot;) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="lucky_kostyl" name-type="" value="false" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+    
+  <method name="doButton_answ2Action">
+      <stopMedia id="luckyselector" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="luckyselector" id-type="string" source="res://.data/audio/lucky-select.mp3" source-type="string"/>
+      <elementHide object="~sender" object-type="object"/>
+      <elementEnabledOff object="button_answ1" object-type="object"/>
+      <elementEnabledOff object="button_answ3" object-type="object"/>
+      <setVar name="lucky_selectedansw" name-type="" value="2" value-type="string"/>
+      <phpLine expr="if ($GLOBALS['luckytruanswer'] == &quot;4&quot;) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="lucky_kostyl" name-type="" value="true" value-type="string"/>
+      <setVar name="lucky_kostyl2" name-type="" value="true" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <phpLine expr="if ($GLOBALS['luckytruanswer'] == &quot;2&quot;) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="lucky_kostyl" name-type="" value="true" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <phpLine expr="if ($GLOBALS['luckytruanswer'] != &quot;2&quot;) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="lucky_kostyl" name-type="" value="false" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doButton17Action">
+      <appendVar asString="" asString-type="" name="luckyqc" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label18" object-type="object" relative="" relative-type="" value="luckyqc" value-type="globalVariable"/>
+    </method>
+    
+    
+    
+  
+  
+  
+  <method name="doButton23Action">
+      <appendVar asString="" asString-type="" name="lucky_points" name-type="" value="100" value-type="string"/>
+      <elementSetText object="label20" object-type="object" relative="" relative-type="" value="lucky_points" value-type="globalVariable"/>
+    </method>
+  <method name="doButton24Action">
+      <appendVar asString="" asString-type="" name="lucky_points" name-type="" value="-100" value-type="string"/>
+      <elementSetText object="label20" object-type="object" relative="" relative-type="" value="lucky_points" value-type="globalVariable"/>
+    </method>
+  
+  
+  
+  <method name="doButton20Action">
+      <elementHide object="panel4" object-type="object"/>
+      <elementShow object="OVERALL_panel4" object-type="object"/>
+    </method>
+  <method name="doLink3Action">
+      <setVar name="llucky_boost1" name-type="" value="1" value-type="string"/>
+      <elementHide object="~sender" object-type="object"/>
+      <elementShow object="link4" object-type="object"/>
+    </method>
+  
+  <method name="doLink4Action">
+      <setVar name="luckyqc" name-type="" value="9" value-type="string"/>
+      <elementHide object="~sender" object-type="object"/>
+      <elementShow object="link5" object-type="object"/>
+      <elementSetText object="label18" object-type="object" relative="" relative-type="" value="luckyqc" value-type="globalVariable"/>
+    </method>
+  <method name="doLink5Action">
+      <setVar name="llucky_boost2" name-type="" value="1" value-type="string"/>
+      <elementHide object="~sender" object-type="object"/>
+      <elementShow object="link6" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton16Action">
+      <ifVar method="equals" method-type="" name="llucky_closed" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementHide object="OVERALL_panel5" object-type="object"/>
+      <elementShow object="OVERALL_panel4" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="luckyclose" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  <method name="doButton14Action">
+      <ifVar method="equals" method-type="" name="luckyprikol" name-type="" not="" not-type="" value="no" value-type="string"/>
+      <openBlock/>
+      <elementSetX object="OVERALL_panel5" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="OVERALL_panel5" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementHide object="OVERALL_panel4" object-type="object"/>
+      <elementShow object="OVERALL_panel5" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="А что сбрасывать?" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Вы ещё даже не начинали игру, мне кажется вы как-то рано" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doLink6Action">
+      <elementShow object="button6" object-type="object"/>
+      <setVar name="llucky_boost3" name-type="" value="1" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="MAX BOOST" value-type="string"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  <method name="doButton6Action">
+      <ifVar method="equals" method-type="" name="llucky_boost1" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementHide object="~sender" object-type="object"/>
+      <setVar name="luckymode" name-type="" value="ingameprepare" value-type="string"/>
+      <phpLine expr="$this-&gt;playerMain-&gt;open('https://l-lacker.ru/app/lucky/game-main.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMainPitch-&gt;open('https://l-lacker.ru/app/lucky/game-main-pitch.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;ANSWER1_label-&gt;mouseTransparent = true" expr-type="expr"/>
+      <phpLine expr="$this-&gt;ANSWER2_label-&gt;mouseTransparent = true" expr-type="expr"/>
+      <phpLine expr="$this-&gt;ANSWER3_label-&gt;mouseTransparent = true" expr-type="expr"/>
+      <stopMedia id="luckyp-start" id-type="string"/>
+      <elementShow object="mediaView" object-type="object"/>
+      <elementSetX object="mediaView" object-type="object" relative="" relative-type="" value="-16" value-type="integer"/>
+      <phpLine expr="$this-&gt;playerHelper-&gt;play()" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="18000" value-type="integer"/>
+      <setVar name="luckymode" name-type="" value="ingame" value-type="string"/>
+      <elementShow object="LABEL_count" object-type="object"/>
+      <elementShow object="LABEL_truequests" object-type="object"/>
+      <setVar name="luckyfullcount" name-type="" value="Отвечено на 0 вопросов из " value-type="string"/>
+      <phpLine expr="$luckycount = $GLOBALS['luckycount2']" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="luckyfullcount" name-type="" value="luckycount" value-type="variable"/>
+      <elementSetText object="LABEL_truequests" object-type="object" relative="" relative-type="" value="luckyfullcount" value-type="globalVariable"/>
+      <elementHide object="mediaView" object-type="object"/>
+      <phpLine expr="$this-&gt;playerMain-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMainPitch-&gt;play()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementHide object="~sender" object-type="object"/>
+      <setVar name="luckymode" name-type="" value="ingameprepare" value-type="string"/>
+      <phpLine expr="$this-&gt;playerMain-&gt;open('https://l-lacker.ru/app/lucky/game-main.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMainPitch-&gt;open('https://l-lacker.ru/app/lucky/game-main-pitch.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;ANSWER1_label-&gt;mouseTransparent = true" expr-type="expr"/>
+      <phpLine expr="$this-&gt;ANSWER2_label-&gt;mouseTransparent = true" expr-type="expr"/>
+      <phpLine expr="$this-&gt;ANSWER3_label-&gt;mouseTransparent = true" expr-type="expr"/>
+      <stopMedia id="luckyp-start" id-type="string"/>
+      <sleep sync="" sync-type="" value="3000" value-type="integer"/>
+      <setVar name="luckymode" name-type="" value="ingame" value-type="string"/>
+      <elementShow object="LABEL_count" object-type="object"/>
+      <elementShow object="LABEL_truequests" object-type="object"/>
+      <setVar name="luckyfullcount" name-type="" value="Отвечено на 0 вопросов из " value-type="string"/>
+      <phpLine expr="$luckycount = $GLOBALS['luckycount2']" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="luckyfullcount" name-type="" value="luckycount" value-type="variable"/>
+      <elementSetText object="LABEL_truequests" object-type="object" relative="" relative-type="" value="luckyfullcount" value-type="globalVariable"/>
+      <elementHide object="mediaView" object-type="object"/>
+      <phpLine expr="$this-&gt;playerMain-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMainPitch-&gt;play()" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  
+  <method name="doButton22Action">
+      <appendVar asString="" asString-type="" name="luckyqc" name-type="" value="-1" value-type="string"/>
+      <elementSetText object="label18" object-type="object" relative="" relative-type="" value="luckyqc" value-type="globalVariable"/>
+    </method>
+  <method name="doLinkAction">
+      <setVar name="lucky_points" name-type="" value="0" value-type="string"/>
+      <elementSetText object="label20" object-type="object" relative="" relative-type="" value="lucky_points" value-type="globalVariable"/>
+    </method>
+  <method name="doLinkAltAction">
+      <setVar name="lucky_points" name-type="" value="250" value-type="string"/>
+      <elementSetText object="label20" object-type="object" relative="" relative-type="" value="lucky_points" value-type="globalVariable"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  <method name="doImageAltClickLeft">
+      <ifVar method="equals" method-type="" name="luckyprikol" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="~sender" object-type="object" path="res://.data/img/llucky-overlay2.png" path-type="string" sync="" sync-type=""/>
+      <setVar name="luckyprikol" name-type="" value="2" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyprikol" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="~sender" object-type="object" path="res://.data/img/llucky-overlay3.png" path-type="string" sync="" sync-type=""/>
+      <setVar name="luckyprikol" name-type="" value="3" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyprikol" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <elementEnabledOff object="OVERALL_button" object-type="object"/>
+      <phpLine expr="$this-&gt;luckyHelper-&gt;start()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;comments-&gt;start()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;luckym1-&gt;start()" expr-type="expr"/>
+      <elementLoadContent object="~sender" object-type="object" path="res://.data/img/llucky-overlay4.png" path-type="string" sync="" sync-type=""/>
+      <setVar name="llucky_sbrosfreq" name-type="" value="0" value-type="string"/>
+      <setVar name="luckyprikol" name-type="" value="no" value-type="string"/>
+      <elementHide object="label" object-type="object"/>
+      <elementShow object="progressIndicator" object-type="object"/>
+      <openUrlMedia autoplay="" autoplay-type="flag" id="luckyp-start" id-type="string" source="https://l-lacker.ru/app/lucky/game-start.mp3" source-type="string"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementLoadContent object="tempimg1" object-type="object" path="https://l-lacker.ru/app/lucky/llucky-screen1.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="tempimg2" object-type="object" path="https://l-lacker.ru/app/lucky/llucky-screen2.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="tempimg3" object-type="object" path="https://l-lacker.ru/app/lucky/llucky-screen3.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="tempimg4" object-type="object" path="https://l-lacker.ru/app/lucky/llucky-screen4.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="tempimg5" object-type="object" path="https://l-lacker.ru/app/lucky/llucky-screen5.png" path-type="string" sync="" sync-type=""/>
+      <phpLine expr="$this-&gt;image3-&gt;image = $this-&gt;tempimg1-&gt;image" expr-type="expr"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetX object="panel" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementEnabledOn object="OVERALL_button" object-type="object"/>
+      <setVar name="luckycomms" name-type="" value="1" value-type="string"/>
+      <setVar name="luckymode" name-type="" value="fiveslides" value-type="string"/>
+      <playMedia id="luckyp-start" id-type="string"/>
+      <phpLine expr="$this-&gt;playerHelper-&gt;open('https://l-lacker.ru/app/lucky/llucky-welcome-ffmpeg.mp4')" expr-type="expr"/>
+      <elementLoadContent object="~sender" object-type="object" path="res://.data/img/llucky-overlay5.png" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="10000" value-type="integer"/>
+      <elementShow object="button6" object-type="object"/>
+      <phpLine expr="$this-&gt;playerTicks-&gt;open('https://l-lacker.ru/app/lucky/llucky-ticks.mp3')" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doButton_answ1Action">
+      <stopMedia id="luckyselector" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="luckyselector" id-type="string" source="res://.data/audio/lucky-select.mp3" source-type="string"/>
+      <elementHide object="~sender" object-type="object"/>
+      <elementEnabledOff object="button_answ2" object-type="object"/>
+      <elementEnabledOff object="button_answ3" object-type="object"/>
+      <setVar name="lucky_selectedansw" name-type="" value="1" value-type="string"/>
+      <phpLine expr="if ($GLOBALS['luckytruanswer'] == &quot;4&quot;) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="lucky_kostyl" name-type="" value="true" value-type="string"/>
+      <setVar name="lucky_kostyl2" name-type="" value="true" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <phpLine expr="if ($GLOBALS['luckytruanswer'] == &quot;1&quot;) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="lucky_kostyl" name-type="" value="true" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <phpLine expr="if ($GLOBALS['luckytruanswer'] != &quot;1&quot;) //" expr-type="expr"/>
+      <openBlock/>
+      <setVar name="lucky_kostyl" name-type="" value="false" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doButton15Action">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <phpLine expr="$this-&gt;luckyHelper-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;comments-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;luckym1-&gt;stop()" expr-type="expr"/>
+      <appendVar asString="" asString-type="" name="llucky_sbroscount" name-type="" value="1" value-type="string"/>
+      <setVar name="llucky_madesbros" name-type="" value="1" value-type="string"/>
+      <setVar name="llucky_closed" name-type="" value="" value-type="string"/>
+      <setVar name="luckyqc" name-type="" value="0" value-type="string"/>
+      <setVar name="lucky_points" name-type="" value="0" value-type="string"/>
+      <ifVar method="equals" method-type="" name="llucky_sbrosfreq" name-type="" not="1" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Предупреждение" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Игра до последнего сброса была слишком недавно. Стабильность не гарантируется" value-type="string"/>
+      <closeBlock/>
+      <elementSetText object="LABEL_count" object-type="object" relative="" relative-type="" value="Счёт: 0" value-type="string"/>
+      <elementSetText object="LABEL_truequests" object-type="object" relative="" relative-type="" value="Отвечено на 0 вопросов из 10" value-type="string"/>
+      <phpLine expr="$this-&gt;playerMain-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMainPitch-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoiceQ2-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoiceQ-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoice-&gt;stop()" expr-type="expr"/>
+      <stopMedia id="lucky-start" id-type="string"/>
+      <elementShow object="LABEL_count" object-type="object"/>
+      <elementShow object="LABEL_truequests" object-type="object"/>
+      <elementSetText object="button9" object-type="object" relative="" relative-type="" value="Выключить" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="panel" object-type="object" value="1" value-type="float"/>
+      <setVar name="luckycomms" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;luckyHelper-&gt;start()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;comments-&gt;start()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;luckym1-&gt;start()" expr-type="expr"/>
+      <setVar name="luckycomms" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;playerTicks-&gt;open('https://l-lacker.ru/app/lucky/llucky-ticks.mp3')" expr-type="expr"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelMainBG" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelWelcome" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelAlt" object-type="object"/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelMainBG" object-type="object" x="2" x-type="float" y="-4" y-type="float"/>
+      <ifVar method="equals" method-type="" name="luckyprikol" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelWelcome" object-type="object" x="-8" x-type="float" y="-2" y-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelWelcome" object-type="object" x="0" x-type="float" y="-2" y-type="float"/>
+      <closeBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="-56" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="250" duration-type="integer" object="OVERALL_panel" object-type="object" value="0" value-type="float"/>
+      <elementHide object="OVERALL_panel5" object-type="object"/>
+      <setVar name="luckymode" name-type="" value="ingameprepare" value-type="string"/>
+      <phpLine expr="$this-&gt;playerMain-&gt;open('https://l-lacker.ru/app/lucky/game-main.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMainPitch-&gt;open('https://l-lacker.ru/app/lucky/game-main-pitch.mp3')" expr-type="expr"/>
+      <phpLine expr="$this-&gt;ANSWER1_label-&gt;mouseTransparent = true" expr-type="expr"/>
+      <phpLine expr="$this-&gt;ANSWER2_label-&gt;mouseTransparent = true" expr-type="expr"/>
+      <phpLine expr="$this-&gt;ANSWER3_label-&gt;mouseTransparent = true" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerHelper-&gt;stop()" expr-type="expr"/>
+      <stopMedia id="luckyp-start" id-type="string"/>
+      <elementShow object="mediaView" object-type="object"/>
+      <elementSetX object="mediaView" object-type="object" relative="" relative-type="" value="-16" value-type="integer"/>
+      <phpLine expr="$this-&gt;playerHelper-&gt;play()" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="18000" value-type="integer"/>
+      <setVar name="luckymode" name-type="" value="ingame" value-type="string"/>
+      <elementShow object="LABEL_count" object-type="object"/>
+      <elementShow object="LABEL_truequests" object-type="object"/>
+      <setVar name="luckyfullcount" name-type="" value="Отвечено на 0 вопросов из " value-type="string"/>
+      <phpLine expr="$luckycount = $GLOBALS['luckycount2']" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="luckyfullcount" name-type="" value="luckycount" value-type="variable"/>
+      <elementSetText object="LABEL_truequests" object-type="object" relative="" relative-type="" value="luckyfullcount" value-type="globalVariable"/>
+      <elementHide object="mediaView" object-type="object"/>
+      <phpLine expr="$this-&gt;playerMain-&gt;play()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMainPitch-&gt;play()" expr-type="expr"/>
+      <elementShow object="OVERALL_button" object-type="object"/>
+      <elementEnabledOn object="OVERALL_button" object-type="object"/>
+      <elementHide object="button6" object-type="object"/>
+      <elementHide object="OVERALL_panel" object-type="object"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  
+  <method name="doOVERALL_buttonAction">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="OVERALL_panel" object-type="object" value="0" value-type="float"/>
+      <elementHide object="OVERALL_panel" object-type="object"/>
+      <elementHide object="OVERALL_store" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelMainBG" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelWelcome" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelAlt" object-type="object"/>
+      <elementSetX object="OVERALL_panel" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="OVERALL_panel" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="OVERALL_panel" object-type="object"/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelMainBG" object-type="object" x="-2" x-type="float" y="4" y-type="float"/>
+      <ifVar method="equals" method-type="" name="luckyprikol" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelWelcome" object-type="object" x="8" x-type="float" y="2" y-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelWelcome" object-type="object" x="0" x-type="float" y="2" y-type="float"/>
+      <closeBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="56" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="250" duration-type="integer" object="OVERALL_panel" object-type="object" value="1" value-type="float"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  <method name="doButton3Action">
+      <ifVar method="equals" method-type="" name="unlockluckystore" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Раздел недоступен" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Для доступа к магазину необходимо пройти всю игру" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementSetX object="OVERALL_store" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="OVERALL_store" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementHide object="OVERALL_panel" object-type="object"/>
+      <elementShow object="OVERALL_store" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelMainBG" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelWelcome" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelAlt" object-type="object"/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelMainBG" object-type="object" x="2" x-type="float" y="-4" y-type="float"/>
+      <ifVar method="equals" method-type="" name="luckyprikol" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelWelcome" object-type="object" x="-8" x-type="float" y="-2" y-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panelWelcome" object-type="object" x="0" x-type="float" y="-2" y-type="float"/>
+      <closeBlock/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="-56" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="250" duration-type="integer" object="OVERALL_panel" object-type="object" value="0" value-type="float"/>
+      <elementHide object="OVERALL_panel" object-type="object"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  
+  
+  
+  <method name="doButton28Action">
+      <phpLine expr="$lucky_points2 = $GLOBALS['lucky_points']" expr-type="expr"/>
+      <setVar name="lucky_store_points_text" name-type="" value="Ваш счёт: " value-type="string"/>
+      <appendVar asString="1" asString-type="" name="lucky_store_points_text" name-type="" value="lucky_points2" value-type="variable"/>
+      <appendVar asString="1" asString-type="" name="lucky_store_points_text" name-type="" value=" очков" value-type="string"/>
+      <elementSetText object="store_ochcount" object-type="object" relative="" relative-type="" value="lucky_store_points_text" value-type="globalVariable"/>
+      <ifVar method="smaller" method-type="" name="lucky_points" name-type="" not="" not-type="" value="50" value-type="integer"/>
+      <openBlock/>
+      <stopMedia id="llbuyerr" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="llbuyerr" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="lox-unlimbillets" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="lucky_points" name-type="" value="-50" value-type="string"/>
+      <phpLine expr="$lucky_points2 = $GLOBALS['lucky_points']" expr-type="expr"/>
+      <setVar name="lucky_store_points_text" name-type="" value="Ваш счёт: " value-type="string"/>
+      <appendVar asString="1" asString-type="" name="lucky_store_points_text" name-type="" value="lucky_points2" value-type="variable"/>
+      <appendVar asString="1" asString-type="" name="lucky_store_points_text" name-type="" value=" очков" value-type="string"/>
+      <elementSetText object="store_ochcount" object-type="object" relative="" relative-type="" value="lucky_store_points_text" value-type="globalVariable"/>
+      <stopMedia id="llbuy" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="llbuy" id-type="string" source="res://.data/audio/lox-buy.mp3" source-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton25Action">
+      <phpLine expr="$lucky_points2 = $GLOBALS['lucky_points']" expr-type="expr"/>
+      <setVar name="lucky_store_points_text" name-type="" value="Ваш счёт: " value-type="string"/>
+      <appendVar asString="1" asString-type="" name="lucky_store_points_text" name-type="" value="lucky_points2" value-type="variable"/>
+      <appendVar asString="1" asString-type="" name="lucky_store_points_text" name-type="" value=" очков" value-type="string"/>
+      <elementSetText object="store_ochcount" object-type="object" relative="" relative-type="" value="lucky_store_points_text" value-type="globalVariable"/>
+      <ifVar method="smaller" method-type="" name="lucky_points" name-type="" not="" not-type="" value="200" value-type="integer"/>
+      <openBlock/>
+      <stopMedia id="llbuyerr" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="llbuyerr" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="lox-freecats" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="lucky_points" name-type="" value="-200" value-type="string"/>
+      <phpLine expr="$lucky_points2 = $GLOBALS['lucky_points']" expr-type="expr"/>
+      <setVar name="lucky_store_points_text" name-type="" value="Ваш счёт: " value-type="string"/>
+      <appendVar asString="1" asString-type="" name="lucky_store_points_text" name-type="" value="lucky_points2" value-type="variable"/>
+      <appendVar asString="1" asString-type="" name="lucky_store_points_text" name-type="" value=" очков" value-type="string"/>
+      <elementSetText object="store_ochcount" object-type="object" relative="" relative-type="" value="lucky_store_points_text" value-type="globalVariable"/>
+      <stopMedia id="llbuy" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="llbuy" id-type="string" source="res://.data/audio/lox-buy.mp3" source-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButtonAction">
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="luckyclose" name-type="" value="1" value-type="string"/>
+      <sleep sync="" sync-type="" value="300" value-type="integer"/>
+      <ifVar method="equals" method-type="" name="luckyprikol" name-type="" not="" not-type="" value="no" value-type="string"/>
+      <openBlock/>
+      <setVar name="llucky_closed" name-type="" value="1" value-type="string"/>
+      <setVar name="luckycomms" name-type="" value="0" value-type="string"/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Информация" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Идёт постепенное завершение процессов игры, подождите ~1 минуту до повторного запуска" value-type="string"/>
+      <elementHide object="button6" object-type="object"/>
+      <phpLine expr="$this-&gt;luckyHelper-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;luckym1-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;comments-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMain-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMainPitch-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoiceQ2-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoiceQ-&gt;stop()" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerVoice-&gt;stop()" expr-type="expr"/>
+      <stopMedia id="luckyp-start" id-type="string"/>
+      <elementSetX object="OVERALL_panel5" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="OVERALL_panel5" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementHide object="OVERALL_panel4" object-type="object"/>
+      <elementShow object="OVERALL_panel5" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelMainBG" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelWelcome" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="panelAlt" object-type="object"/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="panelMainBG" object-type="object" x="2" x-type="float" y="-4" y-type="float"/>
+      <ifVar method="equals" method-type="" name="luckyprikol" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="panelWelcome" object-type="object" x="-8" x-type="float" y="-2" y-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="panelWelcome" object-type="object" x="0" x-type="float" y="-2" y-type="float"/>
+      <closeBlock/>
+      <displace continue="1" continue-type="" duration="50" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="-56" y-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="50" duration-type="integer" object="OVERALL_panel" object-type="object" value="0" value-type="float"/>
+      <elementHide object="OVERALL_panel" object-type="object"/>
+      <closeBlock/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+    </method>
+  <method name="doLabel6Click3x">
+      <phpLine expr="if (str::contains($GLOBALS['loxconfig'], 'zORoDFj2G4cbhJY7DNP35zQdHswNZ')) //" expr-type="expr"/>
+      <openBlock/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementHide object="OVERALL_panel4" object-type="object"/>
+      <elementShow object="panel4" object-type="object"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton12Action">
+      <ifVar method="equals" method-type="" name="luckypitched" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Выключить" value-type="string"/>
+      <phpLine expr="$this-&gt;playerMainPitch-&gt;volume = 0.0" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMain-&gt;volume = $volumeow" expr-type="expr"/>
+      <setVar name="luckypitched" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Включить" value-type="string"/>
+      <phpLine expr="$this-&gt;playerMain-&gt;volume = 0.0" expr-type="expr"/>
+      <phpLine expr="$this-&gt;playerMainPitch-&gt;volume = $volumeow" expr-type="expr"/>
+      <setVar name="luckypitched" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

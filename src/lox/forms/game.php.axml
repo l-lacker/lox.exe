@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="game">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAltAction">
+      <playMedia id="gamePlayer" id-type="string"/>
+    </method>
+    <method name="doButton3Action">
+      <pauseMedia id="gamePlayer" id-type="string"/>
+    </method>
+    <method name="doButton4Action">
+      <stopMedia id="gamePlayer" id-type="string"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAction">
+      <appendVar asString="" asString-type="" name="glifetime" name-type="" value="50" value-type="string"/>
+      <elementSetText object="LFTcounter" object-type="object" relative="" relative-type="" value="glifetime" value-type="globalVariable"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementSetText object="label5" object-type="object" relative="" relative-type="" value="Ждём" value-type="string"/>
+      <sleep sync="" sync-type="" value="100000" value-type="integer"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <elementSetText object="label5" object-type="object" relative="" relative-type="" value="Поспать (раз в 25 v-минут)" value-type="string"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton5Action">
+      <ifVar method="greater" method-type="" name="geat" name-type="" not="" not-type="" value="5" value-type="integer"/>
+      <openBlock/>
+      <setVar name="glifetime" name-type="" value="1" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="geat" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="geat2" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="glifetime" name-type="" value="20" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  <method name="doLabel12MouseEnter">
+      <elementSetText object="form('MainForm')-&gt;PODSKAZKA" object-type="object" relative="" relative-type="" value="За 30 v-минут можно кушать 5 раз. Если вы ни разу не ели за последние 15 v-минут, счётчик жизни=15. Видимых таймеров нет" value-type="string"/>
+    </method>
+    
+    <method name="doLabel14MouseEnter">
+      <elementSetText object="form('MainForm')-&gt;PODSKAZKA" object-type="object" relative="" relative-type="" value="За 30 v-минут можно кушать 5 раз. Если вы ни разу не ели за последние 15 v-минут, счётчик жизни=15. Видимых таймеров нет" value-type="string"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doLabel15MouseEnter">
+      <elementSetText object="form('MainForm')-&gt;PODSKAZKA" object-type="object" relative="" relative-type="" value="Открыть просмотр видео за сеанс можно только 1 раз. Больше смотришь - больше получаешь, не более 4 минут." value-type="string"/>
+    </method>
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doPausebuttonAct">
+      <setVar name="view_yt_mode" name-type="" value="0" value-type="string"/>
+      <playMedia id="gamePlayer" id-type="string"/>
+      <elementEnabledOn object="panel7" object-type="object"/>
+      <elementDestroy object="browser" object-type="object"/>
+      <elementDestroy object="view_video_panel" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doButton7Action">
+      <elementSetX object="view_video_panel" object-type="object" relative="" relative-type="" value="264" value-type="integer"/>
+      <elementSetY object="view_video_panel" object-type="object" relative="" relative-type="" value="176" value-type="integer"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="gvantipause" name-type="" value="1" value-type="string"/>
+      <elementLoadContent object="browser" object-type="object" path="https://l-lacker.ru/app/update/chembed.php?vid=0" path-type="string" sync="" sync-type=""/>
+    </method>
+  <method name="doPausebuttonAction">
+      <ifVar method="equals" method-type="" name="gvantipause" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="form('MainForm')-&gt;PODSKAZKA" object-type="object" relative="" relative-type="" value="Сначала закрой просмотр видосиков, затем ставь игру на паузу" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="view_yt_mode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="form('MainForm')-&gt;PODSKAZKA" object-type="object" relative="" relative-type="" value="Сначала закрой просмотр видосиков, затем ставь игру на паузу" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="gpause" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <setVar name="gpause" name-type="" value="1" value-type="string"/>
+      <stopMedia id="gamePlayer" id-type="string"/>
+      <elementEnabledOff object="panelAlt" object-type="object"/>
+      <elementEnabledOff object="panel6" object-type="object"/>
+      <elementEnabledOff object="panel7" object-type="object"/>
+      <behaviourEnable behaviour="behaviour\custom\BlinkAnimationBehaviour" behaviour-type="string" object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="gpause" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="gpause" name-type="" value="0" value-type="string"/>
+      <playMedia id="gamePlayer" id-type="string"/>
+      <elementEnabledOn object="panelAlt" object-type="object"/>
+      <elementEnabledOn object="panel6" object-type="object"/>
+      <elementEnabledOn object="panel7" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\BlinkAnimationBehaviour" behaviour-type="string" object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doView_video_panelClickRight">
+      <setVar name="view_yt_mode" name-type="" value="0" value-type="string"/>
+      <playMedia id="gamePlayer" id-type="string"/>
+      <setVar name="gvantipause" name-type="" value="0" value-type="string"/>
+      <elementEnabledOn object="panel7" object-type="object"/>
+      <elementDestroy object="browser" object-type="object"/>
+      <elementDestroy object="view_video_panel" object-type="object"/>
+    </method>
+  
+  
+  <method name="doShow">
+      <elementSetX object="panel5" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel5" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementLoadContent object="image" object-type="object" path="https://l-lacker.ru/app/game/background.jpg" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="winimage" object-type="object" path="https://l-lacker.ru/app/game/gifts.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="chAllowText" object-type="object" path="https://l-lacker.ru/app/update/challow.php?v=5" path-type="string" sync="" sync-type=""/>
+      <ifText method="equals" method-type="" not="" not-type="" object="chAllowText" object-type="object" string="no" string-type="string"/>
+      <openBlock/>
+      <elementEnabledOff object="button7" object-type="object"/>
+      <elementDestroy object="view_video_panel" object-type="object"/>
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="Функция серверно отключена" value-type="string"/>
+      <behaviourEnable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="label14" object-type="object"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton6Action">
+      <ifVar method="greater" method-type="" name="gdays" name-type="" not="" not-type="" value="0" value-type="integer"/>
+      <openBlock/>
+      <stopMedia id="gamePlayer" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="gamePlayer" id-type="string" source="res://.data/audio/lox-secret-theme-win.mp3" source-type="string"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <elementSetX object="winimage" object-type="object" relative="" relative-type="" value="1" value-type="integer"/>
+      <elementSetY object="winimage" object-type="object" relative="" relative-type="" value="1" value-type="integer"/>
+      <setVar name="gamewin" name-type="" value="1" value-type="string"/>
+      <elementSetText object="gcheck_1" object-type="object" relative="" relative-type="" value="приз забран" value-type="string"/>
+      <sleep sync="" sync-type="" value="5000" value-type="integer"/>
+      <elementDestroy object="winimage" object-type="object"/>
+      <elementShow object="form('MainForm')-&gt;panel4" object-type="object"/>
+      <elementEnabledOn object="form('MainForm')-&gt;panel4" object-type="object"/>
+      <stopMedia id="gamePlayer" id-type="string"/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="gamePlayer" id-type="string" source="https://l-lacker.ru/app/game/farm-fanzy-2-ost.mp3" source-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="label7" object-type="object"/>
+      <elementSetText object="gcheck_1" object-type="object" relative="" relative-type="" value="условие не выполнено" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doBrowserLoad">
+      <appendVar asString="" asString-type="" name="load_game_count" name-type="" value="1" value-type="string"/>
+      <ifVar method="equals" method-type="" name="load_game_count" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label15" object-type="object" relative="" relative-type="" value="(наведи для инструкции) Теперь выбери видео!" value-type="string"/>
+      <elementEnabledOn object="browser" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="load_game_count" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label15" object-type="object" relative="" relative-type="" value="(наведи для инструкции) Приятного просмотра! сч.+2/сек" value-type="string"/>
+      <setVar name="view_yt_mode" name-type="" value="1" value-type="string"/>
+      <elementEnabledOff object="panel7" object-type="object"/>
+      <stopMedia id="gamePlayer" id-type="string"/>
+      <setVar name="vidplayer" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton8Action">
+      <setVar name="view_yt_mode" name-type="" value="0" value-type="string"/>
+      <setVar name="yt_closed" name-type="" value="1" value-type="string"/>
+      <playMedia id="gamePlayer" id-type="string"/>
+      <setVar name="gvantipause" name-type="" value="0" value-type="string"/>
+      <elementEnabledOn object="panel7" object-type="object"/>
+      <elementDestroy object="browser" object-type="object"/>
+      <elementDestroy object="view_video_panel" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doImage21ClickLeft">
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="gamePlayer" id-type="string" source="https://l-lacker.ru/app/game/farm-fanzy-2-ost.mp3" source-type="string"/>
+      <elementHide object="~sender" object-type="object"/>
+      <phpLine expr="$this-&gt;timer-&gt;disabled = false" expr-type="expr"/>
+      <phpLine expr="$this-&gt;timer-&gt;start()" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <setVar name="gstarted" name-type="" value="2" value-type="string"/>
+    </method>
+  </class>
+</root>

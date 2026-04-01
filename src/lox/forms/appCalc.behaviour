@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="mininotipanel">
+    <behaviour color="#0000002a" offsetX="0" offsetY="4.8780487804878" radius="3.6585365853659" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+</behaviours>

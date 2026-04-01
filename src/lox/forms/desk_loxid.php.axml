@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="desk_loxid">
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doEditKeyUpCtrlV">
+      <setVar name="tglinktest" name-type="" value="$e-&gt;sender-&gt;text" value-type="expr"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+      <phpLine expr="$GLOBALS['tglinktest'] = str_replace('httpstme', '', $GLOBALS['tglinktest'])" expr-type="expr"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="tglinktest" value-type="globalVariable"/>
+    </method>
+    <method name="doEditAltKeyUpCtrlV">
+      <setVar name="tglinktest" name-type="" value="$e-&gt;sender-&gt;text" value-type="expr"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+      <phpLine expr="$GLOBALS['tglinktest'] = str_replace('httpstme', '', $GLOBALS['tglinktest'])" expr-type="expr"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="tglinktest" value-type="globalVariable"/>
+    </method>
+  
+  
+  
+  
+  <method name="doButtonMouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  
+    
+  <method name="doEdit3KeyUpCtrlV">
+      <setVar name="tglinktest" name-type="" value="$e-&gt;sender-&gt;text" value-type="expr"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+      <phpLine expr="$GLOBALS['tglinktest'] = str_replace('httpstme', '', $GLOBALS['tglinktest'])" expr-type="expr"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="tglinktest" value-type="globalVariable"/>
+    </method>
+  
+  <method name="doButton7MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doLinkAltMouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doLinkMouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doButton5MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doButton6MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doButton8MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doButton10MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doButton14MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doButton13MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doButton15MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doButton4MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doButton3MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doButton11MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doButton12MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  <method name="doButton9MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  
+  
+  <method name="doButton16MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+      <elementLoadContent object="image4" object-type="object" path="res://.data/img/smsel_1.png" path-type="string" sync="" sync-type=""/>
+    </method>
+  <method name="doButton17MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+      <elementLoadContent object="image4" object-type="object" path="res://.data/img/smsel_2.png" path-type="string" sync="" sync-type=""/>
+    </method>
+  <method name="doButton18MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+      <elementLoadContent object="image4" object-type="object" path="res://.data/img/smsel_3.png" path-type="string" sync="" sync-type=""/>
+    </method>
+  
+  
+  
+  
+  <method name="doButtonAction">
+      <phpLine expr="$this-&gt;clickScript-&gt;callAsync()" expr-type="expr"/>
+      <elementHide object="label3" object-type="object"/>
+      <elementHide object="button4" object-type="object"/>
+      <elementHide object="button3" object-type="object"/>
+      <elementSetX object="panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementHide object="panel" object-type="object"/>
+      <elementShow object="panel3" object-type="object"/>
+      <sleep sync="" sync-type="" value="7000" value-type="integer"/>
+      <elementEnabledOn object="button7" object-type="object"/>
+    </method>
+  
+  <method name="doLinkAltAction">
+      <phpLine expr="$this-&gt;clickScript-&gt;callAsync()" expr-type="expr"/>
+      <browse url="https://t.me/llackersupportbot" url-type="string"/>
+      <elementEnabledOn object="button7" object-type="object"/>
+    </method>
+  <method name="doButton7Action">
+      <phpLine expr="$this-&gt;clickScript-&gt;callAsync()" expr-type="expr"/>
+      <elementHide object="panel3" object-type="object"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+    </method>
+  <method name="doImageClick">
+      <phpLine expr="$this-&gt;clickScript-&gt;callAsync()" expr-type="expr"/>
+      <browse url="https://t.me/llackersupportbot" url-type="string"/>
+    </method>
+  <method name="doLinkAction">
+      <phpLine expr="$this-&gt;clickScript-&gt;callAsync()" expr-type="expr"/>
+      <elementSetX object="panel7" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel7" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementHide object="panelAlt" object-type="object"/>
+      <elementShow object="panel7" object-type="object"/>
+    </method>
+  <method name="doButton3Action">
+      <phpLine expr="$this-&gt;clickScript-&gt;callAsync()" expr-type="expr"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="50" duration-type="integer" object="~sender" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="100" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="104" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="10" duration-type="integer" object="label3" object-type="object" value="0" value-type="float"/>
+      <elementShow object="label3" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1000" duration-type="integer" object="label3" object-type="object" value="1" value-type="float"/>
+      <sleep sync="" sync-type="" value="3000" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="10" duration-type="integer" object="button4" object-type="object" value="0" value-type="float"/>
+      <elementShow object="button4" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1000" duration-type="integer" object="button4" object-type="object" value="0.3" value-type="float"/>
+    </method>
+  <method name="doButton4Action">
+      <phpLine expr="$this-&gt;clickScript-&gt;callAsync()" expr-type="expr"/>
+      <moveTo continue="" continue-type="" duration="100" duration-type="integer" object="panel" object-type="object" x="0" x-type="float" y="104" y-type="float"/>
+      <fadeTo continue="" continue-type="" duration="10" duration-type="integer" object="label3" object-type="object" value="0" value-type="float"/>
+      <elementShow object="label3" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1000" duration-type="integer" object="label3" object-type="object" value="1" value-type="float"/>
+    </method>
+    <method name="doButton19MouseEnter">
+      <phpLine expr="$this-&gt;hoverScript-&gt;callAsync()" expr-type="expr"/>
+    </method>
+  </class>
+</root>

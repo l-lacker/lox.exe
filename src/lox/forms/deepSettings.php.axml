@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="deepSettings">
+    
+  
+  
+  
+  
+  <method name="doCloseActivityButtonAct">
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="appSettings" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="appSettings" object-type="object" x="224" x-type="float" y="392" y-type="float"/>
+      <elementHide object="appSettings" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton7Action">
+      <ifVar method="equals" method-type="" name="nointernet" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="pherror" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="pherror" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="gamewin" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="pherror" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="pherror" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <elementSetText object="label12" object-type="object" relative="" relative-type="" value="Применение темы..." value-type="string"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="Пожалуйста, подождите" value-type="string"/>
+      <setVar name="themeloader" name-type="" value="1" value-type="string"/>
+      <setVar name="theme_select" name-type="" value="3" value-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="hider2" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="hider2" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="hider2" object-type="object" relative="" relative-type="" value="32" value-type="integer"/>
+      <elementShow object="hider2" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="100" duration-type="integer" object="hider2" object-type="object" value="0.5" value-type="float"/>
+      <elementSetX object="activityLoading" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityLoading" object-type="object" relative="" relative-type="" value="288" value-type="integer"/>
+      <moveTo continue="" continue-type="" duration="100" duration-type="integer" object="activityLoading" object-type="object" x="0" x-type="float" y="224" y-type="float"/>
+      <sleep sync="" sync-type="" value="1500" value-type="integer"/>
+      <ifVar method="equals" method-type="" name="thdone" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label12" object-type="object" relative="" relative-type="" value="Что-то долговато..." value-type="string"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="Тема загрузится в фоновом режиме" value-type="string"/>
+      <sleep sync="" sync-type="" value="500" value-type="integer"/>
+      <closeBlock/>
+      <fadeTo continue="1" continue-type="" duration="100" duration-type="integer" object="hider2" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="100" duration-type="integer" object="activityLoading" object-type="object" x="0" x-type="float" y="288" y-type="float"/>
+      <elementHide object="hider2" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  <method name="doButton13Action">
+      <stopMedia id="ringplayer" id-type="string"/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="ringplayer" id-type="string" source="https://l-lacker.ru/app/masic/lnoti1.mp3" source-type="string"/>
+      <elementEnabledOff object="activitySounds" object-type="object"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementEnabledOn object="activitySounds" object-type="object"/>
+    </method>
+    
+  <method name="doButton14Action">
+      <stopMedia id="ringplayer" id-type="string"/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="ringplayer" id-type="string" source="https://l-lacker.ru/app/masic/lnoti2.mp3" source-type="string"/>
+      <elementEnabledOff object="activitySounds" object-type="object"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementEnabledOn object="activitySounds" object-type="object"/>
+    </method>
+    
+  <method name="doButton15Action">
+      <stopMedia id="ringplayer" id-type="string"/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="ringplayer" id-type="string" source="https://l-lacker.ru/app/masic/lnoti3.mp3" source-type="string"/>
+      <elementEnabledOff object="activitySounds" object-type="object"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementEnabledOn object="activitySounds" object-type="object"/>
+    </method>
+    
+  <method name="doButton16Action">
+      <stopMedia id="ringplayer" id-type="string"/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="ringplayer" id-type="string" source="https://l-lacker.ru/app/masic/lnoti4.mp3" source-type="string"/>
+      <elementEnabledOff object="activitySounds" object-type="object"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementEnabledOn object="activitySounds" object-type="object"/>
+    </method>
+    
+  <method name="doButton17Action">
+      <stopMedia id="ringplayer" id-type="string"/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="ringplayer" id-type="string" source="https://l-lacker.ru/app/masic/lnoti5.mp3" source-type="string"/>
+      <elementEnabledOff object="activitySounds" object-type="object"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementEnabledOn object="activitySounds" object-type="object"/>
+    </method>
+    
+  <method name="doButton18Action">
+      <stopMedia id="ringplayer" id-type="string"/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="ringplayer" id-type="string" source="https://l-lacker.ru/app/masic/lnoti6.mp3" source-type="string"/>
+      <elementEnabledOff object="activitySounds" object-type="object"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementEnabledOn object="activitySounds" object-type="object"/>
+    </method>
+    
+  <method name="doButton19Action">
+      <stopMedia id="ringplayer" id-type="string"/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="ringplayer" id-type="string" source="https://l-lacker.ru/app/masic/lnoti7.mp3" source-type="string"/>
+      <elementEnabledOff object="activitySounds" object-type="object"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementEnabledOn object="activitySounds" object-type="object"/>
+    </method>
+    
+  <method name="doButton20Action">
+      <stopMedia id="ringplayer" id-type="string"/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="ringplayer" id-type="string" source="https://l-lacker.ru/app/masic/lnoti8.mp3" source-type="string"/>
+      <elementEnabledOff object="activitySounds" object-type="object"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementEnabledOn object="activitySounds" object-type="object"/>
+    </method>
+    
+  
+  
+  
+  
+  
+  
+  
+  <method name="doCloseActivityButtonAction">
+      <ifVar method="equals" method-type="" name="set_activity" name-type="" not="" not-type="" value="themes" value-type="string"/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="activityThemes" object-type="object" x="0" x-type="float" y="288" y-type="float"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="set_activity" name-type="" not="" not-type="" value="sounds" value-type="string"/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="activitySounds" object-type="object" x="0" x-type="float" y="288" y-type="float"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="set_activity" name-type="" not="" not-type="" value="battery" value-type="string"/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="activityBattery" object-type="object" x="0" x-type="float" y="288" y-type="float"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="set_activity" name-type="" not="" not-type="" value="device" value-type="string"/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="150" duration-type="integer" object="activityDevice" object-type="object" x="0" x-type="float" y="288" y-type="float"/>
+      <closeBlock/>
+      <setVar name="set_activity" name-type="" value="default" value-type="string"/>
+      <fadeTo continue="" continue-type="" duration="150" duration-type="integer" object="hider1" object-type="object" value="0" value-type="float"/>
+      <setVar name="settingsHideButton" name-type="" value="2" value-type="string"/>
+      <elementSetText object="activityName" object-type="object" relative="" relative-type="" value="Настройки" value-type="string"/>
+      <elementHide object="hider1" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  <method name="doButton22Action">
+      <elementSetX object="activityPashalka" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityPashalka" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="activityPashalka" object-type="object"/>
+    </method>
+  <method name="doButton24Action">
+      <elementHide object="activityPashalka" object-type="object"/>
+    </method>
+    
+  <method name="doButton25Action">
+      <elementHide object="activityOEMunlock" object-type="object"/>
+    </method>
+  <method name="doButton27Action">
+      <elementHide object="activityOEMunlock" object-type="object"/>
+    </method>
+  <method name="doButton23Action">
+      <elementSetX object="activityOEMunlock" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityOEMunlock" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="activityOEMunlock" object-type="object"/>
+    </method>
+  
+  
+  <method name="doButton26Action">
+      <elementHide object="~sender" object-type="object"/>
+      <elementHide object="button27" object-type="object"/>
+      <elementSetText object="label33" object-type="object" relative="" relative-type="" value="Разблокировка выполнена." value-type="string"/>
+      <setVar name="vtp_bl_unlocked" name-type="" value="1" value-type="string"/>
+    </method>
+  
+  <method name="doButton21Action">
+      <elementSetText object="label29" object-type="object" relative="" relative-type="" value="loxstat_other" value-type="globalVariable"/>
+      <elementSetText object="label20" object-type="object" relative="" relative-type="" value="loxstat_loxvideos" value-type="globalVariable"/>
+      <elementSetText object="label24" object-type="object" relative="" relative-type="" value="loxstat_settings" value-type="globalVariable"/>
+      <elementSetText object="label26" object-type="object" relative="" relative-type="" value="loxstat_browser" value-type="globalVariable"/>
+      <elementSetText object="label28" object-type="object" relative="" relative-type="" value="loxstat_gallery" value-type="globalVariable"/>
+      <elementSetText object="label19" object-type="object" relative="" relative-type="" value="loxstat_calc" value-type="globalVariable"/>
+      <elementSetText object="label35" object-type="object" relative="" relative-type="" value="loxstat_lucky" value-type="globalVariable"/>
+      <elementHide object="image6" object-type="object"/>
+    </method>
+  
+  <method name="doButton8Action">
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="Рингтон 1" value-type="string"/>
+      <elementSetX object="activityRingplay" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityRingplay" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="activityRingplay" object-type="object"/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="ringplayer1" id-type="string" source="https://l-lacker.ru/app/masic/lring1.mp3" source-type="string"/>
+      <sleep sync="" sync-type="" value="500" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\RotateAnimationBehaviour" behaviour-type="string" object="image5" object-type="object"/>
+    </method>
+  <method name="doButton10Action">
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="Рингтон 2" value-type="string"/>
+      <elementSetX object="activityRingplay" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityRingplay" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="activityRingplay" object-type="object"/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="ringplayer1" id-type="string" source="https://l-lacker.ru/app/masic/lring2.mp3" source-type="string"/>
+      <sleep sync="" sync-type="" value="500" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\RotateAnimationBehaviour" behaviour-type="string" object="image5" object-type="object"/>
+    </method>
+  <method name="doButton11Action">
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="Рингтон 3" value-type="string"/>
+      <elementSetX object="activityRingplay" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityRingplay" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="activityRingplay" object-type="object"/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="ringplayer1" id-type="string" source="https://l-lacker.ru/app/masic/lring3.mp3" source-type="string"/>
+      <sleep sync="" sync-type="" value="500" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\RotateAnimationBehaviour" behaviour-type="string" object="image5" object-type="object"/>
+    </method>
+  <method name="doButton12Action">
+      <elementSetText object="label14" object-type="object" relative="" relative-type="" value="Рингтон 4" value-type="string"/>
+      <elementSetX object="activityRingplay" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityRingplay" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="activityRingplay" object-type="object"/>
+      <openUrlMedia autoplay="1" autoplay-type="flag" id="ringplayer1" id-type="string" source="https://l-lacker.ru/app/masic/lring4.mp3" source-type="string"/>
+      <sleep sync="" sync-type="" value="500" value-type="integer"/>
+      <behaviourEnable behaviour="behaviour\custom\RotateAnimationBehaviour" behaviour-type="string" object="image5" object-type="object"/>
+    </method>
+  <method name="doButton9Action">
+      <stopMedia id="ringplayer" id-type="string"/>
+      <stopMedia id="ringplayer1" id-type="string"/>
+      <elementHide object="activityRingplay" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\RotateAnimationBehaviour" behaviour-type="string" object="image5" object-type="object"/>
+    </method>
+  
+    
+    
+    
+  
+  
+  
+    
+  
+  
+  
+  <method name="doButton29Action">
+      <elementHide object="activityLVSet" object-type="object"/>
+    </method>
+  <method name="doButton28Action">
+      <elementSetX object="activityLVSet" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityLVSet" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="activityLVSet" object-type="object"/>
+    </method>
+  <method name="doButton31Action">
+      <ifVar method="equals" method-type="" name="lvNoPanel" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="lvNoPanel" name-type="" value="0" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Скрыть" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="lvNoPanel" name-type="" value="1" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Показать" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton30Action">
+      <ifVar method="equals" method-type="" name="lvNoWait" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="lvNoWait" name-type="" value="0" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Отключить" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="lvNoWait" name-type="" value="1" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Включить" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton32Action">
+      <ifVar method="equals" method-type="" name="lvqex" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="lvqex" name-type="" value="0" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Включить" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="lvqex" name-type="" value="1" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Отключить" value-type="string"/>
+      <closeBlock/>
+    </method>
+  <method name="doImage8ClickLeft">
+      <elementShow object="closeActivityButton" object-type="object"/>
+      <setVar name="settingsHideButton" name-type="" value="1" value-type="string"/>
+      <setVar name="set_activity" name-type="" value="themes" value-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="hider1" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="hider1" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="hider1" object-type="object" relative="" relative-type="" value="32" value-type="integer"/>
+      <elementSetX object="activityThemes" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityThemes" object-type="object" relative="" relative-type="" value="288" value-type="integer"/>
+      <elementShow object="hider1" object-type="object"/>
+      <elementShow object="activityThemes" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="hider1" object-type="object" value="0.5" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="activityThemes" object-type="object" x="0" x-type="float" y="32" y-type="float"/>
+      <elementSetText object="activityName" object-type="object" relative="" relative-type="" value="Темы" value-type="string"/>
+    </method>
+  <method name="doImageAltClickLeft">
+      <ifVar method="equals" method-type="" name="masic_helper" name-type="" not="" not-type="" value="playing" value-type="string"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Просто предупредим" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Этот раздел настроек может перебиваться по звуку с радио, остановите что-то одно из двух" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="nointernet" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="pherror" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="pherror" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="sounds_loaded" name-type="" not="1" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <openUrlMedia autoplay="" autoplay-type="flag" id="ring1player" id-type="string" source="https://l-lacker.ru/app/masic/lring1.mp3" source-type="string"/>
+      <setVar name="sounds_loaded" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <elementShow object="closeActivityButton" object-type="object"/>
+      <setVar name="settingsHideButton" name-type="" value="1" value-type="string"/>
+      <setVar name="set_activity" name-type="" value="sounds" value-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="hider1" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="hider1" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="hider1" object-type="object" relative="" relative-type="" value="32" value-type="integer"/>
+      <elementSetX object="activitySounds" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activitySounds" object-type="object" relative="" relative-type="" value="288" value-type="integer"/>
+      <elementShow object="hider1" object-type="object"/>
+      <elementShow object="activitySounds" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="hider1" object-type="object" value="0.5" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="activitySounds" object-type="object" x="0" x-type="float" y="32" y-type="float"/>
+      <elementSetText object="activityName" object-type="object" relative="" relative-type="" value="Звуки" value-type="string"/>
+    </method>
+  <method name="doImage3ClickLeft">
+      <elementShow object="closeActivityButton" object-type="object"/>
+      <setVar name="settingsHideButton" name-type="" value="1" value-type="string"/>
+      <setVar name="set_activity" name-type="" value="battery" value-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="hider1" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="hider1" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="hider1" object-type="object" relative="" relative-type="" value="32" value-type="integer"/>
+      <elementSetX object="activityBattery" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityBattery" object-type="object" relative="" relative-type="" value="288" value-type="integer"/>
+      <elementShow object="image6" object-type="object"/>
+      <elementShow object="hider1" object-type="object"/>
+      <elementShow object="activityBattery" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="hider1" object-type="object" value="0.5" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="activityBattery" object-type="object" x="0" x-type="float" y="32" y-type="float"/>
+      <elementSetText object="activityName" object-type="object" relative="" relative-type="" value="Батарея" value-type="string"/>
+    </method>
+  <method name="doImage4ClickLeft">
+      <elementShow object="closeActivityButton" object-type="object"/>
+      <setVar name="settingsHideButton" name-type="" value="1" value-type="string"/>
+      <setVar name="set_activity" name-type="" value="device" value-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="hider1" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="hider1" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="hider1" object-type="object" relative="" relative-type="" value="32" value-type="integer"/>
+      <elementSetX object="activityDevice" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityDevice" object-type="object" relative="" relative-type="" value="288" value-type="integer"/>
+      <elementShow object="hider1" object-type="object"/>
+      <elementShow object="activityDevice" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="hider1" object-type="object" value="0.5" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="150" duration-type="integer" object="activityDevice" object-type="object" x="0" x-type="float" y="32" y-type="float"/>
+      <elementSetText object="activityName" object-type="object" relative="" relative-type="" value="Устройство" value-type="string"/>
+    </method>
+    
+  
+  
+  
+  <method name="doButtonAltAction">
+      <ifVar method="smaller" method-type="" name="wallcnt" name-type="" not="" not-type="" value="7" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="wallcnt" name-type="" value="1" value-type="string"/>
+      <elementLoadContent object="wallpreview" object-type="object" path="'res://.data/img/phwall'.$GLOBALS['wallcnt'].'.png'" path-type="expr" sync="" sync-type=""/>
+      <closeBlock/>
+    </method>
+  <method name="doButtonAction">
+      <ifVar method="greater" method-type="" name="wallcnt" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="wallcnt" name-type="" value="-1" value-type="string"/>
+      <elementLoadContent object="wallpreview" object-type="object" path="'res://.data/img/phwall'.$GLOBALS['wallcnt'].'.png'" path-type="expr" sync="" sync-type=""/>
+      <closeBlock/>
+    </method>
+  <method name="doButton6Action">
+      <ifVar method="equals" method-type="" name="nointernet" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="pherror" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="pherror" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <elementSetText object="label12" object-type="object" relative="" relative-type="" value="Применение темы..." value-type="string"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="Пожалуйста, подождите" value-type="string"/>
+      <setVar name="themeloader" name-type="" value="1" value-type="string"/>
+      <setVar name="theme_select" name-type="" value="2" value-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="hider2" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="hider2" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="hider2" object-type="object" relative="" relative-type="" value="32" value-type="integer"/>
+      <elementShow object="hider2" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="100" duration-type="integer" object="hider2" object-type="object" value="0.5" value-type="float"/>
+      <elementSetX object="activityLoading" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityLoading" object-type="object" relative="" relative-type="" value="288" value-type="integer"/>
+      <moveTo continue="" continue-type="" duration="100" duration-type="integer" object="activityLoading" object-type="object" x="0" x-type="float" y="224" y-type="float"/>
+      <sleep sync="" sync-type="" value="1500" value-type="integer"/>
+      <ifVar method="equals" method-type="" name="thdone" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label12" object-type="object" relative="" relative-type="" value="Что-то долговато..." value-type="string"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="Тема загрузится в фоновом режиме" value-type="string"/>
+      <sleep sync="" sync-type="" value="500" value-type="integer"/>
+      <closeBlock/>
+      <fadeTo continue="1" continue-type="" duration="100" duration-type="integer" object="hider2" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="100" duration-type="integer" object="activityLoading" object-type="object" x="0" x-type="float" y="288" y-type="float"/>
+      <elementHide object="hider2" object-type="object"/>
+      <exit/>
+    </method>
+  
+  <method name="doButton5Action">
+      <ifVar method="equals" method-type="" name="nointernet" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="pherror" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="pherror" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <elementSetText object="label12" object-type="object" relative="" relative-type="" value="Применение темы..." value-type="string"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="Пожалуйста, подождите" value-type="string"/>
+      <setVar name="themeloader" name-type="" value="1" value-type="string"/>
+      <setVar name="theme_select" name-type="" value="1" value-type="string"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="hider2" object-type="object" value="0" value-type="float"/>
+      <elementSetX object="hider2" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="hider2" object-type="object" relative="" relative-type="" value="32" value-type="integer"/>
+      <elementShow object="hider2" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="100" duration-type="integer" object="hider2" object-type="object" value="0.5" value-type="float"/>
+      <elementSetX object="activityLoading" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="activityLoading" object-type="object" relative="" relative-type="" value="288" value-type="integer"/>
+      <moveTo continue="" continue-type="" duration="100" duration-type="integer" object="activityLoading" object-type="object" x="0" x-type="float" y="224" y-type="float"/>
+      <sleep sync="" sync-type="" value="1500" value-type="integer"/>
+      <ifVar method="equals" method-type="" name="thdone" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <elementSetText object="label12" object-type="object" relative="" relative-type="" value="Что-то долговато..." value-type="string"/>
+      <elementSetText object="label13" object-type="object" relative="" relative-type="" value="Тема загрузится в фоновом режиме" value-type="string"/>
+      <sleep sync="" sync-type="" value="500" value-type="integer"/>
+      <closeBlock/>
+      <fadeTo continue="1" continue-type="" duration="100" duration-type="integer" object="hider2" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="100" duration-type="integer" object="activityLoading" object-type="object" x="0" x-type="float" y="288" y-type="float"/>
+      <elementHide object="hider2" object-type="object"/>
+      <exit/>
+    </method>
+  <method name="doLabel32MouseUpLeft">
+      <moveTo continue="" continue-type="" duration="50" duration-type="integer" object="~sender" object-type="object" x="85" x-type="float" y="92" y-type="float"/>
+    </method>
+  <method name="doImageClickLeft">
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Недоступно" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Данная функция ещё не была реализована" value-type="string"/>
+    </method>
+  </class>
+</root>

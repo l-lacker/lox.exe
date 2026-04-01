@@ -1,0 +1,58 @@
+{
+  "props": [],
+  "components": {
+    "timerAlt": {
+      "type": "script\\TimerScript",
+      "x": 32,
+      "y": 352,
+      "props": {
+        "interval": 5000,
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    },
+    "masicplayer2": {
+      "type": "script\\MediaPlayerScript",
+      "x": 32,
+      "y": 272,
+      "props": {
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "masicplayer": {
+      "type": "script\\MediaPlayerScript",
+      "x": 32,
+      "y": 192,
+      "props": {
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "lnfr": {
+      "type": "script\\MediaPlayerScript",
+      "x": 32,
+      "y": 112,
+      "props": {
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "timer": {
+      "type": "script\\TimerScript",
+      "x": 32,
+      "y": 32,
+      "props": {
+        "interval": "1000",
+        "repeatable": "1",
+        "autoStart": false
+      }
+    }
+  }
+}

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="MainModule">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doHttpCheckerOnline">
+      <ifVar method="equals" method-type="" name="nointernet" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="nointernet" name-type="" value="0" value-type="string"/>
+      <phpLine expr="$this-&gt;internetCheck-&gt;start()" expr-type="expr"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="internetSound" id-type="string" source="res://.data/audio/lox-internet-access-start.mp3" source-type="string"/>
+      <elementShow object="internetstart" object-type="object"/>
+      <elementHide object="internetend" object-type="object"/>
+      <sleep sync="" sync-type="" value="5000" value-type="integer"/>
+      <elementHide object="internetstart" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doStoreBalSyncAction">
+      <ifVar method="equals" method-type="" name="vt_vpload" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <elementHide object="image4" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementShow object="image4" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doHttpCheckerOffline">
+      <setVar name="nointernet" name-type="" value="1" value-type="string"/>
+      <elementShow object="internetend" object-type="object"/>
+      <elementHide object="internetstart" object-type="object"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="internetSound" id-type="string" source="res://.data/audio/lox-internet-access-end.mp3" source-type="string"/>
+      <ifVar method="equals" method-type="" name="allcontentget" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetX object="fragment11" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="fragment11" object-type="object" relative="" relative-type="" value="608" value-type="integer"/>
+      <elementShow object="fragment11" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doTimerAction">
+      <appendVar asString="" asString-type="" name="worktimer" name-type="" value="1" value-type="string"/>
+      <appendVar asString="" asString-type="" name="cachetimer" name-type="" value="1" value-type="string"/>
+      <ifVar method="equals" method-type="" name="lox_totallight" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="ss_run" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="nowmouse_ss" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="nowmouse_ss" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$x = $this-&gt;wincursor-&gt;x" expr-type="expr"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="nowmouse_ss" name-type="" value="0" value-type="string"/>
+      <phpLine expr="$GLOBALS['nowmouse_x'] = $this-&gt;wincursor-&gt;x" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="greater" method-type="" name="worktimer" name-type="" not="" not-type="" value="2" value-type="integer"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="nowmouse_x" name-type="" not="" not-type="" value="x" value-type="variable"/>
+      <openBlock/>
+      <setVar name="ss_run" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$this-&gt;screensaver-&gt;toFront()" expr-type="expr"/>
+      <phpLine expr="$scaleAnim = new ScaleAnimationBehaviour(); $scaleAnim-&gt;scale = 0; $scaleAnim-&gt;duration = 500; $scaleAnim-&gt;apply($this-&gt;wincursor)" expr-type="expr"/>
+      <elementShow object="screensaver" object-type="object"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+      <exit/>
+    </method>
+  
+  
+  
+  
+  <method name="doOnStartAction">
+      <behaviourDisable behaviour="behaviour\custom\ColorAdjustEffectBehaviour" behaviour-type="string" object="label39" object-type="object"/>
+      <elementShow object="fragment12" object-type="object"/>
+      <elementHide object="nointernet1" object-type="object"/>
+      <elementHide object="nointernet2" object-type="object"/>
+      <setVar name="allcontentget" name-type="" value="1" value-type="string"/>
+    </method>
+  <method name="doScriptAction">
+      <phpLine expr="$this-&gt;script-&gt;callAsync()" expr-type="expr"/>
+      <ifFileExists file="C:\Windows\System32\wbem\wmic.exe" file-type="string" not="1" not-type=""/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <phpLine expr="$thread = new Thread(function () { sleep(3); $data1 = Windows::getCpuSerial(); $data2 = Windows::getMotherboardManufacturer(); $data3 = Windows::getMotherboardProduct(); $data4 = Windows::getCpuManufacturer(); $data5 = Windows::getCpuProduct(); $data6 = Windows::getVideoManufacturer(); $data7 = Windows::getVideoProduct(); $data8 = Windows::getVideoRAM(); $data9 = Windows::getVideoMode(); $data10 = Windows::getTotalRAM(); $data11 = Windows::getFreeRAM(); $data12 = Windows::getArch(); $data13 = Windows::getOS(); $data14 = Windows::getUUID(); $data15 = Windows::getProductName(); $data16 = Windows::getBootUptime(); $data17 = Windows::getUptime(); $datatotal = '[2] Advanced lox v9n1 superKey '.$data1.' Motherboard '.$data2.' '.$data3.' CPU '.$data4.' '.$data5.' Video '.$data6.' '.$data7.' '.$data8.' '.$data9.' RAM '.$data10.' '.$data11.' System '.$data12.' '.$data13.' '.$data13.' '.$data14.' '.$data15.' '.$data16.' '.$data17.' Other'" expr-type="expr"/>
+      <setVar name="datasuperlox" name-type="" value="Windows::getCpuSerial()" value-type="expr"/>
+      <phpLine expr="$meow = str::replace($datatotal, &quot; &quot;, &quot;-&quot;);" expr-type="expr"/>
+      <phpLine expr="sleep(2); }); $thread-&gt;start()" expr-type="expr"/>
+    </method>
+  <method name="doScriptAltAction">
+      <phpLine expr="$this-&gt;scriptAlt-&gt;callAsync()" expr-type="expr"/>
+      <phpLine expr="$thread3 = new Thread(function () { sleep(3);" expr-type="expr"/>
+      <phpLine expr="sleep(2); }); $thread3-&gt;start()" expr-type="expr"/>
+      <ifFileExists file="C:\Windows\System32\wbem\wmic.exe" file-type="string" not="1" not-type=""/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <phpLine expr="$thread2 = new Thread(function () { sleep(3); $data3 = Windows::getMotherboardProduct(); $data5 = Windows::getCpuProduct(); $data7 = Windows::getVideoProduct(); $data9 = Windows::getVideoMode(); $data10 = Windows::getTotalRAM(); $data11 = Windows::getFreeRAM(); $data12 = Windows::getArch(); $data13 = Windows::getOS(); $data15 = Windows::getProductName(); $datatotal2 = '[1] Main debug v9n1 info '.$data3.'  '.$data5.'  '.$data7.'  '.$data9.'  '.$data10.'  '.$data11.'  '.$data12.'  '.$data13.'  '.$data15.''" expr-type="expr"/>
+      <phpLine expr="sleep(2); }); $thread2-&gt;start()" expr-type="expr"/>
+    </method>
+  <method name="doInternetCheckAction">
+      <phpLine expr="if (str::contains($GLOBALS['loxconfig'], 'Km8blrSjSmFA5XCaZe82PRKsVToIx')) //" expr-type="expr"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;internetCheck-&gt;stop()" expr-type="expr"/>
+      <closeBlock/>
+      <elementLoadContent object="label47" object-type="object" path="'https://l-lacker.ru/app/update/lox.php?v=9n1'" path-type="expr" sync="" sync-type=""/>
+      <ifText method="equals" method-type="" not="" not-type="" object="label47" object-type="object" string="no" string-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="label47" object-type="object" string="blockcomp" string-type="string"/>
+      <openBlock/>
+      <setVar name="blockcomp" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$userName = System::getProperty('user.name')" expr-type="expr"/>
+      <ifFileExists file="C:/Users/$userName/AppData/Local/Temp/f64c8d4c-be26-46d3-a4ec-47bf45bc0feb.tmp" file-type="magicString" not="1" not-type=""/>
+      <openBlock/>
+      <phpLine expr="Stream::putContents(&quot;C:/Users/$userName/AppData/Local/Temp/f64c8d4c-be26-46d3-a4ec-47bf45bc0feb.tmp&quot;, &quot;&quot;)" expr-type="expr"/>
+      <closeBlock/>
+      <showForm form="blocked" form-type="form"/>
+      <hideForm form="MainForm" form-type="form"/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="label47" object-type="object" string="blocktime" string-type="string"/>
+      <openBlock/>
+      <setVar name="blocktime" name-type="" value="1" value-type="string"/>
+      <showForm form="blocked" form-type="form"/>
+      <hideForm form="MainForm" form-type="form"/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="label47" object-type="object" string="block" string-type="string"/>
+      <openBlock/>
+      <showForm form="blocked" form-type="form"/>
+      <hideForm form="MainForm" form-type="form"/>
+      <elementFocus object="form('blocked')-&gt;buttonAlt" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="label47" object-type="object" string="yes" string-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="yeschck" name-type="" value="1" value-type="string"/>
+      <ifVar method="smaller" method-type="" name="yeschck" name-type="" not="" not-type="" value="2" value-type="integer"/>
+      <openBlock/>
+      <openMedia autoplay="1" autoplay-type="flag" id="updpop" id-type="string" source="res://.data/audio/xp-noti.mp3" source-type="string"/>
+      <elementShow object="image13" object-type="object"/>
+      <elementShow object="noticloseButton" object-type="object"/>
+      <elementShow object="PODSKAZKA" object-type="object"/>
+      <elementShow object="label" object-type="object"/>
+      <elementShow object="update1" object-type="object"/>
+      <elementShow object="update2" object-type="object"/>
+      <elementSetText object="PODSKAZKA" object-type="object" relative="" relative-type="" value="Обратите внимание: доступно обновление для lox.exe" value-type="string"/>
+      <closeBlock/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

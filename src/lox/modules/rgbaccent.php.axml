@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="rgbaccent">
+    <method name="doRgbaccentAction">
+      <ifVar method="equals" method-type="" name="vtb_rgbaccent" name-type="" not="" not-type="" value="default" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;fillColor = &quot;1a3399&quot;" expr-type="expr"/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;strokeColor = &quot;1a3399&quot;" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_rgbaccent" name-type="" not="" not-type="" value="webos" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;fillColor = &quot;b20148&quot;" expr-type="expr"/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;strokeColor = &quot;b20148&quot;" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_rgbaccent" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="vtb_rgbaccenttick" name-type="" value="1" value-type="string"/>
+      <ifVar method="equals" method-type="" name="vtb_rgbaccenttick" name-type="" not="" not-type="" value="7" value-type="string"/>
+      <openBlock/>
+      <setVar name="vtb_rgbaccenttick" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_rgbaccenttick" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;fillColor = &quot;fe0000&quot;" expr-type="expr"/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;strokeColor = &quot;fe0000&quot;" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_rgbaccenttick" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;fillColor = &quot;f17c36&quot;" expr-type="expr"/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;strokeColor = &quot;f17c36&quot;" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_rgbaccenttick" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;fillColor = &quot;ffff00&quot;" expr-type="expr"/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;strokeColor = &quot;ffff00&quot;" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_rgbaccenttick" name-type="" not="" not-type="" value="4" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;fillColor = &quot;01c000&quot;" expr-type="expr"/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;strokeColor = &quot;01c000&quot;" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_rgbaccenttick" name-type="" not="" not-type="" value="5" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;fillColor = &quot;0000c0&quot;" expr-type="expr"/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;strokeColor = &quot;0000c0&quot;" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtb_rgbaccenttick" name-type="" not="" not-type="" value="6" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;fillColor = &quot;7900bf&quot;" expr-type="expr"/>
+      <phpLine expr="$this-&gt;magicrect_control-&gt;strokeColor = &quot;7900bf&quot;" expr-type="expr"/>
+      <exit/>
+      <closeBlock/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

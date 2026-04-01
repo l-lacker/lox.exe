@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="labelAlt">
+    <behaviour color="#000000" offsetX="0" offsetY="0" radius="10" spread="0.64634146341463" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="image6">
+    <behaviour brightness="0" contrast="0" hue="-0.41463414634146" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="image5">
+    <behaviour brightness="0" contrast="0" hue="-0.4390243902439" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="image8">
+    <behaviour brightness="0" contrast="0" hue="0.80487804878049" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="image9">
+    <behaviour brightness="0" contrast="0" hue="0.82926829268293" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label3">
+    <behaviour color="#000000" offsetX="0" offsetY="0" radius="10" spread="0.64634146341463" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label4">
+    <behaviour color="#000000" offsetX="0" offsetY="0" radius="10" spread="0.64634146341463" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label5">
+    <behaviour color="#000000" offsetX="0" offsetY="0" radius="10" spread="0.64634146341463" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="mediaView">
+    <behaviour enabled="" radius="17.682926829268" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+  </target>
+</behaviours>

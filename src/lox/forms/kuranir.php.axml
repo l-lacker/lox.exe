@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="kuranir">
+    <method name="doButtonAltAction">
+      <ifVar method="equals" method-type="" name="vtmode" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="vtmode" name-type="" value="1" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Включить интернет" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vtmode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="vtmode" name-type="" value="0" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Отключить интернет" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doButtonAction">
+      <elementSetX object="panel" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panel" object-type="object"/>
+      <sleep sync="" sync-type="" value="3000" value-type="integer"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <elementHide object="panel" object-type="object"/>
+    </method>
+  <method name="doButton4Action">
+      <elementHide object="panelAlt" object-type="object"/>
+    </method>
+  
+  <method name="doImage3Click2x">
+      <ifVar method="equals" method-type="" name="kurallow" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="kurlox" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="kurlox" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementSetX object="mediaView" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="mediaView" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetX object="panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="mediaView" object-type="object"/>
+      <phpLine expr="$this-&gt;player-&gt;play()" expr-type="expr"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  <method name="doMediaViewClickLeft">
+      <phpLine expr="$this-&gt;player-&gt;pause()" expr-type="expr"/>
+      <behaviourEnable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="~sender" object-type="object"/>
+      <elementShow object="panel3" object-type="object"/>
+    </method>
+  <method name="doButton5Action">
+      <phpLine expr="$this-&gt;player-&gt;play()" expr-type="expr"/>
+    </method>
+  <method name="doButton6Action">
+      <phpLine expr="$this-&gt;player-&gt;pause()" expr-type="expr"/>
+    </method>
+  <method name="doButton7Action">
+      <phpLine expr="$this-&gt;player-&gt;stop()" expr-type="expr"/>
+    </method>
+  
+  <method name="doPanel3ClickLeft">
+      <elementHide object="panel3" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="mediaView" object-type="object"/>
+    </method>
+  <method name="doButton8Action">
+      <phpLine expr="$this-&gt;player-&gt;stop()" expr-type="expr"/>
+      <elementHide object="mediaView" object-type="object"/>
+      <elementHide object="panel3" object-type="object"/>
+      <behaviourDisable behaviour="behaviour\custom\GaussianBlurEffectBehaviour" behaviour-type="string" object="mediaView" object-type="object"/>
+    </method>
+  <method name="doButton3Action">
+      <ifVar method="equals" method-type="" name="avmode" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="avmode" name-type="" value="1" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Отключить антивирус" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="avmode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <setVar name="avmode" name-type="" value="0" value-type="string"/>
+      <elementSetText object="~sender" object-type="object" relative="" relative-type="" value="Включить антивирус" value-type="string"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

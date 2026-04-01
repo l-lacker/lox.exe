@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="agModule">
+    
+  
+  
+  
+  
+  <method name="doTimerAction">
+      <ifVar method="equals" method-type="" name="agHelper" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="ag_performing" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="agHelper" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="photo1" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="photo2" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="photo3" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="photo4" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="photo5" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="photo6" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="photo7" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="photo8" object-type="object" value="0" value-type="float"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="photo9" object-type="object" value="0" value-type="float"/>
+      <setVar name="agHelper" name-type="" value="2" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="agHelper" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="ag_performing" name-type="" value="1" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="200" duration-type="integer" object="photo1" object-type="object" value="1" value-type="float"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="200" duration-type="integer" object="photo2" object-type="object" value="1" value-type="float"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="200" duration-type="integer" object="photo3" object-type="object" value="1" value-type="float"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="200" duration-type="integer" object="photo4" object-type="object" value="1" value-type="float"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="200" duration-type="integer" object="photo5" object-type="object" value="1" value-type="float"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="200" duration-type="integer" object="photo6" object-type="object" value="1" value-type="float"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="200" duration-type="integer" object="photo7" object-type="object" value="1" value-type="float"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="200" duration-type="integer" object="photo8" object-type="object" value="1" value-type="float"/>
+      <sleep sync="" sync-type="" value="50" value-type="integer"/>
+      <fadeTo continue="1" continue-type="" duration="200" duration-type="integer" object="photo9" object-type="object" value="1" value-type="float"/>
+      <setVar name="ag_performing" name-type="" value="0" value-type="string"/>
+      <setVar name="agHelper" name-type="" value="2" value-type="string"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

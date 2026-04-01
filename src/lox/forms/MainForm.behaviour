@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="image10">
+    <behaviour bottomOpacity="0" topOffset="" topOpacity="0.5" type="behaviour\custom\ReflectionEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="balance">
+    <behaviour bottomOpacity="0.18518518518519" topOffset="50" topOpacity="0.52469135802469" type="behaviour\custom\ReflectionEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label8">
+    <behaviour color="#e6e64d" offsetX="0" offsetY="0" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label9">
+    <behaviour color="#ff0000" offsetX="0" offsetY="0" radius="3.1707317073171" spread="1" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label10">
+    <behaviour color="#ff0000" offsetX="0" offsetY="0" radius="3.1707317073171" spread="1" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label11">
+    <behaviour color="#ff0000" offsetX="0" offsetY="0" radius="3.1707317073171" spread="1" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label12">
+    <behaviour color="#ff0000" offsetX="0" offsetY="0" radius="3.1707317073171" spread="1" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label13">
+    <behaviour color="#ff0000" offsetX="0" offsetY="0" radius="3.1707317073171" spread="1" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label14">
+    <behaviour color="#ff0000" offsetX="0" offsetY="0" radius="3.1707317073171" spread="1" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="sorry1">
+    <behaviour bottomOpacity="0" topOffset="47.560975609756" topOpacity="0.23170731707317" type="behaviour\custom\ReflectionEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="sorry2">
+    <behaviour bottomOpacity="0.1219512195122" topOffset="41.463414634146" topOpacity="0.34146341463415" type="behaviour\custom\ReflectionEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="bmAdded">
+    <behaviour color="#ff0000" offsetX="0" offsetY="0" radius="3.1707317073171" spread="1" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="startClose">
+    <behaviour brightness="0" contrast="0" enabled="" hue="0.36585365853659" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+    <behaviour enabled="" radius="10" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+    <behaviour delay="0" duration="50" enabled="" maxOffset="5" repeatCount="-1" type="behaviour\custom\ChatterAnimationBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="image3">
+    <behaviour brightness="0" contrast="0" enabled="" hue="0.36585365853659" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+    <behaviour enabled="" radius="10" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="imageAlt">
+    <behaviour brightness="0" contrast="0" enabled="" hue="0.36585365853659" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+    <behaviour enabled="" radius="10" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="startOpen">
+    <behaviour brightness="0" contrast="0" enabled="" hue="0.36585365853659" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+    <behaviour enabled="" radius="10" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+    <behaviour delay="0" duration="50" enabled="" maxOffset="5" repeatCount="-1" type="behaviour\custom\ChatterAnimationBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="magicstoreimage">
+    <behaviour brightness="0" contrast="0" enabled="" hue="0.36585365853659" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="fragment">
+    <behaviour animated="1" direction="ALL" gridX="1" gridY="1" limitedByParent="" opacity="0.5" opacityEnabled="" type="behaviour\custom\DraggingBehaviour"/>
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="4.88" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="image11">
+    <behaviour brightness="0" contrast="0" enabled="" hue="1" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="copyingfiles">
+    <behaviour brightness="0" contrast="0" enabled="" hue="0.53658536585366" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="wincursor">
+    <behaviour centered="" hideOrigin="1" offsetX="0" offsetY="0" type="behaviour\custom\CursorBindBehaviour"/>
+    <behaviour animated="1" delay="0" duration="500" enabled="" repeatCount="-1" scale="10" type="behaviour\custom\PulseAnimationBehaviour" when="ALWAYS"/>
+    <behaviour color="#0000001b" offsetX="2" offsetY="1.5" radius="0" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+    <behaviour bottomOpacity="0" enabled="" topOffset="" topOpacity="0.5" type="behaviour\custom\ReflectionEffectBehaviour" when="ALWAYS"/>
+    <behaviour delay="0" duration="1000" enabled="" initialScale="1" repeatCount="-1" scale="0" type="behaviour\custom\ScaleAnimationBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label37">
+    <behaviour animated="1" delay="0" duration="1000" maxOpacity="1" minOpacity="0.3" repeatCount="-1" type="behaviour\custom\BlinkAnimationBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="tereb1">
+    <behaviour color="#00ff00" enabled="" offsetX="0" offsetY="0" radius="40" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+    <behaviour color="#4d804d" enabled="" offsetX="0" offsetY="0" radius="7.5308641975309" type="behaviour\custom\InnerShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="CtrlMpanel">
+    <behaviour animated="1" direction="ALL" gridX="1" gridY="1" limitedByParent="" opacity="0.5" opacityEnabled="" type="behaviour\custom\DraggingBehaviour"/>
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="4.88" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="wallpaper">
+    <behaviour brightness="0" contrast="0" enabled="" hue="0.37" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+    <behaviour enabled="" threshold="0.3" type="behaviour\custom\BloomEffectBehaviour" when="ALWAYS"/>
+    <behaviour enabled="" radius="10" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="image16">
+    <behaviour delay="0" duration="1000" enabled="" offsetX="2" offsetY="0" repeatCount="-1" type="behaviour\custom\VibrationAnimationBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label39">
+    <behaviour format="HH:mm" type="behaviour\custom\WatchMakerBehaviour"/>
+    <behaviour brightness="1" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="startOpenLuna">
+    <behaviour brightness="0" contrast="0" enabled="" hue="0.36585365853659" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+    <behaviour enabled="" radius="10" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+    <behaviour delay="0" duration="50" enabled="" maxOffset="5" repeatCount="-1" type="behaviour\custom\ChatterAnimationBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="fragmentAlt">
+    <behaviour color="#000000" offsetX="0" offsetY="0" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="hacktext">
+    <behaviour brightness="1" contrast="0" enabled="" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="fragment13">
+    <behaviour animated="" direction="ALL" gridX="1" gridY="1" limitedByParent="" opacity="0.5" opacityEnabled="" type="behaviour\custom\DraggingBehaviour"/>
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="4.88" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="startOpenZune">
+    <behaviour brightness="0" contrast="0" enabled="" hue="0.36585365853659" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+    <behaviour enabled="" radius="10" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+    <behaviour delay="0" duration="50" enabled="" maxOffset="5" repeatCount="-1" type="behaviour\custom\ChatterAnimationBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="startMenu">
+    <behaviour enabled="" radius="10" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="internetend">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="4.88" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="internetstart">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="4.88" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panel4">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="4.88" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="rect5">
+    <behaviour animated="" direction="ALL" gridX="1" gridY="1" limitedByParent="1" opacity="0.5" opacityEnabled="" type="behaviour\custom\DraggingBehaviour"/>
+  </target>
+  <target id="image20">
+    <behaviour brightness="-1" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+</behaviours>

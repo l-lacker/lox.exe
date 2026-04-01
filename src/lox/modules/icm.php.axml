@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="icm">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doRepeaterAction">
+      <ifVar method="equals" method-type="" name="icm_cnt" name-type="" not="" not-type="" value="100" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$this-&gt;progressBar-&gt;progress = 0" expr-type="expr"/>
+      <setVar name="icm_cnt" name-type="" value="-10" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="icm_sel" name-type="" not="" not-type="" value="4" value-type="string"/>
+      <openBlock/>
+      <setVar name="icm_sel" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="icm_start" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="icm_cnt" name-type="" value="10" value-type="string"/>
+      <phpLine expr="$this-&gt;progressBar-&gt;progress = $GLOBALS['icm_cnt']" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="icm_cnt" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="icm_sel" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <elementSetX object="panel3" object-type="object" relative="" relative-type="" value="232" value-type="integer"/>
+      <elementSetY object="panel3" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panelAlt" object-type="object" x="-232" x-type="float" y="0" y-type="float"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel3" object-type="object" x="-232" x-type="float" y="0" y-type="float"/>
+      <setVar name="icm_sel" name-type="" value="4" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="icm_sel" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="232" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel" object-type="object" x="-232" x-type="float" y="0" y-type="float"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panelAlt" object-type="object" x="-232" x-type="float" y="0" y-type="float"/>
+      <setVar name="icm_sel" name-type="" value="3" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="icm_sel" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetX object="panel" object-type="object" relative="" relative-type="" value="232" value-type="integer"/>
+      <elementSetY object="panel" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <displace continue="1" continue-type="" duration="100" duration-type="integer" object="panel3" object-type="object" x="-232" x-type="float" y="0" y-type="float"/>
+      <displace continue="" continue-type="" duration="100" duration-type="integer" object="panel" object-type="object" x="-232" x-type="float" y="0" y-type="float"/>
+      <setVar name="icm_sel" name-type="" value="2" value-type="string"/>
+      <elementShow object="progressBar" object-type="object"/>
+      <elementHide object="bgimitator" object-type="object"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <closeBlock/>
+      <closeBlock/>
+    </method>
+  <method name="doStartModAction">
+      <elementLoadContent object="image" object-type="object" path="https://l-lacker.ru/app/quickurl/lox-ad1.png" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementLoadContent object="imageAlt" object-type="object" path="https://l-lacker.ru/app/quickurl/lox-ad2.png" path-type="string" sync="" sync-type=""/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementLoadContent object="image3" object-type="object" path="https://l-lacker.ru/app/quickurl/lox-ad3.png" path-type="string" sync="" sync-type=""/>
+      <setVar name="icm_start" name-type="" value="1" value-type="string"/>
+      <setVar name="icm_sel" name-type="" value="1" value-type="string"/>
+    </method>
+  </class>
+</root>

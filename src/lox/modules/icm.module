@@ -1,0 +1,25 @@
+{
+  "props": [],
+  "components": {
+    "repeater": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 128,
+      "props": {
+        "interval": "1000",
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    },
+    "startMod": {
+      "type": "script\\TimerScript",
+      "x": 48,
+      "y": 48,
+      "props": {
+        "interval": 2000,
+        "repeatable": false,
+        "autoStart": "1"
+      }
+    }
+  }
+}

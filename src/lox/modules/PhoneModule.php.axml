@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="PhoneModule">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doProshivHelperAction">
+      <ifVar method="equals" method-type="" name="bl_image_changed" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="vtp_bl_unlocked" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="overall_image" object-type="object" path="res://.data/img/lox-vtp-btl.png" path-type="string" sync="" sync-type=""/>
+      <setVar name="bl_image_changed" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_selected_fw_rb" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementHide object="fw_evox" object-type="object"/>
+      <setVar name="vt_selected_fw_rb" name-type="" value="" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_selected_fw_rb" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <elementSetX object="fw_evox" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="fw_evox" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <elementShow object="fw_evox" object-type="object"/>
+      <setVar name="vt_selected_fw_rb" name-type="" value="" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="fpmode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementSetX object="overall_image" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="overall_image" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <elementShow object="overall_image" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="brick_mode" name-type="" not="" not-type="" value="account" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="overall_image" object-type="object" path="res://.data/img/lox-vtp-stolen.png" path-type="string" sync="" sync-type=""/>
+      <elementSetX object="overall_image" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="overall_image" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <elementShow object="overall_image" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="brick_mode" name-type="" not="" not-type="" value="caal" value-type="string"/>
+      <openBlock/>
+      <elementLoadContent object="overall_image" object-type="object" path="res://.data/img/lox-vtp-destroyed.png" path-type="string" sync="" sync-type=""/>
+      <elementSetX object="overall_image" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="overall_image" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <elementShow object="overall_image" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="fpmode" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <elementHide object="overall_image" object-type="object"/>
+      <closeBlock/>
+    </method>
+  
+  
+  <method name="doStatCountAction">
+      <ifVar method="equals" method-type="" name="loxstat_opened" name-type="" not="" not-type="" value="" value-type="string"/>
+      <openBlock/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="loxstat_opened" name-type="" not="" not-type="" value="other" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="loxstat_otherc" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$GLOBALS['loxstat_other'] = $GLOBALS['loxstat_otherc']" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="loxstat_other" name-type="" value=" сек — прочее" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="loxstat_opened" name-type="" not="" not-type="" value="settings" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="loxstat_settingsc" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$GLOBALS['loxstat_settings'] = $GLOBALS['loxstat_settingsc']" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="loxstat_settings" name-type="" value=" сек" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="loxstat_opened" name-type="" not="" not-type="" value="loxvideos" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="loxstat_loxvideosc" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$GLOBALS['loxstat_loxvideos'] = $GLOBALS['loxstat_loxvideosc']" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="loxstat_loxvideos" name-type="" value=" сек" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="loxstat_opened" name-type="" not="" not-type="" value="gallery" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="loxstat_galleryc" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$GLOBALS['loxstat_gallery'] = $GLOBALS['loxstat_galleryc']" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="loxstat_gallery" name-type="" value=" сек" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="loxstat_opened" name-type="" not="" not-type="" value="browser" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="loxstat_browserc" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$GLOBALS['loxstat_browser'] = $GLOBALS['loxstat_browserc']" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="loxstat_browser" name-type="" value=" сек" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="loxstat_opened" name-type="" not="" not-type="" value="calc" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="loxstat_calcc" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$GLOBALS['loxstat_calc'] = $GLOBALS['loxstat_calcc']" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="loxstat_calc" name-type="" value=" сек" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="loxstat_opened" name-type="" not="" not-type="" value="lucky" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="" asString-type="" name="loxstat_luckyc" name-type="" value="1" value-type="string"/>
+      <phpLine expr="$GLOBALS['loxstat_lucky'] = $GLOBALS['loxstat_luckyc']" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="loxstat_lucky" name-type="" value=" сек" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doPhoneStartAction">
+      <elementSetX object="loxIcon1" object-type="object" relative="" relative-type="" value="152" value-type="integer"/>
+      <elementSetY object="loxIcon1" object-type="object" relative="" relative-type="" value="208" value-type="integer"/>
+      <elementSetX object="loxIcon6" object-type="object" relative="" relative-type="" value="488" value-type="integer"/>
+      <elementSetY object="loxIcon6" object-type="object" relative="" relative-type="" value="208" value-type="integer"/>
+      <elementSetX object="loxIcon3" object-type="object" relative="" relative-type="" value="144" value-type="integer"/>
+      <elementSetY object="loxIcon3" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <elementSetX object="loxIcon2" object-type="object" relative="" relative-type="" value="320" value-type="integer"/>
+      <elementSetY object="loxIcon2" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <elementSetX object="loxIcon4" object-type="object" relative="" relative-type="" value="488" value-type="integer"/>
+      <elementSetY object="loxIcon4" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <elementSetX object="rectAlt" object-type="object" relative="" relative-type="" value="232" value-type="integer"/>
+      <elementSetY object="rectAlt" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <elementSetX object="fragment6" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="fragment6" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doTimerAction">
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="mt2" value-type="globalVariable"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doTimerVolumeAction">
+      <phpLine expr="$volumeow = $GLOBALS['vt_volcol']/100" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayer-&gt;volume = $volumeow" expr-type="expr"/>
+      <phpLine expr="$this-&gt;videoPlayerAlt-&gt;volume = $volumeow" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="vt_volch2" name-type="" not="" not-type="" value="meow1" value-type="string"/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="fragment7" object-type="object" x="168" x-type="float" y="144" y-type="float"/>
+      <setVar name="vt_volch2" name-type="" value="meow2" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_volch2" name-type="" not="" not-type="" value="meow3" value-type="string"/>
+      <openBlock/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="fragment7" object-type="object" x="232" x-type="float" y="144" y-type="float"/>
+      <setVar name="vt_volch2" name-type="" value="" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doVTtimerAction">
+      <ifVar method="equals" method-type="" name="vt_usedvol" name-type="" not="" not-type="" value="5" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_usedvol" name-type="" value="4" value-type="string"/>
+      <setVar name="loxstat_opened" name-type="" value="browser" value-type="string"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="Загрузка..." value-type="string"/>
+      <setVar name="googload" name-type="" value="https://www.google.ru/" value-type="string"/>
+      <elementSetX object="appBrowser" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="appBrowser" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="appBrowser" object-type="object" value="0" value-type="float"/>
+      <elementShow object="appBrowser" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="appBrowser" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="appBrowser" object-type="object" x="224" x-type="float" y="112" y-type="float"/>
+      <elementLoadContent object="mobilebrowser" object-type="object" path="googload" path-type="globalVariable" sync="" sync-type=""/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_usedvol" name-type="" not="" not-type="" value="4" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_usedvol" name-type="" value="3" value-type="string"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="notificationPanel" object-type="object" x="224" x-type="float" y="-192" y-type="float"/>
+      <setVar name="openpanel" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_usedvol" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_usedvol" name-type="" value="3" value-type="string"/>
+      <setVar name="blockpp" name-type="" value="0" value-type="string"/>
+      <setVar name="openpanel" name-type="" value="0" value-type="string"/>
+      <elementSetY object="notificationPanel" object-type="object" relative="" relative-type="" value="-192" value-type="integer"/>
+      <displace continue="1" continue-type="" duration="250" duration-type="integer" object="notificationPanel" object-type="object" x="0" x-type="float" y="64" y-type="float"/>
+      <stopMedia id="ringplayer" id-type="string"/>
+      <playMedia id="ringplayer" id-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_vvpload" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_vvpload" name-type="" value="" value-type="string"/>
+      <elementSetX object="vovapay" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="vovapay" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <elementShow object="vovapay" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_vpload" name-type="" not="" not-type="" value="6" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_vpload" name-type="" value="5" value-type="string"/>
+      <elementHide object="image8" object-type="object"/>
+      <elementHide object="vovapay" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_vpload" name-type="" not="" not-type="" value="4" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_vpload" name-type="" value="5" value-type="string"/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Успешная транзакция" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Благодарим за покупку!" value-type="string"/>
+      <elementHide object="image8" object-type="object"/>
+      <elementHide object="vovapay" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_makeblur" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_makeblur" name-type="" value="" value-type="string"/>
+      <setVar name="openpanel" name-type="" value="0" value-type="string"/>
+      <elementSetY object="notificationPanel" object-type="object" relative="" relative-type="" value="-192" value-type="integer"/>
+      <ifDirExists file="$_ENV['TEMP']" file-type="variable" not="" not-type=""/>
+      <openBlock/>
+      <phpLine expr="$image = $this-&gt;layout-&gt;snapshot()" expr-type="expr"/>
+      <phpLine expr="$filename = $_ENV['TEMP'].'/temp.lox'" expr-type="expr"/>
+      <phpLine expr="fs::ensureParent($filename)" expr-type="expr"/>
+      <phpLine expr="$image-&gt;save($filename, 'png')" expr-type="expr"/>
+      <elementLoadContent object="image8" object-type="object" path="filename" path-type="variable" sync="" sync-type=""/>
+      <elementShow object="image8" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="1" value-type="string"/>
+      <setVar name="errorapi_title" name-type="" value="Макось момент?" value-type="string"/>
+      <setVar name="errorapi_desc" name-type="" value="Ваша система не тянет блюрчик, поэтому жрите как есть :DDDDDD" value-type="string"/>
+      <closeBlock/>
+      <setVar name="vt_vpload" name-type="" value="1" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="vt_newcol" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="vt_newcol" name-type="" value="" value-type="string"/>
+      <setVar name="vt_collinktotal" name-type="" value="https://l-lacker.ru/app/phone/colors/at-" value-type="string"/>
+      <appendVar asString="1" asString-type="" name="vt_collinktotal" name-type="" value="$GLOBALS['vt_collink']" value-type="expr"/>
+      <appendVar asString="1" asString-type="" name="vt_collinktotal" name-type="" value=".png" value-type="string"/>
+      <elementLoadContent object="imageAlt" object-type="object" path="vt_collinktotal" path-type="globalVariable" sync="" sync-type=""/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="headphicon" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="image6" object-type="object" value="1" value-type="float"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <fadeTo continue="1" continue-type="" duration="1" duration-type="integer" object="image6" object-type="object" value="0" value-type="float"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="blockpp" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="blockpp" name-type="" value="2" value-type="string"/>
+      <phpLine expr="$this-&gt;notificationPanel-&gt;dragging-&gt;enabled = false" expr-type="expr"/>
+      <setVar name="openpanel" name-type="" value="1" value-type="string"/>
+      <elementSetY object="notificationPanel" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="blockpp" name-type="" not="" not-type="" value="0" value-type="string"/>
+      <openBlock/>
+      <setVar name="blockpp" name-type="" value="" value-type="string"/>
+      <phpLine expr="$this-&gt;notificationPanel-&gt;dragging-&gt;enabled = true" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="lc_unlockmode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="lc_unlockmode" name-type="" value="" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="fragment6" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="loxIcon1" object-type="object" x="240" x-type="float" y="208" y-type="float"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="loxIcon6" object-type="object" x="400" x-type="float" y="208" y-type="float"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="loxIcon3" object-type="object" x="240" x-type="float" y="304" y-type="float"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="loxIcon2" object-type="object" x="320" x-type="float" y="304" y-type="float"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="loxIcon4" object-type="object" x="400" x-type="float" y="304" y-type="float"/>
+      <moveTo continue="1" continue-type="" duration="250" duration-type="integer" object="rectAlt" object-type="object" x="232" x-type="float" y="296" y-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="loxIcon5" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="image3" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="label10" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="150" duration-type="integer" object="label9" object-type="object" value="1" value-type="float"/>
+      <elementHide object="fragment6" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="lvNoPanel" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <elementShow object="image" object-type="object"/>
+      <else/>
+      <elementHide object="image" object-type="object"/>
+      <ifVar method="equals" method-type="" name="vtmode" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementShow object="vovatechErr1" object-type="object"/>
+      <elementEnabledOn object="vovatechErr1" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  <method name="doPhoneHelperAction">
+      <ifVar method="equals" method-type="" name="errorapi" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="errorapi" name-type="" value="0" value-type="string"/>
+      <elementSetX object="halftrans" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="halftrans" object-type="object" relative="" relative-type="" value="88" value-type="integer"/>
+      <elementSetX object="activityError" object-type="object" relative="" relative-type="" value="224" value-type="integer"/>
+      <elementSetY object="activityError" object-type="object" relative="" relative-type="" value="392" value-type="integer"/>
+      <elementSetText object="errorLabel" object-type="object" relative="" relative-type="" value="errorapi_title" value-type="globalVariable"/>
+      <elementSetText object="errorText" object-type="object" relative="" relative-type="" value="errorapi_desc" value-type="globalVariable"/>
+      <elementShow object="activityError" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="halftrans" object-type="object" value="0" value-type="float"/>
+      <elementShow object="halftrans" object-type="object"/>
+      <fadeTo continue="1" continue-type="" duration="125" duration-type="integer" object="halftrans" object-type="object" value="1" value-type="float"/>
+      <fadeTo continue="1" continue-type="" duration="125" duration-type="integer" object="activityError" object-type="object" value="1" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="125" duration-type="integer" object="activityError" object-type="object" x="224" x-type="float" y="288" y-type="float"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="luckyclose" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="luckyclose" name-type="" value="0" value-type="string"/>
+      <setVar name="loxstat_opened" name-type="" value="other" value-type="string"/>
+      <fadeTo continue="1" continue-type="" duration="250" duration-type="integer" object="appLucky" object-type="object" value="0" value-type="float"/>
+      <moveTo continue="" continue-type="" duration="250" duration-type="integer" object="appLucky" object-type="object" x="224" x-type="float" y="392" y-type="float"/>
+      <elementHide object="appLucky" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="lgalshow" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementShow object="labelgallery" object-type="object"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <elementHide object="labelgallery" object-type="object"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="themeloader" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="thdone" name-type="" value="0" value-type="string"/>
+      <ifVar method="equals" method-type="" name="theme_select" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="themeloader" name-type="" value="0" value-type="string"/>
+      <elementLoadContent object="wallpaper" object-type="object" path="https://l-lacker.ru/app/phone/vovatech-wallpaper.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="statusbar" object-type="object" path="https://l-lacker.ru/app/phone/vovatech-statusbar.png" path-type="string" sync="" sync-type=""/>
+      <elementShow object="label8" object-type="object"/>
+      <elementHide object="labelAlt" object-type="object"/>
+      <elementShow object="image6" object-type="object"/>
+      <setVar name="thdone" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="theme_select" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <setVar name="themeloader" name-type="" value="0" value-type="string"/>
+      <elementLoadContent object="wallpaper" object-type="object" path="https://l-lacker.ru/app/phone/vovatech-wallpaper-apple.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="statusbar" object-type="object" path="https://l-lacker.ru/app/phone/vovatech-statusbar-apple.png" path-type="string" sync="" sync-type=""/>
+      <elementHide object="label8" object-type="object"/>
+      <elementHide object="labelAlt" object-type="object"/>
+      <elementHide object="image6" object-type="object"/>
+      <setVar name="thdone" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="theme_select" name-type="" not="" not-type="" value="3" value-type="string"/>
+      <openBlock/>
+      <setVar name="themeloader" name-type="" value="0" value-type="string"/>
+      <elementLoadContent object="wallpaper" object-type="object" path="https://l-lacker.ru/app/phone/vovatech-wallpaper-gsecret.png" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="statusbar" object-type="object" path="https://l-lacker.ru/app/phone/vovatech-statusbar-gsecret.png" path-type="string" sync="" sync-type=""/>
+      <elementHide object="label8" object-type="object"/>
+      <setVar name="thdone" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="settingsHideButton" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <elementShow object="button3" object-type="object"/>
+      <setVar name="settingsHideButton" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="settingsHideButton" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <elementHide object="button3" object-type="object"/>
+      <setVar name="settingsHideButton" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

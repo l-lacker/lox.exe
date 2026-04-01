@@ -1,0 +1,69 @@
+{
+  "props": [],
+  "components": {
+    "calluisound": {
+      "type": "script\\MediaPlayerScript",
+      "x": 32,
+      "y": 432,
+      "props": {
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "callsound": {
+      "type": "script\\MediaPlayerScript",
+      "x": 32,
+      "y": 352,
+      "props": {
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "gudoksound": {
+      "type": "script\\MediaPlayerScript",
+      "x": 32,
+      "y": 272,
+      "props": {
+        "loop": true,
+        "autoplay": false,
+        "volume": "1.0",
+        "balance": "0.0",
+        "rate": "1.0"
+      }
+    },
+    "mainmenu": {
+      "type": "script\\TimerScript",
+      "x": 32,
+      "y": 112,
+      "props": {
+        "interval": 100,
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    },
+    "numnab": {
+      "type": "script\\TimerScript",
+      "x": 112,
+      "y": 32,
+      "props": {
+        "interval": "1000",
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    },
+    "timer": {
+      "type": "script\\TimerScript",
+      "x": 32,
+      "y": 32,
+      "props": {
+        "interval": 100,
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    }
+  }
+}

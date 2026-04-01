@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<behaviours>
+  <target id="theme1">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="0" radius="21.22" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+    <behaviour delay="0" duration="100" initialScale="1" repeatCount="-1" scale="0.9" type="behaviour\custom\ScaleAnimationBehaviour" when="HOVER"/>
+  </target>
+  <target id="theme2">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="0" radius="21.22" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+    <behaviour delay="0" duration="100" initialScale="1" repeatCount="-1" scale="0.9" type="behaviour\custom\ScaleAnimationBehaviour" when="HOVER"/>
+  </target>
+  <target id="imageAlt">
+    <behaviour color="#b3b3b3" enabled="" offsetX="0" offsetY="0" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="image3">
+    <behaviour color="#b3b3b3" enabled="" offsetX="0" offsetY="0" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panelAlt">
+    <behaviour color="#666666" offsetX="0" offsetY="0" radius="13.90243902439" spread="0.31707317073171" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+    <behaviour animated="1" direction="ALL" gridX="1" gridY="1" limitedByParent="1" opacity="0.5" opacityEnabled="" type="behaviour\custom\DraggingBehaviour"/>
+  </target>
+  <target id="panel">
+    <behaviour enabled="" radius="27.670731707317" type="behaviour\custom\GaussianBlurEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="theme3">
+    <behaviour color="#b3b3b3" offsetX="0" offsetY="0" radius="21.22" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+    <behaviour delay="0" duration="100" initialScale="1" repeatCount="-1" scale="0.9" type="behaviour\custom\ScaleAnimationBehaviour" when="HOVER"/>
+  </target>
+  <target id="button14">
+    <behaviour color="#b3b3b3" offsetX="2.44" offsetY="2.4390243902439" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button15">
+    <behaviour color="#b3b3b3" offsetX="2.44" offsetY="2.44" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="button16">
+    <behaviour color="#b3b3b3" offsetX="2.44" offsetY="2.44" radius="10" spread="0" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="label14">
+    <behaviour color="#ffffff" offsetX="0" offsetY="0" radius="10" spread="0.73170731707317" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="panel4">
+    <behaviour color="#666666" offsetX="0" offsetY="0" radius="13.90243902439" spread="0.31707317073171" type="behaviour\custom\DropShadowEffectBehaviour" when="ALWAYS"/>
+    <behaviour animated="1" direction="ALL" gridX="1" gridY="1" limitedByParent="1" opacity="0.5" opacityEnabled="" type="behaviour\custom\DraggingBehaviour"/>
+  </target>
+  <target id="image10">
+    <behaviour brightness="0.097560975609756" contrast="0" hue="0" saturation="0" type="behaviour\custom\ColorAdjustEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="circle">
+    <behaviour diffuseConstant="0.83" specularConstant="0.74" specularExponent="17.56" surfaceScale="1.5" type="behaviour\custom\LightingEffectBehaviour" when="ALWAYS"/>
+  </target>
+  <target id="circleAlt">
+    <behaviour diffuseConstant="0.83" specularConstant="0.74" specularExponent="17.56" surfaceScale="1.5" type="behaviour\custom\LightingEffectBehaviour" when="ALWAYS"/>
+  </target>
+</behaviours>

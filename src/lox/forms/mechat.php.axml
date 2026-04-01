@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="mechat">
+    
+  
+  
+  
+  
+  <method name="doButton4Action">
+      <ifVar method="equals" method-type="" name="ch_warnmode" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <stopMedia id="messwarn" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="messwarn" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <elementSetX object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panelAlt" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panelAlt" object-type="object"/>
+      <closeBlock/>
+    </method>
+  <method name="doButton5Action">
+      <elementHide object="panelAlt" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton6Action">
+      <elementHide object="panel4" object-type="object"/>
+    </method>
+  
+  <method name="doButton12Action">
+      <elementSetText object="textAreaAlt" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+      <setVar name="ch_msg_counter" name-type="" value="0" value-type="string"/>
+    </method>
+  
+  
+  <method name="doCheckboxClickLeft">
+      <ifVar method="equals" method-type="" name="ch_enabled_date" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="ch_enabled_date" name-type="" value="1" value-type="string"/>
+      <phpLine expr="Element::setText($this-&gt;editAlt, uiText($this-&gt;helper_date-&gt;text))" expr-type="expr"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="ch_enabled_date" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  <method name="doCheckboxAltClickLeft">
+      <ifVar method="equals" method-type="" name="ch_time_disabled" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="ch_time_disabled" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="ch_time_disabled" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  <method name="doCheckbox3ClickLeft">
+      <elementShow object="edit3" object-type="object"/>
+      <ifVar method="equals" method-type="" name="ch_nowtime_disabled" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="ch_nowtime_disabled" name-type="" value="1" value-type="string"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <setVar name="ch_nowtime_disabled" name-type="" value="0" value-type="string"/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  <method name="doButton8Action">
+      <elementHide object="panel6" object-type="object"/>
+    </method>
+  
+  <method name="doButton9Action">
+      <phpLine expr="$loxRandomFN = 'messenger-'.rand(0,999999999)" expr-type="expr"/>
+      <elementSetText object="edit6" object-type="object" relative="" relative-type="" value="loxRandomFN" value-type="variable"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonAction">
+      <setVar name="msg_sender" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Собеседник 1" value-type="string"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="msg_sender_1t" value-type="globalVariable"/>
+    </method>
+  <method name="doButtonAltAction">
+      <setVar name="msg_sender" name-type="" value="2" value-type="string"/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Собеседник 2" value-type="string"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="msg_sender_2t" value-type="globalVariable"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton7Action">
+      <phpLine expr="$image = $this-&gt;panel-&gt;snapshot()" expr-type="expr"/>
+      <phpLine expr="$sraka1 = $this-&gt;edit5-&gt;text" expr-type="expr"/>
+      <phpLine expr="$sraka2 = $this-&gt;edit6-&gt;text" expr-type="expr"/>
+      <phpLine expr="$filename = $sraka1.&quot;\\&quot;.$sraka2.&quot;.png&quot;" expr-type="expr"/>
+      <phpLine expr="fs::ensureParent($filename)" expr-type="expr"/>
+      <phpLine expr="$image-&gt;save($filename, fs::ext($filename))" expr-type="expr"/>
+      <stopMedia id="scrsv" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="scrsv" id-type="string" source="res://.data/audio/screensaved.mp3" source-type="string"/>
+    </method>
+  <method name="doButton3Action">
+      <ifVar method="equals" method-type="" name="ch_warnmode" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="edit" object-type="object" string="" string-type="string"/>
+      <openBlock/>
+      <stopMedia id="messwarn" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="messwarn" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <elementSetX object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel4" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panel4" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="ch_warnmode" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="textArea" object-type="object" string="" string-type="string"/>
+      <openBlock/>
+      <stopMedia id="messwarn" id-type="string"/>
+      <openMedia autoplay="1" autoplay-type="flag" id="messwarn" id-type="string" source="res://.data/audio/lox-error.mp3" source-type="string"/>
+      <elementSetX object="panel6" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementSetY object="panel6" object-type="object" relative="" relative-type="" value="0" value-type="integer"/>
+      <elementShow object="panel6" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <closeBlock/>
+      <appendVar asString="" asString-type="" name="ch_msg_counter" name-type="" value="1" value-type="string"/>
+      <ifVar method="greater" method-type="" name="ch_msg_counter" name-type="" not="" not-type="" value="1" value-type="integer"/>
+      <openBlock/>
+      <phpLine expr="Element::appendText($this-&gt;textAreaAlt, &quot;\n&quot;);" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="msg_sender" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$GLOBALS['msg_sender_1t'] = $this-&gt;edit-&gt;text" expr-type="expr"/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="msg_sender" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$GLOBALS['msg_sender_2t'] = $this-&gt;edit-&gt;text" expr-type="expr"/>
+      <closeBlock/>
+      <phpLine expr="$GLOBALS['ch_fulltext'] = $this-&gt;edit-&gt;text" expr-type="expr"/>
+      <appendVar asString="1" asString-type="" name="ch_fulltext" name-type="" value=" [" value-type="string"/>
+      <ifVar method="equals" method-type="" name="ch_enabled_date" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$GLOBALS['ch_fulltext'] .= $this-&gt;editAlt-&gt;text" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="ch_time_disabled" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <appendVar asString="1" asString-type="" name="ch_fulltext" name-type="" value=", " value-type="string"/>
+      <closeBlock/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="ch_time_disabled" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <ifVar method="equals" method-type="" name="ch_nowtime_disabled" name-type="" not="1" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <phpLine expr="$GLOBALS['ch_fulltext'] .= $this-&gt;helper_time-&gt;text" expr-type="expr"/>
+      <closeBlock/>
+      <else/>
+      <openBlock/>
+      <phpLine expr="$GLOBALS['ch_fulltext'] .= $this-&gt;edit3-&gt;text" expr-type="expr"/>
+      <closeBlock/>
+      <closeBlock/>
+      <appendVar asString="1" asString-type="" name="ch_fulltext" name-type="" value="]: " value-type="string"/>
+      <phpLine expr="$GLOBALS['ch_fulltext'] .= $this-&gt;textArea-&gt;text" expr-type="expr"/>
+      <elementSetText object="textAreaAlt" object-type="object" relative="1" relative-type="" value="ch_fulltext" value-type="globalVariable"/>
+      <phpLine expr="$this-&gt;textAreaAlt-&gt;end()" expr-type="expr"/>
+      <ifVar method="equals" method-type="" name="msg_sender" name-type="" not="" not-type="" value="1" value-type="string"/>
+      <openBlock/>
+      <setVar name="msg_sender" name-type="" value="2" value-type="string"/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Собеседник 2" value-type="string"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="msg_sender_2t" value-type="globalVariable"/>
+      <exit/>
+      <closeBlock/>
+      <ifVar method="equals" method-type="" name="msg_sender" name-type="" not="" not-type="" value="2" value-type="string"/>
+      <openBlock/>
+      <setVar name="msg_sender" name-type="" value="1" value-type="string"/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Собеседник 1" value-type="string"/>
+      <elementSetText object="edit" object-type="object" relative="" relative-type="" value="msg_sender_1t" value-type="globalVariable"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  
+  <method name="doButton13Action">
+      <phpLine expr="if($this-&gt;dirChooser-&gt;execute()) { $this-&gt;edit5-&gt;text = $this-&gt;dirChooser-&gt;initialDirectory; }" expr-type="expr"/>
+    </method>
+  <method name="doButton11Action">
+      <elementSetText object="label17" object-type="object" relative="" relative-type="" value="включены" value-type="string"/>
+      <setVar name="ch_warnmode" name-type="" value="0" value-type="string"/>
+    </method>
+  <method name="doButton10Action">
+      <elementSetText object="label17" object-type="object" relative="" relative-type="" value="отключены" value-type="string"/>
+      <setVar name="ch_warnmode" name-type="" value="1" value-type="string"/>
+    </method>
+  </class>
+</root>

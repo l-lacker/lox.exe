@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280" prefWidth="264" styleClass="">
+  <children>
+    <Panel backgroundColor="#000000" borderColor="#000000" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="280" prefWidth="266" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="activityName" layoutX="8" layoutY="0" prefHeight="31" prefWidth="248" styleClass="label " text="Настройки" textAlignment="CENTER" textFill="#e6e6e6" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="15"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-activityName" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image8" layoutX="0" layoutY="32" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="264">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image8" image=".data/img/setn-th.png" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image" layoutX="0" layoutY="72" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="264">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/setn-bt.png" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="imageAlt" layoutX="0" layoutY="112" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="264">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-imageAlt" image=".data/img/setn-sn.png" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image3" layoutX="0" layoutY="152" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="264">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image3" image=".data/img/setn-bat.png" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image4" layoutX="0" layoutY="192" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="264">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image4" image=".data/img/setn-info.png" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+    <Rectangle arcHeight="0" arcWidth="0" fill="#000000" focusTraversable="false" height="248" id="hider1" layoutX="0" layoutY="296" opacity="0.5" stroke="#000000" strokeType="INSIDE" strokeWidth="2" styleClass="" width="264"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-hider1" visible="1"/>
+    <Panel backgroundColor="#000000" borderColor="#000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="activityThemes" layoutX="280" layoutY="32" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="248" prefWidth="264" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="84" id="wallpreview" layoutX="158" layoutY="134" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="76">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button5" layoutX="8" layoutY="36" prefHeight="32" prefWidth="120" styleClass="x-flat-button " text="Классика" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button5" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label9" layoutX="8" layoutY="8" prefHeight="17" prefWidth="248" styleClass="label " text="Мои темы:" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label9" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button6" layoutX="136" layoutY="36" prefHeight="32" prefWidth="120" styleClass="x-flat-button " text="Гомолучи" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button6" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button7" layoutX="8" layoutY="76" prefHeight="32" prefWidth="120" styleClass="x-flat-button " text="Тайная тема" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button7" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label10" layoutX="8" layoutY="116" prefHeight="14.5234375" prefWidth="66.60595703125" styleClass="label " text="Мои обои:" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial Bold" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label10" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label11" layoutX="136" layoutY="77" prefHeight="32" prefWidth="120" styleClass="label " text="*Для любых тем нужен доступ к Интернету." textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="11"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label11" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="136" id="image9" layoutX="136" layoutY="109" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="120">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image9" image=".data/img/ph-mockup-final.png" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button" layoutX="8" layoutY="136" prefHeight="32" prefWidth="120" styleClass="x-flat-button " text="Предыдущ." textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-wallpreview" image=".data/img/phwall1.png" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="buttonAlt" layoutX="8" layoutY="172" prefHeight="32" prefWidth="120" styleClass="x-flat-button " text="Следующ." textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-buttonAlt" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button3" layoutX="8" layoutY="208" prefHeight="32" prefWidth="120" styleClass="x-flat-button " text="Применить" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button3" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-activityThemes" visible="1"/>
+    <FlatButton alignment="CENTER" borderRadius="10" clickColor="#333333" color="#000000" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#1a1a1a" id="closeActivityButton" layoutX="0" layoutY="0" prefHeight="31" prefWidth="80" styleClass="x-flat-button " text="Закрыть" textAlignment="CENTER" textFill="#e6e6e6" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="15"/>
+      </font>
+    </FlatButton>
+    <Data cursor="HAND" enabled="1" id="data-closeActivityButton" visible=""/>
+    <Panel backgroundColor="#000000" borderColor="#000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="activitySounds" layoutX="552" layoutY="32" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="248" prefWidth="264" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button8" layoutX="8" layoutY="40" prefHeight="32" prefWidth="56" styleClass="x-flat-button " text="1" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button8" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label16" layoutX="8" layoutY="8" prefHeight="17" prefWidth="248" styleClass="label " text="Выберите новый рингтон:" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label16" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button10" layoutX="72" layoutY="40" prefHeight="32" prefWidth="56" styleClass="x-flat-button " text="2" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button10" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button11" layoutX="136" layoutY="40" prefHeight="32" prefWidth="56" styleClass="x-flat-button " text="3" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button11" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button12" layoutX="200" layoutY="40" prefHeight="32" prefWidth="56" styleClass="x-flat-button " text="4" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button12" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label17" layoutX="8" layoutY="88" prefHeight="17" prefWidth="248" styleClass="label " text="Выберите звук уведомления:" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label17" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button13" layoutX="8" layoutY="120" prefHeight="32" prefWidth="56" styleClass="x-flat-button " text="1" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button13" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button14" layoutX="72" layoutY="120" prefHeight="32" prefWidth="56" styleClass="x-flat-button " text="2" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button14" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button15" layoutX="136" layoutY="120" prefHeight="32" prefWidth="56" styleClass="x-flat-button " text="3" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button15" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button16" layoutX="200" layoutY="120" prefHeight="32" prefWidth="56" styleClass="x-flat-button " text="4" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button16" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button17" layoutX="8" layoutY="160" prefHeight="32" prefWidth="56" styleClass="x-flat-button " text="5" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button17" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button18" layoutX="72" layoutY="160" prefHeight="32" prefWidth="56" styleClass="x-flat-button " text="6" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button18" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button19" layoutX="136" layoutY="160" prefHeight="32" prefWidth="56" styleClass="x-flat-button " text="7" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button19" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button20" layoutX="200" layoutY="160" prefHeight="32" prefWidth="56" styleClass="x-flat-button " text="8" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="16"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button20" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-activitySounds" visible="1"/>
+    <Panel backgroundColor="#000000" borderColor="#000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="activityBattery" layoutX="824" layoutY="32" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="248" prefWidth="264" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button21" layoutX="32" layoutY="200" prefHeight="32" prefWidth="200" styleClass="x-flat-button " text="Обновить статистику" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button21" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label21" layoutX="8" layoutY="32" prefHeight="14.5234375" prefWidth="56.3671875" styleClass="label " text="loxVideos" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label21" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label22" layoutX="8" layoutY="8" prefHeight="14.5234375" prefWidth="180.92724609375" styleClass="label " text="Статистика использования:" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label22" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="+" focusTraversable="false" graphicTextGap="4" id="label20" layoutX="8" layoutY="48" prefHeight="30" prefWidth="120" styleClass="label " text="0 сек" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label20" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label23" layoutX="136" layoutY="32" prefHeight="14.5234375" prefWidth="63.7431640625" styleClass="label " text="Настройки" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label23" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="+" focusTraversable="false" graphicTextGap="4" id="label24" layoutX="136" layoutY="48" prefHeight="30" prefWidth="120" styleClass="label " text="0 сек" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label24" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label25" layoutX="8" layoutY="80" prefHeight="14.5234375" prefWidth="49.91162109375" styleClass="label " text="Браузер" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label25" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="+" focusTraversable="false" graphicTextGap="4" id="label26" layoutX="8" layoutY="96" prefHeight="30" prefWidth="120" styleClass="label " text="0 сек" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label26" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label27" layoutX="136" layoutY="80" prefHeight="14.5234375" prefWidth="50.58447265625" styleClass="label " text="Галерея" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label27" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="+" focusTraversable="false" graphicTextGap="4" id="label28" layoutX="136" layoutY="96" prefHeight="30" prefWidth="120" styleClass="label " text="0 сек" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label28" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label29" layoutX="8" layoutY="176" prefHeight="17" prefWidth="248" styleClass="label " text="0 сек — прочее" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="11"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label29" visible="1"/>
+        <Data cursor="DEFAULT" enabled="" id="data-image6" image=".data/img/стрелка.png" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label18" layoutX="8" layoutY="128" prefHeight="14.5234375" prefWidth="76.3876953125" styleClass="label " text="Калькулятор" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label18" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="+" focusTraversable="false" graphicTextGap="4" id="label19" layoutX="8" layoutY="144" prefHeight="30" prefWidth="120" styleClass="label " text="0 сек" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label19" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label34" layoutX="136" layoutY="128" prefHeight="17.291015625" prefWidth="32.2333984375" styleClass="label " text="Lucky" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label34" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="+" focusTraversable="false" graphicTextGap="4" id="label35" layoutX="136" layoutY="144" prefHeight="30" prefWidth="120" styleClass="label " text="0 сек" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label35" visible="1"/>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="64" id="image6" layoutX="72" layoutY="136" mosaic="false" mosaicGap="0" opacity="0.96341463414634" proportional="false" rotate="65.853658536588" stretch="true" styleClass="" textFill="#000000" width="88">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-activityBattery" visible="1"/>
+    <Panel backgroundColor="#000000" borderColor="#000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="activityDevice" layoutX="1096" layoutY="32" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="248" prefWidth="266" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="true" centered="false" focusTraversable="false" height="32" id="image7" layoutX="8" layoutY="8" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="32">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image7" image=".data/img/magic-icon.png" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label30" layoutX="16" layoutY="68" prefHeight="17" prefWidth="240" styleClass="label " text="Версия системы" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial" size="11"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label30" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label31" layoutX="16" layoutY="80" prefHeight="32" prefWidth="240" styleClass="label " text="loxOS v.12" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label31" visible="1"/>
+        <com.jfoenix.controls.JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button22" layoutX="0" layoutY="64" prefHeight="48" prefWidth="264" style="-fx-background-color: #ffffff00;" styleClass="button jfx-button " text="" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </com.jfoenix.controls.JFXButton>
+        <Data cursor="DEFAULT" enabled="1" id="data-button22" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button23" layoutX="16" layoutY="120" prefHeight="32" prefWidth="232" styleClass="x-flat-button " text="Заводская разблокировка" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button23" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button28" layoutX="16" layoutY="160" prefHeight="32" prefWidth="232" styleClass="x-flat-button " text="Настройки loxVideos" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button28" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label38" layoutX="48" layoutY="8" prefHeight="16" prefWidth="96" styleClass="label " text="alo" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Italic" size="16"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label38" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label40" layoutX="70" layoutY="8" prefHeight="16" prefWidth="96" styleClass="label " text="tech" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold Italic" size="16"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label40" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label41" layoutX="48" layoutY="26" prefHeight="16" prefWidth="96" styleClass="label " text="Phone 0" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold Italic" size="20"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label41" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label42" layoutX="48" layoutY="46" prefHeight="16" prefWidth="184" styleClass="label " text="Add more limits to your happy life!™" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold Italic" size="9"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label42" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-activityDevice" visible="1"/>
+    <Rectangle arcHeight="0" arcWidth="0" fill="#000000" focusTraversable="false" height="248" id="hider2" layoutX="280" layoutY="296" opacity="0.5" stroke="#000000" strokeType="INSIDE" strokeWidth="2" styleClass="" width="264"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-hider2" visible="1"/>
+    <Panel backgroundColor="#000000" borderColor="#000000" borderRadius="10" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="activityLoading" layoutX="552" layoutY="296" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="64" prefWidth="264" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <com.jfoenix.controls.JFXSpinner focusTraversable="false" id="progressIndicator" layoutX="8" layoutY="8" prefHeight="32" prefWidth="32" progress="-1" radius="16" styleClass="progress-indicator jfx-spinner "/>
+        <Data cursor="DEFAULT" enabled="1" id="data-progressIndicator" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label12" layoutX="56" layoutY="8" prefHeight="19.951171875" prefWidth="149.09912109375" styleClass="label " text="Применение темы..." textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="15"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label12" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label13" layoutX="56" layoutY="29" prefHeight="15.9609375" prefWidth="133.44140625" styleClass="label " text="Пожалуйста, подождите" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label13" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-activityLoading" visible="1"/>
+    <Panel backgroundColor="#000000" borderColor="#000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="activityRingplay" layoutX="0" layoutY="552" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="280" prefWidth="264" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="88" id="image5" layoutX="88" layoutY="24" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="88">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image5" image=".data/img/lox-plastinka88.png" visible="1"/>
+        <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label14" layoutX="16" layoutY="120" prefHeight="30" prefWidth="232" styleClass="label " text="Текст" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="19"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label14" visible="1"/>
+        <LabelEx alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label15" layoutX="16" layoutY="152" prefHeight="48" prefWidth="232" styleClass="label " text="Все права принадлежат законным правообладателям." textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="11"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label15" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button9" layoutX="68" layoutY="200" prefHeight="32" prefWidth="128" styleClass="x-flat-button " text="Вернуться" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button9" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-activityRingplay" visible="1"/>
+    <Panel backgroundColor="#000000" borderColor="#000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="activityPashalka" layoutX="280" layoutY="552" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="280" prefWidth="264" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label32" layoutX="85" layoutY="92" prefHeight="94.9609375" prefWidth="94.5458984375" styleClass="label " text="12" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="Arial Bold" size="85"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label32" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#333333" color="#000000" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#1a1a1a" id="button24" layoutX="0" layoutY="0" prefHeight="31" prefWidth="80" styleClass="x-flat-button " text="Закрыть" textAlignment="CENTER" textFill="#e6e6e6" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="HAND" enabled="1" id="data-button24" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-activityPashalka" visible="1"/>
+    <Panel backgroundColor="#000000" borderColor="#000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="activityOEMunlock" layoutX="560" layoutY="552" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="280" prefWidth="264" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#333333" color="#000000" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#1a1a1a" id="button25" layoutX="0" layoutY="0" prefHeight="31" prefWidth="80" styleClass="x-flat-button " text="Закрыть" textAlignment="CENTER" textFill="#e6e6e6" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="HAND" enabled="1" id="data-button25" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label33" layoutX="16" layoutY="32" prefHeight="56" prefWidth="224" styleClass="label " text="Вы действительно хотите выполнить OEM разблокировку? (Это понизит безопасность устр-ва)." textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label33" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button26" layoutX="16" layoutY="96" prefHeight="32" prefWidth="72" styleClass="x-flat-button " text="Да" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button26" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button27" layoutX="96" layoutY="96" prefHeight="32" prefWidth="72" styleClass="x-flat-button " text="Нет" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button27" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-activityOEMunlock" visible="1"/>
+    <Panel backgroundColor="#000000" borderColor="#000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="activityLVSet" layoutX="832" layoutY="552" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="282" prefWidth="264" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <FlatButton alignment="CENTER" borderRadius="10" clickColor="#333333" color="#000000" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#1a1a1a" id="button29" layoutX="0" layoutY="0" prefHeight="31" prefWidth="80" styleClass="x-flat-button " text="Закрыть" textAlignment="CENTER" textFill="#e6e6e6" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="15"/>
+          </font>
+        </FlatButton>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label36" layoutX="16" layoutY="34" prefHeight="48" prefWidth="224" styleClass="label " text="5-секундное ожидание перед каждым видео" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial Bold" size="13"/>
+          </font>
+        </LabelEx>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button30" layoutX="16" layoutY="76" prefHeight="32" prefWidth="136" styleClass="x-flat-button " text="Включить" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="HAND" enabled="1" id="data-button29" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" id="data-label36" visible="1"/>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button30" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label37" layoutX="16" layoutY="120" prefHeight="48" prefWidth="224" styleClass="label " text="Скрыть нижнюю панель" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial Bold" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label37" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label39" layoutX="16" layoutY="190" prefHeight="48" prefWidth="224" styleClass="label " text="Выход по нажатию на блюр при выборе кастом. видео" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial Bold" size="13"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label39" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button31" layoutX="16" layoutY="144" prefHeight="32" prefWidth="136" styleClass="x-flat-button " text="Скрыть" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button31" visible="1"/>
+        <FlatButton alignment="CENTER" borderRadius="15" clickColor="#2e2e2e" color="#1a1a1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#333333" id="button32" layoutX="16" layoutY="232" prefHeight="32" prefWidth="136" styleClass="x-flat-button " text="Включить" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="Arial" size="15"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic="" id="data-button32" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-activityLVSet" visible="1"/>
+  </children>
+</AnchorPane>
